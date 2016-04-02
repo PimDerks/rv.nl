@@ -1,0 +1,49 @@
+button,
+.button {
+  background: white;
+  border: baseline(.1) solid black;
+  border-radius: baseline(2);
+  color: black;
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  margin: baseline(2) auto;
+  text-transform: uppercase;
+  padding: baseline(.7);
+  text-decoration: none;
+
+  @include attention {
+    background: black;
+    color: white;
+    text-decoration: none;
+
+    &::after {
+      color: #FFE400;
+    }
+  }
+
+}
+
+.button--brand {
+  background-color: #FFE400;
+  border-color: #FFE400;
+  color: black;
+
+  @include attention(){
+    background-color: black;
+    border-color: black;
+    color: white;
+  }
+
+}
+
+.button--inv {
+  background-color: black;
+  color: white;
+
+  @include attention(){
+    background-color: #FFE400;
+    border-color: #FFE400;
+    color: black;
+  }
+}

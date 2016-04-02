@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #BOX-SIZING
+\*------------------------------------*/
+
+/**
+ * Box-sizing best practice.
+ * @link https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+html {
+  box-sizing: border-box; /* 1 */
+}
+
+form {
+  overflow: hidden; // make sure overflow is hidden (when using overflow-x this is not always the case)
+  overflow-y: visible; // make sure overflow y is visible
+  position: relative; // make sure menu is 100% of page
+  height: 100%; // make sure menu is 100% of page
+  min-height: 100vh; // make sure minimum height is always 100% of viewport
+}
+
+* {
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+
+}

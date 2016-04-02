@@ -1,0 +1,108 @@
+.box {
+  &::before {
+    background-color: #FFE400;
+    content: '';
+    display: block;
+    height: .5em;
+    opacity: .95;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: baseline(3);
+  }
+}
+
+.box,
+.box--brand {
+  background: rgba(white, .99);
+  // color: white;
+  position: relative;
+
+  * {
+    // color: White !important;
+  }
+}
+
+.box--dimmed {
+  background: #f4f4f4;
+}
+
+.box--brand {
+  background: rgba(#ffe400, .99);
+}
+
+.inner {
+  padding: 4.5rem;
+
+  & :last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.inner--spacing {
+  padding-bottom: baseline(9);
+  padding-left: baseline(3);
+  padding-right: baseline(18);
+}
+
+.inner-small {
+  padding: 1.5rem;
+}
+
+
+.box--alt {
+  padding: baseline(4) 0;
+}
+
+
+.box--inv {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #FFE400;
+    &::after {
+      border-color: white;
+    }
+  }
+}
+
+.box--inv {
+  background: rgba(black, .99);
+  color: white;
+
+  > *,
+  .lead {
+    color: white;
+  }
+}
+
+.box--pic {
+  padding: baseline(3) 0 baseline(12);
+  position: relative;
+
+  &::after,
+  &::before {
+    bottom: 0;
+    content: '';
+    display: block;
+    height: baseline(12);
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  &::after {
+    background-image: url('http://4.bp.blogspot.com/-xyUH3ecZTNg/VOOZSFOtF1I/AAAAAAAABYc/st3vfnoNwos/s1600/RVCover.jpg');
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &::before {
+    background-image: linear-gradient(black, transparent), linear-gradient(to right, black, transparent);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,92 @@
+---
+title: Music
+layout: default
+---
+
+{% include layout/hero.html %}
+
+<div class="wrapper wrapper--pull-top">
+
+<div class="box inner">
+<nav>
+    <ul class="o-list-nav">
+        <li>
+            <a href="/music/albums/" class="pill pill--current">Albums</a>
+        </li>
+        <li>
+            <a href="/music/singles/" class="pill">Singles</a>
+        </li>
+        <li>
+            <a href="/music/collaborations/" class="pill">Collaborations</a>
+        </li>
+        <li>
+            <a href="/music/songs/" class="pill">Songs</a>
+        </li>
+    </ul>
+</nav>
+
+<h2>Albums</h2>
+
+<ul class="grid-list">
+    {% for release in site.albums | limit:7 %}
+    <li>
+        <div>
+        <a href="{{ release.url }}">
+            <img src="{{ release.img }}" alt="{{ release.title }}" />
+        </a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<a href="/music/albums/" class="button">View all albums</a>
+<a href="/music/albums/" class="button button--inv">View all albums</a>
+<a href="/music/albums/" class="button button--brand">View all albums</a>
+
+
+<h2>Singles</h2>
+
+<ul class="grid-list">
+    {% for release in site.singles | limit:7 %}
+    <li>
+        <div>
+            <a href="{{ release.url }}">
+                <img src="{{ release.img }}" alt="{{ release.title }}" />
+            </a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<a href="/music/singles/" class="button">View all singles</a>
+
+    <h2>Compilations</h2>
+
+    <ul class="grid-list">
+        {% for release in site.compilations | limit:7 %}
+        <li>
+            <div>
+                <a href="{{ release.url }}">
+                    <img src="{{ release.img }}" alt="{{ release.title }}" />
+                </a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/music/compilations/" class="button">View all compilations</a>
+
+<h2>Collaborations</h2>
+
+<ul class="grid-list">
+    {% for release in site.collaborations | limit:7 %}
+    <li>
+        <div>
+            <a href="{{ release.url }}">
+                <img src="{{ release.img }}" alt="{{ release.title }}" />
+            </a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<a href="/music/collaborations" class="button">View all collaborations</a>
+</div>
+
+</div>

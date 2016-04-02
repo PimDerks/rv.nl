@@ -1,0 +1,24 @@
+---
+title: Albums
+layout: default
+---
+
+{% include layout/hero.html %}
+
+<div class="wrapper wrapper--pull-top">
+
+<div class="box inner">
+    <ul class="grid-list">
+        {% for release in site.albums reversed %}
+        <li>
+            <div>
+                <a href="{{ release.url }}">
+                    <img src="{{ release.img }}" alt="{{ release.title }}" />
+                </a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+</div>

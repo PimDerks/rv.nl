@@ -1,0 +1,57 @@
+---
+title: The Magic Breeze
+year: 2006-01-01
+credits:
+  - key: Written, composed and arranged
+    value: Robby Valentine
+  - key: Lead-vocals, harmony-vocals, grand-piano, synthesizers, rhythm-guitars, drum and synth programming, synth basses
+    value: Robby Valentine
+  - key: Extra harmony-vocals
+    value: Johan Willems
+  - key: Fairlight programming
+    value: Attie Bauw
+  - key: Produced, engineered and mixed
+    value: Erwin Musper
+---
+
+<p>Deep down I went day by day<br />
+To find the one inside<br />
+Life became a stranger<br />
+Locked behind the fright<br />
+But you're the one I'm searching for<br />
+You can stop my fall<br />
+Take me back to better times<br />
+Those I might recall</p>
+
+<p>Love is the only thing<br />
+The only thing I need<br />
+Open up the haze<br />
+Blow the magic breeze</p>
+
+<p>Just one minute of your life<br />
+Heals the wound inside<br />
+Takes me out of nowhere<br />
+Solves the questions in my heart<br />
+That tore me all apart<br />
+And set me free<br />
+'Cause time won't let me be</p>
+
+<p>Will I ever live my dreams<br />
+If no one seems to hear<br />
+Voices of a strange and<br />
+Undeniable fear<br />
+It's hard to take those magic steps<br />
+When everyone demands<br />
+I can't go on like this<br />
+I have to take a chance</p>
+
+<p>You are the only one<br />
+The only one I need<br />
+Open up the haze<br />
+Blow the magic breeze</p>
+
+<p>I keep hiding in disguise<br />
+All my life thru' different eyes<br />
+Tell me what it takes<br />
+Till you believe in me<br />
+'Cause I believe in you</p>

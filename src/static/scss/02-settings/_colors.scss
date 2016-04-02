@@ -1,0 +1,31 @@
+// Color definitions
+
+$colors: (
+  'blue':       #0099FF,
+  'light-blue': #33ADFF,
+  'green':      #009A00,
+  'purple':     #4B08A1,
+  'burgundy':   #9A151C,
+  'sand':       #B3A1AA,
+  'alpha':      #333333,
+  'beta':       #666666,
+  'gamma':      #999999,
+  'delta':      #CCCCCC,
+  'epsilon':    #E5E5E5,
+  'off-white':  #F1F1F1,
+  'white':      #FFFFFF,
+  'black':      #000000,
+  'background': #F0ECEE,
+);
+
+// Helper
+
+@function get-color($name) {
+
+  @if map-has-key($colors, $name){
+    @return map-get($colors, $name);
+  } @else {
+    @error 'Color #{$name} not found in $colors';
+  }
+
+}

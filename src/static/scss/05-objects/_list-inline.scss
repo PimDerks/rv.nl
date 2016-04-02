@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #LIST-INLINE
+\*------------------------------------*/
+
+
+.o-list--inline {
+  padding-left: baseline(.5);
+  display: inline-block;
+
+  li {
+    vertical-align: top;
+
+    &.o-list__item--1\/2 {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  @include respond-min('m') {
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+
+      &.o-list__item--1\/2 {
+        width: calc(50% - .25rem);
+      }
+    }
+  }
+
+}

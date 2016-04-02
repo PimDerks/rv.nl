@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+a {
+  border-bottom: 1px solid #ffe400;
+  color: black;
+  text-decoration: none;
+
+  @include attention {
+    border-bottom-color: black;
+    color: black;
+    text-decoration: none;
+  }
+
+}

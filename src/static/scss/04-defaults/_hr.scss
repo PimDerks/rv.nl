@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #HR
+\*------------------------------------*/
+
+hr {
+  background-color: get-color('epsilon');
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: baseline(1) auto;
+  border: 0;
+}

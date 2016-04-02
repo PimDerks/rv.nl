@@ -1,0 +1,27 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden; // no horizontal scrollbar at any time
+}
+
+main,
+aside {
+  float: left;
+  position: relative;
+}
+
+main {
+  width: 61.804%;
+}
+
+aside {
+  margin-top: baseline(4);
+  width: 100% - 61.804%;
+}
+
+aside .inner {
+  padding-left: 4.5rem;
+}

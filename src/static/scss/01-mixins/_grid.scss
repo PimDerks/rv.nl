@@ -1,0 +1,16 @@
+$columns: 10;
+$column: 100/$columns;
+
+@function grid-unit($amount, $context: null){
+  $return: $amount * $column;
+
+  @if($context){
+    $context: $context/$columns * 100;
+    $gu: ($column * (100/$context));
+    $context: (100/$columns) * $context;
+    $return: $amount * $gu;
+  }
+
+  @return $return * 1%;
+
+}

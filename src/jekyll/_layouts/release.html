@@ -1,0 +1,139 @@
+---
+layout: default
+---
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting" xmlns="http://www.w3.org/1999/html">
+
+  {% include layout/hero.html %}
+
+  <div class="wrapper wrapper--pull-top">
+  <main>
+    <section class="box">
+      <h2 class="u-screenreader">Artwork</h2>
+      <img src="{{ page.img }}" alt="{{ page.title }}" style="margin-bottom:0;" />
+    </section>
+
+    <section class="box inner">
+
+      <h2 class="section-title">Tracklist</h2>
+      {% for disc in page.discs %}
+
+      {% if disc.title %}
+        <h3>{{ disc.title }}</h3>
+      {% endif %}
+
+      <ol>
+        {% for track in disc.tracks %}
+
+        {% assign songTitle = track %}
+
+        {% if track.title %}
+          {% assign songTitle = track.title %}
+        {% endif %}
+
+        {% assign songData = null %}
+
+        {% for song in site.songs %}
+          {% if song.title == songTitle %}
+            {% assign songData = song %}
+          {% endif %}
+        {% endfor %}
+
+        <li>
+
+          {% if songData %}
+            <a href="{{ songData.url }}">{{ songTitle }}</a>
+          {% else %}
+            {{ songTitle }}
+          {% endif %}
+
+          {% if track.subtitle %}
+          ({{ track.subtitle }})
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+
+      {% endfor %}
+
+    </section>
+
+    <img src="http://lorempixel.com/640/240" alt="" />
+
+    <section class="box box--inv inner">
+      <h2 class="section-title">About this release</h2>
+      {{ content }}
+    </section>
+
+  </main>
+
+  <aside>
+
+    <section class="box box--inv inner">
+      <h2 class="section-title">Information</h2>
+      <dl>
+        <dt>Title</dt>
+        <dd>{{ page.title }}</dd>
+        <dt>Released</dt>
+        <dd>{{ page.date | date: '%B %d, %Y' }}</dd>
+        <dt>Label</dt>
+        <dd>{{ page.label }}</dd>
+        <dt>Catalognumber</dt>
+        <dd>{{ page.catalog }}</dd>
+      </dl>
+    </section>
+
+    <img src="http://lorempixel.com/640/481" alt="" />
+
+  <section class="box box--inv inner">
+    <h2 class="section-title">Credits</h2>
+    <dl>
+      {% for credit in page.credits %}
+      <dt>{{ credit.key }}</dt>
+      <dd>{{ credit.value }}</dd>
+      {% endfor %}
+    </dl>
+  </section>
+
+  </aside>
+  </main>
+
+  <nav style="display:none;">
+    <h2>Subnavigation</h2>
+    {% for item in site.albums %}
+      {% if item.title == page.title %}
+        {% assign currentIndex = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if page.type == 'single' %}
+      {% assign src = site.singles %}
+    {% elsif page.type == 'album' %}
+      {% assign src = site.albums %}
+    {% elsif page.type == 'collaboration' %}
+      {% assign src = site.collaborations %}
+    {% endif %}
+
+    {% for item in src %}
+      {% if item.title == page.title %}
+        {% assign currentIndex = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign current = src[currentIndex] %}
+    <p>Current: {{ current.title }} </p>
+
+    {% assign nextIndex = currentIndex|minus:1 %}
+    {% if nextIndex >= 0 and src[nextIndex] %}
+      {% assign next = src[nextIndex] %}
+        <p>Prev: <a href="{{ next.url }}">{{ next.title }}</a><img src="{{ next.img }}" alt="{{ next.title }}" /></p>
+    {% endif %}
+
+    {% assign prevIndex = currentIndex|plus:1 %}
+    {% if prevIndex >= 0 and src[prevIndex] %}
+      {% assign prev = src[prevIndex] %}
+      <p>Next: <a href="{{ prev.url }}">{{ prev.title }}</a><img src="{{ prev.img }}" alt="{{ prev.title }}" /></p>
+    {% endif %}
+  </nav>
+    </div>
+
+</div>

@@ -1,0 +1,51 @@
+{% include document/document-open.html %}
+
+  {% include document/document-head.html %}
+
+  <body>
+  <div class="page-background"></div>
+  <div class="page-header">
+    <div class="logo">
+      <div class="logo2"><img src="/static/img/logo.svg" /></div>
+      <!-- <div class="logo2"></div> -->
+    </div>
+    <div class="hamburger">
+      <div class="hamburger2">
+        <span></span><span></span><span></span>
+      </div>
+      <!-- <div class="logo2"></div> -->
+    </div>
+    <div class="page-nav">
+      <ul>
+        <li>
+          <a href="/news/"><span>News</span></a>
+        </li>
+        <li>
+          <a href="/music/"><span>Music</span></a>
+        </li>
+        <li>
+          <a href="/live/"><span>Live</span></a>
+        </li>
+        <li>
+          <a href="/about/"><span>About</span></a>
+        </li>
+        <li>
+          <a href="/shop/"><span>Shop</span></a>
+        </li>
+        <li>
+          <a href="/contact/"><span>Contact</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div class="page-content">
+          {{ content }}
+    </div>
+
+    {% include header.html %}
+
+    {% include footer.html %}
+
+    {% include document/document-scripts.html %}
+
+{% include document/document-close.html %}

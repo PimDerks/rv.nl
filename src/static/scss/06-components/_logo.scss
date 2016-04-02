@@ -1,0 +1,30 @@
+.logo {
+  background: rgba(black, .78);
+  width: grid-unit(1);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &:hover {
+    background-color: black;
+  }
+
+  .logo2 {
+    display: block;
+    height: baseline(4);
+    // padding-top: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 50%;
+    }
+
+    &:nth-child(2) {
+      background-color: #FFE400;
+    }
+  }
+}

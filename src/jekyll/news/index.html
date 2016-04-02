@@ -1,0 +1,24 @@
+---
+title: News
+layout: default
+---
+
+{% include layout/hero.html %}
+
+<div class="wrapper wrapper--pull-top">
+    <main style="width: 100%;">
+        <ul class="o-list-bare grid-list">
+            {% for post in site.posts %}
+            <li>
+                <article class="box {% cycle '', 'box--dimmed' %}">
+                    <img src="http://lorempixel.com/640/480" alt="{{ post.title }}" />
+                    <div class="inner">
+                        <h2>{{ post.title }}</h2>
+                        {{ post.excerpt }}
+                    </div>
+                </article>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+</div>

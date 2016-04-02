@@ -1,0 +1,20 @@
+---
+title: Compilations
+layout: default
+---
+
+{% include layout/hero.html %}
+
+<div class="box inner">
+    <ul class="grid-list">
+        {% for release in site.compilations %}
+        <li>
+            <div>
+                <a href="{{ release.url }}">
+                    <img src="{{ release.img }}" alt="{{ release.title }}" />
+                </a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

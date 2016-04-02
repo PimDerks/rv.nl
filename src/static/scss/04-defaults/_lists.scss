@@ -1,0 +1,67 @@
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+
+ul,
+ol {
+    list-style: none none outside;
+    padding-left: baseline(1);
+
+    > li {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+ol {
+    counter-reset: ol;
+    padding-left: 0;
+    > li {
+        counter-increment: ol;
+        position: relative;
+        &::before {
+            content: counter(ol) '.';
+            display: inline-block;
+            font-size: 66.66%;
+            line-height: 1.5rem;
+            text-align: right;
+            position: absolute;
+            left: -2.5rem;
+            top: .1em;
+            width: 1.5rem;
+            vertical-align: bottom;
+        }
+    }
+}
+
+ul ol,
+ol ul,
+ul ul {
+padding-left: baseline(1);
+}
+
+dl {
+
+    dt,
+    dd {
+        display: block;
+        padding: 0;
+    }
+
+    dt {
+        font-family: 'Open Sans';
+        font-size: .75em;
+        font-weight: bold;
+        opacity: .5;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    dd + dt {
+        border-top: 1px solid grey;
+        margin-top: baseline(.5);
+        padding-top: baseline(.5);
+    }
+
+}

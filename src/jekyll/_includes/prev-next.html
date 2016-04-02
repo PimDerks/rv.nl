@@ -1,0 +1,21 @@
+{% for item in site[include.pages] %}
+    {{ item.title }}
+    {% if item.title == page.title %}
+        {% assign currentIndex = forloop.index0 %}
+    {% endif %}
+{% endfor %}
+
+{% assign current = site[include.pages][currentIndex] %}
+<p>Current: {{ current.title }} </p>
+
+{% assign prevIndex = currentIndex|plus:1 %}
+{% if prevIndex >= 0 and site[include.pages][prevIndex] %}
+    {% assign prev = site[include.pages][prevIndex] %}
+    <p>Prev: <a href="{{ prev.url }}">{{ prev.title }}</a> </p>
+{% endif %}
+
+{% assign nextIndex = currentIndex|minus:1 %}
+{% if nextIndex >= 0 and site[include.pages][nextIndex] %}
+    {% assign next = site[include.pages][nextIndex] %}
+    <p>Next: <a href="{{ next.url }}">{{ next.title }}</a></p>
+{% endif %}

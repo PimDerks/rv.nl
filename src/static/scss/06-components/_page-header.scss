@@ -1,0 +1,18 @@
+.page-header {
+  height: baseline(4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  // text-shadow: 0 .05em .1em rgba(black, .5);
+  z-index: 10;
+}
+
+.site-header {
+  display: none;
+}
+
+.site-footer {
+  clear: both;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+footer {
+  a {
+    color: #ffe400;
+
+    @include attention {
+      color: #ffe400;
+    }
+  }
+}
+
+.c-footer__links {
+
+  li {
+    margin-right: baseline(.5);
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

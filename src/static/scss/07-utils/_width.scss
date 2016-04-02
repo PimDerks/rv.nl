@@ -1,0 +1,40 @@
+/* Utils for widths
+----------------------------------------------- */
+
+// defaults
+@for $j from 1 through length($widths) {
+
+  $width:               nth($widths, $j);
+  $width-fraction:      nth($width, 1);
+  $width-total:         nth($width, 2);
+  $width-dimensions:    nth($width, 3);
+
+  .u-#{$width-fraction}\/#{$width-total} {
+    width: $width-dimensions;
+  }
+}
+
+
+@for $i from 1 through length($breakpoints) {
+  $bp:  nth($breakpoints, $i);
+  $name:  nth($bp, 1);
+  $code:  nth($bp, 2);
+
+  @include respond-min($name) {
+
+    @for $j from 1 through length($widths) {
+
+      $width:              nth($widths, $j);
+      $width-fraction:      nth($width, 1);
+      $width-total:         nth($width, 2);
+      $width-dimensions:    nth($width, 3);
+
+      .u-#{$width-fraction}\/#{$width-total}\@#{$name} {
+        width: $width-dimensions;
+      }
+
+    }
+
+  }
+
+}

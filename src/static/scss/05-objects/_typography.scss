@@ -1,0 +1,22 @@
+.section-title {
+  font-size: 75%;
+  font-family: 'Open Sans', serif;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: baseline(2);
+  padding-bottom: .75rem;
+  text-transform: uppercase;
+}
+
+.lead {
+  @extend %u-lead;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-bottom: baseline(4);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}

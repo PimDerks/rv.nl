@@ -1,0 +1,21 @@
+---
+title: Timeline
+layout: default
+---
+
+<ul>
+    <li>
+        <a href="/about/biography/">Biography</a>
+    </li>
+    <li>
+        <a href="/about/timeline/">Timeline</a>
+    </li>
+</ul>
+
+<ol>
+{% for item in site.timeline %}
+    <li>
+        {{ item.date }} - {{ item.title }}
+    </li>
+{% endfor %}
+</ol>

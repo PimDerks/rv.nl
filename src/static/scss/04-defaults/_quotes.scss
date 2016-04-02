@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    #QUOTES
+\*------------------------------------*/
+
+blockquote,
+q,
+cite {
+    @extend %u-subheading-beta;
+    color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    margin: baseline(1.75) 0;
+    quotes: '\201C' '\201D' '\2018' '\2019';
+
+    &::before,
+    &::after {
+        // color: #ccc;
+        content: open-quote;
+        // font-size: 4em;
+        // line-height: 0.1em;
+        // margin-right: 0.25em;
+        // vertical-align: -0.4em;
+    }
+
+    &::after {
+        content: close-quote;
+    }
+
+    p {
+        @extend %u-heading-delta;
+    }
+
+    p:first-of-type {
+        &::before {
+            content: open-quote;
+            display: inline-block;
+            margin-left: -.33rem;
+        }
+    }
+
+    p:last-of-type {
+        &::after {
+            content: close-quote;
+        }
+    }
+
+}

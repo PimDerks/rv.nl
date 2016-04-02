@@ -1,0 +1,17 @@
+---
+title: Frequently asked questions
+layout: default
+---
+
+{% include layout/hero.html %}
+
+<div class="wrapper wrapper--pull-top">
+    <div class="box inner">
+        <dl>
+        {% for question in site.faq %}
+            <dt>{{ question.question }}</dt>
+            <dd>{{ question.content }}</dd>
+        {% endfor %}
+        </dl>
+    </div>
+</div>

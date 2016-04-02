@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  {% include layout/hero.html %}
+
+  <div class="wrapper wrapper--pull-top">
+
+  <main>
+    <div class="box">
+      <img src="http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg" alt="" />
+    </div>
+    <section class="box inner">
+      <h2 class="section-title">Lyrics</h2>
+
+      {% assign content = content | strip_newlines %}
+
+      {% if content == '' %}
+        <p>Check back soon for the lyrics for {{ page.title }}!</p>
+      {% else %}
+        {{ content }}
+      {% endif %}
+
+
+    </section>
+    {% if page.about %}
+    <div class="box box--dimmed inner">
+      <h2 class="section-title">About this song</h2>
+      {{ page.about | markdownify }}
+    </div>
+    {% endif %}
+  </main>
+
+  <aside>
+
+  <section class="box box--inv inner">
+    <h2 class="section-title">Credits</h2>
+    <dl>
+      {% for credit in page.credits %}
+        <dt>{{ credit.key }}</dt>
+        <dd>{{ credit.value }}</dd>
+      {% endfor %}
+      <!-- <dt>Appears on</dt>
+      <dd>
+        <ul>
+          {% for appearance in page.appears %}
+
+            {% if appearance.type == 'single' %}
+              {% assign src = site.singles %}
+            {% elsif appearance.type == 'album' %}
+              {% assign src = site.albums %}
+            {% elsif appearance.type == 'misc' %}
+              {% assign src = site.collaborations %}
+            {% endif %}
+
+            {% for release in src %}
+              {% if release.title == appearance.title %}
+                <li>
+                  <a href="{{ release.url }}">{{ release.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </dd> -->
+    </dl>
+  </section>
+
+
+    <!-- <nav class="box box--brand inner">
+      <h2 class="section-title">Subnavigation</h2>
+      {% assign songs = site.songs | sort: 'title' %}
+      {% for song in songs %}
+      {% if song.title == page.title %}
+      {% assign currentIndex = forloop.index0 %}
+      {% endif %}
+      {% endfor %}
+
+      {% assign current = songs[currentIndex] %}
+      <p>Current: {{ current.title }} </p>
+
+      {% assign nextIndex = currentIndex|plus:1 %}
+      {% if nextIndex >= 0 and songs[nextIndex] %}
+      {% assign next = songs[nextIndex] %}
+      <p>Next: <a href="{{ next.url }}">{{ next.title }}</a> </p>
+      {% endif %}
+
+      {% assign prevIndex = currentIndex|minus:1 %}
+      {% if prevIndex >= 0 and songs[prevIndex] %}
+      {% assign prev = songs[prevIndex] %}
+      <p>Prev: <a href="{{ prev.url }}">{{ prev.title }}</a></p>
+      {% endif %}
+    </nav> -->
+
+  </aside>
+
+</div>
+
+</div>

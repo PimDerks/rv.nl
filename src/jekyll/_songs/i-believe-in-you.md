@@ -1,0 +1,100 @@
+---
+title: I Believe In You
+year: 2006-01-01
+credits:
+  - key: Written, composed and arranged
+    value: Robby Valentine
+  - key: Lead-vocals, harmony-vocals, grand-piano, synthesizers, rhythm-guitars, drum and synth programming, synth basses, lead-guitar
+    value: Robby Valentine
+  - key: Extra harmony-vocals
+    value: Johan Willems
+  - key: Fairlight programming
+    value: Attie Bauw
+  - key: Produced, engineered and mixed
+    value: Erwin Musper
+---
+
+<p>I walk alone beneath the stars<br />
+I hear you - inspiration's calling me<br />
+And I thank you on my knees<br />
+For the way you make my life complete</p>
+
+<p>Yes I know that life's unsure<br />
+I give my heart and soul to get it right<br />
+But if anything goes wrong<br />
+I always know my heart will carry on</p>
+
+<p>Oh I believe in you<br />
+The strength is on my side<br />
+You help me thru' and thru'<br />
+And give me back my pride<br />
+This song you hear I dedicate to you</p>
+
+<p>Oh God she's always on my mind<br />
+She's the girl that was so hard to find<br />
+Never felt like this before<br />
+She's the one I will love forever more</p>
+
+<p>I feel that this is meant to be<br />
+Never knew she had so much in store<br />
+And if time is on our side<br />
+I surely know my heart will carry on</p>
+
+<p>Oh I believe in her<br />
+The strength is on my side<br />
+Now I can face the world<br />
+And split the wrong from right<br />
+The feeling grows<br />
+I'm finally coming through</p>
+
+<p>There were days<br />
+When all these words were hard to find<br />
+Living in this world without a friend<br />
+How hard I tried - they got in the way<br />
+I could never sing till the end</p>
+
+<p>But I still believe<br />
+That I catch the magic sound<br />
+I just won't give up trying<br />
+Till you are around</p>
+
+<p>Love left you - would I ever start again<br />
+(Fighting for an answer)<br />
+So lonely - reach out for a helping hand<br />
+(Living without your love)<br />
+No one can hear me - no one will fear me<br />
+I'm so shy - I wonder why</p>
+
+<p>Living in a home without a heart<br />
+I thought of moving out<br />
+I've been waitin' for a brand new start<br />
+Now I can face the crowd</p>
+
+<p>Oh you tried to get along<br />
+(Everything went wrong)<br />
+Nowhere to belong - wasn't easy to survive<br />
+Yes so hard to carry on with a fear so strong<br />
+Like you're losing all the time</p>
+
+<p>Give it - no - give it - no<br />
+Give your soul and you'll be free<br />
+Give it - no - give it - no<br />
+Then we'll never let it be<br />
+Will you still be there<br />
+If you do believe in this dream<br />
+You know it's plain to see<br />
+(You and me)<br />
+Go - go</p>
+
+<p>Love so strong - here's where I belong<br />
+And I leave the fears behind<br />
+Till the end of time</p>
+
+<p>And I'm sure I'll find my way<br />
+'Cause I know the words to say<br />
+Yes I'm sure it won't be long<br />
+'Cause I know I'm not alone</p>
+
+<p>Oh I never - no I never<br />
+Oh I never lose my faith in you<br />
+I believe in you</p>
