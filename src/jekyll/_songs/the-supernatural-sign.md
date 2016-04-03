@@ -1,6 +1,79 @@
 ---
 title: The Supernatural Sign
-year: 2006-01-01
-writer: Robby Valentine
-composer: Robby Valentine
+year: 1995
+credits:
+  - key: Composed, written, arranged and produced
+    value: Robby Valentine
+  - key: All instruments, lead vocal and vocal harmonies
+    value: Robby Valentine
 ---
+
+<p>I almost sank into the water<br />
+I saw my sanity go by<br />
+Voices from the skies above united us in time<br />
+the supernatural sign</p>
+
+<p>I just wanna save the world<br />
+I'm not a saint and that's alright<br />
+I just want it to unfurl<br />
+its kindness and its open mind</p>
+
+<p>All you disciples come on follow me<br />
+Open the skies for those who lie and deceive<br />
+Make them dig deep inside<br />
+To the love they might hide</p>
+
+<p>On my way to save the world<br />
+I'm banned and turned upside down<br />
+They keep trying to unfurl<br />
+The evil I had killed inside</p>
+
+<p>All Pharisees you don't know what you do<br />
+Just clear the way because you don't have a clue<br />
+How can I make this right<br />
+I will stay black and white</p>
+
+<p>You can run and hide<br />
+You can call me blind<br />
+But there soon will come a time<br />
+You will see who's right<br />
+Then you wish you'd find<br />
+The supernatural sign</p>
+
+<p>I don't wanna save the world<br />
+I'm infected with their lies (like it's contagious)<br />
+Now I gotta blame the girl<br />
+For keeping me awake at night</p>
+
+<p>Lord of disciples come on and rescue me<br />
+I'm so alone and I miss all my dreams<br />
+I sure dig deep inside to the love that I hide</p>
+
+<p>Or is this all to find myself in me<br />
+Or is there more that I could never see<br />
+There was a reason for this insanity<br />
+'Cause now I know the truth behind the stranger in me</p>
+
+<p>I just wanna save the world<br />
+I'm not a saint and that alright<br />
+I just want it to unfurl<br />
+Its kindness and its open mind</p>
+
+<p>All you disciples come on follow me<br />
+Open the skies for those who lie and deceive<br />
+I sure dig deep inside<br />
+And I stay black and white</p>
+
+<p>You can run and hide<br />
+You can run and hide<br />
+But there soon will come a time<br />
+That you'll see who's right<br />
+Then you wish you'd find<br />
+The supernatural sign</p>
+
+<p>That's why I choose a supernatural time</p>
+
+
+
+
+

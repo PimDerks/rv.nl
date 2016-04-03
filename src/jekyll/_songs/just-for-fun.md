@@ -1,8 +1,13 @@
 ---
 title: Just For Fun
-year: 2006-01-01
-writer: Robby Valentine
-composer: Robby Valentine
+year: 1995
+credits:
+  - key: Composed, written, arranged and produced
+    value: Robby Valentine
+  - key: Piano, synthesizers, rhythm guitars, acoustic guitars, synth-bass, lead vocals, vocal harmonies, drum programmming
+    value: Robby Valentine
+  - key: Lead guitar, additional vocal harmonies, sampling engineer
+    value: Rob Winter
 ---
 
 <p>I met her at a gig back in '93<br />

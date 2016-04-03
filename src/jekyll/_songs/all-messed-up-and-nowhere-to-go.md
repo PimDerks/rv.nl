@@ -1,6 +1,45 @@
 ---
 title: All Messed Up And Nowhere To Go
-year: 2006
-writer: Robby Valentine
-composer: Robby Valentine
+year: 1995
+credits:
+  - key: Composed, written, arranged and produced
+    value: Robby Valentine
+  - key: Piano, drum programming, synthesizers, synth-bass, acoustic and rhythm guitars, lead vocals and vocal harmonies
+    value: Robby Valentine
+  - key: Lead and harmonic guitars
+    value: Rob Winter
+  - key: Additional backing vocals
+    value: Jay Jay
 ---
+
+<p>Look at me I'm such a silly guy<br />
+I try to ride against the wind<br />
+Though I ain't hip don't want to live a lie<br />
+Where's the world that I was living in</p>
+
+<p>But it's all messed up and nowhere to go<br />
+All dressed up, boy what do I know</p>
+
+<p>Gimme love - sweet love<br />
+Is there anyone out there who'll sympathize<br />
+Gimme love - sweet love<br />
+Trying to keep my head above the waves</p>
+
+<p>Look at the world it's such a silly sight<br />
+The meek follow everything that's in<br />
+t-t-t-two wrong fads don't make a right<br />
+Such a shame this craze is not my thing</p>
+
+<p>But I'm all dressed up and nowhere to go<br />
+All messed up 'cause what do I know</p>
+
+<p>(Chorus)</p>
+
+<p>Gimme love - sweet love<br />
+Is there anyone out there who'll sympathize<br />
+Gimme love - sweet love<br />
+Try to find someone who'll (gimme love)</p>
+
+<p>(Chorus)</p>
+
+

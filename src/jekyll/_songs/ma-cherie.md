@@ -1,0 +1,57 @@
+---
+title: Ma Cherie
+year: 1995
+credits:
+  - key: Composed, written, arranged and produced
+    value: Robby Valentine
+  - key: Piano, lead vocals, vocal harmonies, acoustic guitars, bass guitar solo, drum programming, synthesizers, rhythm guitars
+    value: Robby Valentine
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: Lead guitars
+    value: Rob Winter
+  - key: Timpani
+    value: Juan van Emmerloot
+---
+
+<p>I looked in the mirror<br />
+I was so far from home<br />
+It was the life I always wanted<br />
+Never felt so alone</p>
+
+<p>I asked myself<br />
+must I go through this hell again<br />
+I was tired of beinig lonely<br />
+I was lost without a friend</p>
+
+<p>But all it took was a miracle<br />
+'Cause all my life I've been waiting for you</p>
+
+<p>But now that your spirit glows inside of me<br />
+I can finally feel like heaven<br />
+You're more than I wanted, we are meant to be<br />
+You exceed my dreams, you're heaven<br />
+You're all my mind can see - Ma cherie</p>
+
+<p>Back to my senses<br />
+At this place all alone<br />
+She's the love I always wanted<br />
+Like I finally found home</p>
+
+<p>I told myself I mustn't lose my head again<br />
+I was tired of all the hurting and the pains that never ends<br />
+But we just knew that it was magical<br />
+'Cause all my life I've been searching for you</p>
+
+<p>(Chorus)</p>
+
+<p>Take my hand and let our lives begin<br />
+Take me all the way, carry me home</p>
+
+<p>(Chorus)</p>
+
+<p>(Chorus)</p>
+
+
+
+

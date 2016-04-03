@@ -1,6 +1,7 @@
 .idea/
 node_modules/
 bower_components/
+.sass-cache/ls
 *.css
 *.log
 dest/

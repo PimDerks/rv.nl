@@ -1,8 +1,28 @@
 ---
 title: The Mourning Minstrel
-year: 2006-01-01
-writer: Robby Valentine
-composer: Robby Valentine
+year: 1995
+credits:
+  - key: Composed, written, arranged and produced
+    value: Robby Valentine
+  - key: Acoustic guitar, lead-vocals and vocal harmonies, synthesizers and additional piano
+    value: Robby Valentine
+  - key: Violin
+    value: Roma Mirando
+  - key: Cimbalom
+    value: Tjaja Mirando
+  - key: Grand Piano
+    value: Prala Brandt
+  - key: Double bass
+    value: Soenie Brandt
+  - key: Recorders
+    value: Rob Beek
+  - key: Drums
+    value: Juan van Emmerloot
+  - key: Bass-guitar
+    value: Arthur Polini
+  - key: Guitar
+    value: Rob Winter
+
 ---
 
 <p>I believed in grandfather's way<br />

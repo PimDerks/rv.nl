@@ -1,8 +1,15 @@
 ---
 title: Dreams Never Die
-year: 2006-01-01
-writer: Robby Valentine
-composer: Robby Valentine
+year: 1995
+credits:
+  - key: Composed, written, arranged and produced
+    value: Robby Valentine
+  - key: All instruments, lead vocals and vocal harmonies
+    value: Robby Valentine
+  - key: Additional backing vocals
+    value: Arthur Polini
+  - key: Guitar harmonies
+    value: Rob Winter
 ---
 
 <p>Flown away, all the good is going nowhere<br />
