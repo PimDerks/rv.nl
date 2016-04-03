@@ -4,3 +4,70 @@ year: 2006-01-01
 writer: Robby Valentine
 composer: Robby Valentine
 ---
+
+<p>Flown away, all the good is going nowhere<br />
+Like the heart is pushed aside<br />
+Blown away with the wind of truth and justice<br />
+These are the days<br />
+When the righteous dreams have gone away<br />
+And no one even tries to carry on,<br />
+I keep holding on</p>
+
+<p>But I keep on searching,<br />
+Searching for something<br />
+Searching, searching for something so undefined<br />
+Can I ever hold out this trial<br />
+I will hold on to the Lord, forever more</p>
+
+Far away, from the land of hope and glory<br />
+Helplessly marooned am I<br />
+Fade away, all the virtues I believed in<br />
+These are the days<br />
+People hide inside their masquerade<br />
+And no one ever helps me carry on,<br />
+I keep rolling on</p>
+
+<p>(Chorus)</p>
+
+<p>Dreams never die, dreams never lie<br />
+For the chosen few he favours<br />
+Dreams never lie, dreams never die<br />
+They live on for God the saviour<br />
+I know it's right, why don't you try<br />
+To get home with him tonight</p>
+
+<p>Dreams never die<br />
+Please bring me back to my love</p>
+
+<p>In darkness and light, rain or shine<br />
+This faith will always be mine<br />
+And when the shadows reappear I think of you<br />
+And feel the sounds you make me hear<br />
+I can never be thankful enough<br />
+You gave me the reason to live<br />
+In times of loneliness, in times of love</p>
+
+<p>Forgive me Father for I have sinned<br />
+I must have been poisoned<br />
+By the world I'm living in<br />
+I'll never do it again,<br />
+I will never do it again</p>
+
+<p>But sometimes it's so hard which path to choose
+But if I listen to my heart I will never lose<br />
+I can feel the strength, I can feel the power<br />
+Let me be your disciple until my final hour</p>
+
+<p>Dreams never die, dreams never lie<br />
+For the chosen few he favours<br />
+Dreams never lie, dreams never die<br />
+They live on for God the saviour<br />
+I know it's right, why don't you try<br />
+To get home with him tonight</p>
+
+<p>Dreams never die, dreams never lie<br />
+For the chosen few he favours<br />
+Dreams never lie, dreams never die<br />
+They live on for God, the saviour<br />
+I know it's right, why don't you try<br />
+To leave this empty road behind, forever more</p>

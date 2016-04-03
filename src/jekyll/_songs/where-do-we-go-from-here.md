@@ -1,6 +1,43 @@
 ---
 title: Where Do We Go From Here
-year: 2006-01-01
+year: 1995
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Composed, written, arranged and produced
+    value: Robby Valentine
+  - key: Piano, bassguitar, synthesizers, drum programming,lead vocal and vocal harmonies
+    value: Robby Valentine
+  - key: All guitars
+    value: Rob Winter
+  - key: Additional backing vocals
+    value: Arthur Polini and John Ewbank
 ---
+
+<p>Day by day - someone goes astray<br />
+To join the masses, another soul decays<br />
+So much is lost and nothing ever gained<br />
+Leads to disaster, to the agony's refrain</p>
+
+<p>One look at the world today<br />
+Made me realize the truth has lost its way</p>
+
+<p>Where do we go from here<br />
+Now all our dreams have slowly disappeared<br />
+Where do we go from here<br />
+Living a lie , that's what we're doing here</p>
+
+<p>On and on - greed wins the war<br />
+Where is the magic, we used to feel before<br />
+The Midas touch has turned your heart to stone<br />
+Just show repentance before your chance is gone</p>
+
+<p>Dear world, humanity will pay<br />
+If we go on believing evil ways</p>
+
+<p>(Chorus)</p>
+
+<p>(Chorus)</p>
+
+<p>(Chorus)</p>
+

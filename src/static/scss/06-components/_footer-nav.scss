@@ -1,6 +1,4 @@
 .footer-nav {
-  display: flex;
-  flex-direction: row;
   font-family: 'Open Sans';
   font-weight: bold;
   text-transform: uppercase;
@@ -8,9 +6,7 @@
   margin: 0;
 
   li {
-    flex: 1 1 auto;
     text-align: center;
-
 
     a {
       display: block;

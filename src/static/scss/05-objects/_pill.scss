@@ -19,3 +19,13 @@
   background-color: black;
   color: #FFE400;
 }
+
+.pill--brand {
+  background-color: #FFE400;
+  color: black;
+
+  @include attention {
+    background-color: #000000;
+    color: white;
+  }
+}

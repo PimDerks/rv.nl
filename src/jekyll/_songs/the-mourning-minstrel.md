@@ -4,3 +4,35 @@ year: 2006-01-01
 writer: Robby Valentine
 composer: Robby Valentine
 ---
+
+<p>I believed in grandfather's way<br />
+I chose to cherish my pride<br />
+I was aware of the price I must pay<br />
+I still have dreams left inside</p>
+
+<p>My heart was filled with innocent trust<br />
+But when I opened my eyes<br />
+I was betrayed by the people I loved<br />
+Their darkness clouded my skies<br />
+Their weakness shattered our ties</p>
+
+<p>Don't you believe the sun is dying sir<br />
+(You don't know, no you don't know)<br />
+Don't you believe in stars and signs<br />
+(Gone in a wink of an eye)<br />
+Don't you believe in magic<br />
+Don't you believe in magic<br />
+Feeding the feud till you die</p>
+
+<p>In this world of hate and mistrust<br />
+I'm scared to open my eyes<br />
+This is no place for a child to grow up<br />
+Where greed and power entice<br />
+Where dreams are murdered by lies</p>
+
+<p>On my own through the desert<br />
+On my own through the land<br />
+Let me take all the children by the hand<br />
+And I'll give them a future<br />
+And I'll give them a hope<br />
+That you fools on the earth don't understand</p>

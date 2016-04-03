@@ -1,6 +1,7 @@
 ---
 title: Biography
 layout: default
+permalink: /about/biography/
 profile:
     - key: Lorem
       value: Ipsum

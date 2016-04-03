@@ -1,17 +1,3 @@
-.box {
-  &::before {
-    background-color: #FFE400;
-    content: '';
-    display: block;
-    height: .5em;
-    opacity: .95;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: baseline(3);
-  }
-}
-
 .box,
 .box--brand {
   background: rgba(white, .99);
@@ -79,7 +65,8 @@
 }
 
 .box--pic {
-  padding: baseline(3) 0 baseline(12);
+  overflow: hidden;
+  padding: baseline(6) 0 baseline(6);
   position: relative;
 
   &::after,
@@ -103,6 +90,11 @@
     background-image: linear-gradient(black, transparent), linear-gradient(to right, black, transparent);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  > * {
+    position: relative;
     z-index: 2;
   }
 }

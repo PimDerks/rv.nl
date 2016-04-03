@@ -4,3 +4,57 @@ year: 2006-01-01
 writer: Robby Valentine
 composer: Robby Valentine
 ---
+
+<p>Through the eyes of a child<br />
+I was gazing at this life<br />
+And what did I see hate towards disparity<br />
+Couldn't believe my eyes<br />
+How could they be so unwise<br />
+Is it all jealousy or just dumb stupidity</p>
+
+<p>Everybody can't you see<br />
+We should live in peace and harmony<br />
+To achieve supremacy<br />
+Why don't you believe it, feel it</p>
+
+<p>Black and white united<br />
+This is all we're waiting for<br />
+Black and white united<br />
+It's in you, it's in me</p>
+
+<p>When I looked back in time<br />
+In the books of history<br />
+War was all I could see<br />
+Nothing we've learned so it seems</p>
+
+<p>Tell me, is there a cure<br />
+For this global disease<br />
+Why are we so ill at ease<br />
+Help us Father, if you please</p>
+
+<p>Everybody don't you see<br />
+How we put this world in jeopardy<br />
+Love will lead to victory<br />
+You have to believe it, feel it</p>
+
+<p>Black and white united<br />
+This is all we're waiting for<br />
+Black and white united<br />
+It's in you, it's in me</p>
+
+<p>All your hate and all your fears<br />
+All your pain will disappear<br />
+You just have to be sincere<br />
+Keep the faith and keep your dreams<br />
+Don't you lose your self-esteem<br />
+That's the way to go up-stream</p>
+
+<p>Black and white united<br />
+This is all we're waiting for<br />
+Black and white united<br />
+It's in you, it's in me</p>
+
+<p>Black and white united<br />
+This is all we're waiting for<br />
+Black and white united<br />
+It's in you, it's in me</p>

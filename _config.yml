@@ -18,7 +18,6 @@ future: true
 # Where things are
 source: ./src/jekyll
 destination: ./www
-include: [media]
 keep_files: [static]
 
 # Build settings
