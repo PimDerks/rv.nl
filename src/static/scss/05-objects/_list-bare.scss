@@ -15,4 +15,10 @@
 .o-list-bare,
 %list-bare {
     @include list-bare;
+
+    > li {
+        &::before {
+            display: none;
+        }
+    }
 }

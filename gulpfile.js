@@ -85,7 +85,7 @@ gulp.task('initial', function() {
 // Run this when you want to start developing.
 
 gulp.task('dev', function() {
-    seq('watch', 'browser-sync');
+    seq('initial', 'watch', 'browser-sync');
 });
 
 // Build project

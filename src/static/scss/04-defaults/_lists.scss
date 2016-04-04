@@ -6,14 +6,25 @@ ul,
 ol {
     list-style: none none outside;
     padding-left: baseline(1);
+}
 
+ul {
     > li {
+        position: relative;
+
         &::before {
-            display: none;
+            background-color: #ffe400;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            height: .25em;
+            left: baseline(-.75);
+            position: absolute;
+            top: baseline(.5);
+            width: .25em;
         }
     }
 }
-
 ol {
     counter-reset: ol;
     padding-left: 0;
