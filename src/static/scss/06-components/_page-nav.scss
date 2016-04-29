@@ -1,70 +1,76 @@
 .page-nav {
-  // background: rgba(white, .95);
-  background: rgba(black, .25);
+  background: linear-gradient(rgba(black, .75), transparent);
+  // background: rgba(black, .5);
   font-family: 'Open Sans', serif;
   font-weight: bold;
-  left: grid-unit(1);
+  left: 0;
+  padding-left: baseline(4);
+  position: absolute;
   position: fixed;
   right: 0;
-  text-transform: uppercase;
-  // transform: translateY(0%);
+  text-shadow: 0 .1em .1em rgba(black, .5);
   transition: all 500ms ease-out;
   top: 0;
   z-index: 10;
 
   ul {
     display: flex;
-    flex-direction: row;
     margin-bottom: 0;
-    padding: 0;
     width: 100%;
   }
 
   li {
-    display: block;
+    display: inline-block;
     flex: 1 1 auto;
-    text-align: center;
+    padding: 0 baseline(1);
   }
 
   a {
+    // background: blue;
     border-bottom-width: 0;
     color: white;
     cursor: pointer;
     display: block;
-    padding: 1.5rem .75rem;
+    padding: baseline(1) 0;
+    position: relative;
     text-decoration: none;
-  }
 
-  li:first-child a {
-    padding-left: 1.5rem;
-  }
+    span {
+      // background: red;
+      display: block;
+      padding: 0 0 baseline(.5);
+      position: relative;
 
-  li:last-child a {
-    padding-right: 1.5rem;
-  }
+      &::after {
+        background-color: transparent;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+      }
 
-  a span {
-    display: block;
-    padding: .75rem;
+    }
+
+
+
   }
 
   li:first-child a span {
-    background: black;
-    color: #FFE400;
+    &::after {
+      background-color: #ffe400;
+    }
   }
 
-  a:hover {
-    text-shadow: none;
-  }
-
+  a:focus span,
   a:hover span {
-    background: #FFE400;
-    color: black;
-  }
 
-  &.page-nav--small {
-    background: rgba(black, .5);
-    // transform: translateY(-100%);
+    &::after {
+      background-color: white;
+    }
+
   }
 
 }

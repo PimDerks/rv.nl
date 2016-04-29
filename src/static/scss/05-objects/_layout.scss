@@ -83,7 +83,7 @@
         z-index: 10;
         pointer-events: none;
         opacity: .05;
-        // opacity: 0;
+        opacity: 0;
     }
 }
 
@@ -140,16 +140,23 @@
 }
 
 .wrapper {
-    margin: 0 0 0 grid-unit(1);
+    padding: 0 baseline(3.5);
     position: relative;
+
+    &::before,
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
 }
 
 .wrapper--pull-top {
-    margin-top: baseline(-8);
+    margin-top: baseline(-6);
 }
 
 .page-content {
-    margin-top: 90vh;
+    // margin-top: 90vh;
     // overflow: hidden;
 
 

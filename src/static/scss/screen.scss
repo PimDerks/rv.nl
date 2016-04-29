@@ -6,3 +6,64 @@
 @import '06-components/all';
 @import '07-utils/all';
 @import '08-trumps/all';
+
+.article {
+  // background: white;
+  min-height: 100%;
+
+  .article__img {
+    background: white;
+    box-shadow: baseline(-.25) baseline(-.25) 0 rgba(0,0,0,.05);
+    height: 50%;
+    margin-bottom: 0;
+    padding: baseline(.25);
+    width: 100%;
+
+    img {
+      margin-bottom: 0;
+      width: 100%;
+
+    }
+
+  }
+
+  .article__body {
+    padding: baseline(1) 0;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  &.article--horizontal {
+
+    a {
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      border-bottom-width: 0;
+    }
+
+    .article__img {
+      flex: 0 0 50%;
+    }
+
+    .article__body {
+      background: white;
+      box-shadow: baseline(-.25) baseline(-.25) 0 rgba(0,0,0,.05);
+      display: flex;
+      align-items: center;
+      margin: baseline(8) baseline(2) baseline(4) baseline(-4);
+      flex: 1 1 50%;
+      padding: baseline(2);
+    }
+  }
+
+}
+
+.img-header {
+  margin-bottom: baseline(-15);
+  // padding-left: grid-unit(1);
+  // padding-right: grid-unit(1);
+}

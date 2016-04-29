@@ -1,5 +1,7 @@
 ---
 title: Live
+subtitle: I believe in music
+intro: Valentine performances come in many forms, ranging from intimate solo performances to full-band performances. Below you'll find the upcoming dates, as well as an overview of past gigs.
 layout: default
 ---
 
@@ -8,9 +10,7 @@ layout: default
 <div class="wrapper wrapper--pull-top">
 
 <div class="box inner">
-
-    <!-- <p class="lead">Robby's live performances are as diverse as his music, ranging from full band shows to acoustic shows.</p>
-    <p>Check out the tour schedule below, or take a look at all the gigs from the past.</p> -->
+    <p>Check out the tour schedule below, or take a look at all the gigs from the past.</p>
 
     <h2 class="section-title">Upcoming gigs</h2>
     <table>
@@ -51,6 +51,8 @@ layout: default
     </table>
 </div>
 
+    <img src="http://lorempixel.com/800/200" alt="" />
+    <div class="box inner">
 
     {% for gig in site.live reversed %}
         {% assign currentdate = gig.date | date: "%Y" %}
@@ -58,11 +60,8 @@ layout: default
         {% if currentdate != date %}
             {% unless forloop.first %}
                 </tbody>
-                </table></div>
+                </table>
             {% endunless %}
-
-<img src="http://lorempixel.com/800/200" alt="" />
-<div class="box inner">
 
             <h2 class="section-title">{{ currentdate }}</h2>
 
@@ -105,8 +104,8 @@ layout: default
 
         {% if forloop.last %}
             </tbody>
-            </table></div>
+            </table>
         {% endif %}
     {% endfor %}
-
+    </div>
 </div>

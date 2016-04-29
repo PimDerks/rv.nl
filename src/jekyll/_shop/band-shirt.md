@@ -1,7 +1,7 @@
 ---
 title: Valentine Band Shirt
 img: http://lorempixel.com/480/480
-format: T-shirt
+format: clothing
 price: 20 euro
 ---
 

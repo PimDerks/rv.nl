@@ -10,10 +10,8 @@
 
 .lead {
   @extend %u-lead;
-  color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
-  margin-bottom: baseline(4);
 
   &:last-child {
     margin-bottom: 0;

@@ -1,5 +1,7 @@
 ---
 title: Singles
+subtitle: Hit-singles, E.P.'s and download-only releases
+intro: Over twenty singles have been released since 1991's Over And Over Again. Many of them include bonustracks not available on the regular albums.
 layout: default
 ---
 
@@ -7,18 +9,21 @@ layout: default
 
 <div class="wrapper wrapper--pull-top">
 
-<div class="box inner">
-    <ul class="grid-list">
-        {% for release in site.singles reversed %}
-        <li>
-            <div>
-                <a href="{{ release.url }}">
-                    <img src="{{ release.img }}" alt="{{ release.title }}" />
-                </a>
+    <div class="box box--dimmed box--transparent inner">
+        <ul class="grid-list o-list-bare releases-list">
+            {% for release in site.singles reversed %}<li>
+            <div class="grid-list__item">
+                <article class="article {% if forloop.index == 1 %}article--horizontal{% endif %}">
+                    <figure class="article__img">
+                        <img src="{{ release.img }}" alt="{{ release.title }}" />
+                    </figure>
+                    <div class="article__body">
+                        <p>{{ release.title }}</p>
+                    </div>
+                </article>
             </div>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+        </li>{% endfor %}
+        </ul>
+    </div>
 
 </div>

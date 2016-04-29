@@ -2,19 +2,26 @@
     <div class="wrapper">
         <div class="post-header__inner">
             <h1 class="post-title u-heading-alpha">
+                <span>
                 {% if page.title %}
                     {{ page.title }}
                 {% else %}
                     {{ site.title }}
                 {% endif %}
+                </span>
             </h1>
             <p class="post-meta u-heading-beta">
+                <span>
                 {% if page.subtitle %}
                     {{ page.subtitle }}
                 {% else %}
                     The official website
                 {% endif %}
+                </span>
             </p>
+            {% if page.intro %}
+            <p class="lead">{{ page.intro }}</p>
+            {% endif %}
         </div>
     </div>
 </header>

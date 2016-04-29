@@ -1,6 +1,12 @@
 ---
 title: Shop
+subtitle: Your one-stop Valentine Shop!
+intro: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 layout: default
+categories:
+  - music
+  - clothing
+  - merchandise
 ---
 
 {% include layout/hero.html %}
@@ -10,87 +16,42 @@ layout: default
 
         <div class="box inner">
             <ul class="o-list-nav">
+                {% for cat in page.categories %}
                 <li>
-                    <a href="#" class="pill">Music</a>
+                    <a href="#{{ cat }}" class="pill">{{ cat | capitalize }}</a>
                 </li>
-                <li>
-                    <a href="#" class="pill">Clothing</a>
-                </li>
-                <li>
-                    <a href="#" class="pill">Merchandise</a>
-                </li>
+                {% endfor %}
             </ul>
         </div>
 
-        <div  class="box box--dimmed inner">
-            <h2 class="section-title">Music</h2>
-        </div>
-        <ul class="o-list-bare grid-list grid-list-shop">
-            {% for product in site.shop %}
-            <li>
-                <article class="box {% cycle '', 'box--dimmed' %}">
-                    <img src="http://lorempixel.com/640/480" alt="{{ product.title }}" />
-                    <div class="inner">
-                        <h2>{{ product.title }}</h2>
-                        <dl>
-                            <dt>Format</dt>
-                            <dd>{{ product.format }}</dd>
-                            <dt>Price (excl. postage)</dt>
-                            <dd>{{ product.price }}</dd>
-                        </dl>
-                        {{ product.content }}
-                    </div>
-                </article>
-            </li>
-            {% endfor %}
-        </ul>
-
-        <div  class="box inner">
-        <h2 class="section-title">Clothing</h2>
-        </div>
-        <ul class="o-list-bare grid-list grid-list-shop">
-            {% for product in site.shop %}
-            <li>
-                <article class="box {% cycle '', 'box--dimmed' %}">
-                    <img src="http://lorempixel.com/640/480" alt="{{ product.title }}" />
-                    <div class="inner">
-                        <h2>{{ product.title }}</h2>
-                        <dl>
-                            <dt>Format</dt>
-                            <dd>{{ product.format }}</dd>
-                            <dt>Price (excl. postage)</dt>
-                            <dd>{{ product.price }}</dd>
-                        </dl>
-                        {{ product.content }}
-                    </div>
-                </article>
-            </li>
-            {% endfor %}
-        </ul>
-
+        {% for cat in page.categories %}
+            {% assign products = site.shop | where:'format', cat %}
 
         <div  class="box box--dimmed inner">
-            <h2 class="section-title">Merchandise</h2>
-        </div>
-        <ul class="o-list-bare grid-list grid-list-shop">
-            {% for product in site.shop %}
-            <li>
-                <article class="box {% cycle '', 'box--dimmed' %}">
-                    <img src="http://lorempixel.com/640/480" alt="{{ product.title }}" />
-                    <div class="inner">
-                        <h2>{{ product.title }}</h2>
-                        <dl>
-                            <dt>Format</dt>
-                            <dd>{{ product.format }}</dd>
-                            <dt>Price (excl. postage)</dt>
-                            <dd>{{ product.price }}</dd>
-                        </dl>
-                        {{ product.content }}
-                    </div>
-                </article>
-            </li>
-            {% endfor %}
-        </ul>
+                <h2 class="section-title" id="{{ cat }}">{{ cat | capitalize }}</h2>
+            </div>
+            <ul class="o-list-bare grid-list grid-list-shop">
+                {% for product in products %}
+                <li>
+                    <article class="box {% cycle '', 'box--dimmed' %}">
+                        <img src="http://lorempixel.com/640/480" alt="{{ product.title }}" />
+                        <div class="inner">
+                            <h2>{{ product.title }}</h2>
+                            <dl>
+                                <dt>Format</dt>
+                                <dd>{{ product.format }}</dd>
+                                <dt>Price (excl. postage)</dt>
+                                <dd>{{ product.price }}</dd>
+                            </dl>
+                            {{ product.content }}
+                        </div>
+                    </article>
+                </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+
+
 
     </main>
     <aside>

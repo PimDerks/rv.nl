@@ -1,6 +1,6 @@
 ---
-title: The Queen EP
-format: music
+title: Mug
+format: merchandise
 img: http://lorempixel.com/480/480
 price: 5 euro
 ---

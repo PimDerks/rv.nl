@@ -1,5 +1,7 @@
 ---
 title: Biography
+subtitle: The story so far...
+intro: Robby Valentine was born in the Netherlands in 1968 and began with classical piano lessons at the age of six. Initially his taste ran more to Beethoven, Chopin and Mozart, but a revelation occurred when he saw the video of Queen's "Bohemian Rhapsody" in 1975.
 layout: default
 permalink: /about/biography/
 profile:

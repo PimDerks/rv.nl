@@ -41,6 +41,10 @@
   padding: baseline(4) 0;
 }
 
+.box--transparent {
+  background-color: rgba(black, .5);
+}
+
 
 .box--inv {
   h1,
@@ -65,8 +69,8 @@
 }
 
 .box--pic {
+  background: black;
   overflow: hidden;
-  padding: baseline(6) 0 baseline(6);
   position: relative;
 
   &::after,
@@ -74,14 +78,15 @@
     bottom: 0;
     content: '';
     display: block;
-    height: baseline(12);
+    height: 100%;
     position: absolute;
     right: 0;
-    width: 50%;
+    width: 100%;
   }
 
   &::after {
     background-image: url('http://4.bp.blogspot.com/-xyUH3ecZTNg/VOOZSFOtF1I/AAAAAAAABYc/st3vfnoNwos/s1600/RVCover.jpg');
+    background-position: bottom right;
     background-size: cover;
     z-index: 1;
   }

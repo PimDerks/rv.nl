@@ -3,34 +3,31 @@
 \*------------------------------------*/
 
 .grid-list {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0;
 
     > li {
-        display: inline-block;
-        vertical-align: top;
-        width: 25%;
+        display: flex;
+        flex: 0 0 25%;
+        padding: baseline(1);
 
-        img,
-        a {
-            height: 100%;
-            max-width: none;
-            vertical-align: bottom;
-            width: 100%;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            flex: 1 1 33.33%;
         }
 
-        .grid-list__item {
-            display: block;
-            padding-top: 100%;
-            position: relative;
+        &:first-child:only-child {
+            flex: 1 1 100%;
         }
 
-        a {
-            border-bottom: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    }
 
+    .grid-list__item {
+        width: 100%;
     }
 
 }

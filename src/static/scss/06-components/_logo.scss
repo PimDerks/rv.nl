@@ -1,9 +1,11 @@
 .logo {
-  background: rgba(black, .78);
-  width: grid-unit(1);
-  position: fixed;
-  top: 0;
+  // display: none;
+  background: rgba(black, .99);
   left: 0;
+  width: baseline(3.5);
+  // position: fixed;
+  position: absolute;
+  top: 0;
 
   &:hover {
     background-color: black;
@@ -11,8 +13,7 @@
 
   .logo2 {
     display: block;
-    height: baseline(4);
-    // padding-top: 100%;
+    padding-top: 100%;
     position: relative;
 
     img {
@@ -20,7 +21,7 @@
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
-      width: 50%;
+      width: 60%;
     }
 
     &:nth-child(2) {

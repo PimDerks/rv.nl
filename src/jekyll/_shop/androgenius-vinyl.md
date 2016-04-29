@@ -1,7 +1,7 @@
 ---
 title: Androgenius Vinyl
 img: http://lorempixel.com/480/480
-format: Vinyl
+format: music
 price: 20 euro
 ---
 
