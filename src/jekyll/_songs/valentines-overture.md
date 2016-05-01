@@ -1,8 +1,15 @@
 ---
 title: Valentine's Overture Part I
-year: 2006-01-01
+year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Composed, written, arranged and produced
+    value: Robby Valentine
+  - key: All instruments, lead vocals and vocal harmonies and arrangements
+    value: Robby Valentine
+  - key: Violins
+    value: Rani Koch, Eleanora de Vries and Sarah Koch
 ---
 
 <p>All the time<br />

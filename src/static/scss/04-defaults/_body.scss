@@ -3,11 +3,15 @@ body {
   min-height: 100%;
 }
 
+// url('http://andy-hook.co.uk/assets/img/particles-sprite-large.png')
+
 body {
-  background: #4c4c4c url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
+  background: #4c4c4c;
+  background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
   background-blend-mode: multiply;
-  // background-attachment: fixed;
-  background-size: auto 150%;
+  background-attachment: fixed;
+  background-size: 100vw auto;
+  background-position: top center;
   overflow-x: hidden; // no horizontal scrollbar at any time
   transition: background-position 1500ms ease-out;
 }
@@ -29,8 +33,12 @@ aside {
   width: grid-unit(3);
 }
 
-aside .inner {
-  padding-left: 4.5rem;
+.img-header {
+  height: 90vh;
+  margin-bottom: baseline(-12);
+  //margin-left: grid-unit(-1);
+  //margin-right: grid-unit(-1);
+  overflow: hidden;
 }
 
 main {
@@ -47,7 +55,7 @@ main {
 }
 
 aside {
-  opacity: .9;
+  opacity: .98;
   position: relative;
   z-index: 3;
 }

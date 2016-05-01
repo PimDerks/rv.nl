@@ -14,6 +14,8 @@
                 <span>
                 {% if page.subtitle %}
                     {{ page.subtitle }}
+                {% else if page.year %}
+                    {{ page.year }}
                 {% else %}
                     The official website
                 {% endif %}

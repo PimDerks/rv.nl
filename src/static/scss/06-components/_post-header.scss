@@ -5,20 +5,26 @@
 .post-header--5 {  background-image: url('../img/background-5.jpg'); }
 
 .post-header {
-  background-color: black;
-  background-image: url('../img/background-3.jpg');
+  // background-color: black;
+  // background-image: url('../img/background-3.jpg');
+  background-image: none;
   background-size: cover;
   background-position: top left;
   background-attachment: fixed;
   padding: baseline(8) baseline(4) baseline(12);
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   // opacity: 0;
-  // position: fixed;
+  position: fixed;
   overflow: hidden;
   top: 0;
   text-align: center;
   transition: all 500ms ease-out;
   width: 100%;
+  z-index: 10;
 
   .wrapper > * {
     padding-left: grid-unit(1);
@@ -27,7 +33,7 @@
 
   .post-title,
   .post-meta {
-    text-shadow: 0 0 .25em rgba(black, .5), 0 0 .5em rgba(black, .75), 1px 1px 0 rgba(black, .75);
+    text-shadow: 0 0 .25em rgba(black, .5), 0 0 .5em rgba(black, .75), 1px 1px 0 rgba(black, .75), 0 0 2em black;
     color: white;
     font-family: Trajan, serif;
     // text-transform: uppercase;
@@ -49,7 +55,7 @@
   .post-meta {
     span {
       color: #FFE400;
-      text-shadow: none;
+      // text-shadow: none;
     }
   }
   .post-title {

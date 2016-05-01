@@ -1,17 +1,17 @@
 .page-nav {
   background: linear-gradient(rgba(black, .75), transparent);
-  // background: rgba(black, .5);
+  background: rgba(black, .25);
   font-family: 'Open Sans', serif;
   font-weight: bold;
-  left: 0;
-  padding-left: baseline(4);
+  left: baseline(3.5);
+  margin-top: baseline(2);
   position: absolute;
   position: fixed;
-  right: 0;
+  right: baseline(3.5);
   text-shadow: 0 .1em .1em rgba(black, .5);
   transition: all 500ms ease-out;
   top: 0;
-  z-index: 10;
+  z-index: 10000;
 
   ul {
     display: flex;
@@ -23,6 +23,28 @@
     display: inline-block;
     flex: 1 1 auto;
     padding: 0 baseline(1);
+    text-align: center;
+  }
+
+  li:nth-child(2) { order: 1; }
+  li:nth-child(3) { order: 2; }
+  li:nth-child(4) { order: 3; }
+  li:nth-child(5) { order: 4; }
+  li:nth-child(6) { order: 5; }
+  li:nth-child(7) { order: 6; }
+
+  li:first-child {
+    order: 4;
+    position: relative;
+
+    a {
+      background: url('../img/logo.svg') no-repeat center center;
+      height: baseline(6);
+      margin-top: baseline(-1);
+      position: absolute;
+      text-indent: -999em;
+      width: baseline(6);
+    }
   }
 
   a {

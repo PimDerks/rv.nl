@@ -152,7 +152,43 @@
 }
 
 .wrapper--pull-top {
-    margin-top: baseline(-6);
+    background: #444242;
+    padding-bottom: baseline(4);
+    margin-top: 80vh;
+    position: relative;
+    z-index: 10;
+    // margin-top: baseline(8);
+
+    &::before {
+        background: transparent linear-gradient(transparent, #444242);
+        content: '';
+        display: block;
+        height: 33.33vh;
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        top: -33.33vh;
+        width: 100%;
+        z-index: -1;
+    }
+
+//    &::before {
+//        background-position: center center;
+//        background-color: transparent;
+//        background-repeat: no-repeat;
+//        background-image: url('../img/logo.svg');
+//        background-size: baseline(8) auto;
+//        content: '';
+//        display: block;
+//        width: baseline(8);
+//        height: baseline(8);
+//        opacity: 1;
+//        position: absolute;
+//        left: 50%;
+//        top: 0%;
+//        margin-left: baseline(-4);
+//        margin-top: baseline(-4);
+//    }
 }
 
 .page-content {

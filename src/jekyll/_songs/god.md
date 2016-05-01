@@ -1,6 +1,6 @@
 ---
 title: God
-year: 2006-01-01
+year: 1995
 writer: Robby Valentine
 composer: Robby Valentine
 credits:

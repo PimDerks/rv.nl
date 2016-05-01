@@ -3,12 +3,13 @@
   {% include document/document-head.html %}
 
   <body>
-  <div class="page-header">
+  <header class="page-header">
+    <h1 class="u-screenreader">Robby Valentine</h1>
     <div class="page-nav">
-      <div class="logo">
-        <div class="logo2"><img src="/static/img/logo.svg" /></div>
-      </div>
       <ul class="o-list-bare">
+        <li>
+          <a href="/"><span class="u-screenreader">Home</span></a>
+        </li>
         <li>
           <a href="/news/"><span>News</span></a>
         </li>
@@ -29,7 +30,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </header>
     <div class="page-content">
           {{ content }}
     </div>
