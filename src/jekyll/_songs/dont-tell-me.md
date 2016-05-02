@@ -1,6 +1,59 @@
 ---
 title: Don't Tell Me
-year: 2006-01-01
+year: 1997
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead vocals, vocal harmonies, black and whites, bass-guitar, lead, harmonic, acoustic and rhythm guitars, vocoder, drum programming and other noises.
+    value: Robby Valentine
+  - key: Drums, percussion, drumprogramming
+    value: Juan van Emmerloot
+  - key: Violin
+    value: Rani, Sara and Noortje Koch
+  - key: Additional vocal harmonies
+    value: Jay Jay Willems
 ---
+
+<p>I don't know, I don't care<br />
+what's goin on<br />
+In the world of the wolves<br />
+I don't belong<br />
+People say I'm out of my mind<br />
+They're just mentally blind</p>
+
+<p>Every street, every town<br />
+It's all the same<br />
+It's the black, it's the white<br />
+who get the blame<br />
+Searching for an open mind<br />
+For the innocent kind<br />
+But I just can't find</p>
+
+<p>All I ever do is search for the truth<br />
+Wander day and night<br />
+Please give me a clue<br />
+Looking for a heartbeat pounding so true<br />
+I'm counting on You my Lord<br />
+Don't tell me there'll be less to find</p>
+
+<p>I don't know, I don't care<br />
+what's going on<br />
+In a world of despair<br />
+I don't belong<br />
+People lose the way to their hearts<br />
+for the immortal farce<br />
+(so many dumb souls living a lie)</p>
+
+<p>I don't feel for a mind<br />
+where love is gone (I hate it, I loathe it)<br />
+Should I care for the souls<br />
+in which right is wrong<br />
+Got to get it out of my mind<br />
+before it intertwines<br />
+with the child inside</p>
+
+<p>(Chorus)</p>
+
+<p>(Chorus)</p>
+
+<p>(Chorus)</p>
