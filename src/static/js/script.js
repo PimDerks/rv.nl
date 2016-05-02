@@ -7,24 +7,31 @@
         timer;
 
     // scroll
-    //window.addEventListener('scroll', function(){
-    //
-    //    if(timer){
-    //        clearTimeout(timer);
-    //    }
-    //
-    //    timer = setTimeout(onScroll, 200);
-    //
-    //});
+    window.addEventListener('scroll', function(){
+
+        if(timer){
+            clearTimeout(timer);
+        }
+
+        timer = setTimeout(onScroll, 200);
+
+    });
 
     var onScroll = function(){
         var scroll = document.body.scrollTop,
             perc = Math.min(scroll/(wHeight *.5) * 100, 100);
 
-        headerInner.style.opacity = 1 - perc/100;
+        // headerInner.style.opacity = 1 - perc/100;
 
         // var percDoc = scroll/document.body.offsetHeight * 100;
         // document.body.style.backgroundPosition = '0 ' + percDoc + '%';
+
+        var nav = document.querySelector('.page-nav');
+        if(scroll > (wHeight / 2)){
+            nav.classList.add('page-nav--fixed');
+        } else {
+            nav.classList.remove('page-nav--fixed');
+        }
     };
 
     // random header

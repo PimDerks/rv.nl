@@ -15,5 +15,7 @@
 
 .site-footer {
   clear: both;
+  position: relative;
   text-align: center;
+  z-index: 10;
 }
