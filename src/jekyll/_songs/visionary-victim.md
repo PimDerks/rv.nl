@@ -1,6 +1,53 @@
 ---
 title: Visionary Victim
-year: 2006-01-01
+year: 1997
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead vocals, vocal harmonies, black and whites, bass-guitar, lead, harmonic, acoustic and rhythm guitars, vocoder, drum programming and other noises.
+    value: Robby Valentine
+  - key: Drums, percussion, drumprogramming
+    value: Juan van Emmerloot
+  - key: Violin
+    value: Rani, Sara and Noortje Koch
 ---
+
+<p>What do you say about my new addiction<br />
+I watch the screen to see my life go by<br />
+I found out my dream is just fiction<br />
+to people in this phony world so why do I...</p>
+
+<p>...worry about the creatures on this planet<br />
+It's all just temporary not worthwhile<br />
+What did I say? You know I didn't mean it<br />
+I couldn't stand the feeling being on trial all the time</p>
+
+<p>What would you do, what would you say<br />
+how would you feel<br />
+when the world has put you down to size<br />
+Where would you go, what would you know<br />
+who would you be at the end of the line</p>
+
+<p>Well let me say my dream is not fiction<br />
+I've seen the missionary man alive<br />
+Sent by the Lord to give us all a vision<br />
+But me too, I was weak, I was a fool for a while</p>
+
+<p>(Chorus)</p>
+
+<p>(Chorus)</p>
+
+<p>What did you say you don't believe in fiction<br />
+I'm telling you your life is so worthwhile<br />
+So don't believe in all that false religion<br />
+Just purify your soul and everything is alright</p>
+
+<p>(Chorus)</p>
+
+<p>What would you do, what would you say<br />
+how would you feel<br />
+when the world has put you down to size<br />
+Where would you go, what would you know<br />
+who would you be at the end of the line<br />
+at the end of the line<br />
+at the end of the line</p>

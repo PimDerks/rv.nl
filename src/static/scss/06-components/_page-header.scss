@@ -18,4 +18,9 @@
   position: relative;
   text-align: center;
   z-index: 10;
+
+  p {
+    margin: 0 auto;
+    max-width: 60%;
+  }
 }

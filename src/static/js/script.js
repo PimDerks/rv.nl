@@ -27,7 +27,7 @@
         // document.body.style.backgroundPosition = '0 ' + percDoc + '%';
 
         var nav = document.querySelector('.page-nav');
-        if(scroll > (wHeight / 2)){
+        if(scroll > (wHeight / 4)){
             nav.classList.add('page-nav--fixed');
         } else {
             nav.classList.remove('page-nav--fixed');
