@@ -4,13 +4,11 @@
   font-family: 'Open Sans', serif;
   font-weight: bold;
   left: baseline(3.5);
-  margin-top: baseline(3);
   position: absolute;
-  position: fixed;
+  top: 80vh;
   right: baseline(3.5);
   text-shadow: 0 .1em .1em rgba(black, .5);
-  transition: all 500ms ease-out;
-  top: 0;
+  // transition: all 500ms ease-out;
   z-index: 10000;
 
   ul {
@@ -99,15 +97,9 @@
 
   &.page-nav--fixed {
     background: rgba(black, .5);
-
-    .page-nav__logo {
-
-      a {
-        height: baseline(5);
-        width: baseline(5);
-      }
-    }
-
+    margin-top: baseline(3);
+    position: fixed;
+    top: 0;
   }
 
 }
