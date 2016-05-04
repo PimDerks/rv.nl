@@ -14,9 +14,8 @@
         };
 
     // window height
-    var wHeight = window.innerHeight,
-        header = document.querySelector('.post-header'),
-        headerInner = document.querySelector('.post-header__inner'),
+    var header = document.querySelector('.post-header'),
+        nav = document.querySelector('.page-nav'),
         topOfNav = getOffset(document.querySelector('.page-nav ul')).y,
         topOfHeader = getOffset(document.querySelector('.wrapper--pull-top')).y - topOfNav,
         timer;
@@ -28,39 +27,24 @@
             clearTimeout(timer);
         }
 
-        timer = setTimeout(onScroll, 10);
+        timer = setTimeout(onScroll, 15);
 
     });
 
+    var fixed = true;
     var onScroll = function(){
-        var scroll = document.body.scrollTop,
-            topOfNav = getOffset(document.querySelector('.page-nav ul')).y,
-            perc = Math.min(scroll/(wHeight *.5) * 100, 100);
+        var scroll = document.body.scrollTop;
 
-
-        // headerInner.style.opacity = 1 - perc/100;
-
-        // var percDoc = scroll/document.body.offsetHeight * 100;
-        // document.body.style.backgroundPosition = '0 ' + percDoc + '%';
-
-
-        var fixed = true;
-
-        var nav = document.querySelector('.page-nav');
-
-            if (scroll > topOfHeader && fixed) {
+            var shouldBeFixed = scroll > topOfHeader;
+            if (shouldBeFixed && fixed) {
                 nav.classList.remove('page-nav--fixed');
                 fixed = false;
-            } else {
+            } else if (!shouldBeFixed && !fixed){
                 nav.classList.add('page-nav--fixed');
                 fixed = true;
             }
 
     };
-
-    // random header
-    // var random = Math.floor(Math.random() * 5) + 1;
-    // header.classList.add('post-header--' + random);
 
 }());
 
