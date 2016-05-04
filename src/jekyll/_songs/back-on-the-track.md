@@ -1,52 +1,70 @@
 ---
 title: Back On The Track
-year: 2006
+year: 1997
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead vocals, vocal harmonies, black and whites, bass-guitar, lead, harmonic, acoustic and rhythm guitars, vocoder, drum programming and other noises.
+    value: Robby Valentine
+  - key: Drums, percussion, drumprogramming
+    value: Juan van Emmerloot
+  - key: Violin
+    value: Rani, Sara and Noortje Koch
+  - key: Additional vocal harmonies
+    value: Jay Jay Willems
+  - key: Voice
+    value: Mummy-dear
 ---
 
-<p>Father, I have failed you time after time<br />
-You know I disobeyed you,<br />
+<p>Father I have failed you<br />
+time after time<br />
+You know I disobeyed you<br />
 You know I was blind<br />
-To all the earthly wishes<br />
-To all the earthly sins<br />
-To all the wrong addiction<br />
+to all the earthly wishes<br />
+to all the earthly sins<br />
+to all the wrong addiction<br />
 You know just where I've been<br />
 Please give me one more chance</p>
 
-<p>I won't blame nobody,<br />
+<p>I won't blame nobody<br />
 I know there's no excuse<br />
 I broke the promise<br />
-Ooh, I deserve to lose<br />
+Ooh I deserve to lose<br />
 All the magic power<br />
-The healing of your hands<br />
+the healing of Your hands<br />
 Forgive me for my weakness<br />
 Forgive me for my sins<br />
-Can't You give me one more chance</p>
+Can't you give me one more chance</p>
 
-<p>'Cause I'm back, back on the track<br />
+<p>'Cause I'm back<br />
+Back on the track<br />
 Back on the road again<br />
 Opened my eyes, now I know<br />
-Well I'm back, back on the track<br />
-I'm coming home again<br />
-Free from the lies, I am born again</p>
+Well I'm back<br />
+Back on the track<br />
+I'm  coming home again<br />
+Free from the lies<br />
+I am born again</p>
 
 <p>Since I was a young boy<br />
 I knew where to go<br />
 But time had blurred my vision<br />
-Oh, how could I know<br />
-But ever since I've known you<br />
-There's meaning to my life<br />
+How could I know<br />
+But ever since I've known You<br />
+there's meaning to my life<br />
 Please give me back the passion<br />
 The goal for which I strive<br />
 Can't you give me one more chance</p>
 
 <p>(Chorus)</p>
 
-<p>I lost my destination, I lost my inspiration<br />
-Soothed my soul with all sequential lies<br />
-I sank in deep frustration,<br />
+<p>I lost my destination<br />
+I lost my inspiration<br />
+Soothed my soul<br />
+with all the sequential lies<br />
+I sank in deep frustration<br />
 I failed to find salvation<br />
-Won't you take me home, Father take me home</p>
+Won't You take me home<br />
+Father, take me home</p>
 
 <p>(Chorus)</p>
