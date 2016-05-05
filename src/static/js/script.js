@@ -35,7 +35,7 @@
     var onScroll = function(){
         var scroll = document.body.scrollTop;
 
-            var shouldBeFixed = scroll > topOfHeader;
+            var shouldBeFixed = scroll >= topOfHeader;
             if (shouldBeFixed && fixed) {
                 nav.classList.remove('page-nav--fixed');
                 fixed = false;

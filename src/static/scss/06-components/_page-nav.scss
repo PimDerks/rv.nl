@@ -22,12 +22,14 @@
     display: inline-block;
     flex: 1 1 50%;
     padding: 0 baseline(1);
+    position: static;
     text-align: center;
   }
 
   .page-nav__logo {
     flex: 1 1 100%;
     position: relative;
+    z-index: 1;
 
     a {
       background: url('../img/logo.svg') no-repeat center center;
@@ -98,20 +100,33 @@
     position: absolute;
     top: 80vh;
 
-    ul {
+    > ul {
       flex-direction: row;
-    }
 
-    li {
-      flex-basis: auto;
-    }
+      > li {
+        flex-basis: auto;
+      }
 
-    li:nth-child(2) { order: 1; }
-    li:nth-child(3) { order: 2; }
-    li:nth-child(4) { order: 3; }
-    li:nth-child(5) { order: 4; }
-    li:nth-child(6) { order: 5; }
-    li:nth-child(7) { order: 6; }
+      > li:nth-child(2) {
+        order: 1;
+      }
+      > li:nth-child(3) {
+        order: 2;
+      }
+      > li:nth-child(4) {
+        order: 3;
+      }
+      > li:nth-child(5) {
+        order: 4;
+      }
+      > li:nth-child(6) {
+        order: 5;
+      }
+      > li:nth-child(7) {
+        order: 6;
+      }
+
+    }
 
     .page-nav__logo {
       flex: 1 1 auto;
