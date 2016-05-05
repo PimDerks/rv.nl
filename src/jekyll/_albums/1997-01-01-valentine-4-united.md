@@ -1,9 +1,9 @@
 ---
 type: album
 title: Valentine 4&#58; United
-date: 1997-01-01
-label: CNR
-catalog: 123-456-789
+year: 1997
+label: Polydor
+catalog: POCP-7234
 img: /media/albums/united.jpg
 discs:
   - tracks:
@@ -24,12 +24,20 @@ discs:
     - I Will Come Through
     - Rise And Shine (Reprise) The Victory Anthem
 credits:
+  - key: All songs composed, arranged, produced and recorded
+    value: Robby Valentine
+  - key: Drums, violins and grand piano
+    value: Recorded by Matt Buttler at Wisseloord Studios
+  - key: Mix
+    value: All songs mixed by Matt Buttler at Wisseloord Studios, Hilversum, The Netherlands except track 1, 5, 6, 13 and 16 mixed by Frank.
+  - key: Photography
+    value: Niels van Iperen
   - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
+    value: Takashi Ito
+  - key: Management
+    value: Willem de Bois for Intertune International Management
+  - key: Co-management
+    value: Andre van den Bogaert for Tourmanagement Live Music
 ---
 
 After coming home from Japan March 1996 I couldn’t wait to get back .
