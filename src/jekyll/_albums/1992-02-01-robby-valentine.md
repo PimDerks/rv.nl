@@ -1,9 +1,9 @@
- ---
+---
 type: album
 title: Robby Valentine
-date: 1992-02-01
-label: CNR
-catalog: 123-456-789
+date: 1992-02-14
+label: Polydor
+catalog: 847 986-2, POCP-1417 (Japan)
 img: /media/albums/robby-valentine.jpg
 discs:
   - tracks:

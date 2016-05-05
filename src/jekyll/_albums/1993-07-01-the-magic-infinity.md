@@ -2,8 +2,8 @@
 type: album
 title: The Magic Infinity
 date: 1993-07-01
-label: CNR
-catalog: 123-456-789
+label: Polydor
+catalog: 519 062-2, POCP-1418 (Japan)
 img: /media/albums/the-magic-infinity.jpg
 discs:
   - tracks:
@@ -23,12 +23,10 @@ discs:
     - title: Valentine's Overture Part II (A Martian On Earth)
       subtitle: Japanese bonustrack
 credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
+  - key: Photography
+    value: Joost van Velsen
+  - key: Design
+    value: Ton van Elst
 ---
 
 I had a lot of time in between the recording and release of the first album , which I spent with writing almost all of the songs for the next .

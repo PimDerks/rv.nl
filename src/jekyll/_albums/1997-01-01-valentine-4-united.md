@@ -1,7 +1,7 @@
 ---
 type: album
 title: Valentine 4&#58; United
-year: 1997
+date: 1997-06-20
 label: Polydor
 catalog: POCP-7234
 img: /media/albums/united.jpg
@@ -27,17 +27,13 @@ credits:
   - key: All songs composed, arranged, produced and recorded
     value: Robby Valentine
   - key: Drums, violins and grand piano
-    value: Recorded by Matt Buttler at Wisseloord Studios
+    value: Recorded by Matt Butler at Wisseloord Studios
   - key: Mix
-    value: All songs mixed by Matt Buttler at Wisseloord Studios, Hilversum, The Netherlands except track 1, 5, 6, 13 and 16 mixed by Frank.
+    value: All songs mixed by Matt Butler at Wisseloord Studios, Hilversum, The Netherlands except track 1, 5, 6, 13 and 16 mixed by Frank.
   - key: Photography
     value: Niels van Iperen
   - key: Artwork
     value: Takashi Ito
-  - key: Management
-    value: Willem de Bois for Intertune International Management
-  - key: Co-management
-    value: Andre van den Bogaert for Tourmanagement Live Music
 ---
 
 After coming home from Japan March 1996 I couldn’t wait to get back .

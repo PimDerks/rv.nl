@@ -2,8 +2,8 @@
 type: album
 title: Valentine
 date: 1996-02-01
-label: CNR
-catalog: 123-456-789
+label: Polydor
+catalog: 529 325-2, POCP-7080 (Japan)
 img: /media/albums/valentine.jpg
 discs:
   - tracks:
@@ -24,12 +24,22 @@ discs:
     - title: Remi
       subtitle: Japanese bonustrack
 credits:
-  - key: Artwork
+  - key: All songs composed, written, arranged and produced
     value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
+  - key: Recording
+    value: Recorded by Robby Valentine and John Tilly at The Isolation Cell and Wisseloord Studios
+  - key: Mix
+    value: Track 1, 2, 5, 8, 8, 12 & 3 by Matt Butler at Wisseloord Studios. Track 3, 4, 7, 9, 10 & 11 by Robby Valentine at The Isolation Cell. Track 8 by John Tilly at Wisseloord Studios.
+  - key: Edited and mastered
+    value: Sander van der Heide at The Mastering Suite, Wisseloord Studios
+  - key: Cover Art
+    value: Rob De Wit
+  - key: Art Direction
+    value: Ton van Elst
+  - key: Photography
+    value: Patricia Steur
+  - key: Grand Piano Photo
+    value: Cristafori Amsterdam
 ---
 
 Right after the battle of recording ‘The Magic Infinity’ I had a deadline to write and record a 45 minute rock-opera for an insurance companies-100 years anniversary . Though I desperately needed a rest to recharge , there just was no time for that. In ‘overload’ I squeezed the opera out of me and once it was done I was completely empty. I wasn’t able to write after that for more than 8 months. I felt totally blank for a long time. Though in the mean time "The Magic Infinity" came out and we were a little busy promoting it. Doing some gigs and also the tour with Brian May. But no new ideas came out of me. While trying to get SuperMario to the next level I listened a lot to Abbey Road , Sgt. Peppers , Paul McCartney’s ‘Uncle Albert’, 10 CC’s ‘I’m Mandy..’ These songs gave me back a little inspiration to start with 2 new songs :
