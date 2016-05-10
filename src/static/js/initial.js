@@ -91,7 +91,7 @@ var config = {
         fontFileUrl = config.fonts.ttf;
     }
 
-    loadCSS(fontFileUrl);
+    // loadCSS(fontFileUrl);
 
 
 }(this));

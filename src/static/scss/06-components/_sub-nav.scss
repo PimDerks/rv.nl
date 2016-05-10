@@ -1,0 +1,68 @@
+.sub-nav {
+  overflow: hidden;
+  padding: baseline(1) baseline(2);
+
+
+  h2 {
+    float: left;
+    margin-bottom: 0;
+    margin-top: baseline(.5);
+    padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+
+  }
+
+  ul {
+    float: right;
+  }
+
+  li {
+    margin-left: baseline(.5);
+  }
+
+  a {
+    background: rgba(black, .05);
+    border-bottom: none;
+    border-radius: baseline(1);
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    padding: baseline(.4) baseline(1) baseline(.6);
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+      background-color: transparent;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 50%;
+      margin-top: baseline(.25);
+      position: absolute;
+      top: 100%;
+      transition: all 500ms ease-out;
+      transform: translateX(-50%);
+      width: 0%;
+    }
+
+    @include attention(){
+      background-color: rgba(black, .1);
+
+      &::after {
+        background-color: pink;
+      }
+
+    }
+
+  }
+
+  .sub-nav__current a {
+    background-color: black;
+    color: white;
+  }
+
+}

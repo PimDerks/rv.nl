@@ -7,8 +7,8 @@ body {
 
 body {
   background: #4c4c4c;
-  background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
-  background-blend-mode: multiply;
+  // background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
+  // background-blend-mode: multiply;
   background-attachment: fixed;
   background-size: 100vw auto;
   background-position: top center;
@@ -34,11 +34,24 @@ aside {
 }
 
 .img-header {
+  // background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
+  // background-attachment: fixed;
+  // background-size: 100vw auto;
   height: 90vh;
   margin-bottom: baseline(-12);
   //margin-left: grid-unit(-1);
   //margin-right: grid-unit(-1);
   overflow: hidden;
+
+  &--alt {
+    margin-bottom: 0;
+  }
+
+
+  img {
+    // opacity: 0;
+  }
+
 }
 
 main {

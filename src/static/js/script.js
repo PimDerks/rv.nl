@@ -15,6 +15,7 @@
 
     // window height
     var header = document.querySelector('.post-header'),
+        wHeight = window.innerHeight,
         nav = document.querySelector('.page-nav'),
         topOfNav = getOffset(document.querySelector('.page-nav ul')).y,
         topOfHeader = getOffset(document.querySelector('.wrapper--pull-top')).y - topOfNav,
@@ -33,9 +34,13 @@
 
     var fixed = true;
     var onScroll = function(){
-        var scroll = document.body.scrollTop;
+        var scroll = document.body.scrollTop,
+            perc = Math.min(scroll/(wHeight *.5) * 100, 100);
 
-            var shouldBeFixed = scroll >= topOfHeader;
+        // var percDoc = scroll/document.body.offsetHeight * 100;
+
+        var headerInner = header.querySelector('.post-header__inner').style.opacity = 1 - (perc/100);
+        var shouldBeFixed = scroll >= topOfHeader;
             if (shouldBeFixed && fixed) {
                 nav.classList.remove('page-nav--fixed');
                 fixed = false;

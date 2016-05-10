@@ -22,9 +22,23 @@
   overflow: hidden;
   top: 0;
   text-align: center;
+  text-shadow: 0 0 1.5em black, 0 0 2.5em black, 0 0 5em black;
   transition: all 500ms ease-out;
   width: 100%;
   z-index: 10;
+
+  &::before {
+    background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   .wrapper {
     flex: 1 1 auto;
@@ -37,7 +51,6 @@
 
   .post-title,
   .post-meta {
-    text-shadow: 0 0 .25em rgba(black, .5), 0 0 .5em rgba(black, .75), 1px 1px 0 rgba(black, .75), 0 0 2em black;
     color: white;
     font-family: Trajan, serif;
     // text-transform: uppercase;
@@ -78,7 +91,12 @@
 
   .lead {
     color: rgba(get-color('white'), .75);
-    margin: baseline(2) auto 0;
+    margin: baseline(2) auto;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
   }
 
 }

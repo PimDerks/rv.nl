@@ -152,7 +152,7 @@
 }
 
 .wrapper--pull-top {
-    background: #444242;
+    background: rgba(black, .75);
     padding-bottom: baseline(4);
     margin-top: 80vh;
     position: relative;
@@ -160,14 +160,15 @@
     // margin-top: baseline(8);
 
     &::before {
-        background: transparent linear-gradient(transparent, #444242);
+        background: transparent linear-gradient(transparent, rgba(black, .75));
         content: '';
         display: block;
-        height: 33.33vh;
+        // display: none;
+        height: 50vh;
         opacity: 1;
         position: absolute;
         left: 0;
-        top: -33.33vh;
+        top: -50vh;
         width: 100%;
         z-index: -1;
     }
@@ -202,4 +203,32 @@
         content: '';
         display: table;
     }
+}
+
+@import '../00-vendor/susy/susy';
+
+// -----------------------------------------------------------------------------
+// Grid
+// -----------------------------------------------------------------------------
+
+/**
+ * Grid
+ */
+
+$switch: get-breakpoint('m');
+
+.a-layout {
+    @include container;
+}
+
+@include susy-breakpoint('(min-width: ' + $switch+ ')', $grid-large) {
+
+}
+
+.a-layout--article-detail {
+
+    @include respond-min('m') {
+        @include layout($grid-large);
+    }
+
 }

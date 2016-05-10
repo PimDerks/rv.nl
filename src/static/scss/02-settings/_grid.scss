@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// Grid definition
+// -----------------------------------------------------------------------------
+
+$gutter-small: 20;
+$gutter-large: 30;
+$gutter-unit: 'px';
+
+$grid-small: (
+        columns: 4,
+        gutters: 0,
+        isolate: true,
+        debug: (
+                image: show,
+                color: rgba(red, .25),
+                gutters: 0,
+                output: background,
+                toggle: top right,
+        )
+);
+
+$grid-large: (
+        columns: 14,
+        gutters: 0,
+        isolate: true,
+        debug: (
+                image: show,
+                color: rgba(red, .25),
+                gutters: 0,
+                output: background,
+                toggle: top right,
+        )
+);

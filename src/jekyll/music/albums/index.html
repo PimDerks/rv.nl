@@ -8,29 +8,9 @@ layout: default
 {% include layout/hero.html %}
 
 <div class="wrapper wrapper--pull-top">
-
-    <div class="box box--dimmed inner">
-        <ul class="grid-list o-list-bare releases-list">
-            {% for release in site.albums reversed | limit: 1 %}<li>
-            <div class="grid-list__item">
-                <article class="article {% if forloop.index == 1 %}article--horizontal{% endif %}">
-                    <a href="{{ release.url }}">
-                        <figure class="article__img">
-                            <img src="{{ release.img }}" alt="{{ release.title }}" />
-                        </figure>
-                        <div class="article__body">
-                            <p>{{ release.title }}</p>
-                        </div>
-                    </a>
-                </article>
-            </div>
-        </li>{% endfor %}
-        </ul>
-    </div>
-
     <div class="box inner">
         <ul class="grid-list o-list-bare releases-list">
-            {% for release in site.albums reversed | offset: 1 %}<li>
+            {% for release in site.albums reversed %}<li>
             <div class="grid-list__item">
                 <article class="article">
                     <a href="{{ release.url }}">
