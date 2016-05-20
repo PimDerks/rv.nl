@@ -1,6 +1,6 @@
 .page-nav {
   background: linear-gradient(rgba(black, .75), transparent);
-  background: rgba(black, .25);
+  background: rgba(black, .5);
   font-family: 'Open Sans', serif;
   font-weight: bold;
   margin-top: baseline(5);
@@ -97,8 +97,8 @@
 
   .page-nav {
     margin-top: auto;
-    position: absolute;
-    top: 80vh;
+    // position: absolute;
+    // top: 80vh;
 
     > ul {
       flex-direction: row;
@@ -136,7 +136,7 @@
     &.page-nav--fixed {
       background: rgba(black, .5);
       margin-top: baseline(3);
-      position: fixed;
+      // position: fixed;
       top: 0;
     }
 

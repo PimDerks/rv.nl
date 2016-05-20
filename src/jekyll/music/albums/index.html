@@ -2,12 +2,34 @@
 title: Albums
 subtitle: From Robby Valentine to Bizarro World
 intro: Since the debut was released on Valentine's Day 1992 there have been over a dozen Valentine albums. The most recent album is 2014's Bizarro World.
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 layout: default
 ---
 
-{% include layout/hero.html %}
+{% include components/hero.html %}
 
-<div class="wrapper wrapper--pull-top">
+{% include components/subnavigation.html %}
+
+<div class="box box--inv inner">
+
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
+
+</div>
+
+
+
+    <div class="test">
+        <div class="test-inner">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
+        </div>
+    </div>
+
+    <div class="box inner box--inv">
+        <p style="text-align: center; font-size: 2rem; padding: 8rem 14rem; font-family: Georgia;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
+    </div>
+
     <div class="box inner">
         <ul class="grid-list o-list-bare releases-list">
             {% for release in site.albums reversed %}<li>
@@ -27,4 +49,3 @@ layout: default
         </ul>
     </div>
 
-</div>

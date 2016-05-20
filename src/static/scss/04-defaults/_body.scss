@@ -7,6 +7,7 @@ body {
 
 body {
   background: #4c4c4c;
+  background: black;
   // background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
   // background-blend-mode: multiply;
   background-attachment: fixed;
@@ -16,32 +17,97 @@ body {
   transition: background-position 1500ms ease-out;
 }
 
-main,
-aside {
-  float: left;
+.page-header {
   position: relative;
+  z-index: 3;
 }
 
-main {
-  width: grid-unit(7);
-}
-
-aside {
-  margin-left: grid-unit(-1);
-  margin-top: baseline(8);
+.page-content {
+  margin-bottom: baseline(4);
+  margin-top: baseline(6);
   position: relative;
-  width: grid-unit(3);
+  z-index: 2;
 }
 
-.img-header {
-  // background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
-  // background-attachment: fixed;
-  // background-size: 100vw auto;
-  height: 90vh;
-  margin-bottom: baseline(-12);
-  //margin-left: grid-unit(-1);
-  //margin-right: grid-unit(-1);
+
+.page-background {
+  background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
+  background-size: cover;
+  filter: blur(2px);
+  height: 100%;
+  left: 0;
+  opacity: .25;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero {
+  background-image: url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');
+  background-size: cover;
   overflow: hidden;
+  background-color: rgba(black, .5);
+
+  .hero__inner {
+    overflow: hidden; // clearfix
+    padding: baseline(8) baseline(5);
+  }
+
+  .post-title,
+  .post-meta {
+    background: rgba(black, .75);
+    color: white;
+    float: left;
+    font-family: Trajan, serif;
+    font-weight: normal;
+    max-width: 70%;
+    margin: 0;
+    padding: baseline(1);
+    z-index: 1000;
+
+    span {
+      display: inline-block;
+    }
+
+    &::after {
+      display: none;
+    }
+
+  }
+
+  .post-meta {
+    background-color: rgba(#FFE400, .75);
+    span {
+      color: black;
+      // text-shadow: none;
+    }
+  }
+  .post-title {
+    margin-bottom: 0;
+  }
+
+  .post-meta {
+    // background: rgba(#ffe400, .75);
+    color: #FFE400;
+    clear: left;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: Georgia;
+    font-style: italic;
+  }
+
+  .lead {
+    background: rgba(black, .5);
+    color: rgba(get-color('white'), .75);
+    margin: baseline(2) auto;
+    padding: baseline(1);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
 
   &--alt {
     margin-bottom: 0;
@@ -55,16 +121,9 @@ aside {
 }
 
 main {
-  padding-left: grid-unit(1);
   opacity: .99;
   position: relative;
   z-index: 3;
-}
-
-.img-header {
-  opacity: .95;
-  position: relative;
-  z-index: 1;
 }
 
 aside {

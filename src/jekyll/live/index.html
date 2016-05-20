@@ -1,13 +1,14 @@
 ---
 title: Live
 subtitle: I believe in music
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 intro: Valentine performances come in many forms, ranging from intimate solo performances to full-band performances. Below you'll find the upcoming dates, as well as an overview of past gigs.
 layout: default
 ---
 
-{% include layout/hero.html %}
+{% include components/hero.html %}
 
-<div class="wrapper wrapper--pull-top">
+{% include components/subnavigation.html %}
 
 <div class="box inner">
     <p>Check out the tour schedule below, or take a look at all the gigs from the past.</p>
@@ -108,4 +109,3 @@ layout: default
         {% endif %}
     {% endfor %}
     </div>
-</div>

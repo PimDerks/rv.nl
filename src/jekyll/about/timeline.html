@@ -1,17 +1,15 @@
 ---
 title: Timeline
+subtitle: Lorem ipsum dolor sit amet
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 layout: default
 permalink: /about/timeline/
 ---
 
-<ul>
-    <li>
-        <a href="/about/biography/">Biography</a>
-    </li>
-    <li>
-        <a href="/about/timeline/">Timeline</a>
-    </li>
-</ul>
+{% include components/hero.html %}
+
+{% include components/subnavigation.html %}
+
 
 <ol>
 {% for item in site.timeline %}

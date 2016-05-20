@@ -1,6 +1,7 @@
 ---
 title: Shop
 subtitle: Your one-stop Valentine Shop!
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 intro: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 layout: default
 categories:
@@ -9,9 +10,10 @@ categories:
   - merchandise
 ---
 
-{% include layout/hero.html %}
+{% include components/hero.html %}
 
-<div class="wrapper wrapper--pull-top">
+{% include components/subnavigation.html %}
+
     <main>
 
         <div class="box inner">
@@ -74,5 +76,3 @@ categories:
             </dl>
         </section>
     </aside>
-
-</div>

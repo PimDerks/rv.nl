@@ -3,41 +3,20 @@
   {% include document/document-head.html %}
 
   <body>
-  <header class="page-header">
-    <h1 class="u-screenreader">Robby Valentine</h1>
-    <div class="page-nav page-nav--fixed">
-      <ul class="o-list-bare">
-        <li class="page-nav__logo">
-          <a href="/"><span class="u-screenreader">Home</span></a>
-        </li>
-        <li>
-          <a href="/news/"><span>News</span></a>
-        </li>
-        <li>
-          <a href="/music/"><span>Music</span></a>
-        </li>
-        <li>
-          <a href="/live/"><span>Live</span></a>
-        </li>
-        <li>
-          <a href="/about/"><span>About</span></a>
-        </li>
-        <li>
-          <a href="/shop/"><span>Shop</span></a>
-        </li>
-        <li>
-          <a href="/contact/"><span>Contact</span></a>
-        </li>
-      </ul>
-    </div>
-  </header>
+
+  {% include layout/header.html %}
+
     <div class="page-content">
-          {{ content }}
+      <div class="wrapper">
+
+        {{ content }}
+
+      </div>
     </div>
 
-    {% include header.html %}
+    <div class="page-background"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}></div>
 
-    {% include footer.html %}
+    {% include layout/footer.html %}
 
     {% include document/document-scripts.html %}
 

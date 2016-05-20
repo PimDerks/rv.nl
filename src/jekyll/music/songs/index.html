@@ -1,11 +1,13 @@
 ---
 title: Songs
+subtitle: Lorem ipsum dolor sit amet
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 layout: default
 ---
 
-{% include layout/hero.html %}
+{% include components/hero.html %}
 
-<div class="wrapper wrapper--pull-top">
+{% include components/subnavigation.html %}
 
 <!-- First loop for 'non-alphabetical' songs -->
 {% assign songs = site.songs | where: 'sort', 'false' %}
@@ -50,5 +52,4 @@ layout: default
     {% endif %}
 
 {% endfor %}
-</div>
 <!-- End of loop remaining songs -->

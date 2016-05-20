@@ -1,11 +1,13 @@
 ---
 title: News
+subtitle: Lorem ipsum dolor sit amet
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 layout: default
 ---
 
-{% include layout/hero.html %}
+{% include components/hero.html %}
 
-<div class="wrapper wrapper--pull-top">
+
     <main style="width: 100%;">
         <ul class="o-list-bare grid-list">
             {% for post in site.posts %}
@@ -21,4 +23,3 @@ layout: default
             {% endfor %}
         </ul>
     </main>
-</div>

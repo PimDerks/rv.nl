@@ -1,40 +1,14 @@
 ---
 title: Music
 subtitle: 25 years of Valentine music
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 intro: Since his solo career started in 1991 Robby has released over a dozen of albums and even more singles. In this section of the website you will learn everything you need to know about these releases!
 layout: default
 ---
 
-{% include layout/hero.html %}
+{% include components/hero.html %}
 
-<div class="wrapper wrapper--pull-top">
-
-    <div class="img-header img-header--alt">
-        <img src="http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg" alt="" />
-    </div>
-
-<div class="box box--brand sub-nav">
-    <nav>
-        <h2>
-            Music
-            <span class="u-screenreader">(Subnavigation)</span>
-        </h2>
-        <ul class="o-list-nav o-list-bare">
-            <li class="sub-nav__current">
-                <a href="/music/albums/">Albums</a>
-            </li>
-            <li>
-                <a href="/music/singles/">Singles</a>
-            </li>
-            <li>
-                <a href="/music/collaborations/">Collaborations</a>
-            </li>
-            <li>
-                <a href="/music/songs/">Songs</a>
-            </li>
-        </ul>
-    </nav>
-</div>
+{% include components/subnavigation.html %}
 
 <div class="box inner">
 <h2>Albums</h2>
@@ -53,12 +27,12 @@ layout: default
         </div>
     </li>{% endfor %}
 </ul>
-<a href="/music/albums/" class="button">View all albums</a>
+
+<p><a href="/music/albums/" class="button">View all albums</a>
 <a href="/music/albums/" class="button button--inv">View all albums</a>
-<a href="/music/albums/" class="button button--brand">View all albums</a>
+<a href="/music/albums/" class="button button--brand">View all albums</a></p>
 
-
-<!-- <h2>Singles</h2>
+<h2>Singles</h2>
 
 <ul class="grid-list">
     {% for release in site.singles | limit:7 %}<li>
@@ -96,6 +70,4 @@ layout: default
     </li>{% endfor %}
 </ul>
 <a href="/music/collaborations" class="button">View all collaborations</a>
-</div> -->
-
 </div>

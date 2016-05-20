@@ -3,10 +3,10 @@ layout: default
 ---
 <div class="post" itemscope itemtype="http://schema.org/BlogPosting" xmlns="http://www.w3.org/1999/html">
 
-  {% include layout/hero.html %}
-
-  <div class="wrapper wrapper--pull-top">
   <main>
+
+    {% include components/hero.html %}
+
     <section class="box">
       <h2 class="u-screenreader">Artwork</h2>
       <img src="{{ page.img }}" alt="{{ page.title }}" style="margin-bottom:0;" />
@@ -135,5 +135,3 @@ layout: default
     {% endif %}
   </nav>
     </div>
-
-</div>

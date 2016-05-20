@@ -152,9 +152,8 @@
 }
 
 .wrapper--pull-top {
-    background: rgba(black, .75);
+    // background: rgba(black, .75);
     padding-bottom: baseline(4);
-    margin-top: 80vh;
     position: relative;
     z-index: 10;
     // margin-top: baseline(8);
@@ -163,12 +162,12 @@
         background: transparent linear-gradient(transparent, rgba(black, .75));
         content: '';
         display: block;
-        // display: none;
-        height: 50vh;
+        display: none;
+        height: 33.333vh;
         opacity: 1;
         position: absolute;
         left: 0;
-        top: -50vh;
+        top: -33.333vh;
         width: 100%;
         z-index: -1;
     }
