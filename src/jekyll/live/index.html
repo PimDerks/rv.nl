@@ -55,16 +55,30 @@ layout: default
     <img src="http://lorempixel.com/800/200" alt="" />
     <div class="box inner">
 
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Venue</th>
+                <th scope="col">City</th>
+                <th scope="col">Country</th>
+                <th scope="col">Details</th>
+            </tr>
+            </thead>
+            <tbody>
+
     {% for gig in site.live reversed %}
         {% assign currentdate = gig.date | date: "%Y" %}
 
+
+
         {% if currentdate != date %}
             {% unless forloop.first %}
-                </tbody>
-                </table>
+                <!-- </tbody>
+                </table> -->
             {% endunless %}
 
-            <h2 class="section-title">{{ currentdate }}</h2>
+            <!-- <h2 class="section-title">{{ currentdate }}</h2>
 
             <table>
                 <thead>
@@ -76,7 +90,7 @@ layout: default
                     <th scope="col">Details</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody> -->
                 {% assign date = currentdate %}
         {% endif %}
 
@@ -104,8 +118,10 @@ layout: default
                 {% endif %}
 
         {% if forloop.last %}
-            </tbody>
-            </table>
+            <!-- </tbody>
+            </table> -->
         {% endif %}
     {% endfor %}
+            </tbody>
+        </table>
     </div>
