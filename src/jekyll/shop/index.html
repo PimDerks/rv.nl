@@ -16,16 +16,6 @@ categories:
 
     <main>
 
-        <div class="box inner">
-            <ul class="o-list-nav">
-                {% for cat in page.categories %}
-                <li>
-                    <a href="#{{ cat }}" class="pill">{{ cat | capitalize }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-
         {% for cat in page.categories %}
             {% assign products = site.shop | where:'format', cat %}
 

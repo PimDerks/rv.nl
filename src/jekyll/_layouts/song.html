@@ -4,13 +4,19 @@ layout: default
 
 <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <div class="u-group">
   <main>
 
-    {% include components/hero.html %}
 
-    <div class="u-group"></div>
+    {% include components/page-title.html %}
+
+    <div class="post__content">
+    <div class="post__main">
+
+      <img src="http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg" alt="" />
 
     <section class="box inner">
+
       <h2 class="section-title">Lyrics</h2>
 
       {% assign content = content | strip_newlines %}
@@ -29,73 +35,79 @@ layout: default
       {{ page.about | markdownify }}
     </div>
     {% endif %}
+
+    </div>
+
+    <aside>
+
+      <section class="box box--brand inner box--island">
+        <h2 class="section-title">Credits</h2>
+        <dl>
+          {% for credit in page.credits %}
+          <dt>{{ credit.key }}</dt>
+          <dd>{{ credit.value }}</dd>
+          {% endfor %}
+          <!-- <dt>Appears on</dt>
+          <dd>
+            <ul>
+              {% for appearance in page.appears %}
+
+                {% if appearance.type == 'single' %}
+                  {% assign src = site.singles %}
+                {% elsif appearance.type == 'album' %}
+                  {% assign src = site.albums %}
+                {% elsif appearance.type == 'misc' %}
+                  {% assign src = site.collaborations %}
+                {% endif %}
+
+                {% for release in src %}
+                  {% if release.title == appearance.title %}
+                    <li>
+                      <a href="{{ release.url }}">{{ release.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </ul>
+          </dd> -->
+        </dl>
+      </section>
+
+      <section class="box box--inv inner">
+        <h2 class="section-title">Credits</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada arcu sed enim dictum finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis feugiat consequat metus quis luctus. Phasellus ultrices nunc nec sem finibus, ullamcorper tincidunt odio laoreet. Sed sem nisi, tristique ac pulvinar vitae, pellentesque a libero.</p>
+      </section>
+
+      <!-- <nav class="box box--brand inner">
+        <h2 class="section-title">Subnavigation</h2>
+        {% assign songs = site.songs | sort: 'title' %}
+        {% for song in songs %}
+        {% if song.title == page.title %}
+        {% assign currentIndex = forloop.index0 %}
+        {% endif %}
+        {% endfor %}
+
+        {% assign current = songs[currentIndex] %}
+        <p>Current: {{ current.title }} </p>
+
+        {% assign nextIndex = currentIndex|plus:1 %}
+        {% if nextIndex >= 0 and songs[nextIndex] %}
+        {% assign next = songs[nextIndex] %}
+        <p>Next: <a href="{{ next.url }}">{{ next.title }}</a> </p>
+        {% endif %}
+
+        {% assign prevIndex = currentIndex|minus:1 %}
+        {% if prevIndex >= 0 and songs[prevIndex] %}
+        {% assign prev = songs[prevIndex] %}
+        <p>Prev: <a href="{{ prev.url }}">{{ prev.title }}</a></p>
+        {% endif %}
+      </nav> -->
+
+    </aside>
+    </div>
+
   </main>
 
-  <aside>
-
-  <section class="box box--inv inner box--island">
-    <h2 class="section-title">Credits</h2>
-    <dl>
-      {% for credit in page.credits %}
-        <dt>{{ credit.key }}</dt>
-        <dd>{{ credit.value }}</dd>
-      {% endfor %}
-      <!-- <dt>Appears on</dt>
-      <dd>
-        <ul>
-          {% for appearance in page.appears %}
-
-            {% if appearance.type == 'single' %}
-              {% assign src = site.singles %}
-            {% elsif appearance.type == 'album' %}
-              {% assign src = site.albums %}
-            {% elsif appearance.type == 'misc' %}
-              {% assign src = site.collaborations %}
-            {% endif %}
-
-            {% for release in src %}
-              {% if release.title == appearance.title %}
-                <li>
-                  <a href="{{ release.url }}">{{ release.title }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-        </ul>
-      </dd> -->
-    </dl>
-  </section>
-
-    <section class="box box--brand inner">
-      <h2 class="section-title">Credits</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada arcu sed enim dictum finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis feugiat consequat metus quis luctus. Phasellus ultrices nunc nec sem finibus, ullamcorper tincidunt odio laoreet. Sed sem nisi, tristique ac pulvinar vitae, pellentesque a libero.</p>
-    </section>
-
-    <!-- <nav class="box box--brand inner">
-      <h2 class="section-title">Subnavigation</h2>
-      {% assign songs = site.songs | sort: 'title' %}
-      {% for song in songs %}
-      {% if song.title == page.title %}
-      {% assign currentIndex = forloop.index0 %}
-      {% endif %}
-      {% endfor %}
-
-      {% assign current = songs[currentIndex] %}
-      <p>Current: {{ current.title }} </p>
-
-      {% assign nextIndex = currentIndex|plus:1 %}
-      {% if nextIndex >= 0 and songs[nextIndex] %}
-      {% assign next = songs[nextIndex] %}
-      <p>Next: <a href="{{ next.url }}">{{ next.title }}</a> </p>
-      {% endif %}
-
-      {% assign prevIndex = currentIndex|minus:1 %}
-      {% if prevIndex >= 0 and songs[prevIndex] %}
-      {% assign prev = songs[prevIndex] %}
-      <p>Prev: <a href="{{ prev.url }}">{{ prev.title }}</a></p>
-      {% endif %}
-    </nav> -->
-
-  </aside>
+  </div>
 
 </div>

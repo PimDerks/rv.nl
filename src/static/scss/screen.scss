@@ -6,3 +6,30 @@
 @import '06-components/all';
 @import '07-utils/all';
 @import '08-trumps/all';
+
+.post__content {
+  background: rgba(black, .25);
+  padding: 2.5em;
+
+  &::before,
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  aside {
+    float: right;
+    width: calc(100% - 61.803%);
+    padding: 2.5em;
+  }
+
+  .post__main {
+    float: left;
+    margin-top: -10em;
+    width: 61.803%;
+    padding: 2.5em;
+    position: relative;
+  }
+
+}

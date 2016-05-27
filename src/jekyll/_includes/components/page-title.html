@@ -1,0 +1,25 @@
+<header class="page-title"{% if page.img %} style="background-image:url('{{ page.img }}'){% endif %}">
+    <div class="page-title__inner">
+
+        <h1 class="post-title u-heading-alpha">
+
+                {% if page.title %}
+                    {{ page.title }}
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+
+        </h1>
+        <p class="post-meta u-heading-beta">
+
+                {% if page.subtitle %}
+                    {{ page.subtitle }}
+                {% else if page.year %}
+                    {{ page.year }}
+                {% else %}
+                    The official website
+                {% endif %}
+
+        </p>
+    </div>
+</header>
