@@ -4,7 +4,7 @@ title: Black Rain
 date: 2015-02-14
 label: CNR
 catalog: 123-456-789
-img: /media/singles/black-rain.jpg
+img: /images/singles/black-rain.jpg
 discs:
   - tracks:
     - Black Rain

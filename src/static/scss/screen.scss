@@ -1,35 +1,10 @@
+@import '00-vendor/all';
 @import '01-mixins/all';
 @import '02-settings/all';
 @import '03-base/all';
 @import '04-defaults/all';
-@import '05-objects/all';
-@import '06-components/all';
-@import '07-utils/all';
-@import '08-trumps/all';
-
-.post__content {
-  background: rgba(black, .25);
-  padding: 2.5em;
-
-  &::before,
-  &::after {
-    content: '';
-    clear: both;
-    display: table;
-  }
-
-  aside {
-    float: right;
-    width: calc(100% - 61.803%);
-    padding: 2.5em;
-  }
-
-  .post__main {
-    float: left;
-    margin-top: -10em;
-    width: 61.803%;
-    padding: 2.5em;
-    position: relative;
-  }
-
-}
+@import '05-atoms/all';
+@import '06-molecules/all';
+@import '07-organisms/all';
+@import '08-utils/all';
+@import '09-trumps/all';

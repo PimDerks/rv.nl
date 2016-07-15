@@ -51,7 +51,7 @@
   .small,
   .xsmall,
   .base {
-    // background: rgba(#FF0000, .15) !important;
+    background: rgba(#FF0000, .15) !important;
   }
 
   .placeholder {
@@ -63,16 +63,16 @@
 
   $switch: get-breakpoint('m');
 
-  @include susy-breakpoint('(min-width:0px)', $grid-small) {
+  @include susy-breakpoint('(min-width:0px)', $grid-small-debug) {
     .a-layout {
       @include show-grid;
     }
   }
 
-  @include susy-breakpoint('(min-width: ' + $switch+ ')', $grid-large) {
+  @include susy-breakpoint('(min-width: ' + $switch+ ')', $grid-large-debug) {
     .a-layout {
       @include show-grid;
-      background-size: 8.333333% !important;
+      background-size: 7.142857% !important;
     }
   }
 

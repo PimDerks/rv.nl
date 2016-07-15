@@ -4,7 +4,7 @@ title: The Queen Album
 date: 2014-09-13
 label: CNR
 catalog: 123-456-789
-img: /media/compilations/the-queen-album.jpg
+img: /images/compilations/the-queen-album.jpg
 discs:
   - tracks:
     - Bohemian Rhapsody

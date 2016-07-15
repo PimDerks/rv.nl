@@ -1,0 +1,187 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+.wrapper {
+
+    &::before {
+        background-image:
+        linear-gradient(rgba(black, .5) 1px, transparent 2px),
+        linear-gradient(transparent 25%, rgba(black, .25) calc(25% + 1px), transparent calc(25% + 2px)),
+        linear-gradient(transparent 50%, rgba(black, .25) calc(50% + 1px), transparent calc(50% + 2px)),
+        linear-gradient(transparent 75%, rgba(black, .25) calc(75% + 1px), transparent calc(75% + 2px)),
+        linear-gradient(to right, rgba(black, .5) 1px, transparent 2px),
+        linear-gradient(to right, transparent 25%, rgba(black, .25) calc(25% + 1px), transparent calc(25% + 2px)),
+        linear-gradient(to right, transparent 50%, rgba(black, .25) calc(50% + 1px), transparent calc(50% + 2px)),
+        linear-gradient(to right, transparent 75%, rgba(black, .25) calc(75% + 1px), transparent calc(75% + 2px));
+        background-color: white;
+        background-repeat: repeat;
+        background-position: left top;
+        background-size: (100/$columns * 1%) baseline(4);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        pointer-events: none;
+        opacity: .05;
+        opacity: 0;
+    }
+
+}
+
+
+.container {
+    padding: 0 span(1 of 14);
+}
+
+.pull-top {
+    margin-top: baseline(-4);
+}
+
+
+
+.pull-grid {
+    margin-left: grid-unit(-1, 9);
+}
+
+@for $i from 0 through  $columns {
+    .width-#{$i} { width: grid-unit($i); }
+    .pull-#{$i} { margin-left: grid-unit($i) * -1; }
+    .push-#{$i} { width: grid-unit($i); }
+    .padl-#{$i} { padding-left: grid-unit($i); }
+    .padr-#{$i} { padding-right: grid-unit($i); }
+}
+
+.fl {
+    float: left;
+    margin-right: baseline(4);
+    margin-right: grid-unit(1);
+    margin-bottom: baseline(4);
+}
+
+.fr {
+    float: right;
+    margin-left: baseline(4);
+    margin-left: grid-unit(1);
+    margin-bottom: baseline(4);
+}
+
+.off-grid {
+    margin-left: -10% * (100/90);
+    position: relative;
+    width: grid-unit(4) + (10% * (100/90));
+}
+
+.fl img {
+    border-right: .5em solid #FFE400;
+}
+
+.fr img {
+    border-left: .5em solid #FFE400;
+}
+
+.fl figcaption {
+    padding-right: .5em;
+    text-align: right;
+}
+
+.fr figcaption {
+    padding-left: .5em;
+    text-align: left;
+}
+
+.wrapper {
+    // padding: 0 baseline(3.5);
+    position: relative;
+
+    &::before,
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+.wrapper--pull-top {
+    // background: rgba(black, .75);
+    padding-bottom: baseline(4);
+    position: relative;
+    z-index: 10;
+    // margin-top: baseline(8);
+
+    &::before {
+        background: transparent linear-gradient(transparent, rgba(black, .75));
+        content: '';
+        display: block;
+        display: none;
+        height: 33.333vh;
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        top: -33.333vh;
+        width: 100%;
+        z-index: -1;
+    }
+
+//    &::before {
+//        background-position: center center;
+//        background-color: transparent;
+//        background-repeat: no-repeat;
+//        background-image: url('../img/logo.svg');
+//        background-size: baseline(8) auto;
+//        content: '';
+//        display: block;
+//        width: baseline(8);
+//        height: baseline(8);
+//        opacity: 1;
+//        position: absolute;
+//        left: 50%;
+//        top: 0%;
+//        margin-left: baseline(-4);
+//        margin-top: baseline(-4);
+//    }
+}
+
+.page-content {
+    // margin-top: 90vh;
+    // overflow: hidden;
+
+
+    &::before,
+    &::after, {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+@import '../00-vendor/susy/susy';
+
+// -----------------------------------------------------------------------------
+// Grid
+// -----------------------------------------------------------------------------
+
+/**
+ * Grid
+ */
+
+$switch: get-breakpoint('m');
+
+.a-layout {
+    @include container;
+}
+
+@include susy-breakpoint('(min-width: ' + $switch+ ')', $grid-large) {
+
+}
+
+.a-layout--article-detail {
+
+    @include respond-min('m') {
+        @include layout($grid-large);
+    }
+
+}

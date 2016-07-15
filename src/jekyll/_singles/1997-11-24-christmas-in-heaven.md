@@ -4,7 +4,7 @@ title: Christmas In Heaven
 date: 1997-11-24
 label: CNR
 catalog: 123-456-789
-img: /media/singles/christmas-in-heaven.jpg
+img: /images/singles/christmas-in-heaven.jpg
 discs:
   - tracks:
     - Christmas In Heaven

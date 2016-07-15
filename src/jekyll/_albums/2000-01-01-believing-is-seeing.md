@@ -4,7 +4,7 @@ title: Believing Is Seeing
 date: 2000-01-01
 label: CNR
 catalog: 123-456-789
-img: /media/albums/believing-is-seeing.jpg
+img: /images/albums/believing-is-seeing.jpg
 discs:
   - tracks:
     - Dear Dad

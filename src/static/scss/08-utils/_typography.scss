@@ -1,0 +1,131 @@
+.u-heading-alpha {
+  // @extend %u-heading-alpha;
+  // font-weight: $font-weight-light;
+}
+
+.u-heading-beta {
+  // @extend %u-heading-beta;
+  // font-weight: $font-weight-light;
+}
+
+.u-heading-gamma {
+  @extend %u-heading-gamma;
+  font-weight: $font-weight-light;
+}
+
+.u-payoff {
+  @extend %u-payoff;
+}
+
+.u-quote {
+  @extend %u-quote;
+  font-weight: $font-weight-light;
+}
+
+.u-subheading-alpha {
+  @extend %u-subheading-alpha;
+}
+
+.u-subheading-beta {
+  @extend %u-subheading-beta;
+  font-weight: $font-weight-medium;
+}
+
+.u-subheading-gamma {
+  @extend %u-subheading-gamma;
+  font-weight: $font-weight-medium;
+}
+
+.u-xlarge {
+  @extend %u-heading-beta;
+}
+
+.u-large {
+  @extend %u-heading-gamma;
+}
+
+.u-medium {
+  @extend %u-subheading-beta;
+}
+
+.u-small {
+  @extend %u-small;
+}
+
+.u-xsmall {
+  @extend %u-xsmall;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.u-heading-alpha,
+.u-heading-beta,
+.u-heading-gamma,
+.u-quote,
+.u-payoff {
+
+  b {
+    font-weight: 700;
+  }
+
+}
+
+.u-brand {
+  color: get-color('brand');
+}
+
+.u-display {
+  font-family: $font-display;
+  text-transform: uppercase;
+}
+
+.u-upper {
+  text-transform: uppercase;
+}
+
+.u-strong {
+  font-weight: $font-weight-bold;
+}
+
+.u-italic {
+  font-style: italic;
+}
+
+@each $color in $colors {
+  $name: nth($color, 1);
+  $code: nth($color, 2);
+  .u-subheading--#{$name}{
+    color: $code;
+  }
+}
+
+.u-dimmed {
+  opacity: .5;
+}
+
+
+.u-lead {
+  @extend %u-lead;
+  font-style: italic;
+}
+
+.u-lead--intro {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    border-top: 1px dashed rgba(black, .25);
+    margin: baseline(2) auto baseline(3);
+    width: 10em;
+  }
+
+}

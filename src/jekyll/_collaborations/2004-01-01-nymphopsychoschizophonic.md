@@ -1,11 +1,11 @@
 ---
-type: misc
+type: collaboration
 title: Nymphopsychoschizophonic
 artist: V
 date: 2004-01-01
 label: CNR
 catalog: 123-456-789
-img: http://lorempixel.com/480/480
+img: /images/collaborations/nymphopsychoschizophonic.jpg
 discs:
   - tracks:
     - title: So Close But Still So Far Away

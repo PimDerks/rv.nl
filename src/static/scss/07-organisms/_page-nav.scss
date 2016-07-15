@@ -1,0 +1,123 @@
+.page-nav {
+  background: rgba(black, .75);
+  font-family: $font-display;
+  margin-top: baseline(5);
+  left: baseline(3.5);
+  right: baseline(3.5);
+  text-transform: uppercase;
+  text-shadow: 0 .1em .1em rgba(black, .5);
+  transition: background-color 500ms ease-out;
+  z-index: 10000;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    flex: 1 1 50%;
+    padding: 0 baseline(1);
+    position: static;
+    text-align: center;
+  }
+
+  .page-nav__logo {
+    flex: 1 1 100%;
+    position: relative;
+    z-index: 1;
+
+    a {
+      background: url('../img/logo.svg') no-repeat center center;
+      height: baseline(5);
+      left: 50%;
+      position: absolute;
+      text-indent: -999em;
+      top: 50%;
+      transition: all 250ms ease-out;
+      transform: translateX(-50%) translateY(-50%);
+      width: baseline(7);
+    }
+
+  }
+
+  a {
+    @extend %u-heading-delta;
+    border-bottom: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 0;
+    padding: baseline(1) 0;
+    position: relative;
+    text-decoration: none;
+
+    span {
+      position: relative;
+
+      &::after {
+        background-color: transparent;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 50%;
+        margin-top: baseline(.25);
+        position: absolute;
+        top: 100%;
+        transition: all 500ms ease-out;
+        transform: translateX(-50%);
+        width: 0%;
+      }
+    }
+
+  }
+
+  li:first-child a {
+    span::after {
+      background-color: #ffe400;
+    }
+  }
+
+  a:focus,
+  a:hover {
+    border-bottom: none;
+
+    span::after {
+      background-color: #ffe400;
+      width: 100%;
+    }
+
+  }
+
+}
+
+@include respond-min('l'){
+
+  .page-nav {
+    margin-top: auto;
+
+    > ul {
+      flex-direction: row;
+
+      > li {
+        flex-basis: auto;
+      }
+
+    }
+
+    .page-nav__logo {
+      flex: 1 1 auto;
+    }
+
+    &.page-nav--fixed {
+      margin-top: baseline(3);
+      // position: fixed;
+      top: 0;
+    }
+
+  }
+
+}

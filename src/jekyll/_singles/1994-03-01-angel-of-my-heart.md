@@ -4,7 +4,7 @@ title: Angel Of My Heart
 date: 1994-03-01
 label: CNR
 catalog: 123-456-789
-img: /media/singles/angel-of-my-heart.jpg
+img: /images/singles/angel-of-my-heart.jpg
 discs:
   - tracks:
     - Angel Of My Heart

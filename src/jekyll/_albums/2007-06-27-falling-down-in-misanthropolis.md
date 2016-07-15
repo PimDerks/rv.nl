@@ -4,7 +4,7 @@ title: Falling Down In Misanthropolis
 date: 2007-06-27
 label: CNR
 catalog: 123-456-789
-img: /media/albums/falling-down-in-misanthropolis.jpg
+img: /images/albums/falling-down-in-misanthropolis.jpg
 discs:
   - tracks:
     - Falling Down

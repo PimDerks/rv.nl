@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    #LIST-ICON
+\*------------------------------------*/
+
+/**
+* The list-icon object simply removes any indents and bullet points from lists.
+*/
+
+.a-list--icon {
+  @include a-list-bare;
+
+  li {
+
+    &::before {
+      @include icon();
+    }
+  }
+}

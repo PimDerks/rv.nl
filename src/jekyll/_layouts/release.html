@@ -7,131 +7,158 @@ layout: default
 
     {% include components/hero.html %}
 
-    <section class="box">
-      <h2 class="u-screenreader">Artwork</h2>
-      <img src="{{ page.img }}" alt="{{ page.title }}" style="margin-bottom:0;" />
-    </section>
+    <div class="stack">
+      <div class="wrapper">
 
-    <section class="box inner">
+        <div class="m-layout u-group">
+          <div class="m-layout__row">
 
-      <h2 class="section-title">Tracklist</h2>
-      {% for disc in page.discs %}
+            <div class="m-layout__column u-1/1 u-2/3@l pull-top">
 
-      {% if disc.title %}
-        <h3>{{ disc.title }}</h3>
-      {% endif %}
+                <div class="m-layout__item">
+                  <section class="box">
+                  <h2 class="u-screenreader">Artwork</h2>
+                  <img src="{{ page.img }}" alt="{{ page.title }}" style="margin-bottom:0;" />
+                </section>
+                  <section class="box inner">
 
-      <ol>
-        {% for track in disc.tracks %}
+                  <h2 class="section-title">Tracklist</h2>
+                  {% for disc in page.discs %}
 
-        {% assign songTitle = track %}
+                  {% if disc.title %}
+                  <h3>{{ disc.title }}</h3>
+                  {% endif %}
 
-        {% if track.title %}
-          {% assign songTitle = track.title %}
-        {% endif %}
+                  <ol>
+                    {% for track in disc.tracks %}
 
-        {% assign songData = null %}
+                    {% assign songTitle = track %}
 
-        {% for song in site.songs %}
-          {% if song.title == songTitle %}
-            {% assign songData = song %}
-          {% endif %}
-        {% endfor %}
+                    {% if track.title %}
+                    {% assign songTitle = track.title %}
+                    {% endif %}
 
-        <li>
+                    {% assign songData = null %}
 
-          {% if songData %}
-            <a href="{{ songData.url }}">{{ songTitle }}</a>
-          {% else %}
-            {{ songTitle }}
-          {% endif %}
+                    {% for song in site.songs %}
+                    {% if song.title == songTitle %}
+                    {% assign songData = song %}
+                    {% endif %}
+                    {% endfor %}
 
-          {% if track.subtitle %}
-          ({{ track.subtitle }})
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ol>
+                    <li>
 
-      {% endfor %}
+                      {% if songData %}
+                      <a href="{{ songData.url }}">{{ songTitle }}</a>
+                      {% else %}
+                      {{ songTitle }}
+                      {% endif %}
 
-    </section>
+                      {% if track.subtitle %}
+                      ({{ track.subtitle }})
+                      {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ol>
 
-    <img src="http://lorempixel.com/640/240" alt="" />
+                  {% endfor %}
 
-    <section class="box box--inv inner">
-      <h2 class="section-title">About this release</h2>
-      {{ content }}
-    </section>
+                </section>
+                </div>
 
-  </main>
+                <div class="m-layout__item">
+                  <img src="http://lorempixel.com/640/240" alt="" />
+                  <section class="box box--inv inner">
+                    <h2 class="section-title">About this release</h2>
+                    {{ content }}
+                  </section>
+                </div>
 
-  <aside>
+              </div>
+            </div>
 
-    <section class="box box--inv inner">
-      <h2 class="section-title">Information</h2>
-      <dl>
-        <dt>Title</dt>
-        <dd>{{ page.title }}</dd>
-        <dt>Released</dt>
-        <dd>{{ page.date | date: '%B %d, %Y' }}</dd>
-        <dt>Label</dt>
-        <dd>{{ page.label }}</dd>
-        <dt>Catalognumber</dt>
-        <dd>{{ page.catalog }}</dd>
-      </dl>
-    </section>
+            <div class="m-layout__column u-1/1 u-1/3@l">
 
-    <img src="http://lorempixel.com/640/481" alt="" />
 
-  <section class="box box--inv inner">
-    <h2 class="section-title">Credits</h2>
-    <dl>
-      {% for credit in page.credits %}
-      <dt>{{ credit.key }}</dt>
-      <dd>{{ credit.value }}</dd>
-      {% endfor %}
-    </dl>
-  </section>
+              <div class="m-layout__item">
+              <section class="box box--inv inner">
+                <h2 class="section-title">Information</h2>
+                <dl>
+                  <dt>Title</dt>
+                  <dd>{{ page.title }}</dd>
+                  <dt>Released</dt>
+                  <dd>{{ page.date | date: '%B %d, %Y' }}</dd>
+                  <dt>Label</dt>
+                  <dd>{{ page.label }}</dd>
+                  <dt>Catalognumber</dt>
+                  <dd>{{ page.catalog }}</dd>
+                </dl>
+              </section>
+              </div>
 
-  </aside>
-  </main>
+              <div class="m-layout__item">
+              <img src="http://lorempixel.com/640/481" alt="" />
+              <section class="box box--inv inner">
+                <h2 class="section-title">Credits</h2>
+                <dl>
+                  {% for credit in page.credits %}
+                  <dt>{{ credit.key }}</dt>
+                  <dd>{{ credit.value }}</dd>
+                  {% endfor %}
+                </dl>
+              </section>
+              </div>
 
-  <nav style="display:none;">
-    <h2>Subnavigation</h2>
-    {% for item in site.albums %}
-      {% if item.title == page.title %}
-        {% assign currentIndex = forloop.index0 %}
-      {% endif %}
-    {% endfor %}
+              <div class="m-layout__item">
+              <nav>
+                <h2>Subnavigation</h2>
+                {% for item in site.albums %}
+                {% if item.title == page.title %}
+                {% assign currentIndex = forloop.index0 %}
+                {% endif %}
+                {% endfor %}
 
-    {% if page.type == 'single' %}
-      {% assign src = site.singles %}
-    {% elsif page.type == 'album' %}
-      {% assign src = site.albums %}
-    {% elsif page.type == 'collaboration' %}
-      {% assign src = site.collaborations %}
-    {% endif %}
+                {% if page.type == 'single' %}
+                {% assign src = site.singles %}
+                {% elsif page.type == 'album' %}
+                {% assign src = site.albums %}
+                {% elsif page.type == 'collaboration' %}
+                {% assign src = site.collaborations %}
+                {% endif %}
 
-    {% for item in src %}
-      {% if item.title == page.title %}
-        {% assign currentIndex = forloop.index0 %}
-      {% endif %}
-    {% endfor %}
+                {% for item in src %}
+                {% if item.title == page.title %}
+                {% assign currentIndex = forloop.index0 %}
+                {% endif %}
+                {% endfor %}
 
-    {% assign current = src[currentIndex] %}
-    <p>Current: {{ current.title }} </p>
+                {% assign current = src[currentIndex] %}
+                <p>Current: {{ current.title }} </p>
 
-    {% assign nextIndex = currentIndex|minus:1 %}
-    {% if nextIndex >= 0 and src[nextIndex] %}
-      {% assign next = src[nextIndex] %}
-        <p>Prev: <a href="{{ next.url }}">{{ next.title }}</a><img src="{{ next.img }}" alt="{{ next.title }}" /></p>
-    {% endif %}
+                {% assign nextIndex = currentIndex|minus:1 %}
+                {% if nextIndex >= 0 and src[nextIndex] %}
+                {% assign next = src[nextIndex] %}
+                <p>Prev: <a href="{{ next.url }}">{{ next.title }}</a></p>
+                {% endif %}
 
-    {% assign prevIndex = currentIndex|plus:1 %}
-    {% if prevIndex >= 0 and src[prevIndex] %}
-      {% assign prev = src[prevIndex] %}
-      <p>Next: <a href="{{ prev.url }}">{{ prev.title }}</a><img src="{{ prev.img }}" alt="{{ prev.title }}" /></p>
-    {% endif %}
-  </nav>
+                {% assign prevIndex = currentIndex|plus:1 %}
+                {% if prevIndex >= 0 and src[prevIndex] %}
+                {% assign prev = src[prevIndex] %}
+                <p>Next: <a href="{{ prev.url }}">{{ prev.title }}</a></p>
+                {% endif %}
+              </nav>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
+
+
+
+  </main>
+
+</div>

@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #LIST-INLINE
+\*------------------------------------*/
+
+
+.a-list--inline {
+  padding-left: baseline(.5);
+  display: inline-block;
+
+  li {
+    vertical-align: top;
+  }
+
+  @include respond-min('m') {
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+}

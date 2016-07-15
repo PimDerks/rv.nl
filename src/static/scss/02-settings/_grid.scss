@@ -2,11 +2,17 @@
 // Grid definition
 // -----------------------------------------------------------------------------
 
-$gutter-small: 20;
-$gutter-large: 30;
-$gutter-unit: 'px';
+$gutter-small: 3;
+$gutter-large: 3;
+$gutter-unit: 'em';
 
 $grid-small: (
+        columns: 4,
+        gutters: 0,
+        isolate: true
+);
+
+$grid-small-debug: (
         columns: 4,
         gutters: 0,
         isolate: true,
@@ -19,7 +25,14 @@ $grid-small: (
         )
 );
 
+
 $grid-large: (
+        columns: 14,
+        gutters: 0,
+        isolate: true
+);
+
+$grid-large-debug: (
         columns: 14,
         gutters: 0,
         isolate: true,

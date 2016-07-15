@@ -1,0 +1,59 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3179293, 2016-03-01T08:44:13-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: AvenirNextLTPro-Bold by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/avenir-next-pro/pro-bold/
+ * Copyright: Copyright &#x00A9; 2004 - 2007 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Avenir is a trademark of Linotype GmbH
+ * Licensed pageviews: 250,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3179293
+ *
+ * © 2016 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/30831d");
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Bold';
+  src: url('../fonts/avenir-next/30831D_0_0.woff2') format('woff2');
+
+  // By recommendation of myfonts readme
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/open-sans/OpenSans-Semibold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/open-sans/OpenSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/open-sans/OpenSans-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Fontello doesn't offer a woff2 version
+@font-face {
+  font-family: 'damen-shiprepair-font';
+  src: url('../fonts/damen-shiprepair-font/damen-shiprepair-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

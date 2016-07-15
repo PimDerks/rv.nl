@@ -4,7 +4,7 @@ title: Bizarro World
 date: 2014-10-25
 label: CNR
 catalog: 123-456-789
-img: /media/albums/bizarro-world.jpg
+img: /images/albums/bizarro-world.jpg
 discs:
   - tracks:
     - Interlude Bizarre

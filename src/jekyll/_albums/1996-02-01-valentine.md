@@ -4,7 +4,7 @@ title: Valentine
 date: 1996-02-01
 label: Polydor
 catalog: 529 325-2, POCP-7080 (Japan)
-img: /media/albums/valentine.jpg
+img: /images/albums/valentine.jpg
 discs:
   - tracks:
     - God

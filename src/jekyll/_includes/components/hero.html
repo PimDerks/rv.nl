@@ -1,17 +1,18 @@
-<header class="hero"{% if page.img %} style="background-image:url('{{ page.img }}'){% endif %}">
-    <div class="hero__inner">
+<header class="o-hero"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}>
+    <div class="wrapper">
+        <div class="o-hero__inner">
 
-        <h1 class="post-title u-heading-alpha">
-                <span>
+            <h1 class="o-hero__title u-heading-alpha">
+
                 {% if page.title %}
                     {{ page.title }}
                 {% else %}
                     {{ site.title }}
                 {% endif %}
-                </span>
-        </h1>
-        <p class="post-meta u-heading-beta">
-                <span>
+
+            </h1>
+            <p class="o-hero__subtitle u-heading-delta u-display">
+
                 {% if page.subtitle %}
                     {{ page.subtitle }}
                 {% else if page.year %}
@@ -19,7 +20,8 @@
                 {% else %}
                     The official website
                 {% endif %}
-                </span>
-        </p>
+
+            </p>
+        </div>
     </div>
 </header>

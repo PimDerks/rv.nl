@@ -4,7 +4,7 @@ title: Save Myself
 date: 2009-01-01
 label: CNR
 catalog: 123-456-789
-img: /media/singles/save-myself.jpg
+img: /images/singles/save-myself.jpg
 discs:
   - tracks:
     - title: Save Myself

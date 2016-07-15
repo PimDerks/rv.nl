@@ -4,7 +4,7 @@ title: A Tribute To Queen
 date: 2011-01-01
 label: CNR
 catalog: 123-456-789
-img: /media/albums/a-tribute-to-queen.jpg
+img: /images/albums/a-tribute-to-queen.jpg
 discs:
   - tracks:
     - Save Me

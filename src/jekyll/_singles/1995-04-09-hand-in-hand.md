@@ -4,7 +4,7 @@ title: Hand In Hand (We Keep The Faith Alive)
 date: 1995-04-09
 label: CNR
 catalog: 123-456-789
-img: /media/singles/hand-in-hand.jpg
+img: /images/singles/hand-in-hand.jpg
 discs:
   - tracks:
     - Hand In Hand (We Keep The Faith Alive)

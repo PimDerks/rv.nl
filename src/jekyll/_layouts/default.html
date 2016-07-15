@@ -4,19 +4,18 @@
 
   <body>
 
+  <div class="site">
   {% include layout/header.html %}
 
     <div class="page-content">
-      <div class="wrapper">
 
         {{ content }}
 
-      </div>
     </div>
 
-    <div class="page-background"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}></div>
-
     {% include layout/footer.html %}
+
+    </div>
 
     {% include document/document-scripts.html %}
 

@@ -4,7 +4,7 @@ title: Only Your Love
 date: 1994-04-30
 label: CNR
 catalog: 123-456-789
-img: /media/singles/only-your-love.jpg
+img: /images/singles/only-your-love.jpg
 discs:
   - tracks:
     - Only Your Love

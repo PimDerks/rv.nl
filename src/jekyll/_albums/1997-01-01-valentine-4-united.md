@@ -4,7 +4,7 @@ title: Valentine 4&#58; United
 date: 1997-06-20
 label: Polydor
 catalog: POCP-7234
-img: /media/albums/united.jpg
+img: /images/albums/united.jpg
 discs:
   - tracks:
     - Rise And Shine

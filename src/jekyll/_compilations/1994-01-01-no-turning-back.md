@@ -4,7 +4,7 @@ title: No Turning Back
 date: 1994-01-01
 label: CNR
 catalog: 123-456-789
-img: /media/compilations/no-turning-back.jpg
+img: /images/compilations/no-turning-back.jpg
 discs:
   - tracks:
     - No Turning Back

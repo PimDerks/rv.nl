@@ -1,0 +1,42 @@
+.o-hero {
+  background-image: url('/images/headers/2.jpg');
+  background-position: 100% 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-shadow: 0 0 .5em rgba(black, .5);
+  transition: background-position 250ms ease-out;
+
+  .o-hero__inner {
+    padding-bottom: baseline(4);
+    padding-top: baseline(16);
+    transition: opacity 250ms ease-out;
+  }
+
+  // Overlay
+  &::before {
+    background: linear-gradient(transparent, rgba(black, .5));
+    bottom: 0;
+    content: '';
+    height: 50%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  // Title
+  .o-hero__title {
+    color: get-color('white');
+    max-width: 12em;
+  }
+
+  // Subtitle
+  .o-hero__subtitle {
+    background: get-color('black');
+    color: get-color('brand');
+    display: inline-block;
+    margin-bottom: 0;
+    padding: baseline(.5);
+  }
+
+}

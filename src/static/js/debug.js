@@ -15,7 +15,7 @@ var debug = function(config){
             document.body.classList.toggle('u-baseline');
         });
         document.body.appendChild(toggle);
-        document.body.classList.add('u-baseline');
+        // document.body.classList.add('u-baseline');
     }
 
     /*

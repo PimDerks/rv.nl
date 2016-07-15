@@ -7,7 +7,7 @@ module.exports = (function(){
             src: './src',
             www: './www',
             dest: './dest',
-            tmp: './tmp',
+            tmp: './tmp'
         },
 
         // path
@@ -24,7 +24,7 @@ module.exports = (function(){
             icons: 'icons',
             layouts: '_layouts',
             shim: 'shim',
-            media: 'media'
+            media: 'content'
         }
 
     }

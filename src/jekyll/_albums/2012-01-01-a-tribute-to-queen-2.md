@@ -4,7 +4,7 @@ title: A Tribute To Queen 2
 date: 2012-01-01
 label: CNR
 catalog: 123-456-789
-img: /media/albums/a-tribute-to-queen-2.jpg
+img: /images/albums/a-tribute-to-queen-2.jpg
 discs:
   - tracks:
     - We Will Rock You (Fast)

@@ -1,11 +1,11 @@
 ---
-type: misc
+type: collaboration
 title: Lost The Way
 artist: Aniday
 date: 2009-01-01
 label: CNR
 catalog: 123-456-789
-img: /media/collaborations/lost-the-way.jpg
+img: /images/collaborations/lost-the-way.jpg
 discs:
   - tracks:
     - Lost The Way

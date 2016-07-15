@@ -13,7 +13,7 @@ layout: default
 {% assign songs = site.songs | where: 'sort', 'false' %}
 <div class="box box--dimmed inner">
     <h2 class="section-title">0-9</h2>
-    <ul class="o-list-bare">
+    <ul>
         {% for song in songs %}
         <li>
             <a href="{{ song.url }}">{{ song.title }}</a>

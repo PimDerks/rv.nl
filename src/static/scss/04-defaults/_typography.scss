@@ -3,53 +3,54 @@
 \*------------------------------------*/
 
 @font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot');
-  src: url('../fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff') format('woff'),
-  url('../fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf') format('truetype'),
-  url('../fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg#robotobold') format('svg');
+  font-family: 'Norwester';
+  src: url('../fonts/norwester-webfont.woff2') format('woff2'),
+  url('../fonts/norwester-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+  url('../fonts/playfairdisplay-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+  url('../fonts/playfairdisplay-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+  url('../fonts/playfairdisplay-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto_light_macroman/Roboto-Light-webfont.eot');
-  src: url('../fonts/roboto_light_macroman/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/roboto_light_macroman/Roboto-Light-webfont.woff') format('woff'),
-  url('../fonts/roboto_light_macroman/Roboto-Light-webfont.ttf') format('truetype'),
-  url('../fonts/roboto_light_macroman/Roboto-Light-webfont.svg#robotolight') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Norwester';
+  src: url('../fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/playfairdisplay-bolditalic-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
 }
 
-@font-face {
-  font-family: 'roboto';
-  src: url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
-  src: url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
-  url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
-  url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-  font-weight: bolder;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'trajan';
-  src: url('../fonts/trajan.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+$font-default: 'Playfair Display', Georgia, Times New Roman, sans-serif;
+$font-display: 'Norwester', Impact, Arial, sans-serif;
 
 body {
-  color: get-color('gamma');
-  font-family: $font;
+  font-family: $font-default;
   font-weight: 100;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
   line-height: 1.5;
 }
 
@@ -58,60 +59,20 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Trajan', serif;
+  font-family: $font-display;
+  font-size: 1em;
+  font-weight: normal;
   color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.fjalla {
-  font-family: 'Open Sans', serif !important;
-  text-transform: uppercase;
-}
-
-h1 {
-  text-transform: none;
-}
-
-h3,
-h4,
-h5 {
   text-transform: uppercase;
 }
 
 h1,
 h2,
 h3,
-h4 {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+h4,
+h5 {
+  margin-bottom: baseline(1);
   position: relative;
-  &::after {
-    content: '';
-    border-top: .15rem solid #FFE400;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: baseline(1);
-  }
-}
-
-h3,
-h4 {
-  margin-top: 4.5rem;
-  padding-bottom: 0;
-  &::after {
-    display: none;
-  }
-}
-
-h1 {
-  margin-bottom: 4.5rem;
-  margin-top: 1.5rem;
-}
-
-h2 {
-  // margin-top: 3rem;
 }
 
 /* Basic vertical rhythm
@@ -224,41 +185,31 @@ h5,
 }
 
 h1,
-.u-subheading-alpha {
-  @extend %u-subheading-alpha;
-  font-weight: 400;
+.u-heading-alpha {
+  @extend %u-heading-alpha;
 }
 
 h2,
-.u-subheading-alpha {
-  @extend %u-subheading-beta;
-  font-weight: 400;
+.u-heading-beta {
+  @extend %u-heading-beta;
 }
 
 h3,
-.u-subheading-beta {
-  @extend %u-subheading-gamma;
-  font-weight: 400;
+.u-heading-gamma {
+  @extend %u-heading-gamma;
 }
 
 h4,
-.u-subheading-gamma {
-  @extend %u-subheading-delta;
-  font-weight: 400;
-}
-
-h5,
-.u-subheading-delta {
-  @extend %u-subheading-epsilon;
-  font-weight: normal;
+.u-heading-delta {
+  @extend %u-heading-delta;
 }
 
 p {
-  @extend %base;
+  @extend %u-base;
 }
 
 small {
-  @extend %small;
+  @extend %u-small;
 }
 
 /* Set base font-sizes configured in $typographic-breakpoints.

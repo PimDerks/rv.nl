@@ -1,11 +1,11 @@
 ---
-type: misc
+type: collaboration
 title: Valentine vs. Valensia
 artist: V
 date: 2002-05-01
 label: CNR
 catalog: 123-456-789
-img: /media/collaborations/valentine-vs-valensia.jpg
+img: /images/collaborations/valentine-vs-valensia.jpg
 discs:
   - tracks:
     - title: City Lights

@@ -4,7 +4,7 @@ title: I Believe In Music
 date: 1997-07-01
 label: CNR
 catalog: 123-456-789
-img: /media/singles/i-believe-in-music.jpg
+img: /images/singles/i-believe-in-music.jpg
 discs:
   - tracks:
     - I Believe In Music

@@ -4,7 +4,7 @@ title: Take My Hand
 date: 1996-01-01
 label: CNR
 catalog: 123-456-789
-img: /media/singles/take-my-hand.jpg
+img: /images/singles/take-my-hand.jpg
 discs:
   - tracks:
     - Take My Hand

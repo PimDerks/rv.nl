@@ -4,7 +4,7 @@ title: Live & Demos
 date: 1994-09-24
 label: CNR
 catalog: 123-456-789
-img: /media/singles/live-demos.jpg
+img: /images/singles/live-demos.jpg
 discs:
   - tracks:
     - title: I Believe In You

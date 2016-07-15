@@ -4,7 +4,7 @@ title: Love Takes Me Higher
 date: 1992-02-01
 label: CNR
 catalog: 123-456-789
-img: /media/singles/love-takes-me-higher.jpg
+img: /images/singles/love-takes-me-higher.jpg
 discs:
   - tracks:
     - Love Takes Me Higher

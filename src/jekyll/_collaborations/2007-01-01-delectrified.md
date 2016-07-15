@@ -1,11 +1,11 @@
 ---
-type: misc
+type: collaboration
 title: Delectrified
 artist: Marlies
 date: 2007-01-01
 label: CNR
 catalog: 123-456-789
-img: /media/collaborations/delectrified.jpg
+img: /images/collaborations/delectrified.jpg
 discs:
   - tracks:
     - title: Can't Take No More

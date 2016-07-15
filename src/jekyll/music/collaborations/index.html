@@ -6,25 +6,35 @@ intro: Over the years Robby has lent his talents to lots of other artists' music
 layout: default
 ---
 
-{% include layout/hero.html %}
+{% include components/hero.html %}
 
 {% include components/subnavigation.html %}
 
+<div class="stack">
+    <div class="wrapper">
 
+        <p class="u-lead">{{ page.intro }}</p>
 
-    <div class="box box--dimmed box--transparent inner">
-        <ul class="grid-list o-list-bare releases-list">
-            {% for release in site.collaborations reversed %}<li>
-            <div class="grid-list__item">
-                <article class="article {% if forloop.index == 1 %}article--horizontal{% endif %}">
-                    <figure class="article__img">
-                        <img src="{{ release.img }}" alt="{{ release.title }}" />
-                    </figure>
-                    <div class="article__body">
-                        <p>{{ release.title }}</p>
+        <ul class="m-layout u-group a-list-bare">
+            {% for release in site.collaborations reversed %}<li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
+            <div class="m-layout__item">
+
+                <article class="a-card a-card--reveal a-card--release">
+                    <div class="a-card__inner">
+                        <a href="{{ release.url }}">
+                            <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('{{ release.img }}')">
+                                <img src="{{ release.img }}" alt="{{ release.title }}" />
+                            </div>
+                            <div class="a-card__title">
+                                {{ release.title }}
+                            </div>
+                        </a>
                     </div>
                 </article>
+
             </div>
         </li>{% endfor %}
         </ul>
+
     </div>
+</div>

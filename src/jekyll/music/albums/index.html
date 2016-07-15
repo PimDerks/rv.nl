@@ -10,42 +10,32 @@ layout: default
 
 {% include components/subnavigation.html %}
 
-<div class="box box--inv inner">
+<div class="stack">
+    <div class="wrapper">
 
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
+    <p class="u-lead u-lead--intro">{{ page.intro }}</p>
 
-</div>
+    <ul class="m-layout u-group a-list-bare">
+        {% for release in site.albums reversed %}<li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
+        <div class="m-layout__item">
 
-
-
-    <div class="test">
-        <div class="test-inner">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
-        </div>
-    </div>
-
-    <div class="box inner box--inv">
-        <p style="text-align: center; font-size: 2rem; padding: 8rem 14rem; font-family: Georgia;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices sollicitudin nibh, feugiat fringilla mi volutpat at."</p>
-    </div>
-
-    <div class="box inner">
-        <ul class="grid-list o-list-bare releases-list">
-            {% for release in site.albums reversed %}<li>
-            <div class="grid-list__item">
-                <article class="article">
+            <article class="a-card a-card--reveal a-card--release">
+                <div class="a-card__inner">
                     <a href="{{ release.url }}">
-                        <figure class="article__img">
+                        <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('{{ release.img }}')">
                             <img src="{{ release.img }}" alt="{{ release.title }}" />
-                        </figure>
-                        <div class="article__body">
-                            <p>{{ release.title }}</p>
+                        </div>
+                        <div class="a-card__title">
+                            {{ release.title }}
                         </div>
                     </a>
-                </article>
-            </div>
-        </li>{% endfor %}
-        </ul>
+                </div>
+            </article>
+
+        </div>
+    </li>{% endfor %}
+    </ul>
+
     </div>
+</div>
 

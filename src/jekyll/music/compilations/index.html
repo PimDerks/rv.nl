@@ -6,20 +6,35 @@ intro: Various compilations of Robby's music have been released all around the w
 layout: default
 ---
 
-{% include layout/hero.html %}
+{% include components/hero.html %}
 
 {% include components/subnavigation.html %}
 
-<div class="box inner">
-    <ul class="grid-list">
-        {% for release in site.compilations %}
-        <li>
-            <div>
-                <a href="{{ release.url }}">
-                    <img src="{{ release.img }}" alt="{{ release.title }}" />
-                </a>
+<div class="stack">
+    <div class="wrapper">
+
+        <p class="u-lead">{{ page.intro }}</p>
+
+        <ul class="m-layout u-group a-list-bare">
+            {% for release in site.compilations reversed %}<li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
+            <div class="m-layout__item">
+
+                <article class="a-card a-card--reveal a-card--release">
+                    <div class="a-card__inner">
+                        <a href="{{ release.url }}">
+                            <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('{{ release.img }}')">
+                                <img src="{{ release.img }}" alt="{{ release.title }}" />
+                            </div>
+                            <div class="a-card__title">
+                                {{ release.title }}
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
             </div>
-        </li>
-        {% endfor %}
-    </ul>
+        </li>{% endfor %}
+        </ul>
+
+    </div>
 </div>

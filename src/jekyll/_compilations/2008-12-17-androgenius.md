@@ -4,7 +4,7 @@ title: Androgenius
 date: 2008-12-17
 label: CNR
 catalog: 123-456-789
-img: /media/compilations/androgenius.jpg
+img: /images/compilations/androgenius.jpg
 discs:
   - title: Future?
     tracks:
