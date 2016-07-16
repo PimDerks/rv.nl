@@ -8,7 +8,7 @@
   transition: background-position 250ms ease-out;
 
   .o-hero__inner {
-    padding-bottom: baseline(4);
+    padding-bottom: baseline(6);
     padding-top: baseline(16);
     transition: opacity 250ms ease-out;
   }
@@ -37,6 +37,14 @@
     display: inline-block;
     margin-bottom: 0;
     padding: baseline(.5);
+  }
+
+}
+
+.o-hero--detail {
+
+  .o-hero__inner {
+    padding-top: baseline(9);
   }
 
 }

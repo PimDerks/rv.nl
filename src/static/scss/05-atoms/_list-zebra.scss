@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #LIST-ZEBRA
+\*------------------------------------*/
+
+
+.a-list-zebra {
+
+  > li:nth-child(odd) {
+    background: white;
+  }
+
+  > li:nth-child(odd) {
+    background: #efefef;
+  }
+
+}

@@ -1,0 +1,24 @@
+.a-date {
+  // background: white;
+  // border: 1px solid;
+  display: inline-block;
+  font-family: $font-display;
+  padding: baseline(.5);
+  text-align: center;
+  text-transform: uppercase;
+  width: baseline(3);
+
+  .a-date__day {
+    @extend %u-heading-gamma;
+    margin-bottom: 0;
+  }
+
+  .a-date__year {
+    opacity: .5;
+  }
+
+  abbr[title] {
+    border-bottom-width: 0;
+  }
+
+}

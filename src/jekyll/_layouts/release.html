@@ -5,7 +5,7 @@ layout: default
 
   <main>
 
-    {% include components/hero.html %}
+    {% include components/hero.html detail=true %}
 
     <div class="stack">
       <div class="wrapper">
@@ -13,75 +13,69 @@ layout: default
         <div class="m-layout u-group">
           <div class="m-layout__row">
 
-            <div class="m-layout__column u-1/1 u-2/3@l pull-top">
-
-                <div class="m-layout__item">
-                  <section class="box">
-                  <h2 class="u-screenreader">Artwork</h2>
-                  <img src="{{ page.img }}" alt="{{ page.title }}" style="margin-bottom:0;" />
-                </section>
-                  <section class="box inner">
-
-                  <h2 class="section-title">Tracklist</h2>
-                  {% for disc in page.discs %}
-
-                  {% if disc.title %}
-                  <h3>{{ disc.title }}</h3>
-                  {% endif %}
-
-                  <ol>
-                    {% for track in disc.tracks %}
-
-                    {% assign songTitle = track %}
-
-                    {% if track.title %}
-                    {% assign songTitle = track.title %}
-                    {% endif %}
-
-                    {% assign songData = null %}
-
-                    {% for song in site.songs %}
-                    {% if song.title == songTitle %}
-                    {% assign songData = song %}
-                    {% endif %}
-                    {% endfor %}
-
-                    <li>
-
-                      {% if songData %}
-                      <a href="{{ songData.url }}">{{ songTitle }}</a>
-                      {% else %}
-                      {{ songTitle }}
-                      {% endif %}
-
-                      {% if track.subtitle %}
-                      ({{ track.subtitle }})
-                      {% endif %}
-                    </li>
-                    {% endfor %}
-                  </ol>
-
-                  {% endfor %}
-
-                </section>
-                </div>
-
-                <div class="m-layout__item">
-                  <img src="http://lorempixel.com/640/240" alt="" />
-                  <section class="box box--inv inner">
-                    <h2 class="section-title">About this release</h2>
-                    {{ content }}
-                  </section>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="m-layout__column u-1/1 u-1/3@l">
-
+            <div class="m-layout__column u-1/1 u-1/2@l pull-top">
 
               <div class="m-layout__item">
-              <section class="box box--inv inner">
+                <div class="a-card ">
+                  <div class="a-card__inner">
+                    <h2 class="u-screenreader">Artwork</h2>
+                    <img src="{{ page.img }}" alt="{{ page.title }}" style="margin-bottom:0;" />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            </div>
+
+            <div class="m-layout__column u-1/1 u-1/2@l">
+
+              <div class="m-layout__item">
+
+                    <h2 class="section-title">Tracklist</h2>
+                    {% for disc in page.discs %}
+
+                    {% if disc.title %}
+                    <h3>{{ disc.title }}</h3>
+                    {% endif %}
+
+                    <ol class="a-list-zebra">
+                      {% for track in disc.tracks %}
+
+                      {% assign songTitle = track %}
+
+                      {% if track.title %}
+                      {% assign songTitle = track.title %}
+                      {% endif %}
+
+                      {% assign songData = null %}
+
+                      {% for song in site.songs %}
+                      {% if song.title == songTitle %}
+                      {% assign songData = song %}
+                      {% endif %}
+                      {% endfor %}
+
+                      <li>
+
+                        {% if songData %}
+                        <a href="{{ songData.url }}">{{ songTitle }}</a>
+                        {% else %}
+                        {{ songTitle }}
+                        {% endif %}
+
+                        {% if track.subtitle %}
+                        ({{ track.subtitle }})
+                        {% endif %}
+                      </li>
+                      {% endfor %}
+                    </ol>
+
+                    {% endfor %}
+
+              </div>
+
+              <div class="m-layout__item">
+
                 <h2 class="section-title">Information</h2>
                 <dl>
                   <dt>Title</dt>
@@ -93,23 +87,32 @@ layout: default
                   <dt>Catalognumber</dt>
                   <dd>{{ page.catalog }}</dd>
                 </dl>
-              </section>
+
               </div>
 
               <div class="m-layout__item">
-              <img src="http://lorempixel.com/640/481" alt="" />
-              <section class="box box--inv inner">
-                <h2 class="section-title">Credits</h2>
-                <dl>
-                  {% for credit in page.credits %}
-                  <dt>{{ credit.key }}</dt>
-                  <dd>{{ credit.value }}</dd>
-                  {% endfor %}
-                </dl>
-              </section>
+
+                  <h2 class="section-title">Credits</h2>
+                  <dl>
+                    {% for credit in page.credits %}
+                    <dt>{{ credit.key }}</dt>
+                    <dd>{{ credit.value }}</dd>
+                    {% endfor %}
+                  </dl>
+
               </div>
 
+              {% assign content = content | strip_newlines %}
+              {% if content != ""  %}
               <div class="m-layout__item">
+                <h2 class="section-title">About this release</h2>
+                {{ content }}
+                {{ content}}
+              </div>
+              {% endif %}
+
+
+              <!-- <div class="m-layout__item">
               <nav>
                 <h2>Subnavigation</h2>
                 {% for item in site.albums %}
@@ -147,7 +150,7 @@ layout: default
                 <p>Next: <a href="{{ prev.url }}">{{ prev.title }}</a></p>
                 {% endif %}
               </nav>
-                </div>
+                </div> -->
 
             </div>
 

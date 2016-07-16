@@ -26,20 +26,20 @@
   }
 
   .page-nav__logo {
-    flex: 1 1 100%;
+    flex: 4 0 200px;
     position: relative;
     z-index: 1;
 
     a {
       background: url('../img/logo.svg') no-repeat center center;
-      height: baseline(5);
+      height: baseline(6);
       left: 50%;
       position: absolute;
       text-indent: -999em;
       top: 50%;
       transition: all 250ms ease-out;
       transform: translateX(-50%) translateY(-50%);
-      width: baseline(7);
+      width: baseline(6);
     }
 
   }
@@ -97,7 +97,7 @@
 @include respond-min('l'){
 
   .page-nav {
-    margin-top: auto;
+    margin-top: baseline(2);
 
     > ul {
       flex-direction: row;
@@ -109,13 +109,14 @@
     }
 
     .page-nav__logo {
-      flex: 1 1 auto;
+      flex: 4 1 auto;
     }
 
     &.page-nav--fixed {
-      margin-top: baseline(3);
-      // position: fixed;
-      top: 0;
+      left: baseline(2);
+      right: baseline(2);
+      margin-top: 0;
+      position: fixed;
     }
 
   }

@@ -1,10 +1,18 @@
+.a-inner {
+  padding: baseline(1);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+
 .a-card {
   background: #FFF;
   border-radius: .25em;
   box-shadow: 0 2px 2px rgba(black, .15);
   position: relative;
-  transform: scale(1);
-  transition: all 250ms ease-out;
 
   .a-card__inner {
     border-radius: .25em;
@@ -17,6 +25,12 @@
     font-family: $font-display;
     text-transform: uppercase;
   }
+
+}
+
+.a-card--hover {
+  transform: scale(1);
+  transition: all 250ms ease-out;
 
   &:hover {
     box-shadow: 0 0 4px rgba(black, .25);

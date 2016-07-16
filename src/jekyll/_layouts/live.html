@@ -2,65 +2,91 @@
 layout: default
 ---
 
-<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+{% assign contentType = 'live' %}
 
 
+  <main>
 
-  <section>
-    <h2>About this gig</h2>
-    <dl>
-      <dt>Date</dt>
-      <dd>{{ page.date }}</dd>
-      <dt>Venue</dt>
-      <dd>{{ page.venue }}</dd>
-      <dt>City</dt>
-      <dd>{{ page.city }}</dd>
-      <dt>Country</dt>
-      <dd>{{ page.country }}</dd>
-    </dl>
-  </section>
+    {% include components/hero.html detail=true %}
 
-  <section>
-    <h2>Information</h2>
-    {{ content }}
-  </section>
+    <div class="stack">
+      <div class="wrapper">
 
-  <section>
-    <h2>Setlist</h2>
+        <div class="m-layout u-group">
+          <div class="m-layout__row">
 
-    <ol>
-      {% for track in page.setlist %}
-      {% assign songData = null %}
+            <div class="m-layout__column u-1/1 u-1/2@l pull-top">
 
-      {% for song in site.songs %}
-      {% if song.title == track %}
-      {% assign songData = song %}
-      {% endif %}
-      {% endfor %}
+              <div class="m-layout__item">
+                <div class="a-card ">
+                  <div class="a-card__inner">
+                    <h2 class="u-screenreader">Map</h2>
+                    <div class="u-ratio u-ratio--1:1" id="map"></div>
+                  </div>
+                </div>
+              </div>
 
-      <li>
-        {% assign songTitle = track %}
+            </div>
 
-        {% if track.title %}
-        {% assign songTitle = track.title %}
-        {% endif %}
+            <div class="m-layout__column u-1/1 u-1/2@l">
 
-        {% if songData %}
-        <a href="{{ songData.url }}">{{ songTitle }}</a>
-        {% else %}
-        {{ songTitle }}
-        {% endif %}
+              {% if page.setlist %}
+            <div class="m-layout__item">
 
-        {% if track.subtitle %}
-        ({{ track.subtitle }})
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ol>
-  </section>
+              <h2>Setlist</h2>
 
-  <nav>
-    <h2>Subnavigation</h2>
+              <ol class="a-list-zebra">
+                {% for track in page.setlist %}
+                {% assign songData = null %}
+
+                {% for song in site.songs %}
+                {% if song.title == track %}
+                {% assign songData = song %}
+                {% endif %}
+                {% endfor %}
+
+                <li>
+                  {% assign songTitle = track %}
+
+                  {% if track.title %}
+                  {% assign songTitle = track.title %}
+                  {% endif %}
+
+                  {% if songData %}
+                  <a href="{{ songData.url }}">{{ songTitle }}</a>
+                  {% else %}
+                  {{ songTitle }}
+                  {% endif %}
+
+                  {% if track.subtitle %}
+                  ({{ track.subtitle }})
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ol>
+
+            </div>
+              {% endif %}
+
+            <div class="m-layout__item">
+
+              <h2>About this gig</h2>
+              <dl>
+                <dt>Date</dt>
+                <dd>{{ page.date }}</dd>
+                <dt>Venue</dt>
+                <dd>{{ page.venue }}</dd>
+                <dt>City</dt>
+                <dd>{{ page.city }}</dd>
+                <dt>Country</dt>
+                <dd>{{ page.country }}</dd>
+              </dl>
+
+            </div>
+
+            <!-- <div class="m-layout__item">
+            <nav>
+              <h2>Subnavigation</h2>
     {% for item in site.live %}
     {% if item.date == page.date %}
     {% assign currentIndex = forloop.index0 %}
@@ -81,6 +107,17 @@ layout: default
     {% assign prev = site.live[prevIndex] %}
     <p>Prev: <a href="{{ prev.url }}">{{ prev.date }}</a></p>
     {% endif %}
-  </nav>
+            </nav>
+              </div> -->
 
+          </div>
+
+        </div>
+      </div>
+
+    </div>
 </div>
+
+
+
+</main>

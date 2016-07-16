@@ -86,7 +86,7 @@ collections:
     output: "true"
     permalink: /music/songs/:title/
   live:
-    output: "false"
+    output: "true"
     permalink: /live/:year-:month-:day/
   timeline:
     output: "false"

@@ -1,4 +1,10 @@
-<header class="o-hero"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}>
+{% if include.detail %}
+    <header class="o-hero o-hero--detail">
+{% else %}
+    <header class="o-hero"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}>
+{% endif %}
+
+
     <div class="wrapper">
         <div class="o-hero__inner">
 
@@ -6,17 +12,22 @@
 
                 {% if page.title %}
                     {{ page.title }}
+                {% else if contentType == 'live' %}
+                    {{ page.venue }}, {{ page.city }}
                 {% else %}
                     {{ site.title }}
                 {% endif %}
-
             </h1>
             <p class="o-hero__subtitle u-heading-delta u-display">
 
                 {% if page.subtitle %}
                     {{ page.subtitle }}
-                {% else if page.year %}
-                    {{ page.year }}
+                {% else if page.date %}
+                    {% if contentType == 'live' %}
+                        {{ page.date | date: '%d %B %Y' }}
+                    {% else %}
+                        {{ page.date | date: '%B %Y' }}
+                    {% endif %}
                 {% else %}
                     The official website
                 {% endif %}

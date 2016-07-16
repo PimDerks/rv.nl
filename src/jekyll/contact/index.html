@@ -6,44 +6,66 @@ intro: Lorem Ipsum is simply dummy text of the printing and typesetting industry
 layout: default
 ---
 
-{% include components/hero.html %}
+<main>
 
-    <main>
-        <section class="box inner">
-            <h2 class="section-title">Contact information</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl. Cras suscipit nec elit a placerat. Integer lacinia mi in neque congue, in egestas elit finibus. Pellentesque in rhoncus odio. Sed vehicula, arcu ac pretium elementum, dolor nibh congue urna, vel luctus massa augue eu elit. Maecenas in consectetur ex, eget ullamcorper magna. Aliquam iaculis, ex quis suscipit sagittis, ante metus ultricies metus, mollis egestas lorem ex ut velit. Pellentesque et arcu at leo malesuada sodales ut quis turpis. Etiam rutrum pharetra ex, quis blandit tellus tempus fermentum. Nunc sit amet sapien vitae neque laoreet sollicitudin at at est. Cras aliquam eros sed scelerisque lobortis.</p>
-        </section>
-        <img src="http://lorempixel.com/800/600" alt="" />
-        <section class="box box--dimmed inner">
-            <h2 class="section-title">Bookings</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl. Cras suscipit nec elit a placerat. Integer lacinia mi in neque congue, in egestas elit finibus. Pellentesque in rhoncus odio. Sed vehicula, arcu ac pretium elementum, dolor nibh congue urna, vel luctus massa augue eu elit. Maecenas in consectetur ex, eget ullamcorper magna. Aliquam iaculis, ex quis suscipit sagittis, ante metus ultricies metus, mollis egestas lorem ex ut velit. Pellentesque et arcu at leo malesuada sodales ut quis turpis. Etiam rutrum pharetra ex, quis blandit tellus tempus fermentum. Nunc sit amet sapien vitae neque laoreet sollicitudin at at est. Cras aliquam eros sed scelerisque lobortis.</p>
-        </section>
-    </main>
-    <aside>
-        <section class="box box--inv inner">
-            <h2 class="section-title">Social media</h2>
-            <dl>
-                <dt>Facebook</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
-                <dt>Soundcloud</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
-                <dt>YouTube</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
-            </dl>
+    {% include components/hero.html detail=true %}
 
-        </section>
-        <img src="http://lorempixel.com/640/480" alt="" />
-        <section class="box box--brand inner">
-            <h2 class="section-title">
-                Frequently asked questions
-            </h2>
-            <dl>
-                <dt>Where can I get Robby's albums and/or singles?</dt>
-                <dd>Via this website you can order the Bizarro World and Queen Tribute albums. For the other albums Robby does not own the rights. Try eBay or Discogs.</dd>
-                <dt>How much is postage to my location?</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
-                <dt>How can I pay?</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
-            </dl>
-        </section>
-    </aside>
+    <div class="stack">
+        <div class="wrapper">
+
+            <div class="m-layout u-group">
+                <div class="m-layout__row">
+
+                    <div class="m-layout__column u-1/1 u-1/2@l">
+
+                        <div class="m-layout__item">
+
+                            <h2 class="section-title">Contact information</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl. Cras suscipit nec elit a placerat. Integer lacinia mi in neque congue, in egestas elit finibus. Pellentesque in rhoncus odio. Sed vehicula, arcu ac pretium elementum, dolor nibh congue urna, vel luctus massa augue eu elit. Maecenas in consectetur ex, eget ullamcorper magna. Aliquam iaculis, ex quis suscipit sagittis, ante metus ultricies metus, mollis egestas lorem ex ut velit. Pellentesque et arcu at leo malesuada sodales ut quis turpis. Etiam rutrum pharetra ex, quis blandit tellus tempus fermentum. Nunc sit amet sapien vitae neque laoreet sollicitudin at at est. Cras aliquam eros sed scelerisque lobortis.</p>
+                            <h2 class="section-title">Bookings</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl. Cras suscipit nec elit a placerat. Integer lacinia mi in neque congue, in egestas elit finibus. Pellentesque in rhoncus odio. Sed vehicula, arcu ac pretium elementum, dolor nibh congue urna, vel luctus massa augue eu elit. Maecenas in consectetur ex, eget ullamcorper magna. Aliquam iaculis, ex quis suscipit sagittis, ante metus ultricies metus, mollis egestas lorem ex ut velit. Pellentesque et arcu at leo malesuada sodales ut quis turpis. Etiam rutrum pharetra ex, quis blandit tellus tempus fermentum. Nunc sit amet sapien vitae neque laoreet sollicitudin at at est. Cras aliquam eros sed scelerisque lobortis.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="m-layout__column u-1/1 u-1/2@l">
+
+
+                        <div class="m-layout__item">
+                            <h2 class="section-title">Social media</h2>
+                            <dl>
+                                <dt>Facebook</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
+                                <dt>Soundcloud</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
+                                <dt>YouTube</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
+                            </dl>
+                        </div>
+
+                        <div class="m-layout__item">
+                            <h2 class="section-title">
+                                Frequently asked questions
+                            </h2>
+                            <dl>
+                                <dt>Where can I get Robby's albums and/or singles?</dt>
+                                <dd>Via this website you can order the Bizarro World and Queen Tribute albums. For the other albums Robby does not own the rights. Try eBay or Discogs.</dd>
+                                <dt>How much is postage to my location?</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
+                                <dt>How can I pay?</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
+                            </dl>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
