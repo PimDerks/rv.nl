@@ -10,7 +10,9 @@ layout: default
 
 {% include components/subnavigation.html %}
 
-<div class="box inner">
+<div class="stack">
+    <div class="wrapper">
+
     <p>Check out the tour schedule below, or take a look at all the gigs from the past.</p>
 
     <h2 class="section-title">Upcoming gigs</h2>
@@ -19,73 +21,27 @@ layout: default
         {% assign curDate = site.time | date: '%s' %}
         {% for gig in site.live %}
         {% assign gigDate = gig.date | date: '%s' %}
-        {% if gigDate >= curDate %}
-        <li>
-            <dl class="a-event">
-                <dt class="u-screenreader">Datum</dt>
-                <dd class="a-event__date">
-                    <div class="a-date">
-                        <div class="a-date__day">{{ gig.date | date: "%d"}}</div>
-                        <div class="a-date__month">
-                            <abbr title="{{ gig.date | date: '%B' }}">
-                                {{ gig.date | date: "%b"}}
-                            </abbr>
-                        </div>
-                        <div class="a-date__year">{{ gig.date | date: "%Y"}}</div>
-                    </div>
-                </dd>
-                <dt class="u-screenreader">Venue</dt>
-                <dd class="a-event__venue">{{ gig.venue }}</dd>
-                <dt class="u-screenreader">City</dt>
-                <dd class="a-event__city">{{ gig.city }}</dd>
-                <dt class="u-screenreader">Country</dt>
-                <dd class="a-event__country">{{ gig.country }}</dd>
-                <dt class="u-screenreader">Note</dt>
-                <dd class="a-event__note">{{ gig.note }}</dd>
-                <dt class="u-screenreader">Details</dt>
-                <dd class="a-event__details"><a href="{{ gig.url }}">Details</a></dd>
-            </dl>
+            {% if gigDate >= curDate %}
+                <li>
+                    {% include components/event.html %}
+                </li>
             {% endif %}
-            {% endfor %}
+        {% endfor %}
     </ol>
-</div>
 
-    <img src="http://lorempixel.com/800/200" alt="" />
-    <div class="box inner">
+    <h2>Past gigs</h2>
 
-        <h2>Past gigs</h2>
-
-        <ol class="a-list-bare a-list-zebra m-events">
-            {% assign curDate = site.time | date: '%s' %}
-            {% for gig in site.live reversed %}
+    <ol class="a-list-bare a-list-zebra m-events">
+        {% assign curDate = site.time | date: '%s' %}
+        {% for gig in site.live reversed %}
             {% assign gigDate = gig.date | date: '%s' %}
             {% if gigDate < curDate %}
-            <li>
-                <dl class="a-event">
-                    <dt class="u-screenreader">Datum</dt>
-                    <dd class="a-event__date">
-                        <div class="a-date">
-                            <div class="a-date__day">{{ gig.date | date: "%d"}}</div>
-                            <div class="a-date__month">
-                                <abbr title="{{ gig.date | date: '%B' }}">
-                                    {{ gig.date | date: "%b"}}
-                                </abbr>
-                            </div>
-                            <div class="a-date__year">{{ gig.date | date: "%Y"}}</div>
-                        </div>
-                    </dd>
-                    <dt class="u-screenreader">Venue</dt>
-                    <dd class="a-event__venue">{{ gig.venue }}</dd>
-                    <dt class="u-screenreader">City</dt>
-                    <dd class="a-event__city">{{ gig.city }}</dd>
-                    <dt class="u-screenreader">Country</dt>
-                    <dd class="a-event__country">{{ gig.country }}</dd>
-                    <dt class="u-screenreader">Note</dt>
-                    <dd class="a-event__note">{{ gig.note }}</dd>
-                    <dt class="u-screenreader">Details</dt>
-                    <dd class="a-event__details"><a href="{{ gig.url }}">Details</a></dd>
-                </dl>
-                {% endif %}
-                {% endfor %}
-        </ol>
+                <li>
+                    {% include components/event.html %}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+
     </div>
+</div>

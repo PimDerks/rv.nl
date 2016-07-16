@@ -1,0 +1,26 @@
+<article class="a-card">
+    <div class="a-card__inner">
+
+        {% assign img = post.img | strip_newlines %}
+
+        {% if img == '' %}
+            {% assign img = 'http://loremflickr.com/300/300' %}
+        {% else %}
+            {% assign img = post.img %}
+        {% endif %}
+
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('{{ img }}')">
+                <img src="{{ img }}" alt="{{ post.title }}" />
+            </div>
+            <div class="a-inner">
+                <div class="a-card__title">
+                    {{ post.title }}
+                </div>
+                <div class="a-card__subtitle">
+                    {{ post.date | date: "%b %-d, %Y" }}
+                </div>
+            </div>
+        </a>
+    </div>
+</article>

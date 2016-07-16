@@ -1,0 +1,22 @@
+.m-tracklist {
+
+  > li {
+    padding: baseline(.5);
+
+    &::before {
+      display: none;
+    }
+
+    a {
+      border-bottom-width: 0;
+      display: block;
+      text-decoration: none;
+    }
+
+  }
+
+  .m-tracklist__subtitle {
+    font-style: italic;
+  }
+
+}

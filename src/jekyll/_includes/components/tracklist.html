@@ -1,0 +1,38 @@
+{% if disc.title %}
+    <h3>{{ disc.title }}</h3>
+{% endif %}
+
+<ol class="a-list-zebra m-tracklist">
+    {% for track in disc.tracks %}
+
+    {% assign songTitle = track %}
+
+    {% if track.title %}
+    {% assign songTitle = track.title %}
+    {% endif %}
+
+    {% assign songData = null %}
+
+    {% for song in site.songs %}
+    {% if song.title == songTitle %}
+    {% assign songData = song %}
+    {% endif %}
+    {% endfor %}
+
+    <li class="m-tracklist__track">
+
+        <div class="m-tracklist__title">
+            {% if songData %}
+                <a href="{{ songData.url }}">{{ songTitle }}</a>
+            {% else %}
+            {{ songTitle }}
+            {% endif %}
+        </div>
+        {% if track.subtitle %}
+            <div class="m-tracklist__subtitle">
+                {{ track.subtitle }}
+            </div>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ol>

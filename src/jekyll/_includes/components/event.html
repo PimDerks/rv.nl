@@ -1,0 +1,24 @@
+<dl class="a-event">
+    <dt class="u-screenreader">Datum</dt>
+    <dd class="a-event__date">
+        <div class="a-date">
+            <div class="a-date__day">{{ gig.date | date: "%d"}}</div>
+            <div class="a-date__month">
+                <abbr title="{{ gig.date | date: '%B' }}">
+                    {{ gig.date | date: "%b"}}
+                </abbr>
+            </div>
+            <div class="a-date__year">{{ gig.date | date: "%Y"}}</div>
+        </div>
+    </dd>
+    <dt class="u-screenreader">Venue</dt>
+    <dd class="a-event__venue">{{ gig.venue }}</dd>
+    <dt class="u-screenreader">City</dt>
+    <dd class="a-event__city">{{ gig.city }}</dd>
+    <dt class="u-screenreader">Country</dt>
+    <dd class="a-event__country">{{ gig.country }}</dd>
+    <dt class="u-screenreader">Note</dt>
+    <dd class="a-event__note">{{ gig.note }}</dd>
+    <dt class="u-screenreader">Details</dt>
+    <dd class="a-event__details"><a href="{{ gig.url }}">Details</a></dd>
+</dl>

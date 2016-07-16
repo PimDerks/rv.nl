@@ -33,43 +33,7 @@ layout: default
 
                     <h2 class="section-title">Tracklist</h2>
                     {% for disc in page.discs %}
-
-                    {% if disc.title %}
-                    <h3>{{ disc.title }}</h3>
-                    {% endif %}
-
-                    <ol class="a-list-zebra">
-                      {% for track in disc.tracks %}
-
-                      {% assign songTitle = track %}
-
-                      {% if track.title %}
-                      {% assign songTitle = track.title %}
-                      {% endif %}
-
-                      {% assign songData = null %}
-
-                      {% for song in site.songs %}
-                      {% if song.title == songTitle %}
-                      {% assign songData = song %}
-                      {% endif %}
-                      {% endfor %}
-
-                      <li>
-
-                        {% if songData %}
-                        <a href="{{ songData.url }}">{{ songTitle }}</a>
-                        {% else %}
-                        {{ songTitle }}
-                        {% endif %}
-
-                        {% if track.subtitle %}
-                        ({{ track.subtitle }})
-                        {% endif %}
-                      </li>
-                      {% endfor %}
-                    </ol>
-
+                      {% include components/tracklist.html %}
                     {% endfor %}
 
               </div>
