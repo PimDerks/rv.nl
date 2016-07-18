@@ -23,6 +23,8 @@ keep_files: [static]
 # Build settings
 markdown: kramdown
 
+permalink: /news/:title/
+
 # Defaults
 defaults:
   - scope:

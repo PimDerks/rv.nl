@@ -40,7 +40,7 @@ gulp.task('watch-js', js.watch);
 gulp.task('watch-sass', sass.watch);
 gulp.task('watch-html', jekyll.watch);
 gulp.task('watch-www', watchWWW);
-gulp.task('watch', ['watch-js', 'watch-sass', 'watch-html', 'watch-www']);
+gulp.task('watch', ['watch-js', 'watch-sass', 'watch-html']);
 
 // Automatically update files in browser
 gulp.task('browser-sync', browserSync);
