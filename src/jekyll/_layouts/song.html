@@ -19,7 +19,8 @@ layout: default
 
                 <section>
 
-                  <div class="box inner">
+                  <div class="box a-inner a-inner+">
+
                     <h2 class="section-title u-heading-gamma">Lyrics</h2>
 
                     {% assign content = content | strip_newlines %}
@@ -37,7 +38,7 @@ layout: default
                 {% if page.about %}
               <div class="m-layout__item">
                 <section>
-                  <div class="box box--dimmed inner">
+                  <div class="box box--dimmed a-inner a-inner+">
                     <h2 class="section-title u-heading-gamma">About this song</h2>
                     {{ page.about | markdownify }}
                   </div>
@@ -50,7 +51,7 @@ layout: default
             <div class="m-layout__column u-1/1 u-1/3@l">
               <div class="m-layout__item">
 
-                <section class="box box--brand inner box--island">
+                <section class="box box--brand a-inner box--island">
                   <h2 class="section-title u-heading-delta">Credits</h2>
                   <dl>
                     {% for credit in page.credits %}
@@ -59,7 +60,7 @@ layout: default
                     {% endfor %}
                     <dt>Appears on</dt>
                     <dd>
-                      <ul>
+                      <ul class="a-list-bare">
                         {% for appearance in page.appears %}
 
                         {% if appearance.type == 'single' %}
@@ -87,7 +88,7 @@ layout: default
 
               <div class="m-layout__item">
 
-                <section class="box box--inv inner">
+                <section class="box box--inv a-inner">
                   <h2 class="section-title u-heading-delta">Credits</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada arcu sed enim dictum finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis feugiat consequat metus quis luctus. Phasellus ultrices nunc nec sem finibus, ullamcorper tincidunt odio laoreet. Sed sem nisi, tristique ac pulvinar vitae, pellentesque a libero.</p>
                 </section>
@@ -96,7 +97,7 @@ layout: default
 
               <div class="m-layout__item">
 
-                <nav class="box box--brand inner">
+                <nav class="box box--brand a-inner">
                   <h2 class="section-title u-heading-delta">Subnavigation</h2>
                   {% assign songs = site.songs | sort: 'title' %}
                   {% for song in songs %}

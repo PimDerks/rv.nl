@@ -6,11 +6,15 @@
 .a-list-zebra {
 
   > li:nth-child(odd) {
-    background: white;
+    background: #efefef;
   }
 
-  > li:nth-child(odd) {
-    background: #efefef;
+  > li:nth-child(even) {
+
+    &:last-child {
+      border-bottom: 1px solid #efefef; // always end with a separator
+    }
+
   }
 
 }
