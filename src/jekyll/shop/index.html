@@ -17,65 +17,64 @@ categories:
 <div class="stack">
     <div class="wrapper">
 
-        <main>
-
-            {% for cat in page.categories %}
-            {% assign products = site.shop | where:'format', cat %}
-
-            <h2 class="section-title" id="{{ cat }}">{{ cat | capitalize }}</h2>
-
-            <ul class="m-layout u-group a-list-bare">
-                {% for product in products %}
-                <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l">
+        <div class="m-layout u-group">
+            <div class="m-layout__row">
+                <div class="m-layout__column u-1/1 u-2/3@l">
                     <div class="m-layout__item">
 
-                        <article class="a-card">
-                            <div class="a-card__inner">
-                                <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('http://loremflickr.com/300/300"')">
-                                    <img src="http://loremflickr.com/300/300"" alt="{{ product.title }}" />
-                                </div>
-                                <div class="a-inner">
-                                    <h2>{{ product.title }}</h2>
-                                    <dl>
-                                        <dt>Format</dt>
-                                        <dd>{{ product.format }}</dd>
-                                        <dt>Price (excl. postage)</dt>
-                                        <dd>{{ product.price }}</dd>
-                                    </dl>
-                                    {{ product.content }}
-                                </div>
-                            </div>
-                        </article>
+                        <main>
+
+                            {% for cat in page.categories %}
+                            {% assign products = site.shop | where:'format', cat %}
+
+                            <h2 class="section-title" id="{{ cat }}">{{ cat | capitalize }}</h2>
+
+                            <ul class="a-list-bare m-products">
+                                {% for product in products %}
+                                <li id="product-{% increment index %}">
+                                    {% include components/card-product.html index=index %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endfor %}
+
+                        </main>
 
                     </div>
-                </li>
-                {% endfor %}
-            </ul>
-            {% endfor %}
+                </div>
+                <div class="m-layout__column u-1/1 u-1/3@l">
 
-        </main>
+                        <aside>
+                            <div class="m-layout__item">
+                            <section>
+                                <h3 class="section-title">How to order</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </section>
+                                </div>
+                            <div class="m-layout__item">
+                            <section>
+                                <h3 class="section-title">
+                                    Frequently asked questions
+                                </h3>
+                                <dl>
+                                    <dt>Where can I get Robby's albums and/or singles?</dt>
+                                    <dd>Via this website you can order the Bizarro World and Queen Tribute albums. For the other albums Robby does not own the rights. Try eBay or Discogs.</dd>
+                                    <dt>How much is postage to my location?</dt>
+                                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
+                                    <dt>How can I pay?</dt>
+                                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
+                                </dl>
+                            </section>
+                                </div>
+                        </aside>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </div>
 </div>
-
-
-    <!-- <aside>
-        <section class="box box--inv inner">
-            <h2 class="section-title">How to order</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl. Cras suscipit nec elit a placerat. Integer lacinia mi in neque congue, in egestas elit finibus. Pellentesque in rhoncus odio. Sed vehicula, arcu ac pretium elementum, dolor nibh congue urna, vel luctus massa augue eu elit. Maecenas in consectetur ex, eget ullamcorper magna. Aliquam iaculis, ex quis suscipit sagittis, ante metus ultricies metus, mollis egestas lorem ex ut velit. Pellentesque et arcu at leo malesuada sodales ut quis turpis. Etiam rutrum pharetra ex, quis blandit tellus tempus fermentum. Nunc sit amet sapien vitae neque laoreet sollicitudin at at est. Cras aliquam eros sed scelerisque lobortis.</p>
-        </section>
-        <img src="http://lorempixel.com/640/480" alt="" />
-        <section class="box box--brand inner">
-            <h2 class="section-title">
-                Frequently asked questions
-            </h2>
-            <dl>
-                <dt>Where can I get Robby's albums and/or singles?</dt>
-                <dd>Via this website you can order the Bizarro World and Queen Tribute albums. For the other albums Robby does not own the rights. Try eBay or Discogs.</dd>
-                <dt>How much is postage to my location?</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
-                <dt>How can I pay?</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id lacus ut est mollis interdum a sit amet nisl.</dd>
-            </dl>
-        </section>
-    </aside> -->

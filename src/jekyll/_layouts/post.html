@@ -21,6 +21,9 @@ layout: default
 
                   <section>
 
+                    <div class="a-img u-ratio u-ratio--16:9" style="background-image:url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');">
+                        <img src="http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg" alt="" />
+                    </div>
                     <div class="box a-inner a-inner+">
 
                       <h2 class="section-title u-heading-gamma">{{ page.title }}</h2>
@@ -39,7 +42,7 @@ layout: default
                     <h2 class="section-title u-heading-delta">Credits</h2>
                     <dl>
                       <dt>Post date</dt>
-                      <dd>{{ page.date }}</dd>
+                      <dd>{{ page.date | date: '%B %-d, %Y' }}</dd>
                     </dl>
                   </section>
 

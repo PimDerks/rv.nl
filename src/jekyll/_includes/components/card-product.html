@@ -1,0 +1,27 @@
+{% assign mod = include.index | modulo: 2 %}
+
+<article class="a-card a-card--landscape{% if mod > 0 %} a-card--landscape-rev{%endif%}">
+    <div class="a-card__inner">
+        <div class="a-card__image">
+            <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('http://loremflickr.com/300/300')">
+                <img src="http://loremflickr.com/300/300" alt="{{ product.title }}" />
+            </div>
+        </div>
+        <div class="a-card__content">
+            <div class="a-inner a-inner+">
+                <h2 class="u-heading-delta">{{ product.title }}</h2>
+                {{ product.content }}
+                <!-- <h3>Details</h3>
+                <dl>
+                    <dt>Format</dt>
+                    <dd>{{ product.format }}</dd>
+                    <dt>Price (excl. postage)</dt>
+                    <dd>{{ product.price }}</dd>
+                </dl> -->
+                <p class="u-heading-delta u-italic">
+                    € {{ product.price }},- <span class="u-small u-dimmed">(excl. postage)</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

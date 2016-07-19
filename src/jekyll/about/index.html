@@ -5,7 +5,46 @@ img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 layout: default
 ---
 
-{% include components/hero.html %}
+<div class="u-group">
+    <main>
 
-{% include components/subnavigation.html %}
+        {% include components/hero.html detail=true %}
 
+        <div class="stack">
+            <div class="wrapper">
+
+                <div class="m-layout u-group">
+                    <div class="m-layout__row">
+                        <div class="m-layout__column u-1/1 u-2/3@l">
+                            <div class="m-layout__item">
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus eu elit eget faucibus. Cras magna urna, porta ac ante sit amet, facilisis consectetur eros. Sed mauris neque, tristique sit amet augue ut, volutpat pulvinar lectus. Proin eget ex ante. Nullam facilisis condimentum viverra. Maecenas ac ligula efficitur, hendrerit augue eu, ultrices tortor. Donec mattis, massa quis accumsan iaculis, nisi nisl consectetur est, et sagittis elit augue a justo.</p>
+
+                                <p>Vestibulum enim urna, commodo a aliquet sed, porta sed mi. Nullam non urna sollicitudin, volutpat est nec, eleifend justo. Cras et odio ut erat elementum gravida nec eleifend turpis. Donec convallis dignissim convallis. Quisque vel vestibulum turpis, id condimentum augue. Aenean faucibus efficitur tortor eget pellentesque. Sed maximus nisi purus, et facilisis nibh venenatis in. Nunc ullamcorper risus ut erat venenatis venenatis. Aliquam ultrices est vitae leo hendrerit ullamcorper.</p>
+
+                            </div>
+
+                        </div>
+                        <div class="m-layout__column u-1/1 u-1/3@l">
+                            <div class="m-layout__item">
+
+                                <section class="box box--brand a-inner box--island">
+                                    <h2 class="section-title u-heading-delta">Credits</h2>
+                                    <dl>
+                                        <dt>Post date</dt>
+                                        <dd>{{ page.date | date: '%B %-d, %Y' }}</dd>
+                                    </dl>
+                                </section>
+
+                            </div>l
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</div>

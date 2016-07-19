@@ -36,6 +36,33 @@
 
 }
 
+.a-card--landscape {
+
+  .a-card__inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .a-card__image,
+  .a-card__content {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .a-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &.a-card--landscape-rev {
+    .a-card__inner {
+      flex-direction: row-reverse;
+    }
+  }
+
+}
+
 .a-card--hover {
   transform: scale(1);
   transition: all 250ms ease-out;

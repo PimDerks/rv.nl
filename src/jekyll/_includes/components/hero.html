@@ -23,7 +23,7 @@
                     {{ page.subtitle }}
                 {% else if page.date %}
                     {% if contentType == 'live' or contentType == 'post' %}
-                        {{ page.date | date: '%B %d, %Y' }}
+                        {{ page.date | date: '%B %-d, %Y' }}
                     {% else %}
                         {{ page.date | date: '%B %Y' }}
                     {% endif %}

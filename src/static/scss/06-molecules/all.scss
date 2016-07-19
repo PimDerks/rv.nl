@@ -1,2 +1,16 @@
 @import 'events';
 @import 'tracklist';
+
+.m-products {
+  margin-bottom: baseline(2);
+
+  > li {
+    margin-bottom: baseline(2);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
