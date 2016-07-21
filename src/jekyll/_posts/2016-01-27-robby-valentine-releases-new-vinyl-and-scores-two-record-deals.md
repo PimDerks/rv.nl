@@ -3,7 +3,7 @@ title: Robby Valentine releases new vinyl and scores two record deals
 date: 2016-01-27
 ---
 
-<p>In the early 90’s, Robby Valentine had a huge hit with his debut single, ‘Over And Over Again’. The untitled debut album earned him the Silver Harp award and a loyal following in Japan. With the release of his latest album, ‘Bizarro World’, Valentine has found a renewed success with concerts at home and abroad, and above all a contract with one of the largest record companies in Japan: King Records.</p>
+<p class="u-lead">With the release of his latest album, ‘Bizarro World’, Valentine has found a renewed success with concerts at home and abroad, and above all a contract with one of the largest record companies in Japan: King Records.</p>
 
 <p>On March 2, 2016, King Records will release Valentine’s two latest albums, ‘Bizarro World’ and ‘The Queen Album’ as a double set which will include bonus tracks featuring a cover of David Bowie's ‘Life on Mars’. The Queen album is an ultimate homage to Queen; the original album has twenty-four numbers, but the Japanese edition will have twenty-five.</p>
 

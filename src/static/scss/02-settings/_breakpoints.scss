@@ -7,7 +7,8 @@ $breakpoints:(
     s:  24em, /* 480/20 = iPhone landscape */
     m:  38em, /* 768/20 = iPad landscape */
     l:  50em, /* 1000/20 = iPad portrait */
-    xl: 64em); /* 1280/20 = laptop */
+    xl: 64em, /* 1280/20 = laptop */
+    xxl: 72em); /* 1440/20 = laptop full screen */
 
 /**
  * Z-index management

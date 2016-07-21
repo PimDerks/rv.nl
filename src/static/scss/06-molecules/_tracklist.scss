@@ -3,9 +3,17 @@
 
   > li {
     padding: baseline(.5);
+    padding-left: baseline(2);
+    position: relative;
 
     &::before {
-      display: none;
+      content: counter(ol);
+      font-family: $font-display;
+      left: baseline(1);
+      position: absolute;
+      text-align: center;
+      top: baseline(.6); // magic number ftw
+      transform: translateX(-50%);
     }
 
     a {
@@ -18,6 +26,27 @@
 
   .m-tracklist__subtitle {
     font-style: italic;
+  }
+
+}
+
+.m-tracklist--alt {
+
+  column-count: 2;
+  column-gap: baseline(2);
+
+  > li {
+    break-inside: avoid;
+    padding-left: baseline(.5);
+
+    &::before {
+      display: none;
+    }
+
+    &:last-child {
+      border-bottom-width: 0 !important;
+    }
+
   }
 
 }

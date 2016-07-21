@@ -19,4 +19,15 @@ body {
 .wrapper {
   padding-left: baseline(2);
   padding-right: baseline(2);
+
+  @include respond-min('xl') {
+    padding-left: baseline(4);
+    padding-right: baseline(4);
+  }
+
+  @include respond-min('xxl') {
+    padding-left: baseline(6);
+    padding-right: baseline(6);
+  }
+
 }

@@ -21,18 +21,21 @@ submenu:
 
 {% include components/subnavigation.html %}
 
+<div class="stack">
+    <div class="wrapper">
+
 <!-- First loop for 'non-alphabetical' songs -->
 {% assign songs = site.songs | where: 'sort', 'false' %}
-<div class="box box--dimmed inner">
-    <h2 class="section-title">0-9</h2>
-    <ul>
+
+    <h2 class="u-heading-gamma" id="songs-0">0-9</h2>
+    <ol class="a-list-bare a-list-zebra m-tracklist m-tracklist--alt">
         {% for song in songs %}
         <li>
             <a href="{{ song.url }}">{{ song.title }}</a>
         </li>
         {% endfor %}
-    </ul>
-</div>
+    </ol>
+
 <!-- End of first loop for 'non-alphabetical' songs -->
 
 <!-- Loop remaining songs -->
@@ -43,14 +46,13 @@ submenu:
     {% if currentLetter != letter %}
 
         {% unless forloop.first %}
-            </ul>
-            </div>
+            </ol>
         {% endunless %}
 
-        <div class="box {% cycle '', 'box--dimmed' %} inner">
-        <h2 class="section-title">{{ currentLetter }}</h2>
 
-        <ul class="o-list-bare">
+        <h2 class="u-heading-gamma" id="songs-{{ currentLetter | lower }}">{{ currentLetter }}</h2>
+
+        <ol class="a-list-bare a-list-zebra m-tracklist m-tracklist--alt">
             {% assign letter = currentLetter %}
     {% endif %}
 
@@ -59,9 +61,11 @@ submenu:
         </li>
 
     {% if forloop.last %}
-        </ul>
-        </div>
+        </ol>
+
     {% endif %}
 
 {% endfor %}
 <!-- End of loop remaining songs -->
+</div>
+</div>

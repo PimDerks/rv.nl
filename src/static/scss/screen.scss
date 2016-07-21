@@ -8,3 +8,8 @@
 @import '07-organisms/all';
 @import '08-utils/all';
 @import '09-trumps/all';
+
+.section-title {
+  margin: baseline(2) 0;
+  text-align: center;
+}

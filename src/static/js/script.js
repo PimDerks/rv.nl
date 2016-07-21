@@ -37,6 +37,7 @@
     };
 
     var onScroll = function(){
+        return;
         var scroll = document.body.scrollTop,
             perc = scroll/(heroHeight/100);
 

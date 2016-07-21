@@ -14,3 +14,15 @@ a {
   }
 
 }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  border-bottom-width: 0;
+
+  @include attention {
+    text-decoration: none;
+  }
+}

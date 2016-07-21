@@ -1,5 +1,6 @@
 .page-nav {
   background: rgba(black, .75);
+  display: none;
   font-family: $font-display;
   margin-top: baseline(5);
   left: baseline(3.5);
@@ -97,6 +98,7 @@
 @include respond-min('l'){
 
   .page-nav {
+    display: block;
     margin-top: baseline(2);
 
     > ul {

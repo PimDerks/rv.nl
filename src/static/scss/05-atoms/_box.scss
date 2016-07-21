@@ -1,7 +1,8 @@
 .box,
 .box--brand {
   background: rgba(white, .99);
-  // color: white;
+  border-radius: .25em;
+  overflow: hidden;
   position: relative;
 
   * {
@@ -14,7 +15,7 @@
 }
 
 .box--dimmed {
-  background: rgba(black, .1);
+  background: rgba(black, .025);
 }
 
 .box--brand {

@@ -9,18 +9,33 @@
             {% assign img = post.img %}
         {% endif %}
 
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('{{ img }}')">
-                <img src="{{ img }}" alt="{{ post.title }}" />
-            </div>
-            <div class="a-inner">
-                <div class="a-card__title">
-                    {{ post.title }}
-                </div>
-                <div class="a-card__subtitle">
-                    {{ post.date | date: "%b %-d, %Y" }}
+
+            <div class="a-card__image">
+                <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('{{ img }}')">
+                    <img src="{{ img }}" alt="{{ post.title }}" />
                 </div>
             </div>
-        </a>
+            <div class="a-card__content">
+                <div class="a-inner a-inner+">
+                    <header class="a-card__header">
+
+                        <h3 class="a-card__title">
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                {{ post.title }}
+                            </a>
+                        </h3>
+                        <p class="a-card__subtitle">
+                            {{ post.date | date: "%B %-d, %Y" }}
+                        </p>
+
+                    </header>
+                    <p>
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            Read more
+                        </a>
+                    </p>
+                </div>
+            </div>
+
     </div>
 </article>

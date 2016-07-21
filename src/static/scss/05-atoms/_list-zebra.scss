@@ -6,13 +6,13 @@
 .a-list-zebra {
 
   > li:nth-child(odd) {
-    background: #efefef;
+    background: rgba(white, .25);
   }
 
   > li:nth-child(even) {
 
     &:last-child {
-      border-bottom: 1px solid #efefef; // always end with a separator
+      border-bottom: 1px solid rgba(white, .25); // always end with a separator
     }
 
   }

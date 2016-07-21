@@ -25,13 +25,19 @@
     z-index: 1;
   }
 
+  .a-card__header {
+    margin-bottom: baseline(1);
+  }
+
   .a-card__title {
     font-family: $font-display;
+    margin-bottom: 0;
     text-transform: uppercase;
   }
 
   .a-card__subtitle {
     font-style: italic;
+    margin-bottom: 0;
   }
 
 }

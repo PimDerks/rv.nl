@@ -1,16 +1,18 @@
 {% if page.submenu %}
 <div class="box box--brand sub-nav">
     <nav>
-        <h2 class="u-screenreader">
-            Subnavigation
-        </h2>
-        <ul class="a-list-nav a-list-bare">
-            {% for page in page.submenu %}
-                <li{% if page.active %} class="sub-nav__current"{% endif %}>
-                    <a href="{{ page.link }}">{{ page.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
+        <div class="wrapper">
+            <h2 class="u-screenreader">
+                Subnavigation
+            </h2>
+            <ul class="a-list-nav a-list-bare">
+                {% for page in page.submenu %}
+                    <li{% if page.active %} class="sub-nav__current"{% endif %}>
+                        <a href="{{ page.link }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </nav>
 </div>
 {% endif %}

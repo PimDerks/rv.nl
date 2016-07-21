@@ -33,9 +33,10 @@ layout: default
               {% if page.setlist %}
             <div class="m-layout__item">
 
+              <div class="box box--dimmed a-inner a-inner+">
               <h2>Setlist</h2>
 
-              <ol class="a-list-zebra">
+              <ol class="a-list-zebra m-tracklist">
                 {% for track in page.setlist %}
                 {% assign songData = null %}
 
@@ -64,23 +65,26 @@ layout: default
                 </li>
                 {% endfor %}
               </ol>
+                </div>
 
             </div>
               {% endif %}
 
             <div class="m-layout__item">
 
-              <h2>About this gig</h2>
-              <dl>
-                <dt>Date</dt>
-                <dd>{{ page.date }}</dd>
-                <dt>Venue</dt>
-                <dd>{{ page.venue }}</dd>
-                <dt>City</dt>
-                <dd>{{ page.city }}</dd>
-                <dt>Country</dt>
-                <dd>{{ page.country }}</dd>
-              </dl>
+              <div class="box box--dimmed a-inner a-inner+">
+                <h2>About this gig</h2>
+                <dl>
+                  <dt>Date</dt>
+                  <dd>{{ page.date }}</dd>
+                  <dt>Venue</dt>
+                  <dd>{{ page.venue }}</dd>
+                  <dt>City</dt>
+                  <dd>{{ page.city }}</dd>
+                  <dt>Country</dt>
+                  <dd>{{ page.country }}</dd>
+                </dl>
+              </div>
 
             </div>
 
