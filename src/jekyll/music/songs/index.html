@@ -27,7 +27,7 @@ submenu:
 <!-- First loop for 'non-alphabetical' songs -->
 {% assign songs = site.songs | where: 'sort', 'false' %}
 
-    <h2 class="u-heading-gamma" id="songs-0">0-9</h2>
+    <h2 class="u-heading-gamma section-title" id="songs-0">0-9</h2>
     <ol class="a-list-bare a-list-zebra m-tracklist m-tracklist--alt">
         {% for song in songs %}
         <li>
@@ -50,7 +50,7 @@ submenu:
         {% endunless %}
 
 
-        <h2 class="u-heading-gamma" id="songs-{{ currentLetter | lower }}">{{ currentLetter }}</h2>
+        <h2 class="u-heading-gamma section-title" id="songs-{{ currentLetter | lower }}">{{ currentLetter }}</h2>
 
         <ol class="a-list-bare a-list-zebra m-tracklist m-tracklist--alt">
             {% assign letter = currentLetter %}

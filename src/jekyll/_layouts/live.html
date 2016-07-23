@@ -76,7 +76,7 @@ layout: default
                 <h2>About this gig</h2>
                 <dl>
                   <dt>Date</dt>
-                  <dd>{{ page.date }}</dd>
+                  <dd>{{ page.date | date: '%B %-d, %Y' }}</dd>
                   <dt>Venue</dt>
                   <dd>{{ page.venue }}</dd>
                   <dt>City</dt>

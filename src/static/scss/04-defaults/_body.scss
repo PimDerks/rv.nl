@@ -16,6 +16,10 @@ body {
   margin-right: auto;
 }
 
+.stack > .wrapper > *:first-child {
+  margin-top: 0;
+}
+
 .wrapper {
   padding-left: baseline(2);
   padding-right: baseline(2);

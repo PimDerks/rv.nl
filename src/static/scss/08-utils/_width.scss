@@ -10,6 +10,7 @@
   $width-dimensions:    nth($width, 3);
 
   .u-#{$width-fraction}\/#{$width-total} {
+    flex-basis: $width-dimensions !important;
     width: $width-dimensions !important;
   }
 }
@@ -30,6 +31,7 @@
       $width-dimensions:    nth($width, 3);
 
       .u-#{$width-fraction}\/#{$width-total}\@#{$name} {
+        flex-basis: $width-dimensions !important;
         width: $width-dimensions !important;
       }
 

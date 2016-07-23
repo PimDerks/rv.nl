@@ -6,9 +6,9 @@
                 Subnavigation
             </h2>
             <ul class="a-list-nav a-list-bare">
-                {% for page in page.submenu %}
-                    <li{% if page.active %} class="sub-nav__current"{% endif %}>
-                        <a href="{{ page.link }}">{{ page.title }}</a>
+                {% for p in page.submenu %}
+                    <li{% if p.active %} class="sub-nav__current"{% endif %}>
+                        <a href="{{ p.link }}">{{ p.title }}</a>
                     </li>
                 {% endfor %}
             </ul>

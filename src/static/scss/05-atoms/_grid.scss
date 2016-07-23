@@ -19,6 +19,10 @@ $gutter-half: baseline(1);
     padding: baseline(2) 0;
 }
 
+.stack--brand {
+    background: #666;
+}
+
 .m-layout {
     margin: 0 #{-$gutter-half};
     padding: 0;

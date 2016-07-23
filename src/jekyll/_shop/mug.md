@@ -1,6 +1,6 @@
 ---
 title: Mug
-format: merchandise
+format: accessories
 img: http://lorempixel.com/480/480
 price: 5
 ---

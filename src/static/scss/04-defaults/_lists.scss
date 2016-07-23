@@ -64,14 +64,22 @@ dl {
     dt {
         font-family: $font-display;
         font-weight: bold;
-        opacity: .25;
+        opacity: .33;
         text-transform: uppercase;
     }
 
     dd + dt {
-        border-top: 1px solid grey;
         margin-top: baseline(.5);
         padding-top: baseline(.5);
+
+        &::before {
+            border-top: 1px solid currentColor;
+            content: '';
+            display: block;
+            margin-bottom: baseline(1);
+            opacity: .33;
+            width: 100%;
+        }
     }
 
 }

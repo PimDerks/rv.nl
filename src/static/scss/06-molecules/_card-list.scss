@@ -1,0 +1,23 @@
+.m-card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  > li {
+    float: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: stretch;
+
+    > .m-layout__item {
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - #{baseline(2)});
+
+      > * {
+        height: 100%;
+      }
+    }
+
+  }
+
+}

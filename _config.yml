@@ -22,8 +22,12 @@ keep_files: [static]
 
 # Build settings
 markdown: kramdown
-
 permalink: /news/:title/
+
+# Pagination
+paginate: 6
+paginate_path: "/news/:num/"
+gems: [jekyll-paginate]
 
 # Defaults
 defaults:
