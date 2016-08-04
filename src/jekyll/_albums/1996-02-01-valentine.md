@@ -2,8 +2,6 @@
 type: album
 title: Valentine
 date: 1996-02-01
-label: Polydor
-catalog: 529 325-2, POCP-7080 (Japan)
 img: /images/albums/valentine.jpg
 discs:
   - tracks:

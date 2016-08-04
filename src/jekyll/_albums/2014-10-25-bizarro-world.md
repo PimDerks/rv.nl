@@ -2,8 +2,6 @@
 type: album
 title: Bizarro World
 date: 2014-10-25
-label: CNR
-catalog: 123-456-789
 img: /images/albums/bizarro-world.jpg
 discs:
   - tracks:
@@ -19,11 +17,4 @@ discs:
     - Save Our Souls
     - Black Rain
     - The Mistake
-credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
 ---

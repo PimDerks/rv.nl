@@ -21,7 +21,7 @@ layout: default
 
                   <div class="box a-inner a-inner+">
 
-                    <h2 class="section-title u-heading-gamma">Lyrics</h2>
+                    <h2 class="u-heading-gamma">Lyrics</h2>
 
                     {% assign content = content | strip_newlines %}
                     {% if content == '' %}
@@ -39,7 +39,7 @@ layout: default
               <div class="m-layout__item">
                 <section>
                   <div class="box box--dimmed a-inner a-inner+">
-                    <h2 class="section-title u-heading-gamma">About this song</h2>
+                    <h2 class="u-heading-gamma">About this song</h2>
                     {{ page.about | markdownify }}
                   </div>
                 </section>
@@ -52,7 +52,7 @@ layout: default
               <div class="m-layout__item">
 
                 <section class="box box--brand a-inner box--island">
-                  <h2 class="section-title u-heading-delta">Credits</h2>
+                  <h2 class="u-heading-delta">Credits</h2>
                   <dl>
                     {% for credit in page.credits %}
                     <dt>{{ credit.key }}</dt>
@@ -89,7 +89,7 @@ layout: default
               <div class="m-layout__item">
 
                 <section class="box box--inv a-inner">
-                  <h2 class="section-title u-heading-delta">Credits</h2>
+                  <h2 class="u-heading-delta">Credits</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada arcu sed enim dictum finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis feugiat consequat metus quis luctus. Phasellus ultrices nunc nec sem finibus, ullamcorper tincidunt odio laoreet. Sed sem nisi, tristique ac pulvinar vitae, pellentesque a libero.</p>
                 </section>
 
@@ -98,7 +98,7 @@ layout: default
               <div class="m-layout__item">
 
                 <nav class="box box--brand a-inner">
-                  <h2 class="section-title u-heading-delta">Subnavigation</h2>
+                  <h2 class="u-heading-delta">Subnavigation</h2>
                   {% assign songs = site.songs | sort: 'title' %}
                   {% for song in songs %}
                   {% if song.title == page.title %}

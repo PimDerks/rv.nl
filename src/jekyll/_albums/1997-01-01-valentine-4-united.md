@@ -2,8 +2,6 @@
 type: album
 title: Valentine 4&#58; United
 date: 1997-06-20
-label: Polydor
-catalog: POCP-7234
 img: /images/albums/united.jpg
 discs:
   - tracks:

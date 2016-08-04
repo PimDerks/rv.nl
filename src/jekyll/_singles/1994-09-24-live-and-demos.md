@@ -2,8 +2,6 @@
 type: single
 title: Live & Demos
 date: 1994-09-24
-label: CNR
-catalog: 123-456-789
 img: /images/singles/live-demos.jpg
 discs:
   - tracks:
@@ -19,7 +17,4 @@ discs:
       subtitle: Live
     - title: No Turning Back
       subtitle: Live
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---

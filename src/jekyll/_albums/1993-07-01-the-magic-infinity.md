@@ -2,8 +2,6 @@
 type: album
 title: The Magic Infinity
 date: 1993-07-01
-label: Polydor
-catalog: 519 062-2, POCP-1418 (Japan)
 img: /images/albums/the-magic-infinity.jpg
 discs:
   - tracks:

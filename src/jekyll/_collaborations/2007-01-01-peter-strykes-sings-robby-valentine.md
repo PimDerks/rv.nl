@@ -3,8 +3,6 @@ type: collaboration
 title: Peter Strykes Sings Robby Valentine
 artist: Peter Strykes
 date: 2007-01-01
-label: CNR
-catalog: 123-456-789
 img: /images/collaborations/peter-strykes-sings-robby-valentine.jpg
 discs:
   - tracks:

@@ -2,8 +2,6 @@
 type: album
 title: The Most Beautiful Pain
 date: 2006-03-24
-label: CNR
-catalog: 123-456-789
 img: /images/albums/the-most-beautiful-pain.jpg
 discs:
   - tracks:

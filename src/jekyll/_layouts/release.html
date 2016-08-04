@@ -27,10 +27,6 @@ layout: default
                         <dd>{{ page.title }}</dd>
                         <dt>Released</dt>
                         <dd>{{ page.date | date: '%B %Y' }}</dd>
-                        <dt>Label</dt>
-                        <dd>{{ page.label }}</dd>
-                        <dt>Catalognumber</dt>
-                        <dd>{{ page.catalog }}</dd>
                       </dl>
                     </div>
                   </div>
@@ -55,6 +51,7 @@ layout: default
 
               <div class="m-layout__item">
 
+                {% if page.credits %}
                 <div class="box box--dimmed a-inner a-inner+">
                   <h2 class="u-heading-gamma">Credits</h2>
                   <dl>
@@ -64,6 +61,7 @@ layout: default
                     {% endfor %}
                   </dl>
                   </div>
+                {% endif %}
 
               </div>
 

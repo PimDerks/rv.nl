@@ -2,8 +2,6 @@
 type: compilation
 title: Androgenius
 date: 2008-12-17
-label: CNR
-catalog: 123-456-789
 img: /images/compilations/androgenius.jpg
 discs:
   - title: Future?
@@ -46,11 +44,4 @@ discs:
       - title: I Believe In You
         subtitle: 2008 recording
       - Rise And Shine (Reprise) The Victory Anthem
-credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
 ---

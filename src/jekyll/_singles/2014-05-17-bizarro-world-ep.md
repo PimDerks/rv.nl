@@ -2,8 +2,6 @@
 type: single
 title: Bizarro World EP
 date: 2014-05-17
-label: CNR
-catalog: 123-456-789
 img: /images/singles/bizarro-world-ep.jpg
 discs:
   - tracks:
@@ -12,7 +10,4 @@ discs:
     - Close The Door
     - Keeping The Force
     - Life On Mars?
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---

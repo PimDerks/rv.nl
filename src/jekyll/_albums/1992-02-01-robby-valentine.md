@@ -2,8 +2,6 @@
 type: album
 title: Robby Valentine
 date: 1992-02-14
-label: Polydor
-catalog: 847 986-2, POCP-1417 (Japan)
 img: /images/albums/robby-valentine.jpg
 discs:
   - tracks:

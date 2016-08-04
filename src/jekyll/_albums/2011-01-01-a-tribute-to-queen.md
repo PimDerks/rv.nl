@@ -2,8 +2,6 @@
 type: album
 title: A Tribute To Queen
 date: 2011-01-01
-label: CNR
-catalog: 123-456-789
 img: /images/albums/a-tribute-to-queen.jpg
 discs:
   - tracks:
@@ -17,11 +15,4 @@ discs:
     - Bicycle Race
     - We Will Rock You
     - We Are The Champions
-credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
 ---

@@ -25,17 +25,11 @@ submenu:
 <div class="stack">
     <div class="wrapper">
 
-        <p class="u-lead">{{ page.intro }}</p>
+        <p class="u-lead u-lead--intro">
+            {{ page.intro }}
+        </p>
 
-        <ul class="m-layout u-group a-list-bare">
-            {% for release in site.collaborations reversed %}<li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
-            <div class="m-layout__item">
-
-                {% include components/card-release.html %}
-
-            </div>
-        </li>{% endfor %}
-        </ul>
+        {% include components/card-releases-list.html data=site.collaborations %}
 
     </div>
 </div>

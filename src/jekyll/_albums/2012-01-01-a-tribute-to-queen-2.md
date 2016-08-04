@@ -2,8 +2,6 @@
 type: album
 title: A Tribute To Queen 2
 date: 2012-01-01
-label: CNR
-catalog: 123-456-789
 img: /images/albums/a-tribute-to-queen-2.jpg
 discs:
   - tracks:
@@ -19,11 +17,4 @@ discs:
       subtitle: One Vision/Now I'm Here/Hammer To Fall
     - Crazy Little Thing Called Love
     - God Save The Queen
-credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
 ---

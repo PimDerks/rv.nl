@@ -2,8 +2,6 @@
 type: album
 title: No Sugar Added
 date: 1998-01-01
-label: CNR
-catalog: 123-456-789
 img: /images/albums/no-sugar-added.jpg
 discs:
   - tracks:

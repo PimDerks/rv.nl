@@ -2,8 +2,6 @@
 type: single
 title: I Believe In Music
 date: 1997-07-01
-label: CNR
-catalog: 123-456-789
 img: /images/singles/i-believe-in-music.jpg
 discs:
   - tracks:
@@ -13,7 +11,4 @@ discs:
       subtitle: Demo
     - title: Broken Dreams
       subtitle: Demo
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---

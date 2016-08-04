@@ -114,18 +114,7 @@ h5,
 }
 
 .u-lead--intro {
-  margin-left: auto;
-  margin-right: auto;
+  margin: baseline(3) auto;
   max-width: 70%;
   text-align: center;
-
-  &::after {
-    content: '';
-    display: block;
-    height: 0;
-    border-top: 1px dashed rgba(black, .25);
-    margin: baseline(2) auto baseline(3);
-    width: 10em;
-  }
-
 }

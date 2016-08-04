@@ -2,8 +2,6 @@
 type: album
 title: Believing Is Seeing
 date: 2000-01-01
-label: CNR
-catalog: 123-456-789
 img: /images/albums/believing-is-seeing.jpg
 discs:
   - tracks:

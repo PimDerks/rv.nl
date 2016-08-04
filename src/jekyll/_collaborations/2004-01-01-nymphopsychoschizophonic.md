@@ -3,8 +3,6 @@ type: collaboration
 title: Nymphopsychoschizophonic
 artist: V
 date: 2004-01-01
-label: CNR
-catalog: 123-456-789
 img: /images/collaborations/nymphopsychoschizophonic.jpg
 discs:
   - tracks:

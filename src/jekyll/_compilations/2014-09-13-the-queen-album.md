@@ -2,8 +2,6 @@
 type: compilation
 title: The Queen Album
 date: 2014-09-13
-label: CNR
-catalog: 123-456-789
 img: /images/compilations/the-queen-album.jpg
 discs:
   - tracks:
@@ -34,11 +32,4 @@ discs:
     - We Will Rock You
     - We Are The Champions
     - God Save The Queen
-credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
 ---

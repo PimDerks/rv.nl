@@ -2,8 +2,6 @@
 type: single
 title: Save Myself
 date: 2009-01-01
-label: CNR
-catalog: 123-456-789
 img: /images/singles/save-myself.jpg
 discs:
   - tracks:
@@ -14,7 +12,4 @@ discs:
     - title: Save Myself
       subtitle: Semi-Acoustic Version
     - The Lonesome Road
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---

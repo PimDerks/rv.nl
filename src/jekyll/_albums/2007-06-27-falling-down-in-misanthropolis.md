@@ -2,8 +2,6 @@
 type: album
 title: Falling Down In Misanthropolis
 date: 2007-06-27
-label: CNR
-catalog: 123-456-789
 img: /images/albums/falling-down-in-misanthropolis.jpg
 discs:
   - tracks:
@@ -23,13 +21,6 @@ discs:
       subtitle: 2006 Mix, Japanese bonustrack
     - title: The Mistake
       subtitle: Japanese bonustrack
-credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
 ---
 
 (Robby) Valentine’s 8th studio album ‘Falling Down In Misanthropolis’ gives an honest inside look into the personal turmoil of the mind of it’s creator during the time of recording and writing of it.
