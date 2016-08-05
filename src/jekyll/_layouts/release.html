@@ -49,9 +49,8 @@ layout: default
 
               </div>
 
+              {% if page.credits %}
               <div class="m-layout__item">
-
-                {% if page.credits %}
                 <div class="box box--dimmed a-inner a-inner+">
                   <h2 class="u-heading-gamma">Credits</h2>
                   <dl>
@@ -61,9 +60,10 @@ layout: default
                     {% endfor %}
                   </dl>
                   </div>
-                {% endif %}
-
               </div>
+              {% endif %}
+
+
 
               {% assign content = content | strip_newlines %}
               {% if content == "nope"  %}

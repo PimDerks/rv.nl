@@ -4,17 +4,6 @@
 
 .m-releases-list {
 
-  > li:nth-child(3n+1){
-    clear: left;
-  }
-
-  @include respond-min('xl'){
-
-    > li:nth-child(3n+1){
-      clear: none;
-    }
-
-  }
 
 }
 
