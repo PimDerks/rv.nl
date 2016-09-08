@@ -4,7 +4,6 @@
     <header class="o-hero"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}>
 {% endif %}
 
-
     <div class="wrapper">
         <div class="o-hero__inner">
 
@@ -34,4 +33,17 @@
             </p>
         </div>
     </div>
+
+    {% if page.intro %}
+        <div class="box box--dimmed">
+            <div class="stack">
+                <div class="wrapper">
+                    <p class="u-lead">
+                        {{ page.intro }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
 </header>

@@ -1,6 +1,7 @@
 ---
 title: Robby Valentine releases new vinyl and scores two record deals
 date: 2016-01-27
+intro: With the release of his latest album, ‘Bizarro World’, Valentine has found a renewed success with concerts at home and abroad, and above all a contract with one of the largest record companies in Japan, King Records.
 ---
 
 <p class="u-lead">With the release of his latest album, ‘Bizarro World’, Valentine has found a renewed success with concerts at home and abroad, and above all a contract with one of the largest record companies in Japan: King Records.</p>

@@ -15,7 +15,12 @@
 }
 
 .box--dimmed {
-  background: rgba(black, .025);
+  background: rgba(black, .25);
+  color: white;
+}
+
+.box--dimmed a {
+  color: white;
 }
 
 .box--brand {

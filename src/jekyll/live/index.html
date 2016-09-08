@@ -6,44 +6,42 @@ intro: Valentine performances come in many forms, ranging from intimate solo per
 layout: default
 ---
 
-{% include components/hero.html %}
+{% include components/hero.html detail=true %}
 
 {% include components/subnavigation.html %}
 
 <div class="stack">
     <div class="wrapper">
 
-        <p class="u-lead u-lead--intro">
-            {{ page.intro }}
-        </p>
+        <div class="box a-inner">
+            <h2 class="section-title">Upcoming gigs</h2>
 
-        <h2 class="section-title">Upcoming gigs</h2>
-
-        <ol class="a-list-bare a-list-zebra m-events">
-            {% assign curDate = site.time | date: '%s' %}
-            {% for gig in site.live %}
-            {% assign gigDate = gig.date | date: '%s' %}
-                {% if gigDate >= curDate %}
-                    <li>
-                        {% include components/event.html %}
-                    </li>
-                {% endif %}
-            {% endfor %}
-        </ol>
-
-        <h2 class="section-title">Past gigs</h2>
-
-        <ol class="a-list-bare a-list-zebra m-events">
-            {% assign curDate = site.time | date: '%s' %}
-            {% for gig in site.live reversed %}
+            <ol class="a-list-bare a-list-zebra m-events">
+                {% assign curDate = site.time | date: '%s' %}
+                {% for gig in site.live %}
                 {% assign gigDate = gig.date | date: '%s' %}
-                {% if gigDate < curDate %}
-                    <li>
-                        {% include components/event.html %}
-                    </li>
-                {% endif %}
-            {% endfor %}
-        </ol>
+                    {% if gigDate >= curDate %}
+                        <li>
+                            {% include components/event.html %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+
+            <h2 class="section-title">Past gigs</h2>
+
+            <ol class="a-list-bare a-list-zebra m-events">
+                {% assign curDate = site.time | date: '%s' %}
+                {% for gig in site.live reversed %}
+                    {% assign gigDate = gig.date | date: '%s' %}
+                    {% if gigDate < curDate %}
+                        <li>
+                            {% include components/event.html %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+        </div>
 
     </div>
 </div>

@@ -18,16 +18,12 @@ submenu:
   active: true
 ---
 
-{% include components/hero.html %}
+{% include components/hero.html detail=true %}
 
 {% include components/subnavigation.html %}
 
 <div class="stack">
     <div class="wrapper">
-
-        <p class="u-lead u-lead--intro">
-            {{ page.intro }}
-        </p>
 
 <!-- First loop for 'non-alphabetical' songs -->
 {% assign songs = site.songs | where: 'sort', 'false' %}

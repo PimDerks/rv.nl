@@ -4,8 +4,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  text-align: center;
   text-shadow: 0 0 .5em rgba(black, .5);
   transition: background-position 250ms ease-out;
+
+  @include respond-min('l'){
+    text-align: left;
+  }
 
   .o-hero__inner {
     padding-bottom: baseline(6);
