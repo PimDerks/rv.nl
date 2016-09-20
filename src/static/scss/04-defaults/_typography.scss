@@ -168,10 +168,10 @@ h5,
 .u-subheading-alpha,
 .u-subheading-beta,
 .u-subheading-gamma {
-  color: get-color('beta');
+  color: get-color('brand-off');
 
   a {
-    color: get-color('beta');
+    color: get-color('brand-off');
     text-decoration: none;
 
     &:focus,
@@ -182,6 +182,10 @@ h5,
 
   }
 
+}
+
+h3 {
+  // color: get-color('white');
 }
 
 h1,

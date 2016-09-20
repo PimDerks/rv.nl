@@ -24,6 +24,9 @@ $gutter-half: baseline(1);
 }
 
 .m-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 #{-$gutter-half};
     padding: 0;
 
@@ -34,11 +37,12 @@ $gutter-half: baseline(1);
 
     .m-layout__row {
         clear: both;
+        display: flex;
     }
 
     .m-layout__column {
-        float: left;
-        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
 
     .m-layout__row--rev .m-layout__column {

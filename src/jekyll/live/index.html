@@ -4,6 +4,11 @@ subtitle: I believe in music
 img: /images/headers/5.jpg
 intro: Valentine performances come in many forms, ranging from intimate solo performances to full-band performances. Below you'll find the upcoming dates, as well as an overview of past gigs.
 layout: default
+submenu:
+- title: Upcoming gigs
+  link: #upcoming
+- title: Past gigs
+  link: #2016
 ---
 
 {% include components/hero.html detail=true %}
@@ -28,19 +33,35 @@ layout: default
                 {% endfor %}
             </ol>
 
-            <h2 class="section-title">Past gigs</h2>
+            {% for gig in site.live reversed %}
 
-            <ol class="a-list-bare a-list-zebra m-events">
+                {% assign currentdate = gig.date | date: "%Y" %}
+
+                {% if currentdate != date %}
+                    {% unless forloop.first %}
+                        </ol>
+                    {% endunless %}
+
+                    <h2 class="section-title" id="gigs-{{ current-date }}">{{ currentdate }}</h2>
+
+                    <ol class="a-list-bare a-list-zebra m-events">
+                    {% assign date = currentdate %}
+                {% endif %}
+
                 {% assign curDate = site.time | date: '%s' %}
-                {% for gig in site.live reversed %}
-                    {% assign gigDate = gig.date | date: '%s' %}
-                    {% if gigDate < curDate %}
-                        <li>
-                            {% include components/event.html %}
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ol>
+                {% assign gigDate = gig.date | date: '%s' %}
+
+                {% if curDate > gigDate %}
+                    <li>
+                        {% include components/event.html %}
+                    </li>
+                {% endif %}
+
+                {% if forloop.last %}
+                    </ol>
+                {% endif %}
+
+            {% endfor %}
         </div>
 
     </div>
