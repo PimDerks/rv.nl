@@ -1,21 +1,40 @@
 {% for item in site[include.pages] %}
-    {{ item.title }}
     {% if item.title == page.title %}
         {% assign currentIndex = forloop.index0 %}
     {% endif %}
 {% endfor %}
 
-{% assign current = site[include.pages][currentIndex] %}
-<p>Current: {{ current.title }} </p>
+<div class="box box--brand sub-nav">
+    <nav>
+        <div class="wrapper">
+            <h2 class="u-screenreader">
+                Subnavigation
+            </h2>
+            <ul class="a-list-nav a-list-bare">
 
-{% assign prevIndex = currentIndex|plus:1 %}
-{% if prevIndex >= 0 and site[include.pages][prevIndex] %}
-    {% assign prev = site[include.pages][prevIndex] %}
-    <p>Prev: <a href="{{ prev.url }}">{{ prev.title }}</a> </p>
-{% endif %}
+                {% assign current = site[include.pages][currentIndex] %}
+                {% assign prevIndex = currentIndex|plus:1 %}
+                {% assign nextIndex = currentIndex|minus:1 %}
 
-{% assign nextIndex = currentIndex|minus:1 %}
-{% if nextIndex >= 0 and site[include.pages][nextIndex] %}
-    {% assign next = site[include.pages][nextIndex] %}
-    <p>Next: <a href="{{ next.url }}">{{ next.title }}</a></p>
-{% endif %}
+                {% if nextIndex >= 0 and site[include.pages][nextIndex] %}
+                {% assign next = site[include.pages][nextIndex] %}
+                <li>
+                    <a href="{{ next.url }}">{{ next.title }}</a>
+                </li>
+                {% endif %}
+
+                <li class="sub-nav__current">
+                    <a href="{{ current.url }}">{{ current.title }}</a>
+                </li>
+
+                {% if prevIndex >= 0 and site[include.pages][prevIndex] %}
+                {% assign prev = site[include.pages][prevIndex] %}
+                <li>
+                    <a href="{{ prev.url }}">{{ prev.title }}</a>
+                </li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </nav>
+</div>
