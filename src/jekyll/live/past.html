@@ -21,21 +21,24 @@ submenu:
 
             {% for gig in site.live reversed %}
 
-                {% assign currentdate = gig.date | date: "%Y" %}
+                {% assign gigYear = gig.date | date: "%Y" %}
+                {% assign gigDate = gig.date | date: "%s" %}
+                {% assign curDate = site.time | date: "%s" %}
+                {% assign curYear = site.time | date: "%Y" %}
 
-                {% if currentdate != date %}
+                {% if gigYear != previousYear %}
+
                     {% unless forloop.first %}
-                        </ol>
+                            </ol>
                     {% endunless %}
 
-                    <h2 class="section-title" id="gigs-{{ current-date }}">{{ currentdate }}</h2>
+                    {% if gigYear <= curYear %}
+                        <h2 class="section-title" id="gigs-{{ gigYear }}">{{ gigYear }}</h2>
+                        <ol class="a-list-bare a-list-zebra m-events">
+                    {% endif %}
 
-                    <ol class="a-list-bare a-list-zebra m-events">
-                    {% assign date = currentdate %}
+                    {% assign previousYear = gigYear %}
                 {% endif %}
-
-                {% assign curDate = site.time | date: '%s' %}
-                {% assign gigDate = gig.date | date: '%s' %}
 
                 {% if curDate > gigDate %}
                     <li>

@@ -3,11 +3,10 @@
 \*------------------------------------*/
 
 a {
-  color: get-color('brand');
-  text-decoration: none;
+  color: get-color('black');
 
   @include attention {
-    color: get-color('brand');
+    color: get-color('black');
     text-decoration: none;
   }
 

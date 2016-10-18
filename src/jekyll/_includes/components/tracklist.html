@@ -22,10 +22,12 @@
     <li class="m-tracklist__track">
 
         <div class="m-tracklist__title">
-            {% if songData %}
-                <a href="{{ songData.url }}">{{ songTitle }}</a>
+            {% if page.lyrics == true %}
+                {% if songData and page.lyrics == true %}
+                    <a href="{{ songData.url }}">{{ songTitle }}</a>
+                {% endif %}
             {% else %}
-            {{ songTitle }}
+                {{ songTitle }}
             {% endif %}
         </div>
         {% if track.subtitle %}

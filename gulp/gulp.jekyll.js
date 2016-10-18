@@ -12,7 +12,15 @@ var gulp = require('gulp'),
 module.exports.copy = function(){
 
     var spawn = require('child_process').spawn;
-    var jekyll = spawn('jekyll', ['serve', '--watch', '--incremental'], {stdio: 'inherit'});
+    var tasks = ['serve', '--watch', '--incremental'];
+
+    if(util.env.build) {
+        tasks.push('JEKYLL_ENV=production')
+    } else {
+        tasks.push('JEKYLL_ENV=development')
+    }
+
+    var jekyll = spawn('jekyll', tasks, {stdio: 'inherit'});
 
 };
 
