@@ -1,41 +1,53 @@
 .page-nav {
-  background: rgba(black, .75);
+  background: rgba(black, .85);
+  bottom: 0;
   display: none;
   font-family: $font-display;
-  margin-top: baseline(5);
-  left: baseline(3.5);
-  right: baseline(3.5);
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
   text-transform: uppercase;
   text-shadow: 0 .1em .1em rgba(black, .5);
+  top: 0;
   transition: background-color 500ms ease-out;
   z-index: 10000;
 
+  &:target {
+    display: block;
+  }
+
+  .page-nav__close {
+    position: absolute;
+    right: baseline(1);
+    top: baseline(1);
+
+    &::before {
+      content: 'X';
+    }
+  }
+
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     margin-bottom: 0;
     width: 100%;
   }
 
   li {
-    display: inline-block;
-    flex: 1 1 50%;
+    display: block;
     padding: 0 baseline(1);
     position: static;
     text-align: center;
   }
 
   .page-nav__logo {
-    flex: 4 0 200px;
-    position: relative;
-    z-index: 1;
 
     a {
       background: url('../img/logo.svg') no-repeat center center;
       height: baseline(6);
       left: 50%;
-      position: absolute;
       text-indent: -999em;
       top: 50%;
       transition: all 250ms ease-out;
@@ -46,7 +58,7 @@
   }
 
   a {
-    @extend %u-heading-delta;
+    @extend %u-heading-gamma;
     border-bottom: none;
     color: white;
     cursor: pointer;
@@ -95,31 +107,48 @@
 
 }
 
-@include respond-min('l'){
+@include respond-min('m'){
 
   .page-nav {
-    display: block;
-    margin-top: baseline(2);
+    background-color: transparent;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
 
     > ul {
-      flex-direction: row;
+      position: relative;
+      transform: none;
 
       > li {
-        flex-basis: auto;
+        display: inline-block;
+        padding-left: baseline(.5);
+        padding-right: baseline(.5);
       }
 
     }
 
-    .page-nav__logo {
-      flex: 4 1 auto;
+    .page-nav__close {
+      display: none;
     }
 
-    &.page-nav--fixed {
-      left: baseline(2);
-      right: baseline(2);
-      margin-top: 0;
-      position: fixed;
+  }
+
+}
+
+@include respond-min('l'){
+
+  .page-nav {
+
+    > ul {
+
+      > li {
+        padding-left: baseline(1.25);
+        padding-right: baseline(1.25);
+      }
+
     }
+
 
   }
 

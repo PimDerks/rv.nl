@@ -3,13 +3,11 @@
 \*------------------------------------*/
 
 a {
-  border-bottom: 1px solid #ffe400;
-  color: black;
+  color: get-color('brand');
   text-decoration: none;
 
   @include attention {
-    border-bottom-color: black;
-    color: black;
+    color: get-color('brand');
     text-decoration: none;
   }
 

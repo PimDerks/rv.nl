@@ -25,11 +25,15 @@ discs:
 
 (Robby) Valentine’s 8th studio album ‘Falling Down In Misanthropolis’ gives an honest inside look into the personal turmoil of the mind of it’s creator during the time of recording and writing of it.
 ‘Misanthropolis’, the name of Valentine’s studio and residence , a combination of the words misanthrope and Metropolis.
+
 The story of Michael Douglas´ starring movie ‘Falling Down’ was taken as a metaphor for the lyrical content of this album and included in the album title.
+
 Every instrument on this CD is played by RV, as well is the production.
 Apart from two cover versions (Abba’s SOS and Queen’s Flick Of The Wrist) all songs are originally written by RV.
+
 This album is the darkest in Robby’s now 8th album counting oeuvre .
 Heavier, more brutal sound and lyric wise. Emotional . Down to earth., but still with his familiar angelic choirs and his characteristic clear sounding voice.
 Clever production and arrangements all done in “Misanthropolis” his personal recording studio.
+
 This time not so many piano’s appear. Mainly it became a guitar oriented album that suited the attitude of the powerful compositions best.
 Valentine sounds heavier than ever.

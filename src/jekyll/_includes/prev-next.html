@@ -1,4 +1,4 @@
-{% for item in site[include.pages] %}
+{% for item in include.items %}
     {% if item.title == page.title %}
         {% assign currentIndex = forloop.index0 %}
     {% endif %}
@@ -12,12 +12,12 @@
             </h2>
             <ul class="a-list-nav a-list-bare">
 
-                {% assign current = site[include.pages][currentIndex] %}
+                {% assign current = include.items[currentIndex] %}
                 {% assign prevIndex = currentIndex|plus:1 %}
                 {% assign nextIndex = currentIndex|minus:1 %}
 
-                {% if nextIndex >= 0 and site[include.pages][nextIndex] %}
-                {% assign next = site[include.pages][nextIndex] %}
+                {% if nextIndex >= 0 and include.items[nextIndex] %}
+                {% assign next = include.items[nextIndex] %}
                 <li>
                     <a href="{{ next.url }}">{{ next.title }}</a>
                 </li>
@@ -27,8 +27,8 @@
                     <a href="{{ current.url }}">{{ current.title }}</a>
                 </li>
 
-                {% if prevIndex >= 0 and site[include.pages][prevIndex] %}
-                {% assign prev = site[include.pages][prevIndex] %}
+                {% if prevIndex >= 0 and include.items[prevIndex] %}
+                {% assign prev = include.items[prevIndex] %}
                 <li>
                     <a href="{{ prev.url }}">{{ prev.title }}</a>
                 </li>
@@ -38,3 +38,4 @@
         </div>
     </nav>
 </div>
+

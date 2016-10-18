@@ -22,19 +22,19 @@ submenu:
 <div class="stack">
     <div class="wrapper">
 
-        <h2>Latest releases</h2>
+        <h2 class="section-title u-diapositive">Latest releases</h2>
 
         <ul class="m-layout u-group a-list-bare">
             {% assign items = site.albums|reverse %}
             {% for release in items limit:1 %}
-                <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
+                <li class="m-layout__column u-1/2 u-1/4@l">
                     <div class="m-layout__item">
-                        <h3>Albums</h3>
+                        <h3 class="u-center">Albums</h3>
 
                         {% include components/card-release.html %}
 
                         <p>
-                            <a href="/music/albums/">View all albums</a>
+                            <a href="/music/albums/" class="button button--block">All albums</a>
                         </p>
                     </div>
                 </li>
@@ -42,14 +42,14 @@ submenu:
 
             {% assign items = site.singles|reverse %}
             {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
+            <li class="m-layout__column u-1/2 u-1/4@l">
                 <div class="m-layout__item">
-                    <h3>Singles</h3>
+                    <h3 class="u-center">Singles</h3>
 
                     {% include components/card-release.html %}
 
                     <p>
-                        <a href="/music/singles/">View all singles</a>
+                        <a href="/music/singles/" class="button button--block">All singles</a>
                     </p>
                 </div>
             </li>
@@ -57,14 +57,14 @@ submenu:
 
             {% assign items = site.compilations|reverse %}
             {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
+            <li class="m-layout__column u-1/2 u-1/4@l">
                 <div class="m-layout__item">
-                    <h3>Compilations</h3>
+                    <h3 class="u-center">Compilations</h3>
 
                     {% include components/card-release.html %}
 
                     <p>
-                        <a href="/music/compilations/">View all compilations</a>
+                        <a href="/music/compilations/" class="button button--block">All compilations</a>
                     </p>
                 </div>
             </li>
@@ -72,18 +72,20 @@ submenu:
 
             {% assign items = site.collaborations|reverse %}
             {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
+            <li class="m-layout__column u-1/2 u-1/4@l">
                 <div class="m-layout__item">
-                    <h3>Collaborations</h3>
+                    <h3 class="u-center">Collaborations</h3>
 
                     {% include components/card-release.html %}
                     <p>
-                        <a href="/music/collaborations/">View all collaborations</a>
+                        <a href="/music/collaborations/" class="button button--block">All collaborations</a>
                     </p>
                 </div>
             </li>
             {% endfor %}
         </ul>
 
+
     </div>
 </div>
+

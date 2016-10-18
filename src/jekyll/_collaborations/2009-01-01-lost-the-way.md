@@ -7,7 +7,4 @@ img: /images/collaborations/lost-the-way.jpg
 discs:
   - tracks:
     - Lost The Way
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---

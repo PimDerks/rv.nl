@@ -1,80 +1,99 @@
 ---
 layout: default
-title: Welcome to the official Robby Valentine website!
-subtitle: Bizarro World
+title: Robby Valentine
+subtitle: The official website
+isHomepage: true
 ---
 
-{% include components/hero.html %}
+{% include components/hero.html homepage=true %}
 
-<div class="stack">
 <div class="wrapper">
 
-    <h2 class="section-title">Latest News</h2>
-    <ol class="m-layout u-group a-list-bare m-card-list">
-      {% for post in site.posts reversed | limit: 3 %}<li class="m-layout__column u-1/1 u-1/2@m u-1/3@l">
-      <div class="m-layout__item">
+    <h2 class="u-screenreader">Highlights</h2>
 
-        {% include components/card-news.html %}
+    {% include components/carousel.html %}
 
-      </div>
-    </li>{% endfor %}
-    </ol>
-</div>
 </div>
 
-<div class="stack stack--brand">
+
+
+<div class="stack">
     <div class="wrapper">
 
-    <h2 class="section-title u-diapositive">Latest Releases</h2>
+        <h2 class="section-title u-diapositive">Latest News</h2>
 
-    <ul class="m-layout u-group a-list-bare">
-        {% assign items = site.albums|reverse %}
-        {% for release in items limit:1 %}
-        <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
-            <div class="m-layout__item">
+        <ul class="m-layout u-group a-list-bare m-card-list">
+            {% assign posts = site.posts %}
+            {% for post in posts limit:3 %}
+                <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l">
+                    <div class="m-layout__item">
+                        {% include components/card-news.html %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
 
-                {% include components/card-release.html %}
+        <div class="u-center">
+            <a href="/news/" class="button">Go to news archives</a>
+        </div>
 
-            </div>
-        </li>
-        {% endfor %}
-
-        {% assign items = site.singles|reverse %}
-        {% for release in items limit:1 %}
-        <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
-            <div class="m-layout__item">
-
-                {% include components/card-release.html %}
-
-            </div>
-        </li>
-        {% endfor %}
-
-        {% assign items = site.compilations|reverse %}
-        {% for release in items limit:1 %}
-        <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
-            <div class="m-layout__item">
-
-                {% include components/card-release.html %}
-
-            </div>
-        </li>
-        {% endfor %}
-
-        {% assign items = site.collaborations|reverse %}
-        {% for release in items limit:1 %}
-        <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l u-1/4@xl">
-            <div class="m-layout__item">
-
-                {% include components/card-release.html %}
-
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
-
-
-
-
+    </div>
 </div>
+
+<div class="stack stack--darkest">
+    <div class="wrapper">
+
+        <h2 class="section-title u-diapositive">Latest Releases</h2>
+
+        <ul class="m-layout u-group a-list-bare">
+            {% assign items = site.albums|reverse %}
+            {% for release in items limit:1 %}
+            <li class="m-layout__column u-1/1 u-1/2@m u-1/4@l">
+                <div class="m-layout__item">
+
+                    {% include components/card-release.html %}
+
+                </div>
+            </li>
+            {% endfor %}
+
+            {% assign items = site.singles|reverse %}
+            {% for release in items limit:1 %}
+            <li class="m-layout__column u-1/1 u-1/2@m u-1/4@l">
+                <div class="m-layout__item">
+
+                    {% include components/card-release.html %}
+
+                </div>
+            </li>
+            {% endfor %}
+
+            {% assign items = site.compilations|reverse %}
+            {% for release in items limit:1 %}
+            <li class="m-layout__column u-1/1 u-1/2@m u-1/4@l">
+                <div class="m-layout__item">
+
+                    {% include components/card-release.html %}
+
+                </div>
+            </li>
+            {% endfor %}
+
+            {% assign items = site.collaborations|reverse %}
+            {% for release in items limit:1 %}
+            <li class="m-layout__column u-1/1 u-1/2@m u-1/4@l">
+                <div class="m-layout__item">
+
+                    {% include components/card-release.html %}
+
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <div class="u-center">
+            <a href="/music/" class="button">View all releases</a>
+        </div>
+
+    </div>
 </div>

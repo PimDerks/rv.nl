@@ -1,12 +1,45 @@
 .page-header {
-  height: baseline(4);
-  // position: fixed;
-  position: absolute;
+  background: rgba(black, .15);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  // text-shadow: 0 .05em .1em rgba(black, .5);
   z-index: 100;
+
+  @include respond-min('m'){
+    text-align: center;
+  }
+}
+
+@include respond-min('m'){
+
+  .page-header {
+    position: absolute;
+  }
+
+  .page-header .wrapper {
+
+  }
+
+  .page-header .logo {
+    display: inline-block;
+    float: none;
+    position: relative;
+    vertical-align: middle;
+  }
+
+}
+
+.page-header h1 {
+
+}
+
+.menu-link {
+  float: right;
+
+  @include respond-min('m'){
+    display: none;
+  }
 }
 
 .site-header {

@@ -31,21 +31,15 @@ submenu:
 
                         <main>
 
-                            {% for cat in page.categories %}
-                            {% assign products = site.shop | where:'format', cat %}
-
-                            <h2 class="section-title" id="{{ cat }}">{{ cat | capitalize }}</h2>
-
                             <ul class="m-layout m-card-list m-releases-list u-group a-list-bare">
-                                {% for product in products %}
-                                <li class="m-layout__column u-1/1 u-1/2@m">
+                                {% for product in site.shop %}
+                                <li class="m-layout__column u-1/1 u-1/2@s u-1/3@m u-1/4@l">
                                     <div class="m-layout__item">
                                         {% include components/card-product.html index=index %}
                                     </div>
                                 </li>
                                 {% endfor %}
                             </ul>
-                            {% endfor %}
 
                         </main>
 

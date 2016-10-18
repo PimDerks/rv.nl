@@ -29,21 +29,17 @@ discs:
       subtitle: Japanese bonustrack
     - title: How Do You Sleep At Night
       subtitle: Japanese bonustrack
-credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
 ---
 
 The first song I wrote meant for this album was “THE WAY TO EUPHORICA”.
 Wrote it on the night of June 15, 2002. That day was the day of my father’s death 5 years before. I let a tape recorder running while playing the piano and lit a candle. Maybe he could help me. I definitely wanted the new album to become a heavy one.(I find it easier to find guitar riffs on the piano).
 But after playing for hours nothing good came to me.
+
 At the time I listened a lot to ‘The Eagles’ and “I Can’t Tell You Why” was stuck in my head . And that night the only worthwhile tune that came out was something inspired by that song. But it was far from the metal sound I was looking for. About 10 months later I recorded it with Juan on drums. Trying to get a bit of that 70’s feel to it, like the Eagles did, with a Fender Rhodes sound, dry low tuned snare… As the all-round musician he is, Juan understood immediately, gave it the perfect feel. I was very pleased with the result, showing a totally different sound, but it didn’t make the album eventually. I already decided then the album shouldn’t be just a pop-metal album, like my initial idea. But more divers because of the variety in styles with the new songs I’d written. But this one was so totally different that it stood out too much. And with 17 tracks, the album was too long already anyway.
+
 But since Universal Japan decided to put the album out after all and requested bonus-tracks, I took the opportunity to use it after all. Did a new mix of it and together with 2 other newer songs it completes the total of 20 or actually 21 tracks for the Japanese version.
-The other extra-tracks are called : ‘CAN’T TAKE NOMORE’ and ‘HOW DO YOU SLEEP AT NIGHT’. They’re songs I wrote for Kyssmet, the project I do with vocalist Alyss Andico. Only these versions have of course my vocal in stead of hers. “Can’t Take..” was the first I wrote after TMBP was done. Lyrically it fits with the theme of the album and the heaviness of it goes well with the first 2-3 tracks. ‘How Do You Sleep’ is a typical ‘Valentine’ song I think. Bombastic and harmonic , lots of choirs where this time Alyss and Peter Strykes join me. Where the European version ends rather sad but sweet with the piano ballad ‘Can’t Get Over You’, the Japanese version ends kind of bitter and heavy. Because of the last 2 songs. And in that way a perfect circle and connection to the first track “I Should Have Known Better“.
+
+The other extra-tracks are called : ‘CAN’T TAKE NO MORE’ and ‘HOW DO YOU SLEEP AT NIGHT’. They’re songs I wrote for Kyssmet, the project I do with vocalist Alyss Andico. Only these versions have of course my vocal in stead of hers. “Can’t Take..” was the first I wrote after TMBP was done. Lyrically it fits with the theme of the album and the heaviness of it goes well with the first 2-3 tracks. ‘How Do You Sleep’ is a typical ‘Valentine’ song I think. Bombastic and harmonic , lots of choirs where this time Alyss and Peter Strykes join me. Where the European version ends rather sad but sweet with the piano ballad ‘Can’t Get Over You’, the Japanese version ends kind of bitter and heavy. Because of the last 2 songs. And in that way a perfect circle and connection to the first track “I Should Have Known Better“.
 
 Another nice detail is that this album is mastered by Peter van ‘t Riet,
 my best friend and drummer in Spoiled Brats, the band I was in back in ’85. Though when the band split up we lost contact.

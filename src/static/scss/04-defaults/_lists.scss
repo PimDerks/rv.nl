@@ -26,14 +26,18 @@ ul {
         }
     }
 }
+
 ol {
     counter-reset: ol;
     padding-left: 0;
+
     > li {
         counter-increment: ol;
         padding-left: baseline(1.5);
         position: relative;
+
         &::before {
+            color: get-color('brand-off');
             content: counter(ol) '.';
             display: inline-block;
             line-height: 1.5rem;
@@ -44,7 +48,9 @@ ol {
             width: 1.5rem;
             vertical-align: bottom;
         }
+
     }
+
 }
 
 ul ol,

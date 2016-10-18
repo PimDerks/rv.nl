@@ -16,7 +16,17 @@ $gutter: baseline(2);
 $gutter-half: baseline(1);
 
 .stack {
-    padding: baseline(2) 0;
+    padding: baseline(3) 0;
+}
+
+.stack--dark {
+    background: #373737;
+    color: get-color('white');
+}
+
+.stack--darkest {
+    background: #212121;
+    color: get-color('white');
 }
 
 .stack--brand {
@@ -38,6 +48,8 @@ $gutter-half: baseline(1);
     .m-layout__row {
         clear: both;
         display: flex;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .m-layout__column {

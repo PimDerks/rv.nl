@@ -11,6 +11,8 @@ layout: default
 
       {% include components/hero.html detail=true %}
 
+      {% include prev-next.html items=site.posts %}
+
       <div class="stack">
         <div class="wrapper">
 
@@ -19,18 +21,18 @@ layout: default
               <div class="m-layout__column u-1/1 u-2/3@l">
                 <div class="m-layout__item">
 
-                  <section>
+                    {% if page.img %}
+                      <div class="a-img u-ratio u-ratio--16:9" style="background-image:url('{{ page.img }}');">
+                          <img src="{{ page.img}}" alt="" />
+                      </div>
+                    {% endif %}
 
-                    <div class="a-img u-ratio u-ratio--16:9" style="background-image:url('http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg');">
-                        <img src="http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg" alt="" />
-                    </div>
                     <div class="box a-inner a-inner+">
-
-                      <h2 class="u-heading-gamma">{{ page.title }}</h2>
+                      {% if page.lead %}
+                        <p class="u-lead">{{ page.lead }}</p>
+                      {% endif %}
                       {{ content }}
                     </div>
-
-                  </section>
 
                 </div>
 
@@ -49,38 +51,6 @@ layout: default
                   </div>
 
                 </div>
-
-                <!-- <div class="m-layout__item">
-
-                  <nav class="box box--brand a-inner">
-                    <h2 class="section-title u-heading-delta">Subnavigation</h2>
-
-                    {% for post in site.posts %}
-                      {% if post.url == page.url %}
-                        {% assign post_index0 = forloop.index0 %}
-                        {% assign post_index1 = forloop.index %}
-                      {% endif %}
-                    {% endfor %}
-
-                    {% for post in site.posts %}
-                      {% if post_index0 == forloop.index %}
-                        {% assign next_post = post.url %}
-                      {% endif %}
-                      {% if post_index1 == forloop.index0 %}
-                        {% assign prev_post = post.url %}
-                      {% endif %}
-                    {% endfor %}
-
-                    {% if next_post %}
-                    <a href="{{ next_post }}">Next Post</a> <br>
-                    {% endif %}
-                    {% if prev_post %}
-                    <a href="{{ prev_post }}">Previous Post</a> <br>
-                    {% endif %}
-
-                  </nav>
-
-                </div> -->
 
               </div>
             </div>

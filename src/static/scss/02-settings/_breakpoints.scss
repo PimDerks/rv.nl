@@ -3,12 +3,12 @@
 \*------------------------------------*/
 
 $breakpoints:(
-    xs: 16em, /* 320/20 = iPhone portrait */
-    s:  24em, /* 480/20 = iPhone landscape */
-    m:  38em, /* 768/20 = iPad landscape */
-    l:  50em, /* 1000/20 = iPad portrait */
-    xl: 64em, /* 1280/20 = laptop */
-    xxl: 72em); /* 1440/20 = laptop full screen */
+    xs: 20em, /* 320/16 = iPhone portrait */
+    s:  30em, /* 480/16 = iPhone landscape */
+    m:  48em, /* 768/16 = iPad landscape */
+    l:  60em, /* 960/16 = iPad portrait */
+    xl: 80em, /* 1280/16 = laptop */
+    xxl: 90em); /* 1440/16 = laptop full screen */
 
 /**
  * Z-index management

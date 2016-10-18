@@ -1,0 +1,14 @@
+- title: Live
+  subtitle: Don't miss these shows!
+  button: View all events
+  link: /live/
+  image: /images/headers/4.jpg
+- title: Discography
+  button: View all music
+  link: /music/
+  image: /images/headers/5.jpg
+- title: Japan 2017
+  subtitle: It's finally happening!
+  button: Read the press release
+  link: /music/
+  image: /images/headers/3.jpg

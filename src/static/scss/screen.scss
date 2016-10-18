@@ -13,3 +13,35 @@
   margin: baseline(2) 0;
   text-align: center;
 }
+
+.flickity-prev-next-button {
+  margin: 0;
+}
+
+.flickity-page-dots {
+  bottom: baseline(1) !important;
+  position: absolute;
+
+  > li {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+
+  }
+
+}
+
+.pagination {
+  overflow: hidden;
+
+  .pagination__prev {
+    float: left;
+  }
+
+  .pagination__next {
+    float: right;
+  }
+
+}

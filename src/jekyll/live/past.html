@@ -19,8 +19,6 @@ submenu:
 <div class="stack">
     <div class="wrapper">
 
-        <div class="box a-inner">
-
             {% for gig in site.live reversed %}
 
                 {% assign currentdate = gig.date | date: "%Y" %}
@@ -50,7 +48,6 @@ submenu:
                 {% endif %}
 
             {% endfor %}
-        </div>
 
     </div>
 </div>

@@ -1,11 +1,16 @@
 <header class="page-header">
     <div class="wrapper">
-    <h1 class="u-screenreader">Robby Valentine</h1>
-    <div class="page-nav">
+
+    <h1 class="logo">
+        <a href="/">
+            <img src="/static/img/logo.svg" alt="{{ site.title }}" />
+        </a>
+    </h1>
+
+    <a href="#menu" class="menu-link">+</a>
+
+    <nav class="page-nav" id="menu">
         <ul class="a-list-bare">
-            <li class="page-nav__logo">
-                <a href="/"><span class="u-screenreader">Home</span></a>
-            </li>
             <li>
                 <a href="/news/"><span>News</span></a>
             </li>
@@ -25,6 +30,10 @@
                 <a href="/contact/"><span>Contact</span></a>
             </li>
         </ul>
-    </div>
+        <a href="#" class="page-nav__close">
+            <span class="u-screenreader">Close menu</span>
+        </a>
+    </nav>
+
     </div>
 </header>

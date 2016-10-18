@@ -1,25 +1,21 @@
 button,
 .button {
-  background: white;
-  border: baseline(.1) solid black;
-  border-radius: baseline(2);
-  color: black;
+  background: rgba(black, .15);
+  border: baseline(.1) solid get-color('white');
+  color: get-color('white');
   display: inline-block;
   font-family: 'Open Sans';
   font-weight: bold;
-  margin: baseline(2) auto;
   text-transform: uppercase;
-  padding: baseline(.7);
+  text-align: center;
+  padding: baseline(.75) baseline(1);
   text-decoration: none;
+  white-space: nowrap;
 
   @include attention {
-    background: black;
+    background: rgba(black, .5);
     color: white;
     text-decoration: none;
-
-    &::after {
-      color: #FFE400;
-    }
   }
 
 }
@@ -46,4 +42,8 @@ button,
     border-color: #FFE400;
     color: black;
   }
+}
+
+.button--block {
+  display: block;
 }

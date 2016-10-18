@@ -6,9 +6,7 @@ module.exports = function(browserSync){
     return function(){
 
         browserSync.init({
-            server: {
-                baseDir: config.roots.www
-            },
+            proxy: "localhost:4000",
             open: false,
             notify: false
         });

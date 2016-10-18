@@ -19,22 +19,22 @@ submenu:
 <div class="stack">
     <div class="wrapper">
 
-        <div class="box a-inner">
+
             <h2 class="section-title">Upcoming gigs</h2>
 
-            <ol class="a-list-bare a-list-zebra m-events">
-                {% assign curDate = site.time | date: '%s' %}
-                {% for gig in site.live %}
-                {% assign gigDate = gig.date | date: '%s' %}
-                    {% if gigDate >= curDate %}
-                        <li>
-                            {% include components/event.html %}
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ol>
 
-        </div>
+                <ol class="a-list-bare a-list-zebra m-events">
+                    {% assign curDate = site.time | date: '%s' %}
+                    {% for gig in site.live %}
+                    {% assign gigDate = gig.date | date: '%s' %}
+                        {% if gigDate >= curDate %}
+                            <li>
+                                {% include components/event.html %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+
 
     </div>
 </div>

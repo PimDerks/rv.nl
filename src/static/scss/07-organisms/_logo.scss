@@ -1,14 +1,14 @@
 .logo {
-  // display: none;
-  background: rgba(black, .99);
-  left: 0;
-  width: baseline(3.5);
-  // position: fixed;
-  position: absolute;
-  top: 0;
+  float: left;
+  margin: baseline(1) 0;
+  width: baseline(3);
 
-  &:hover {
-    background-color: black;
+  @include respond-min('m'){
+    width: baseline(4);
+  }
+
+  img {
+    margin-bottom: 0;
   }
 
   .logo2 {

@@ -1,5 +1,5 @@
 <dl class="a-event">
-    <dt class="u-screenreader">Datum</dt>
+    <dt class="u-screenreader">Date</dt>
     <dd class="a-event__date">
         <div class="a-date">
             <div class="a-date__day">{{ gig.date | date: "%d"}}</div>
@@ -11,14 +11,25 @@
             <div class="a-date__year">{{ gig.date | date: "%Y"}}</div>
         </div>
     </dd>
-    <dt class="u-screenreader">Venue</dt>
-    <dd class="a-event__venue">{{ gig.venue }}</dd>
-    <dt class="u-screenreader">City</dt>
-    <dd class="a-event__city">{{ gig.city }}</dd>
-    <dt class="u-screenreader">Country</dt>
-    <dd class="a-event__country">{{ gig.country }}</dd>
-    <dt class="u-screenreader">Note</dt>
-    <dd class="a-event__note">{{ gig.note }}</dd>
-    <!-- <dt class="u-screenreader">Details</dt>
-    <dd class="a-event__details"><a href="{{ gig.url }}">Details</a></dd> -->
+
+    {% if gig.venue %}
+        <dt class="u-screenreader">Venue</dt>
+        <dd class="a-event__venue">{{ gig.venue }}</dd>
+    {% endif %}
+
+    {% if gig.city %}
+        <dt class="u-screenreader">City</dt>
+        <dd class="a-event__city">{{ gig.city }}</dd>
+    {% endif %}
+
+    {% if gig.country %}
+        <dt class="u-screenreader">Country</dt>
+        <dd class="a-event__country">{{ gig.country }}</dd>
+    {% endif %}
+
+    {% if gig.note %}
+        <dt class="u-screenreader">Note</dt>
+        <dd class="a-event__note">{{ gig.note }}</dd>
+    {% endif %}
+
 </dl>

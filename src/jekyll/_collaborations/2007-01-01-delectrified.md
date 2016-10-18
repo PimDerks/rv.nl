@@ -22,7 +22,4 @@ discs:
       subtitle: Guitar Version
     - title: Lost The Way
       subtitle: Guitar Version
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---

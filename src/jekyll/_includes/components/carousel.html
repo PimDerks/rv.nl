@@ -1,0 +1,23 @@
+<div class="carousel" >
+    {% for slide in site.data.carousel %}
+    <div class="carousel-slide" style="background-image: url('{{ slide.image }}');">
+        <div class="box box--dimmed carousel-slide__cta">
+            <h3 class="u-heading-alpha carousel-slide__title">{{ slide.title }}</h3>
+            {% if slide.title %}
+                <p class="carousel-slide__subtitle">{{ slide.subtitle }}</p>
+            {% endif %}
+            <a href="{{ slide.link }}" class="button">{{ slide.button }}</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+    var elem = document.querySelector('.carousel');
+    var flkty = new Flickity( elem, {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        pageDots: false
+    });
+</script>

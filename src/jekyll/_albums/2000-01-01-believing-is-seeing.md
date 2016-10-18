@@ -17,63 +17,69 @@ discs:
     - Truth Will Out
     - Fear Of Heights
     - Now, Forever And 1 Day
-credits:
-  - key: Artwork
-    value: Robby Valentine
-  - key: Production
-    value: John Sonneveld
-  - key: Mixing
-    value: Robby Valentine
 ---
 
 This is my favourite until then.
 Make Way (For The Messenger) was the first song I recorded for it.
 For the bridges and ending I needed a female voice . Guitarist Vinnie Kay recommended his friend Sigrid Slagmolen. And she did great, sung the parts exactly like I had in mind.
+
 Then the preparations of the V tour ’99 came in between so I continued after coming back from Japan, November 1999.
 I’m a big fan of Tori Amos and at that time I listened to her CD’s a lot. That made me want to have a lot of songs in that direction on the new album. Actually I thought of becoming the male version of Tori Amos but only came up with two songs a bit in that style : ‘Not In A Million Years’ and ‘Believing Is Seeing’.
 Inspired by the way we recorded the basics of the first V album, I wanted to do the same on this one : Start out with recording drums & piano ‘live’ in the studio, without click-track. To get most of the human-feel . With speeding up and going down in tempo whenever needed in a track .
+
 The only negative aspect is that I had to save up all the songs. I always prefer recording right after writing something and capture the intention exactly how it’s meant.
 With recording the drums first, without a metronome , it all depends on the drummer. He can make or break a song. I built up such a good and musical relationship with Juan van Emmerloot that he always understood exactly what I liked him to play.
 And his great all-round skills plus his ability of not only memorizing lots of new information, but also playing them with the right intensity , made it possible to record this way. I explained the songs on the spot and we would record them together. The piano was in a different booth so the drums didn’t leak to the piano microphones. And we kept eye contact through the glass.
 That’s my favourite time of recording .
+
 With the first V album we recorded the same way plus Valensia was playing guitar to it. Those times being in the studio where exciting. But it could only be done with musician’s who are on the same wavelength. Otherwise it’s a nightmare.
 You know, it is very boring building up a song all by yourself. But that’s the fate you get wanting to play all the instruments by yourself, haha.
 Recorded it at the Fendalsound studios with engineer Hans van Vondelen.
 We could get along well and he also mixed the album .
+
 Recording ‘Fear Of Heights’ was a good experience. I wanted a ‘John Bonham’-feel for the drums. Juan nailed down a great track, got it all right. And the sound Hans made was perfect. He understood. And that made me decide he should do the mixing as well. After recording drums and piano I continued with all the other stuff at home in my Isolation cell.
 But before starting all that I had to come up with enough songs I was satisfied with. So I had to postpone the dates a couple of times.
+
 The theme from ‘Fear Of Heights’ I took from something I recorded for Dutch illusionist Hans Klok. In 1998 I wrote some music for his magic shows.
 He had an act with elephants, made them disappear, and wanted me to write music for that.
 With that slow Bonham-drum beat like in Led Zeppelin’s ‘Kashmir’ I always visualize a herd of elephants slowly passing by. So I went for that approach . But in the end he used some jungle type of sounds with that elephant act.
 I wanted to have a track on the album with that beat and I remembered the theme. Coincidentally my friend Peter Strykes is a huge Led Zeppelin and Robert Plant fan. And in the chorus I had this high voice in mind that would be perfect for Peter. And it was. The lyrics are about wanting to be on the good side but having difficulties getting rid of some addictions that prevent getting there. .
 That one together with ‘What In The World I’m Waiting For’ are my favourites.
+
 ‘What In The World…’ was influenced a lot by Sparks and Abba.
 I think this has one of the best verses I’ve written.
 The song’s about a ‘don’t know what you got until it’s gone’-feeling.
 When you find yourself in the position where you think you have it all, and that your life is all planned out for you. And you ask yourself : “Is this all there is to life ?” And then the situation changed , and you realized that what you had is what you ever really wanted.
+
 ‘A New Tomorrow’ was written with Brian May in my mind. It was supposed to be the anthem for Euro 2000. The soccer tournament held in Holland and Belgium that time. But as in so many occasions, also this didn’t happen in the end.
+
 Obviously ‘Dear Dad’ is for my father.
 You can hear the grand piano slightly being out of tune.
 I use to hit the keys rather abusive and the piano always gets out of tune quickly.
 But the guy who tuned the piano already came back a couple of times to do it again, and he refused to show up once more. Not if I was playing .
 But hell, it gave the song a bit more of a melancholic feel to it.
 I love the drum fill with the reversed reverb Juan comes in with .
+
 ‘The way To Get Home’ is a sort of AOR type of song.
 I wanted to arrange it differently. And once I heard a Disney song by Phil Collins I decided to arrange the verses a bit like that, with the cello and all.
 In the chorus’ there’s Johan Willems again. Especially in these type of songs our voices work together so well.
+
 Initially I wanted to get famous guitar players on each song to do the solos.
 But I already knew note by note what I wanted to hear so I decided to do it myself. How could I ask a guitar-hero to become a puppet ? They wouldn’t accept that . It would be ridiculous. Actually the experience with ‘Over And Over Again’ made me step away from the idea. At that time producer Humberto Gattica took it to LA for mixing and let Michael Landau do the solo.
 I wasn’t there. And he did a good solo and played very nice parts, but it wasn’t what I had in mind. And I have to live with it for the rest of my life .
 ‘The Eternal Light’ , a ballad in the ‘Over And Over’ tradition, I wrote after coming back from the V tour. For a change that one came out fast.
+
 The final track ‘Now, Forever and 1 day’ was recorded separately.
 Did everything at home . All the other songs were done. And I was fed up with recording. My mind was elsewhere at that time and I didn’t take too much time with this. I thought the album should end with a long epic sort of song.
 But my heart wasn’t with long epical tracks like that anymore. And I think you can hear that. Well, I do.
+
 This is the first album with the Black/Yellow V/symbol logo.
 And the last with some sort of spiritual meaning in the title.
 ‘If you believe hard in something , it’ll come true eventually’
 Personally I was already tired at that time with that sort of talk.
 I want reality.
 But we all need ‘hope’ to survive, so it seemed the right thing to do.
+
 The symbol, that is actually a Latin cross with a crown and symbolizes Victory in Christian symbolism, only emphasizes that.
 Actually I had the title for the song from a Christmas movie, corny isn’t it ??
 I guess I couldn’t come up with a better title for the album....

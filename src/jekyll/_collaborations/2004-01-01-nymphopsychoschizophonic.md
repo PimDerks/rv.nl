@@ -32,9 +32,6 @@ discs:
       subtitle: Valensia
     - title: Why
       subtitle: Valentine
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---
 
 Lorem.

@@ -1,6 +1,7 @@
 ---
 title: Two new dates
 date: 2011-10-23
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 ---
 
 <p>Robby will be performing at the Queen Fanclub Day in Koningshof Maassluis on Nov 5th. More info at www.queenfanclub.nl. For this occasion he recorded an entire album of Queen Covers titled: A Tribute To Queen. The Album will be on sale at the Fanclub Day and later here on RV.com as well.</p>

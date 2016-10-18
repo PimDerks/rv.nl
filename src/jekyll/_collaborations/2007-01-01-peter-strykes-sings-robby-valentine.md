@@ -16,7 +16,4 @@ discs:
     - Il Piano Di Vento (Nocturne Op. 9 No. 2)
     - Joyful (An Die Freude)
     - Winding Road
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---

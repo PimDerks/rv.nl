@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 module.exports.copy = function(){
 
     var spawn = require('child_process').spawn;
-    var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
+    var jekyll = spawn('jekyll', ['serve', '--watch', '--incremental'], {stdio: 'inherit'});
 
 };
 
@@ -44,7 +44,7 @@ module.exports.watch = function(){
     src.push(config.roots.src + '/**/*.html');
     src.push(config.roots.src + '/**/*.md');
 
-    var tasks = ['output-html'];
+    var tasks = [];
     if(!util.env.killlint) {
         tasks.push('lint-html');
     }

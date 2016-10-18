@@ -32,7 +32,4 @@ discs:
       subtitle: Valensia
     - title: Victory
       subtitle: Valensia
-credits:
-  - key: Artwork
-    value: Robby Valentine
 ---

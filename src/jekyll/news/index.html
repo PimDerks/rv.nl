@@ -1,14 +1,12 @@
 ---
 title: News
-subtitle: Lorem ipsum dolor sit amet
+subtitle: What's happening in Bizarro World?
 img: /images/headers/2.jpg
 layout: default
 submenu:
-- title: Latest
+- title: Latest news
   link: /news/
   active: true
-- title: Archive
-  link: /news/archives/
 ---
 
 {% include components/hero.html %}
@@ -20,17 +18,27 @@ submenu:
 
         <main>
 
-            <h2 class="section-title">Latest headlines</h2>
+            <h2 class="section-title u-screenreader">Headlines</h2>
 
             <ol class="a-list-bare m-layout m-card-list u-group">
                 {% for post in paginator.posts %}
-                    <li class="m-layout__column u-1/1 u-1/2@l">
-                        <div class="m-layout__item">
-                            {% include components/card-news.html %}
-                        </div>
-                    </li>
+                <li class="m-layout__column u-1/1 u-1/2@s u-1/3@m">
+                    <div class="m-layout__item">
+                        {% include components/card-news.html %}
+                    </div>
+                </li>
                 {% endfor %}
             </ol>
+
+            <div class="pagination">
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path }}" class="button pagination__prev">Previous</a>
+                {% endif %}
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path }}" class="button pagination__next">Next</a>
+                {% endif %}
+            </div>
+            >
 
         </main>
 

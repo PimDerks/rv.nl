@@ -1,6 +1,7 @@
 ---
 title: Thank you Spain!
 date: 2010-11-02
+img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 ---
 
 <p>Robby, Lilo, Andre, Johan and Paul would like to say GRAÇIAS to all the Spanish fans for their incredible support during the show at Ritmo Y Compas, Madrid on 23rd October 2010. Also a big Thank you to the organisation Vicalva Rock Productions and the support band Th3 Reasons ! It was a magical evening, which we really enjoyed every minute of, and it was a real pleasure to meet you all after the show!!!  We will never forget the warm welcome you guys gave us!</p>

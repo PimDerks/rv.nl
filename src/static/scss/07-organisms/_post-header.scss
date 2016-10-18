@@ -6,15 +6,16 @@
   position: relative;
   text-align: center;
   text-shadow: 0 0 .5em rgba(black, .5);
-  transition: background-position 250ms ease-out;
+  transition: background-position 250ms linear;
+  width: 100%;
 
-  @include respond-min('l'){
+  @include respond-min('m'){
     text-align: left;
   }
 
   .o-hero__inner {
-    padding-bottom: baseline(6);
-    padding-top: baseline(16);
+    padding-bottom: baseline(3);
+    padding-top: baseline(8);
     transition: opacity 250ms ease-out;
   }
 
@@ -32,7 +33,10 @@
   // Title
   .o-hero__title {
     color: get-color('white');
-    max-width: 12em;
+
+    @include respond-min('m') {
+      max-width: 12em;
+    }
   }
 
   // Subtitle
@@ -44,6 +48,13 @@
     padding: baseline(.5);
   }
 
+}
+
+.o-hero--homepage {
+  .o-hero__inner {
+    padding-top: baseline(12);
+    padding-bottom: baseline(8);
+  }
 }
 
 .o-hero--detail {
