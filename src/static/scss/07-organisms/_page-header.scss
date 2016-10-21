@@ -1,15 +1,104 @@
 .page-header {
-  background: rgba(black, .15);
+  background: rgba(black, .25);
+  height: baseline(3);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
 
+  .logo {
+    height: baseline(2);
+    left: baseline(.5);
+    margin: 0;
+    position: absolute;
+    top: baseline(.5);
+    width: auto;
+  }
+
+  .logo img {
+    height: baseline(2);
+    margin-bottom: 0;
+    vertical-align: top;
+  }
+
   @include respond-min('m'){
     // text-align: center;
   }
 }
+
+// Menu link
+
+.menu-link {
+  background: black;
+  height: baseline(2);
+  width: baseline(2);
+  position: absolute;
+  top: baseline(.5);
+  right: baseline(.5);
+  z-index: 10001;
+
+  .menu-icon {
+
+    &::before,
+    &::after {
+      background: white;
+      content: '';
+      display: block;
+      left: 50%;
+      position: absolute;
+      margin-top: -2px;
+      height: 4px;
+      transition: all 250ms ease-out;
+      transform: translateX(-50%);
+      top: 25%;
+      width: 70%;
+    }
+
+    &::after {
+      box-shadow: 0 -.75em 0 white;
+      top: 75%;
+    }
+
+  }
+
+}
+
+// Checkbox hack
+.menu-toggle {
+  height: baseline(2);
+  width: baseline(2);
+  position: absolute;
+  top: baseline(.5);
+  right: baseline(.5);
+
+
+  &:checked + .menu-link .menu-icon {
+
+    &::before,
+    &::after {
+      top: 50%;
+    }
+
+    &::before {
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+
+    &::after {
+      box-shadow: none;
+      transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+
+  }
+
+  &:checked ~ .page-nav {
+    display: block;
+  }
+
+}
+
+
+
 
 @include respond-min('m'){
 

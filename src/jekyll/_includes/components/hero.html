@@ -1,10 +1,4 @@
-{% if include.detail and include.homepage %}
-<header class="o-hero o-hero--homepage">
-{% elsif include.detail %}
-    <header class="o-hero o-hero--detail">
-{% else %}
-    <header class="o-hero"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}>
-{% endif %}
+<header class="o-hero"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}>
 
     <div class="wrapper">
         <div class="o-hero__inner">
@@ -32,21 +26,9 @@
 
             </p>
         </div>
-        {% if include.homepage %}
-            <div style="padding-bottom: 28.125%"></div>
-        {% endif %}
+
     </div>
 
-    <!-- {% if page.intro %}
-        <div class="box box--gradient">
-            <div class="stack">
-                <div class="wrapper">
-                    <p class="u-lead">
-                        {{ page.intro }}
-                    </p>
-                </div>
-            </div>
-        </div>
-    {% endif %} -->
-
 </header>
+
+{% include components/breadcrumbs.html %}

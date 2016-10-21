@@ -7,7 +7,11 @@
         </a>
     </h1>
 
-    <a href="#menu" class="menu-link">+</a>
+    <input type="checkbox" class="menu-toggle" id="menu-input" />
+    <label class="menu-link" for="menu-input">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="u-screenreader">Menu</span>
+    </label>
 
     <nav class="page-nav" id="menu">
         <ul class="a-list-bare">
@@ -30,10 +34,9 @@
                 <a href="/contact/"><span>Contact</span></a>
             </li>
         </ul>
-        <a href="#" class="page-nav__close">
-            <span class="u-screenreader">Close menu</span>
-        </a>
     </nav>
 
     </div>
 </header>
+
+

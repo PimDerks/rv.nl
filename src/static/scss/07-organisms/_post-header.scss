@@ -1,6 +1,6 @@
 .o-hero {
-  background-image: url('/images/headers/2.jpg');
-  background-position: top center;
+  background-image: url('/images/headers/header.jpg');
+  background-position: 85% 0;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -9,14 +9,23 @@
   transition: background-position 250ms linear;
   width: 100%;
 
+  @include respond-min('s'){
+    background-position: 85% 0;
+  }
+
   @include respond-min('m'){
+    background-position: top right;
     text-align: left;
   }
 
   .o-hero__inner {
     padding-bottom: baseline(3);
-    padding-top: baseline(8);
+    padding-top: baseline(6);
     transition: opacity 250ms ease-out;
+
+    @include respond-min('m'){
+      padding-bottom: baseline(4);
+    }
   }
 
   // Overlay
@@ -46,21 +55,6 @@
     display: inline-block;
     margin-bottom: 0;
     padding: baseline(.5);
-  }
-
-}
-
-.o-hero--homepage {
-  .o-hero__inner {
-    padding-top: baseline(12);
-    padding-bottom: baseline(8);
-  }
-}
-
-.o-hero--detail {
-
-  .o-hero__inner {
-    padding-top: baseline(9);
   }
 
 }

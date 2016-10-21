@@ -7,7 +7,7 @@ layout: default
   <div class="u-group">
   <main>
 
-    {% include components/hero.html detail=true %}
+    {% include components/hero.html %}
 
     <div class="stack">
       <div class="wrapper">
@@ -55,32 +55,9 @@ layout: default
                   <h2 class="u-heading-delta">Credits</h2>
                   <dl>
                     {% for credit in page.credits %}
-                    <dt>{{ credit.key }}</dt>
-                    <dd>{{ credit.value }}</dd>
+                      <dt>{{ credit.key }}</dt>
+                      <dd>{{ credit.value }}</dd>
                     {% endfor %}
-                    <dt>Appears on</dt>
-                    <dd>
-                      <ul class="a-list-bare">
-                        {% for appearance in page.appears %}
-
-                        {% if appearance.type == 'single' %}
-                        {% assign src = site.singles %}
-                        {% elsif appearance.type == 'album' %}
-                        {% assign src = site.albums %}
-                        {% elsif appearance.type == 'misc' %}
-                        {% assign src = site.collaborations %}
-                        {% endif %}
-
-                        {% for release in src %}
-                        {% if release.title == appearance.title %}
-                        <li>
-                          <a href="{{ release.url }}">{{ release.title }}</a>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                        {% endfor %}
-                      </ul>
-                    </dd>
                   </dl>
                 </section>
 

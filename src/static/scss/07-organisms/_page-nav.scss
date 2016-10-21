@@ -13,10 +13,6 @@
   transition: background-color 500ms ease-out;
   z-index: 10000;
 
-  &:target {
-    display: block;
-  }
-
   .page-nav__close {
     position: absolute;
     right: baseline(1);
