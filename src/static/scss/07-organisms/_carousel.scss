@@ -1,4 +1,5 @@
 .carousel-slide {
+  background-position: center center;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -12,6 +13,7 @@
 
   .carousel-slide__inner {
     left: 50%;
+    max-width: 70%;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -24,8 +26,6 @@
     & a {
       color: get-color('white');
     }
-
-    min-width: 8em;
     text-shadow: 0 0 .25em rgba(black, .5);
   }
 

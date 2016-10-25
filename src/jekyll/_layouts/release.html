@@ -1,11 +1,6 @@
 ---
 layout: default
 ---
-<div class="post" itemscope itemtype="http://schema.org/BlogPosting" xmlns="http://www.w3.org/1999/html">
-
-  <main>
-
-    {% include components/hero.html %}
 
     {% if page.type == 'single' %}
       {% assign items = site.singles %}
@@ -16,8 +11,6 @@ layout: default
     {% elsif page.type == 'compilation' %}
       {% assign items = site.compilations %}
     {% endif %}
-
-    {% include prev-next.html items=items %}
 
     <div class="stack stack--dark">
       <div class="wrapper">
@@ -30,7 +23,7 @@ layout: default
 
                 <div class="box box--dimmed">
                     <h2 class="u-screenreader">Artwork</h2>
-                    <img src="{{ page.img }}" alt="{{ page.title }}" style="margin-bottom:0;" />
+                    <img src="{{ page.img }}" alt="{{ page.title }}" class="u-stacked u-full-width" />
                     <div class="a-inner a-inner+">
                       <h2 class="u-heading-gamma">Information</h2>
                       <dl>
@@ -112,7 +105,3 @@ layout: default
       </div>
     </div>
     {% endif %} -->
-
-  </main>
-
-</div>

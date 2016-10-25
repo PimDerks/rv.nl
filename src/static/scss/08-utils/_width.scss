@@ -1,6 +1,10 @@
 /* Utils for widths
 ----------------------------------------------- */
 
+.u-full-width {
+  width: 100%;
+}
+
 // defaults
 @for $j from 1 through length($widths) {
 

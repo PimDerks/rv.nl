@@ -1,6 +1,6 @@
 .o-hero {
   background-image: url('/images/headers/header.jpg');
-  background-position: 85% 0;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -10,11 +10,11 @@
   width: 100%;
 
   @include respond-min('s'){
-    background-position: 85% 0;
+
   }
 
   @include respond-min('m'){
-    background-position: top right;
+
     text-align: left;
   }
 

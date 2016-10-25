@@ -9,8 +9,10 @@
 
     <div class="page-content">
 
-        {% include components/hero.html %}
-        {% include components/breadcrumbs.html %}
+        {% if page.isHomepage != true %}
+            {% include components/hero.html %}
+            {% include components/breadcrumbs.html %}
+        {% endif %}
 
         {{ content }}
 
