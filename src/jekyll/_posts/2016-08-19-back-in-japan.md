@@ -2,10 +2,14 @@
 title: Back in Japan
 img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
 date: 2016-08-19
-lead: We're announcing TWO shows in TOKYO Japan, next year!
+categories: live, announcement
+lead: "We're announcing TWO shows in TOKYO Japan, next year!"
 ---
 
-<p>January 20 2017, Robby Valentine presents: A Tribute to Queen (Valentine's ultimate tribute to his favorite band of all times)</p>
-<p>January 21 2017: Robby Valentine's Bizarro World (containing new and old Valentine classics: From GOD, to Bizarro World, and everything in between)</p>
-<p>We're super excited to be back on Japanese soil again. Both shows will be 120 minute extravaganza's.</p>
-<p>For more info, <a href="http://www.mandicompany.co.jp/ValentineSP.html" target="_blank">click here</a>.</p>
+January 20, 2017: Robby Valentine presents: A Tribute to Queen (Valentine's ultimate tribute to his favorite band of all times).
+
+January 20, 2017: Robby Valentine's Bizarro World (containing new and old Valentine classics: From GOD, to Bizarro World, and everything in between)
+
+We're super excited to be back on Japanese soil again. Both shows will be 120 minute extravaganza's.
+
+For more info, <a href="http://www.mandicompany.co.jp/ValentineSP.html" target="_blank">click here</a>.

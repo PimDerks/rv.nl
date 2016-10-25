@@ -4,14 +4,10 @@ layout: default
 
 {% assign contentType = 'post' %}
 
-<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+<div class="post">
 
   <div class="u-group">
-    <main>
-
-      {% include components/hero.html %}
-
-      {% include prev-next.html items=site.posts %}
 
       <div class="stack">
         <div class="wrapper">
@@ -45,8 +41,14 @@ layout: default
                     <dl>
                       <dt>Post date</dt>
                       <dd>{{ page.date | date: '%B %-d, %Y' }}</dd>
-                      <dt>Author</dt>
-                      <dd>Maria Catharina</dd>
+                      {% if page.categories %}
+                        <dt>Categories</dt>
+                        <dd>
+                          {% for category in page.categories %}
+                            <span class="tag">{{ category }}</span>
+                          {% endfor %}
+                        </dd>
+                      {% endif %}
                     </dl>
                   </div>
 
@@ -58,8 +60,6 @@ layout: default
 
         </div>
       </div>
-
-    </main>
 
   </div>
 

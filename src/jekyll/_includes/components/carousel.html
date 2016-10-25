@@ -1,14 +1,18 @@
 <div class="carousel" >
     {% for slide in site.data.carousel %}
-    <div class="carousel-slide" style="background-image: url('{{ slide.image }}');">
-        <div class="box box--dimmed carousel-slide__cta">
-            <h3 class="u-heading-alpha carousel-slide__title">{{ slide.title }}</h3>
-            {% if slide.title %}
-                <p class="carousel-slide__subtitle">{{ slide.subtitle }}</p>
-            {% endif %}
-            <a href="{{ slide.link }}" class="button">{{ slide.button }}</a>
+        <div class="carousel-slide" style="background-image: url('{{ slide.image }}');">
+            <div class="carousel-slide__inner">
+                <h3 class="u-heading-alpha carousel-slide__title">
+                    <a href="{{ slide.link }}">
+                        {{ slide.title }}
+                    </a>
+                </h3>
+                {% if slide.subtitle %}
+                    <p class="carousel-slide__subtitle u-heading-delta u-display">{{ slide.subtitle }}</p>
+                {% endif %}
+                <a href="{{ slide.link }}" class="u-target">Read more</a>
+            </div>
         </div>
-    </div>
     {% endfor %}
 </div>
 

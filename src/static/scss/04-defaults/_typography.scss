@@ -59,6 +59,7 @@ h2,
 h3,
 h4,
 h5 {
+  color: get-color('brand-off');
   font-family: $font-display;
   font-size: 1em;
   font-weight: normal;

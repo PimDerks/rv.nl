@@ -1,28 +1,40 @@
-.carousel {
-  margin-top: -27.625%;
-}
-
 .carousel-slide {
   background-size: cover;
+  height: 100%;
   overflow: hidden;
-  padding-top:56.25%;
+  padding-top: 75%; /* 4:3 */
   width: 100%;
   position: relative;
 
-  .carousel-slide__cta {
+  @include respond-min('m'){
+    padding-top: 56.25%; /* 16:9 */
+  }
+
+  .carousel-slide__inner {
     left: 50%;
-    padding: baseline(1);
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
   }
 
   .carousel-slide__title {
-    color: get-color('white');
+
+    &,
+    & a {
+      color: get-color('white');
+    }
+
     min-width: 8em;
     text-shadow: 0 0 .25em rgba(black, .5);
+  }
+
+  .carousel-slide__subtitle {
+    background: get-color('black');
+    color: get-color('brand');
+    display: inline-block;
+    margin-bottom: baseline(1);
+    padding: baseline(.5);
   }
 
 }

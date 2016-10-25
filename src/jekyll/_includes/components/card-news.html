@@ -1,13 +1,7 @@
 <article class="a-card">
     <div class="a-card__inner">
 
-        {% assign img = post.img | strip_newlines %}
-
-        {% if img == '' %}
-            {% assign img = 'http://loremflickr.com/300/300' %}
-        {% else %}
-            {% assign img = post.img %}
-        {% endif %}
+        {% assign img = post.img %}
 
 
             <div class="a-card__image">
@@ -29,8 +23,8 @@
                         <p class="a-card__subtitle">
                             {{ post.date | date: "%B %-d, %Y" }}
                         </p>
-
                     </header>
+                    <p>{{ post.lead }}</p>
             </div>
 
     </div>

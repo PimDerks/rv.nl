@@ -1,6 +1,6 @@
 button,
 .button {
-  background: rgba(black, .15);
+  background: rgba(black, .5);
   border: baseline(.1) solid get-color('white');
   color: get-color('white');
   display: inline-block;
@@ -13,7 +13,7 @@ button,
   white-space: nowrap;
 
   @include attention {
-    background: rgba(black, .5);
+    background: rgba(black, .75);
     color: white;
     text-decoration: none;
   }

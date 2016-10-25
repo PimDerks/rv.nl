@@ -93,11 +93,12 @@
 
   &:checked ~ .page-nav {
     display: block;
+    opacity: 1;
+    pointer-events: inherit;
+    transform: scale(1);
   }
 
 }
-
-
 
 
 @include respond-min('m'){
@@ -106,15 +107,26 @@
     position: absolute;
   }
 
-  .page-header .wrapper {
+  .menu-toggle {
+    display: none;
+  }
 
+  .page-header {
+    height: auto;
   }
 
   .page-header .logo {
     display: inline-block;
     float: none;
+    margin-right: baseline(1);
     position: relative;
+    top: 0;
     vertical-align: middle;
+  }
+
+  .page-header .logo,
+  .page-header .logo img {
+    height: baseline(2);
   }
 
 }

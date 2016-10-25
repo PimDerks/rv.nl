@@ -56,7 +56,8 @@
       display: inline-block;
     }
 
-    li + li {
+    li + li,
+    li:nth-last-child(2){
 
       &::before {
         border-left-color: black;
