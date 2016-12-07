@@ -9,6 +9,11 @@
 
     <div class="page-content">
 
+        {% if page.isHomepage != true %}
+            {% include components/hero.html %}
+            {% include components/breadcrumbs.html %}
+        {% endif %}
+
         {{ content }}
 
     </div>

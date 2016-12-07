@@ -1,6 +1,10 @@
 .o-hero {
   background-image: url('/images/headers/header.jpg');
+<<<<<<< HEAD
   background-position: 50% 20%;
+=======
+  background-position: center center;
+>>>>>>> 00ef3699a16520363bf840e146e18ca8856afcef
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: baseline(4);
@@ -11,9 +15,18 @@
   transition: background-position 250ms linear;
   width: 100%;
 
+<<<<<<< HEAD
   @include respond-min('m'){
     padding-bottom: baseline(6);
     padding-top: baseline(9);
+=======
+  @include respond-min('s'){
+
+  }
+
+  @include respond-min('m'){
+
+>>>>>>> 00ef3699a16520363bf840e146e18ca8856afcef
     text-align: left;
   }
 
