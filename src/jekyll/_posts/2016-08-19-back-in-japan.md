@@ -1,6 +1,6 @@
 ---
 title: Back in Japan
-img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
+img: /images/news/2016-08-19.jpg
 date: 2016-08-19
 categories: live, announcement
 lead: "We're announcing TWO shows in TOKYO Japan, next year!"

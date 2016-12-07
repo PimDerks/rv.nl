@@ -1,31 +1,26 @@
 .o-hero {
   background-image: url('/images/headers/header.jpg');
-  background-position: 85% 0;
+  background-position: 50% 20%;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: baseline(4);
+  padding-top: baseline(6);
   position: relative;
   text-align: center;
   text-shadow: 0 0 .5em rgba(black, .5);
   transition: background-position 250ms linear;
   width: 100%;
 
-  @include respond-min('s'){
-    background-position: 85% 0;
-  }
-
   @include respond-min('m'){
-    background-position: top right;
+    padding-bottom: baseline(6);
+    padding-top: baseline(9);
     text-align: left;
   }
 
-  .o-hero__inner {
-    padding-bottom: baseline(3);
-    padding-top: baseline(6);
-    transition: opacity 250ms ease-out;
-
-    @include respond-min('m'){
-      padding-bottom: baseline(4);
-    }
+  .wrapper {
+    height: 100%;
+    top: 0;
+    width: 100%;
   }
 
   // Overlay
@@ -46,6 +41,7 @@
     @include respond-min('m') {
       max-width: 12em;
     }
+
   }
 
   // Subtitle

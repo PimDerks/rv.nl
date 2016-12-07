@@ -3,6 +3,7 @@ type: album
 title: Bizarro World
 date: 2014-10-25
 img: /images/albums/bizarro-world.jpg
+header: /images/headers/albums/bw2014.jpg
 lyrics: true
 discs:
   - tracks:

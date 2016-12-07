@@ -4,6 +4,7 @@ bower_components/
 .sass-cache/ls
 *.css
 *.log
+*.psd
 dest/
 tmp/
 www/

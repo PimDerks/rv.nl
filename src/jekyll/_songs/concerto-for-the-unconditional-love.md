@@ -15,7 +15,7 @@ credits:
     value: Jay Jay Willems
 ---
 
-<p class="u-lead">Hear my plea, I beg you Father<br />
+<p>Hear my plea, I beg you Father<br />
 Will you please let this sacred love succeed<br />
 Without it I can't live or breathe<br />
 And I will lose my goal<br />

@@ -3,6 +3,7 @@ type: album
 title: No Sugar Added
 date: 1998-01-01
 img: /images/albums/no-sugar-added.jpg
+header: /images/headers/albums/nsa1998.jpg
 discs:
   - tracks:
     - The Forces Of Secrecy

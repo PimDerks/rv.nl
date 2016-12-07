@@ -3,6 +3,7 @@ type: album
 title: Valentine
 date: 1996-02-01
 img: /images/albums/valentine.jpg
+header: /images/headers/albums/v1995.jpg
 discs:
   - tracks:
     - God

@@ -2,6 +2,7 @@
 title: Music
 subtitle: 25 years of Valentine music
 img: /images/headers/2.jpg
+header: /images/headers/music.jpg
 intro: Since his solo career started in 1991 Robby has released over a dozen of albums and even more singles. In this section of the website you will learn everything you need to know about these releases!
 layout: default
 submenu:
@@ -15,6 +16,9 @@ submenu:
   link: /music/collaborations/
 ---
 
+{% include components/hero.html %}
+{% include components/breadcrumbs.html %}
+
 {% include components/subnavigation.html %}
 
 <div class="stack">
@@ -25,7 +29,7 @@ submenu:
         <ul class="m-layout u-group a-list-bare">
             {% assign items = site.albums|reverse %}
             {% for release in items limit:1 %}
-                <li class="m-layout__column u-1/2 u-1/4@l">
+                <li class="m-layout__column u-1/1 u-1/2@s u-1/4@l">
                     <div class="m-layout__item">
                         <h3 class="u-center">Albums</h3>
 
@@ -40,7 +44,7 @@ submenu:
 
             {% assign items = site.singles|reverse %}
             {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/2 u-1/4@l">
+            <li class="m-layout__column u-1/1 u-1/2@s u-1/4@l">
                 <div class="m-layout__item">
                     <h3 class="u-center">Singles</h3>
 
@@ -55,7 +59,7 @@ submenu:
 
             {% assign items = site.compilations|reverse %}
             {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/2 u-1/4@l">
+            <li class="m-layout__column u-1/1 u-1/2@s u-1/4@l">
                 <div class="m-layout__item">
                     <h3 class="u-center">Compilations</h3>
 
@@ -70,7 +74,7 @@ submenu:
 
             {% assign items = site.collaborations|reverse %}
             {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/2 u-1/4@l">
+            <li class="m-layout__column u-1/1 u-1/2@s u-1/4@l">
                 <div class="m-layout__item">
                     <h3 class="u-center">Collaborations</h3>
 

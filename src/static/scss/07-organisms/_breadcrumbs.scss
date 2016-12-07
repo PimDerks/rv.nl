@@ -14,14 +14,10 @@
     display: none;
     padding-left: baseline(1);
     text-transform: uppercase;
-
-
   }
 
-  li + li,
-  li:nth-last-child(2) {
+  li + li {
     padding-left: baseline(1);
-
 
     &::before {
       background-color: transparent;
@@ -41,8 +37,16 @@
 
   }
 
+  li:first-child::before {
+    display: none;
+  }
+
   li:nth-last-child(2) {
     display: inline-block;
+
+    &::before {
+      display: inline-block;
+    }
   }
 
   a {

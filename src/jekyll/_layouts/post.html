@@ -4,6 +4,8 @@ layout: default
 
 {% assign contentType = 'post' %}
 
+{% include components/hero.html %}
+{% include components/breadcrumbs.html %}
 
 <div class="post">
 
@@ -41,14 +43,14 @@ layout: default
                     <dl>
                       <dt>Post date</dt>
                       <dd>{{ page.date | date: '%B %-d, %Y' }}</dd>
-                      {% if page.categories %}
+                      <!-- {% if page.categories %}
                         <dt>Categories</dt>
                         <dd>
                           {% for category in page.categories %}
                             <span class="tag">{{ category }}</span>
                           {% endfor %}
                         </dd>
-                      {% endif %}
+                      {% endif %} -->
                     </dl>
                   </div>
 

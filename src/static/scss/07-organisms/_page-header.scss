@@ -22,9 +22,6 @@
     vertical-align: top;
   }
 
-  @include respond-min('m'){
-    // text-align: center;
-  }
 }
 
 // Menu link
@@ -104,7 +101,7 @@
 @include respond-min('m'){
 
   .page-header {
-    position: absolute;
+    position: fixed;
   }
 
   .menu-toggle {
@@ -126,7 +123,12 @@
 
   .page-header .logo,
   .page-header .logo img {
-    height: baseline(2);
+    height: baseline(6);
+  }
+
+  .page-header .logo {
+    margin-bottom: baseline(-3);
+    margin-top: baseline(1);
   }
 
 }

@@ -32,33 +32,17 @@
   }
 
   a {
-    background: rgba(black, .05);
-    border-bottom: none;
-    border-radius: baseline(1);
-    color: black;
+    color: get-color('brand-off');
     cursor: pointer;
     display: block;
+    font-size: 1.25rem;
     font-weight: bold;
-    padding: baseline(.5) baseline(1);
+    padding: 0 baseline(.5);
     position: relative;
     text-decoration: none;
 
-    &::after {
-      background-color: transparent;
-      content: '';
-      display: block;
-      height: 2px;
-      left: 50%;
-      margin-top: baseline(.25);
-      position: absolute;
-      top: 100%;
-      transition: all 500ms ease-out;
-      transform: translateX(-50%);
-      width: 0%;
-    }
-
     @include attention(){
-      background-color: rgba(black, .1);
+      color: get-color('white');
 
       &::after {
         background-color: pink;

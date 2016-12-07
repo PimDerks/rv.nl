@@ -1,7 +1,7 @@
 ---
 title: Merry Christmas
 date: 2010-12-19
-img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
+img: /images/news/2010-12-19.jpg
 ---
 
 <p>Hey Everyone !!</p>

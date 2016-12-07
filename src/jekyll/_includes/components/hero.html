@@ -1,7 +1,11 @@
-<header class="o-hero"{% if page.img %} style="background-image:url('{{ page.img }}')"{% endif %}>
+<header class="o-hero"
+        {% if page.header %}
+            style="background-image:url('{{ page.header }}')"
+        {% endif %}
+        >
 
     <div class="wrapper">
-        <div class="o-hero__inner">
+
 
             <h1 class="o-hero__title u-heading-alpha">
                 {% if page.title %}
@@ -25,7 +29,6 @@
                 {% endif %}
 
             </p>
-        </div>
 
     </div>
 

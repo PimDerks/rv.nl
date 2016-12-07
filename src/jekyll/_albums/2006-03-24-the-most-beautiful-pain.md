@@ -3,6 +3,7 @@ type: album
 title: The Most Beautiful Pain
 date: 2006-03-24
 img: /images/albums/the-most-beautiful-pain.jpg
+header: /images/headers/albums/tmbp2006.jpg
 discs:
   - tracks:
     - I Should Have Known Better

@@ -3,6 +3,7 @@ type: album
 title: Valentine 4&#58; United
 date: 1997-06-20
 img: /images/albums/united.jpg
+header: /images/headers/albums/u1997.jpg
 discs:
   - tracks:
     - Rise And Shine

@@ -10,10 +10,6 @@ credits:
     value: Johan Willems
   - key: Fairlight programming
     value: Attie Bauw
-  - key: Extra harmony-vocals
-    value: Johan Willems
-  - key: Fairlight programming
-    value: Attie Bauw
   - key: Lead-guitar
     value: Lex Bolderdijk
   - key: Produced, engineered and mixed

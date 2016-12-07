@@ -3,6 +3,7 @@ type: album
 title: The Magic Infinity
 date: 1993-07-01
 img: /images/albums/the-magic-infinity.jpg
+header: /images/headers/albums/tmi1994.jpg
 discs:
   - tracks:
     - The Magic Infinity

@@ -19,8 +19,8 @@ isHomepage: true
 
         <ul class="m-layout u-group a-list-bare m-card-list">
             {% assign posts = site.posts %}
-            {% for post in posts limit:3 %}
-                <li class="m-layout__column u-1/1 u-1/2@s u-1/3@l">
+            {% for post in posts limit:6 %}
+                <li class="m-layout__column u-1/1 u-1/3@m">
                     <div class="m-layout__item">
                         {% include components/card-news.html %}
                     </div>

@@ -2,6 +2,7 @@
 title: News
 subtitle: What's happening in Bizarro World?
 img: /images/headers/2.jpg
+header: /images/headers/generic/4.jpg
 layout: default
 submenu:
 - title: Latest news
@@ -10,19 +11,16 @@ submenu:
 ---
 
 {% include components/hero.html %}
-
 {% include components/breadcrumbs.html %}
 
 <div class="stack">
     <div class="wrapper">
 
-        <main>
-
             <h2 class="section-title u-screenreader">Headlines</h2>
 
             <ol class="a-list-bare m-layout m-card-list u-group">
                 {% for post in paginator.posts %}
-                <li class="m-layout__column u-1/1 u-1/2@s u-1/3@m">
+                <li class="m-layout__column u-1/1 u-1/2@m u-1/3@m">
                     <div class="m-layout__item">
                         {% include components/card-news.html %}
                     </div>
@@ -38,9 +36,6 @@ submenu:
                     <a href="{{ paginator.next_page_path }}" class="button pagination__next">Next</a>
                 {% endif %}
             </div>
-            >
-
-        </main>
 
     </div>
 </div>

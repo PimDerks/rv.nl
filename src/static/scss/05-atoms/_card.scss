@@ -105,6 +105,33 @@
 
 }
 
+.a-card--image {
+  position: relative;
+
+  .a-card__header {
+    background: linear-gradient(transparent, rgba(0,0,0,.8));
+    margin-bottom: 0;
+    padding: baseline(1) baseline(4) baseline(1) baseline(1);
+    text-shadow: 0 0 .25em rgba(0,0,0, .5);
+  }
+
+  .a-card__content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .a-card__subtitle {
+    color: get-color('brand-off');
+  }
+
+  a {
+    color: get-color('white');
+  }
+
+}
+
 .a-card {
   margin-bottom: baseline(1);
 }

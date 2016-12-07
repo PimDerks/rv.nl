@@ -1,7 +1,7 @@
 ---
 title: Bizarro World
 date: 2011-08-12
-img: http://lflmagazine.nl/wp-content/uploads/Robby-Valentine.jpg
+img: /images/news/2011-08-12.jpg
 ---
 
 

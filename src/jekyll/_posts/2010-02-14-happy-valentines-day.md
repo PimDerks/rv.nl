@@ -1,0 +1,10 @@
+---
+title: Happy Valentine's Day Everyone
+date: 2010-02-14
+img: /images/news/2010-02-14.jpg
+---
+
+HAPPY VALENTINES DAY Everyone !!!
+
+Again we stick to the tradition of giving you fans something special on V-Day. This time its a yet unknown track that was initially written + recorded for ´THE MOST BEAUTIFUL PAIN´ back in summer 2002 but didnt make the Album in the end. Now, almost 8 years later & exclusively on RV.com it finally sees the light of day!
+For the occasion people celebrate today this song PAYBACK TIME might be quite a refreshing contrast as it represents more of the down- /darksides to Love + Romance...  so, in true (Robby) VALENTINE traditon ´expect the unexpected´ ;o)

@@ -32,4 +32,20 @@
         <dd class="a-event__note">{{ gig.note }}</dd>
     {% endif %}
 
+    {% assign curDate = site.time | date: '%s' %}
+    {% assign gigDate = gig.date | date: '%s' %}
+
+    {% if gigDate >= curDate %}
+        {% if gig.link %}
+            <dt class="u-screenreader">Link</dt>
+            <dd class="a-event__link">
+                <a href="{{ gig.link }}" class="button" target="_blank">
+                    More info
+                </a>
+            </dd>
+        {% endif %}
+    {% else %}
+        <!-- link to archive -->
+    {% endif %}
+
 </dl>
