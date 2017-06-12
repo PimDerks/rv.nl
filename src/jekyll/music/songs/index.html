@@ -27,7 +27,7 @@ submenu:
     <div class="wrapper">
 
 <!-- First loop for 'non-alphabetical' songs -->
-{% assign songs = site.songs | where: 'sort', 'false' %}
+{% assign songs = site.songs | where:"order","false" %}
 
     <h2 class="u-heading-gamma section-title" id="songs-0">0-9</h2>
     <ol class="a-list-bare a-list-zebra m-tracklist m-tracklist--alt">
@@ -41,7 +41,7 @@ submenu:
 <!-- End of first loop for 'non-alphabetical' songs -->
 
 <!-- Loop remaining songs -->
-{% assign songs = site.songs | where: 'sort', null %}
+{% assign songs = site.songs | where_exp:"item","item.order == null" %}
 {% for song in songs %}
     {% assign currentLetter = song.title | slice: 0 %}
 

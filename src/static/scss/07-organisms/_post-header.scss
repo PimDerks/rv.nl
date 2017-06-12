@@ -1,10 +1,6 @@
 .o-hero {
   background-image: url('/images/headers/header.jpg');
-<<<<<<< HEAD
   background-position: 50% 20%;
-=======
-  background-position: center center;
->>>>>>> 00ef3699a16520363bf840e146e18ca8856afcef
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: baseline(4);
@@ -15,19 +11,28 @@
   transition: background-position 250ms linear;
   width: 100%;
 
-<<<<<<< HEAD
-  @include respond-min('m'){
+  @include respond-min('m') {
     padding-bottom: baseline(6);
     padding-top: baseline(9);
-=======
-  @include respond-min('s'){
-
   }
 
   @include respond-min('m'){
-
->>>>>>> 00ef3699a16520363bf840e146e18ca8856afcef
     text-align: left;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 3;
+  }
+
+  + * {
+    position: relative;
+    z-index: 3;
+
+    .wrapper {
+      margin-top: baseline(-6);
+    }
+
   }
 
   .wrapper {
@@ -37,7 +42,7 @@
   }
 
   // Overlay
-  &::before {
+  /* &::before {
     background: linear-gradient(transparent, rgba(black, .5));
     bottom: 0;
     content: '';
@@ -45,6 +50,18 @@
     left: 0;
     position: absolute;
     width: 100%;
+    z-index: 1;
+  } */
+
+  &::after {
+    content: '';
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(#303030,0), #303030);
+    z-index: 2;
   }
 
   // Title

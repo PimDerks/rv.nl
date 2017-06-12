@@ -16,10 +16,10 @@
   background: #FFF;
   border-radius: .25em;
   box-shadow: 0 2px 2px rgba(black, .15);
+  overflow: hidden;
   position: relative;
 
   .a-card__inner {
-    border-radius: .25em;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -30,6 +30,7 @@
   }
 
   .a-card__title {
+    border-radius: 0;
     font-family: $font-display;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -76,31 +77,6 @@
   &:hover {
     box-shadow: 0 0 4px rgba(black, .25);
     transform: scale(1.025);
-  }
-
-}
-
-.a-card--reveal {
-
-  .a-card__title {
-    background: rgba(black, .75);
-    color: #FFF;
-    left: 0;
-    padding: baseline(.25) baseline(1);
-    position: absolute;
-    text-align: center;
-    transform: translateY(0%);
-    transition: all 250ms ease-out;
-    top: 100%;
-    width: 100%;
-  }
-
-  &:hover {
-
-    .a-card__title {
-      transform: translateY(-100%);
-    }
-
   }
 
 }
@@ -178,26 +154,6 @@
 
     &::after {
       transform: rotate(-3deg);
-    }
-
-  }
-
-}
-
-.a-card--release {
-
-  &::before {
-    display: none;
-  }
-
-  &::after {
-    border-radius: 50%;
-  }
-
-  &:hover {
-
-    &::after {
-      left: 10%;
     }
 
   }

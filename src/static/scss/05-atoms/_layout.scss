@@ -4,7 +4,7 @@
 
 .wrapper {
 
-    &::before {
+    /* &::before {
         background-image:
         linear-gradient(rgba(black, .5) 1px, transparent 2px),
         linear-gradient(transparent 25%, rgba(black, .25) calc(25% + 1px), transparent calc(25% + 2px)),
@@ -28,7 +28,7 @@
         pointer-events: none;
         opacity: .05;
         opacity: 0;
-    }
+    } */
 
 }
 
@@ -95,6 +95,9 @@
 
 .wrapper {
     // padding: 0 baseline(3.5);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70em;
     position: relative;
 
     &::before,

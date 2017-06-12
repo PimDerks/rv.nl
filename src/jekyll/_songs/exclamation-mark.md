@@ -1,6 +1,6 @@
 ---
 title: "!"
-sort: false
+order: false
 year: 1995
 credits:
   - key: Composed, written, arranged and produced

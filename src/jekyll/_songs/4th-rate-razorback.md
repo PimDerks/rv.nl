@@ -1,6 +1,6 @@
 ---
 title: 4th Rate Razorback
-sort: false
+order: false
 year: 2007
 writer: Robby Valentine
 composer: Robby Valentine

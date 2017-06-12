@@ -13,29 +13,6 @@
   font-weight: $font-weight-light;
 }
 
-.u-payoff {
-  @extend %u-payoff;
-}
-
-.u-quote {
-  @extend %u-quote;
-  font-weight: $font-weight-light;
-}
-
-.u-subheading-alpha {
-  @extend %u-subheading-alpha;
-}
-
-.u-subheading-beta {
-  @extend %u-subheading-beta;
-  font-weight: $font-weight-medium;
-}
-
-.u-subheading-gamma {
-  @extend %u-subheading-gamma;
-  font-weight: $font-weight-medium;
-}
-
 .u-xlarge {
   @extend %u-heading-beta;
 }
@@ -45,15 +22,7 @@
 }
 
 .u-medium {
-  @extend %u-subheading-beta;
-}
-
-.u-small {
-  @extend %u-small;
-}
-
-.u-xsmall {
-  @extend %u-xsmall;
+  @extend %u-heading-beta;
 }
 
 

@@ -204,15 +204,9 @@ $unit: 'rem';
     // calculate line-height in pixels
     $line-height-calculated: get-line-height($font-size-calculated, $config, $context, $extra);
 
-    @if $unit == 'rem' {
-        $font-size-final: $font-size-calculated/$base-font-size + rem;
-        $line-height-final: $line-height-calculated/$base-font-size + rem;
-    }
-
-    @if $unit == 'em' {
-        $font-size-final: $font-size-calculated/$base-font-size + em;
-        $line-height-final: $line-height-calculated/$font-size-calculated + em;
-    }
+    // calculate font-size + line-height in rems
+    $font-size-final: $font-size-calculated/$base-font-size + rem;
+    $line-height-final: $line-height-calculated/$base-font-size + rem;
 
     // output
     font-size: $font-size-final;

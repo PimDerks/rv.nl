@@ -1,6 +1,6 @@
 ---
 title: Bizarro World
-year: 2014-01-01
+year: 2014
 appears:
   - title: Bizarro World EP
     type: single
@@ -9,7 +9,6 @@ appears:
 writer: Robby Valentine
 composer: Robby Valentine
 about: Title track Bizarro World is a Muse inspired up tempo rocksong with classical piano intermezzo’s based around a killer guitar rif. Lyrically it’s about feeling out of place in a world where everything’s opposite and backwards.
-
 ---
 
 <p>I feel something viciously unkind here<br/>

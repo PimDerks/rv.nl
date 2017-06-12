@@ -12,22 +12,33 @@ layout: default
       {% assign items = site.compilations %}
     {% endif %}
 
-{% include components/hero.html %}
-{% include components/breadcrumbs.html %}
-
-
-    <div class="stack stack--dark">
+    <div class="stack">
       <div class="wrapper">
 
         <div class="m-layout u-group">
           <div class="m-layout__row">
 
-            <div class="m-layout__column u-1/1 u-1/2@m">
-              <div class="m-layout__item">
+            <div class="m-layout__column u-1/1 u-2/3@m">
+              <div class="m-layout__item m-layout__item--wide">
 
-                <div class="box box--dimmed">
+                <div class="box">
+                  <div class="a-inner a-inner+">
                     <h2 class="u-screenreader">Artwork</h2>
-                    <img src="{{ page.img }}" alt="{{ page.title }}" class="u-stacked u-full-width" />
+                    <img src="{{ page.img }}" alt="{{ page.title }}" class="u-full-width" />
+                    
+                      <h2 class="u-heading-gamma">Tracklist</h2>
+                      {% for disc in page.discs %}
+                        {% include components/tracklist.html %}
+                      {% endfor %}
+                    </div>                
+                </div>
+
+              </div>
+            </div>
+
+            <div class="m-layout__column u-1/1 u-1/3@m">
+                <div class="m-layout__item m-layout__item--wide">
+                <div class="box box--dimmed">
                     <div class="a-inner a-inner+">
                       <h2 class="u-heading-gamma">Information</h2>
                       <dl>
@@ -36,24 +47,9 @@ layout: default
                         <dt>Released</dt>
                         <dd>{{ page.date | date: '%B %Y' }}</dd>
                       </dl>
-                  </div>
+                  </div>              
                 </div>
-
-              </div>
-            </div>
-
-            <div class="m-layout__column u-1/1 u-1/2@m">
-
-              <div class="m-layout__item">
-
-                <div class="box box--dimmed a-inner a-inner+">
-                    <h2 class="u-heading-gamma">Tracklist</h2>
-                    {% for disc in page.discs %}
-                      {% include components/tracklist.html %}
-                    {% endfor %}
                 </div>
-
-              </div>
 
             </div>
 
@@ -66,7 +62,7 @@ layout: default
     {% assign content = content | strip_newlines %}
 
     <!--
-    {% if page.credits && content != '' %}
+    {% if page.credits and content != '' %}
       <div class="stack stack--darkest">
       <div class="wrapper">
 

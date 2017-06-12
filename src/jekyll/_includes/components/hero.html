@@ -26,7 +26,12 @@
                     {% else %}
                         {{ page.date | date: '%B %Y' }}
                     {% endif %}
+                {% else if page.year %}
+                    {{ page.year | date: '%Y' }}
+                    {{ page.year }}
                 {% endif %}
+
+                {{ page.year }}
 
             </p>
 
