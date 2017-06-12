@@ -31,12 +31,20 @@
     <meta name="msapplication-square310x310logo" content="{{ site.path}}/static/icons/largetile.png" />
 
     <title>
-        {% if page.isHomepage == true %}
-            {{ site.title }}
+        {% if layout.type == 'live' %}
+            {{ page.venue }}, {{ page.city }} ({{ page.date | date: "%B %-d, %Y" }}) - 
+        {% elsif layout.type == 'release' %}
+            {{ page.title }} - 
+        {% elsif layout.type == 'post' %}
+            {{ page.title }} - 
+        {% elsif layout.type == 'page' %}
+            {{ page.title }} - 
         {% else %}
-            {{ page.title }} - {{ site.title }}
+            {{ page.title }} - 
         {% endif %}
+        {{ site.title }}
     </title>
+
 
     <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic" rel="stylesheet" type="text/css">
     <!-- <link href="{{ site.path}}/_static/css/styles.prefixed.css" rel="stylesheet" type="text/css" /> -->

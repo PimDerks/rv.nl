@@ -6,33 +6,29 @@
 
     <div class="wrapper">
 
-
             <h1 class="o-hero__title u-heading-alpha">
-                {% if page.title %}
+                {% if layout.type == 'live' %}
+                    {{ page.venue }}
+                {% elsif layout.type == 'release' %}
                     {{ page.title }}
-                {% else if contentType == 'live' %}
-                    {{ page.venue }}, {{ page.city }}
+                {% elsif layout.type == 'post' %}
+                    {{ page.title }}
+                {% elsif layout.type == 'page' %}
+                    {{ page.title }}
                 {% else %}
-                    {{ site.title }}
+                    {{ page.title }}
                 {% endif %}
             </h1>
             <p class="o-hero__subtitle u-heading-delta u-display">
-
                 {% if page.subtitle %}
                     {{ page.subtitle }}
-                {% else if page.date %}
-                    {% if contentType == 'live' or contentType == 'post' %}
-                        {{ page.date | date: '%B %-d, %Y' }}
-                    {% else %}
-                        {{ page.date | date: '%B %Y' }}
-                    {% endif %}
-                {% else if page.year %}
-                    {{ page.year | date: '%Y' }}
-                    {{ page.year }}
+                {% elsif layout.type == 'live' %}
+                    {{ page.date | date: "%B %-d, %Y" }}
+                {% elsif layout.type == 'release' %}
+                    {{ page.date | date: "%B %Y" }}
+                {% elsif layout.type == 'post' %}
+                    {{ page.date | date: "%B %-d, %Y'" }}
                 {% endif %}
-
-                {{ page.year }}
-
             </p>
 
     </div>
