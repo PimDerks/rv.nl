@@ -2,30 +2,44 @@
   margin-bottom: baseline(2);
 
   > li {
-    padding: baseline(.5);
-    padding-left: baseline(2);
-    position: relative;
-
+    padding-left: 0;
+    
     &::before {
-      content: counter(ol);
-      font-family: $font-display;
-      left: baseline(1);
-      position: absolute;
-      text-align: center;
-      top: baseline(.6); // magic number ftw
-      transform: translateX(-50%);
+      display: none;
     }
+
+    + li {
+      margin-top: baseline(.5);
+    }
+
+    position: relative;
 
     a {
       border-bottom-width: 0;
+      color: get-color('white');
       display: block;
       text-decoration: none;
     }
 
   }
 
+  .m-tracklist__title,
   .m-tracklist__subtitle {
-    font-style: italic;
+    display: inline-block;
+    font-family: $font-display;
+    margin-bottom: 0;
+    padding: baseline(.25) baseline(.5);
+  }
+
+  .m-tracklist__title {
+    background-color: get-color('black');
+    color: get-color('white');
+  }
+
+  .m-tracklist__subtitle {
+    background-color: get-color('brand');
+    color: get-color('black'); 
+    margin-left: baseline(.25);
   }
 
 }
@@ -34,3 +48,4 @@
   background: white;
   margin: 0 baseline(6) baseline(3);
 }
+

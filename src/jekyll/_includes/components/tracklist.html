@@ -2,7 +2,7 @@
     <h3 class="u-heading-delta">{{ disc.title }}</h3>
 {% endif %}
 
-<ol class="a-list-border m-tracklist">
+<ol class="m-tracklist">
     {% for track in disc.tracks %}
 
     {% assign songTitle = track %}
@@ -21,7 +21,7 @@
 
     <li class="m-tracklist__track">
 
-        <div class="m-tracklist__title">
+        <div class="m-tracklist__title u-heading-delta">
             {% if page.lyrics == true %}
                 {% if songData and page.lyrics == true %}
                     <a href="{{ songData.url }}">{{ songTitle }}</a>
@@ -31,7 +31,7 @@
             {% endif %}
         </div>
         {% if track.subtitle %}
-            <div class="m-tracklist__subtitle">
+            <div class="m-tracklist__subtitle u-heading-delta">
                 {{ track.subtitle }}
             </div>
         {% endif %}

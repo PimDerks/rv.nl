@@ -33,7 +33,7 @@ layout: default
               <div class="box box--dimmed a-inner a-inner+">
               <h2>Setlist</h2>
 
-              <ol class="a-list-zebra m-tracklist">
+              <ol class="m-tracklist">
                 {% for track in page.setlist %}
                 {% assign songData = null %}
 
@@ -51,13 +51,21 @@ layout: default
                   {% endif %}
 
                   {% if songData %}
-                  <a href="{{ songData.url }}">{{ songTitle }}</a>
+                  <a href="{{ songData.url }}">
+                    <span class="m-tracklist__title u-heading-delta">
+                      {{ songTitle }}
+                    </span>
+                  </a>
                   {% else %}
-                  {{ songTitle }}
+                    <span class="m-tracklist__title u-heading-delta">
+                      {{ songTitle }}
+                    </span>
                   {% endif %}
 
                   {% if track.subtitle %}
-                  ({{ track.subtitle }})
+                  <span class="m-tracklist__subtitle u-heading-delta">
+                      ({{ track.subtitle }})
+                    </span>                  
                   {% endif %}
                 </li>
                 {% endfor %}
