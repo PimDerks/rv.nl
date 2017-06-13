@@ -26,6 +26,8 @@
                     {{ page.date | date: "%B %-d, %Y" }}
                 {% elsif layout.type == 'release' %}
                     {{ page.date | date: "%B %Y" }}
+                {% elsif layout.type == 'song' %}
+                    {{ page.year }}
                 {% elsif layout.type == 'post' %}
                     {{ page.date | date: "%B %-d, %Y'" }}
                 {% endif %}

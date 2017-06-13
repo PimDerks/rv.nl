@@ -3,6 +3,7 @@ type: collaboration
 title: Delectrified
 artist: Marlies
 date: 2007-01-01
+header: /images/collaborations/delectrified.jpg
 img: /images/collaborations/delectrified.jpg
 discs:
   - tracks:

@@ -25,9 +25,11 @@ type: release
                 <div class="box">
                   <div class="a-inner a-inner+">
                     <h2 class="u-screenreader">Artwork</h2>
-                    <img src="{{ page.img }}" alt="{{ page.title }}" class="u-full-width" />
+                    <div class="a-img u-ratio u-ratio--1:1" style="background-image:url({{ page.img }});">
+                      <img src="{{ page.img }}" alt="{{ page.title }}" class="u-full-width" />
+                    </div>
                     
-                      <h2 class="u-heading-gamma">Tracklist</h2>
+                      <h2 class="u-heading-gamma u-screenreader">Tracklist</h2>
                       {% for disc in page.discs %}
                         {% include components/tracklist.html %}
                       {% endfor %}

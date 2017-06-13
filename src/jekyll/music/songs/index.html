@@ -19,10 +19,6 @@ submenu:
   active: true
 ---
 
-{% include components/hero.html %}
-{% include components/breadcrumbs.html %}
-{% include components/subnavigation.html %}
-
 <div class="stack">
     <div class="wrapper">
 
@@ -30,10 +26,12 @@ submenu:
 {% assign songs = site.songs | where:"order","false" %}
 
     <h2 class="u-heading-gamma section-title" id="songs-0">0-9</h2>
-    <ol class="a-list-bare a-list-zebra m-tracklist m-tracklist--alt">
+    <ol class="a-list-bare m-tracklist">
         {% for song in songs %}
         <li>
-            <a href="{{ song.url }}">{{ song.title }}</a>
+            <a href="{{ song.url }}" class="m-tracklist__title u-heading-delta">
+                {{ song.title }}
+            </a>
         </li>
         {% endfor %}
     </ol>
@@ -54,12 +52,14 @@ submenu:
 
         <h2 class="u-heading-gamma section-title" id="songs-{{ currentLetter | lower }}">{{ currentLetter }}</h2>
 
-        <ol class="a-list-bare a-list-zebra m-tracklist m-tracklist--alt">
+        <ol class="a-list-bare m-tracklist">
             {% assign letter = currentLetter %}
     {% endif %}
 
         <li>
-            <a href="{{ song.url }}">{{ song.title }}</a>
+            <a href="{{ song.url }}" class="m-tracklist__title u-heading-delta">
+                {{ song.title }}
+            </a>
         </li>
 
     {% if forloop.last %}
