@@ -19,6 +19,11 @@
   overflow: hidden;
   position: relative;
 
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
   .a-card__inner {
     overflow: hidden;
     position: relative;
@@ -81,81 +86,6 @@
 
 }
 
-.a-card--image {
-  position: relative;
-
-  .a-card__header {
-    background: linear-gradient(transparent, rgba(0,0,0,.8));
-    margin-bottom: 0;
-    padding: baseline(1) baseline(4) baseline(1) baseline(1);
-    text-shadow: 0 0 .25em rgba(0,0,0, .5);
-  }
-
-  .a-card__content {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-  }
-
-  .a-card__subtitle {
-    color: get-color('brand-off');
-  }
-
-  a {
-    color: get-color('white');
-  }
-
-}
-
 .a-card {
   margin-bottom: baseline(1);
-}
-
-.a-card--stack,
-.a-card--release {
-  background-color: transparent;
-
-  &::before,
-  &::after {
-    background: black;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    transition: all 250ms ease-out;
-    top: 0;
-    width: 100%;
-  }
-}
-
-.a-card--stack {
-
-  &::before,
-  &::after {
-    background: #FFF;
-    border-radius: .25em;
-    box-shadow: 0 2px 2px rgba(black, .15);
-    opacity: 0;
-    transform: rotate(0);
-  }
-
-  &:hover {
-
-    &::before,
-    &::after {
-      opacity: 1;
-    }
-
-    &::before {
-      transform: rotate(3deg);
-    }
-
-    &::after {
-      transform: rotate(-3deg);
-    }
-
-  }
-
 }
