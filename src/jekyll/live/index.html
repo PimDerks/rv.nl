@@ -15,22 +15,112 @@ submenu:
 <div class="stack">
     <div class="wrapper">
 
+        <div class="m-layout u-group">
+          <div class="m-layout__row">
 
-            <h2 class="section-title">Upcoming gigs</h2>
+            <div class="m-layout__column u-1/1 u-2/3@m">
+              <div class="m-layout__item m-layout__item--wide">
+
+                <div class="box">
+                  <div class="a-inner a-inner+">
+
+                    <h2>Upcoming gigs</h2>
+
+                    <ol class="a-list-bare m-tracklist">
+                        {% assign curDate = site.time | date: '%s' %}
+                        {% for gig in site.live %}
+                        {% assign gigDate = gig.date | date: '%s' %}
+                            {% if gigDate >= curDate %}
+                                <li>
+                                    <span class="m-tracklist__title u-heading-delta">
+                                        {{ gig.date | date: '%d-%m-%Y' % }}
+                                    </span>
+                                    <span class="m-tracklist__subtitle u-heading-delta">
+                                        {{ gig.venue }}, {{ gig.city }}
+                                    </span>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ol>
+
+                    {% for gig in site.live reversed %}
+
+                {% assign gigYear = gig.date | date: "%Y" %}
+                {% assign gigDate = gig.date | date: "%s" %}
+                {% assign curDate = site.time | date: "%s" %}
+                {% assign curYear = site.time | date: "%Y" %}
+
+                {% if gigYear != previousYear %}
+
+                    {% unless forloop.first %}
+                            </ol>
+                    {% endunless %}
+
+                    {% if gigYear <= curYear %}
+                        <h2 id="gigs-{{ gigYear }}">{{ gigYear }}</h2>
+                        <ol class="a-list-bare m-tracklist">
+                    {% endif %}
+
+                    {% assign previousYear = gigYear %}
+                {% endif %}
+
+                {% if curDate > gigDate %}
+                    <li>
+                        <span class="m-tracklist__title u-heading-delta">
+                            {{ gig.date | date: '%d-%m-%Y' }}
+                        </span>
+                        <span class="m-tracklist__subtitle u-heading-delta">
+                            {{ gig.venue }}, {{ gig.city }}
+                        </span>
+                    </li>
+                {% endif %}
+
+                {% if forloop.last %}
+                    </ol>
+                {% endif %}
+
+            {% endfor %}
 
 
-                <ol class="a-list-bare a-list-zebra m-events">
-                    {% assign curDate = site.time | date: '%s' %}
-                    {% for gig in site.live %}
-                    {% assign gigDate = gig.date | date: '%s' %}
-                        {% if gigDate >= curDate %}
-                            <li>
-                                {% include components/event.html %}
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ol>
+                  </div>
+                </div>
+            
+                </div>
+            </div>
 
+            <div class="m-layout__column u-1/1 u-1/3@m">
+                <div class="m-layout__item m-layout__item--wide">
+                <div class="box box--dimmed">
+                    <div class="a-inner a-inner+">
+                        <ol>
+                        {% for gig in site.live reversed %}
 
+                {% assign gigYear = gig.date | date: "%Y" %}
+                {% assign gigDate = gig.date | date: "%s" %}
+                {% assign curDate = site.time | date: "%s" %}
+                {% assign curYear = site.time | date: "%Y" %}
+
+                {% if gigYear != previousYear %}
+
+                    {% if gigYear <= curYear %}
+                        <li>
+                            <a href="#gigs-{{ gigYear }}">{{ gigYear }}</a>
+                    {% endif %}
+
+                    {% assign previousYear = gigYear %}
+                {% endif %}
+
+            {% endfor %}
+
+            </ol>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+</div>
 </div>

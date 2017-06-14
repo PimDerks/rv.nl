@@ -22,52 +22,73 @@ submenu:
 <div class="stack">
     <div class="wrapper">
 
-<!-- First loop for 'non-alphabetical' songs -->
-{% assign songs = site.songs | where:"order","false" %}
+        <div class="m-layout u-group">
+          <div class="m-layout__row">
 
-    <h2 class="u-heading-gamma section-title" id="songs-0">0-9</h2>
-    <ol class="a-list-bare m-tracklist">
-        {% for song in songs %}
-        <li>
-            <a href="{{ song.url }}" class="m-tracklist__title u-heading-delta">
-                {{ song.title }}
-            </a>
-        </li>
-        {% endfor %}
-    </ol>
+            <div class="m-layout__column u-1/1 u-2/3@m">
+              <div class="m-layout__item m-layout__item--wide">
 
-<!-- End of first loop for 'non-alphabetical' songs -->
+                <div class="box">
+                  <div class="a-inner a-inner+">
 
-<!-- Loop remaining songs -->
-{% assign songs = site.songs | where_exp:"item","item.order == null" %}
-{% for song in songs %}
-    {% assign currentLetter = song.title | slice: 0 %}
+                    <!-- First loop for 'non-alphabetical' songs -->
+                    {% assign songs = site.songs | where:"order","false" %}
 
-    {% if currentLetter != letter %}
+                        <h2 class="" id="songs-0">0-9</h2>
+                        <ol class="a-list-bare m-tracklist">
+                            {% for song in songs %}
+                            <li>
+                                <a href="{{ song.url }}" class="m-tracklist__title u-heading-delta">
+                                    {{ song.title }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ol>
 
-        {% unless forloop.first %}
-            </ol>
-        {% endunless %}
+                    <!-- End of first loop for 'non-alphabetical' songs -->
+
+                    <!-- Loop remaining songs -->
+                    {% assign songs = site.songs | where_exp:"item","item.order == null" %}
+                    {% for song in songs %}
+                        {% assign currentLetter = song.title | slice: 0 %}
+
+                        {% if currentLetter != letter %}
+
+                            {% unless forloop.first %}
+                                </ol>
+                            {% endunless %}
 
 
-        <h2 class="u-heading-gamma section-title" id="songs-{{ currentLetter | lower }}">{{ currentLetter }}</h2>
+                            <h2 class="" id="songs-{{ currentLetter | lower }}">{{ currentLetter }}</h2>
 
-        <ol class="a-list-bare m-tracklist">
-            {% assign letter = currentLetter %}
-    {% endif %}
+                            <ol class="a-list-bare m-tracklist">
+                                {% assign letter = currentLetter %}
+                        {% endif %}
 
-        <li>
-            <a href="{{ song.url }}" class="m-tracklist__title u-heading-delta">
-                {{ song.title }}
-            </a>
-        </li>
+                            <li>
+                                <a href="{{ song.url }}" class="m-tracklist__title u-heading-delta">
+                                    {{ song.title }}
+                                </a>
+                            </li>
 
-    {% if forloop.last %}
-        </ol>
+                        {% if forloop.last %}
+                            </ol>
 
-    {% endif %}
+                        {% endif %}
 
-{% endfor %}
-<!-- End of loop remaining songs -->
-</div>
+                    {% endfor %}
+                    <!-- End of loop remaining songs -->
+        
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 </div>
