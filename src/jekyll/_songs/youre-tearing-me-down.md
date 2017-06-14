@@ -1,6 +1,6 @@
 ---
 title: You're Tearing Me Down
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: A pop song with some Justin Timberlake arrangements in the verses. Reading the lyric you might think it’s about a love affair. But it’s about Ecstacy and the danger of using it.
