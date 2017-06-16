@@ -33,22 +33,7 @@ gems: [jekyll-paginate]
 defaults:
   - scope:
       path: ""
-      type: "albums"
-    values:
-      layout: release
-  - scope:
-      path: ""
-      type: "compilations"
-    values:
-      layout: release
-  - scope:
-      path: ""
-      type: "singles"
-    values:
-      layout: release
-  - scope:
-      path: ""
-      type: "collaborations"
+      type: "releases"
     values:
       layout: release
   - scope:
@@ -74,20 +59,8 @@ defaults:
 
 # Collections
 collections:
-  albums:
+  releases:
     output: "true"
-    permalink: /music/albums/:title/
-  compilations:
-      output: "true"
-      permalink: /music/compilations/:title/
-  singles:
-    output: "true"
-    permalink: /music/singles/:title/
-  collaborations:
-    output: "false"
-    permalink: /music/collaborations/:title/
-  guest:
-    output: "false"
   songs:
     output: "true"
     permalink: /music/songs/:title/

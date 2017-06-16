@@ -33,7 +33,7 @@ submenu:
                             {% if gigDate >= curDate %}
                                 <li>
                                     <span class="m-tracklist__title u-heading-delta">
-                                        {{ gig.date | date: '%d-%m-%Y' % }}
+                                        {{ gig.date | date: '%d-%m-%Y' }}
                                     </span>
                                     <span class="m-tracklist__subtitle u-heading-delta">
                                         {{ gig.venue }}, {{ gig.city }}

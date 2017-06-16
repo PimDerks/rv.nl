@@ -20,7 +20,8 @@ submenu:
 <div class="stack">
     <div class="wrapper">
 
-        {% include components/card-releases-list.html data=site.collaborations %}
+        {% assign releases = site.releases | where:'type','collaboration' %}
+        {% include components/card-releases-list.html data=releases %}
 
     </div>
 </div>
