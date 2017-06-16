@@ -86,3 +86,9 @@
     }
 
 }
+
+@include respond-min('m') {
+    .m-layout__sidebar {
+        margin-top: baseline(3);
+    }
+}
