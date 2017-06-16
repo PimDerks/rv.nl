@@ -6,6 +6,9 @@ $gutter-small: 3;
 $gutter-large: 3;
 $gutter-unit: 'em';
 
+$gutter: baseline(2);
+$gutter-half: baseline(1);
+
 $grid-small: (
         columns: 4,
         gutters: 0,
