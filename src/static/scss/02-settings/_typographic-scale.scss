@@ -38,6 +38,7 @@ $typographic-scale-names:(
     'small': (0 1),
     'base': (0 1),
     'lead': (1 1),
+    'heading-epsilon': (0 .5),
     'heading-delta': (0 1),
     'heading-gamma': (0 1),
     'heading-beta': (0 1),
@@ -50,6 +51,7 @@ $typographic-scale-names:(
 $typographic-scale-sizes:(
     -1,
     0,
+    1,
     1,
     1,
     2,

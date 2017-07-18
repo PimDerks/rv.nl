@@ -1,6 +1,8 @@
 <header class="o-hero"
         {% if page.header %}
             style="background-image:url('{{ page.header }}')"
+        {% elsif layout.type == 'release' %}
+            style="background-image:url('{{ page.img }}')"
         {% endif %}
         >
 
@@ -9,12 +11,6 @@
             <h1 class="o-hero__title u-heading-alpha">
                 {% if layout.type == 'live' %}
                     {{ page.venue }}
-                {% elsif layout.type == 'release' %}
-                    {{ page.title }}
-                {% elsif layout.type == 'post' %}
-                    {{ page.title }}
-                {% elsif layout.type == 'page' %}
-                    {{ page.title }}
                 {% else %}
                     {{ page.title }}
                 {% endif %}

@@ -30,9 +30,12 @@
     z-index: 3;
 
     .wrapper {
-      margin-top: baseline(-6);
-    }
+        margin-top: baseline(-3);
 
+        @include respond-min('l') {
+          margin-top: baseline(-6);
+        }
+    }
   }
 
   .wrapper {
@@ -42,16 +45,16 @@
   }
 
   // Overlay
-  /* &::before {
-    background: linear-gradient(transparent, rgba(black, .5));
+  &::before {
+    background-color: rgba(#303030, .25);
     bottom: 0;
     content: '';
-    height: 50%;
+    height: 100%;
     left: 0;
     position: absolute;
     width: 100%;
     z-index: 1;
-  } */
+  }
 
   &::after {
     content: '';

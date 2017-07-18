@@ -218,6 +218,11 @@ h4,
   @extend %u-heading-delta;
 }
 
+h5,
+.u-heading-epsilon {
+  @extend %u-heading-epsilon;
+}
+
 p {
   @extend %u-base;
 }

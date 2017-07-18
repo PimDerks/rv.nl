@@ -38,7 +38,7 @@ gulp.task('copy', ['copy-static', 'copy-media']);
 // Watching DEV
 gulp.task('watch-js', js.watch);
 gulp.task('watch-sass', sass.watch);
-//gulp.task('watch-html', jekyll.watch);
+gulp.task('watch-html', jekyll.watch);
 gulp.task('watch-www', watchWWW);
 // gulp.task('watch', ['watch-js', 'watch-sass', 'watch-html']);
 gulp.task('watch', ['watch-js', 'watch-sass']);

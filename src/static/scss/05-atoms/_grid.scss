@@ -37,6 +37,13 @@
     margin: 0 #{-$gutter-half};
     padding: 0;
 
+    @include respond-min('m') {
+        &.m-layout--wide {
+            margin-left: #{-$gutter};
+            margin-right: #{-$gutter};
+        }
+    }
+
     .m-layout {
         margin-left: 0;
         margin-right: 0;
@@ -87,7 +94,7 @@
 
 }
 
-@include respond-min('m') {
+@include respond-min('l') {
     .m-layout__sidebar {
         margin-top: baseline(3);
     }

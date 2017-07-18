@@ -92,7 +92,7 @@ submenu:
                 <div class="m-layout__item m-layout__item--wide">
                 <div class="box box--dimmed">
                     <div class="a-inner a-inner+">
-                        <ol>
+                        <ol class="a-list-bare a-list-border submenu">
                         {% for gig in site.live reversed %}
 
                 {% assign gigYear = gig.date | date: "%Y" %}
@@ -104,7 +104,7 @@ submenu:
 
                     {% if gigYear <= curYear %}
                         <li>
-                            <a href="#gigs-{{ gigYear }}">{{ gigYear }}</a>
+                            <a href="#gigs-{{ gigYear }}" class="u-heading-delta">{{ gigYear }}</a>
                     {% endif %}
 
                     {% assign previousYear = gigYear %}

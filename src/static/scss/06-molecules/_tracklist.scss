@@ -1,3 +1,14 @@
+.submenu a {
+  display: block;
+  font-family: $font-display;
+  margin-bottom: 0;
+  padding: baseline(1);
+  text-decoration: none;
+}
+
+
+
+
 .m-tracklist {
   margin-bottom: baseline(2);
 
