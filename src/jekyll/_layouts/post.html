@@ -36,21 +36,14 @@ type: post
               <div class="m-layout__column u-1/1 u-1/3@l m-layout__sidebar">
                 <div class="m-layout__item m-layout__item--wide">
 
-                  <div class="box box--dimmed a-inner a-inner+">
-                    <h2 class="u-heading-gamma">About this post</h2>
-                    <dl>
-                      <dt class="u-heading-epsilon">Post date</dt>
-                      <dd>{{ page.date | date: '%B %-d, %Y' }}</dd>
-                      <!-- {% if page.categories %}
-                        <dt>Categories</dt>
-                        <dd>
-                          {% for category in page.categories %}
-                            <span class="tag">{{ category }}</span>
-                          {% endfor %}
-                        </dd>
-                      {% endif %} -->
-                    </dl>
-                  </div>
+                  {% assign metaKeys = "" | split:"" %}
+                  {% assign metaValues = "" | split:"" %}
+
+                  {% assign metaKeys = metaKeys | push: "Post date" %}
+                  {% assign releaseDate = page.date | date: "%B %-d, %Y" %}
+                  {% assign metaValues = metaValues | push: releaseDate %}
+
+                  {% include components/meta.html meta-title="About this post" meta-keys=metaKeys meta-values=metaValues %}
 
                 </div>
 

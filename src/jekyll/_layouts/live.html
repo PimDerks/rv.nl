@@ -77,23 +77,27 @@ type: live
             </div>
               {% endif %}
 
-              <div class="m-layout__column u-1/1 u-1/3@l">
+              <div class="m-layout__column u-1/1 u-1/3@l m-layout__sidebar">
             <div class="m-layout__item m-layout__item--wide">
 
-              <div class="box box--dimmed a-inner a-inner+">
-                <h2>About this gig</h2>
-                <dl>
-                  <dt>Date</dt>
-                  <dd>{{ page.date | date: '%B %-d, %Y' }}</dd>
-                  <dt>Venue</dt>
-                  <dd>{{ page.venue }}</dd>
-                  <dt>City</dt>
-                  <dd>{{ page.city }}</dd>
-                  <dt>Country</dt>
-                  <dd>{{ page.country }}</dd>
-                </dl>
-              </div>
+                {% assign metaKeys = "" | split:"" %}
+                {% assign metaValues = "" | split:"" %}
 
+                {% assign metaKeys = metaKeys | push: "Date" %}
+                {% assign releaseDate = page.date | date: "%B %-d, %Y" %}
+                {% assign metaValues = metaValues | push: releaseDate %}
+
+                {% assign metaKeys = metaKeys | push: "Venue" %}
+                {% assign metaValues = metaValues | push: page.venue %}
+                
+                {% assign metaKeys = metaKeys | push: "City" %}
+                {% assign metaValues = metaValues | push: page.city %}
+
+                {% assign metaKeys = metaKeys | push: "Country" %}
+                {% assign metaValues = metaValues | push: page.country %}
+
+                {% include components/meta.html meta-title="About this gig" meta-keys=metaKeys meta-values=metaValues %}
+                
               </div>
 
             </div>

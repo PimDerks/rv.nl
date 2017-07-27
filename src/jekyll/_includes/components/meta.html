@@ -1,0 +1,18 @@
+<div class="box box--dimmed a-inner a-inner+">
+  <h2 class="u-heading-gamma">{{ include.meta-title }}</h2>
+  <dl>
+  	{% if include.meta-items %}
+  		{% for item in include.meta-items %}
+	      <dt class="u-heading-epsilon">{{ item.key }}</dt>
+	      <dd>{{ item.value }}</dd>
+	    {% endfor %}
+  	{% endif %}
+
+  	{% if include.meta-keys %}
+	    {% for item in include.meta-keys %}
+	      <dt class="u-heading-epsilon">{{ item }}</dt>
+	      <dd>{{ include.meta-values[forloop.index0] }}</dd>
+	    {% endfor %}
+    {% endif %}
+  </dl>
+</div>
