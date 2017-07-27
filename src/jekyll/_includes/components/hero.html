@@ -26,6 +26,8 @@
                     {{ page.year }}
                 {% elsif layout.type == 'post' %}
                     {{ page.date | date: "%B %-d, %Y" }}
+                {% elsif layout.type == 'article' %}
+                    {{ page.date | date: "%B %-d, %Y" }}
                 {% endif %}
             </p>
 

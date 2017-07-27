@@ -33,6 +33,11 @@ gems: [jekyll-paginate]
 defaults:
   - scope:
       path: ""
+      type: "articles"
+    values:
+      layout: article
+  - scope:
+      path: ""
       type: "releases"
     values:
       layout: release
@@ -59,6 +64,8 @@ defaults:
 
 # Collections
 collections:
+  articles:
+    output: "true"
   releases:
     output: "true"
   songs:
