@@ -41,41 +41,8 @@ isHomepage: true
         <h2 class="section-title">Latest Releases</h2>
 
         <ul class="m-layout u-group a-list-bare">
-            {% assign items = site.albums|reverse %}
-            {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/1 u-1/2@s u-1/4@l">
-                <div class="m-layout__item">
-
-                    {% include components/card-release.html %}
-
-                </div>
-            </li>
-            {% endfor %}
-
-            {% assign items = site.singles|reverse %}
-            {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/1 u-1/2@s u-1/4@l">
-                <div class="m-layout__item">
-
-                    {% include components/card-release.html %}
-
-                </div>
-            </li>
-            {% endfor %}
-
-            {% assign items = site.compilations|reverse %}
-            {% for release in items limit:1 %}
-            <li class="m-layout__column u-1/1 u-1/2@s u-1/4@l">
-                <div class="m-layout__item">
-
-                    {% include components/card-release.html %}
-
-                </div>
-            </li>
-            {% endfor %}
-
-            {% assign items = site.collaborations|reverse %}
-            {% for release in items limit:1 %}
+            {% assign items = site.releases|reverse %}
+            {% for release in items limit:4 %}
             <li class="m-layout__column u-1/1 u-1/2@s u-1/4@l">
                 <div class="m-layout__item">
 
