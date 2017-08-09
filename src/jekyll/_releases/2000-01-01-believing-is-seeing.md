@@ -1,7 +1,7 @@
 ---
 type: album
 title: Believing Is Seeing
-date: 2000-01-01
+date: 2000-11-29
 img: /images/albums/believing-is-seeing.jpg
 permalink: /music/albums/:title/
 discs:
@@ -18,6 +18,21 @@ discs:
     - Truth Will Out
     - Fear Of Heights
     - Now, Forever And 1 Day
+credits:
+  - key: Composed, written, arranged, performed, produced and recorded
+    value: Robert Valentine
+  - key: Drums and grand piano
+    value: Recorded by Hans van Vondelen at Fendal Studio's.
+  - key: Mix
+    value: Mixed by Hans van Vondelen at Fendal except "Venus And Mars", "Make Way (For The Messenger)" and "Now, Forever And 1 Day" mixed by Robby
+  - key: Mastering
+    value: Rene Schardt at Wisseloord Studio's.
+  - key: Photography
+    value: Niels van Iperen
+  - key: Make up & hair
+    value: Leco van Zadelhoff
+  - key: Art direction
+    value: Takashi Ito    
 ---
 
 This is my favourite until then.

@@ -1,8 +1,18 @@
 ---
-title: Now, Forever And 1 Day
-year: 2006-01-01
+title: Now, Forever and 1 Day
+year: 200
+img: /images/headers/4.jpg
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead vocals, vocal harmonies, black and whites, bass-guitar, lead, harmonic, acoustic and rhythm guitars, vocoder, drum programming and other noises.
+    value: Robby Valentine
+  - key: Drums, percussion, drumprogramming
+    value: Juan van Emmerloot
+  - key: Violin
+    value: Rani, Sara and Noortje Koch
+  - key: Additional vocal harmonies
+    value: Jay Jay Willems
 ---
 
 <p>Tempted by faithless disguise<br />
