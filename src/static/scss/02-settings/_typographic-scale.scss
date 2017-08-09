@@ -28,6 +28,11 @@ $typographic-breakpoints:(
     'xs':   (
         'font-size': 14,
         'line-height': 1.5, // 24/20
+        'scale': map-get($typographic-scales, 'perfect-fifth')
+    ),
+    'm': (
+        'font-size': 16,
+        'line-height': 1.5, // 24/20
         'scale': map-get($typographic-scales, 'golden-ratio')
     )
 );

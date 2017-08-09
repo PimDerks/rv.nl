@@ -108,9 +108,9 @@
         display: table;
     }
 
-    @include respond-min('s') {
+    // @include respond-min('s') {
         max-width: 95%;
-    }
+    // }
 
     @include respond-min('m') { // iPad landscape
         max-width: 90%;
