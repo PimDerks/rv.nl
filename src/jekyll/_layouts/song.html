@@ -25,25 +25,49 @@ type: song
 
               </div>
 
-                {% if page.about %}
+              {% if page.about %}
               <div class="m-layout__item m-layout__item--wide">
                 <section>
                   <div class="box box--dimmed a-inner a-inner+">
-                    <h2 class="u-heading-gamma">About this song</h2>
+                    <h2 class="u-heading-gamma">Robby talks about {{ page.title }}</h2>
                     {{ page.about | markdownify }}
                   </div>
                 </section>
                 </div>
                 {% endif %}
 
+              {% if page.credits %}
+              <div class="m-layout__item m-layout__item--wide">
+              {% include components/meta.html meta-title="Credits" meta-items=page.credits %}
+              </div>
+              {% endif %}
+
 
               </div>
             <div class="m-layout__column u-1/1 u-1/3@m m-layout__sidebar">
-              {% if page.credits %}
               <div class="m-layout__item m-layout__item--wide">
-                {% include components/meta.html meta-title="Credits" meta-items=page.credits %}
+
+                {% assign metaKeys = "" | split:"" %}
+                {% assign metaValues = "" | split:"" %}
+
+                {% assign metaKeys = metaKeys | push: "Title" %}
+                {% assign releaseDate = page.title %}
+                {% assign metaValues = metaValues | push: releaseDate %}
+
+                {% assign metaKeys = metaKeys | push: "Writer" %}
+                {% assign writer = page.writer %}
+                {% assign metaValues = metaValues | push: writer %}
+
+                {% assign metaKeys = metaKeys | push: "Composer" %}
+                {% assign composer = page.composer %}
+                {% assign metaValues = metaValues | push: composer %}
+
+                {% assign metaKeys = metaKeys | push: "Year" %}
+                {% assign year = page.year %}
+                {% assign metaValues = metaValues | push: year %}
+
+                {% include components/meta.html meta-title="About this song" meta-keys=metaKeys meta-values=metaValues %}
               </div>
-              {% endif %}
 
               <!--
               <div class="m-layout__item">

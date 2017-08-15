@@ -4,6 +4,7 @@ title: Believing Is Seeing
 date: 2000-11-29
 img: /images/albums/believing-is-seeing.jpg
 permalink: /music/albums/:title/
+lyrics: true
 discs:
   - tracks:
     - Dear Dad

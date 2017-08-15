@@ -117,7 +117,7 @@
     }
 
     @include respond-min('l') { // iPad portrait
-        max-width: 85%;
+        max-width: 95%;
     }
 
     @include respond-min('xl') { // iPad portrait

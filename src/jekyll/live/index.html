@@ -26,16 +26,16 @@ submenu:
 
                     <h2>Upcoming gigs</h2>
 
-                    <ol class="a-list-bare m-tracklist">
+                    <ol class="a-list-bare m-item-list">
                         {% assign curDate = site.time | date: '%s' %}
                         {% for gig in site.live %}
                         {% assign gigDate = gig.date | date: '%s' %}
                             {% if gigDate >= curDate %}
-                                <li>
-                                    <span class="m-tracklist__title u-heading-delta">
+                                <li class="m-item-list__item">
+                                    <span class="m-item-list__title u-heading-delta a-tag a-tag--black">
                                         {{ gig.date | date: '%d-%m-%Y' }}
                                     </span>
-                                    <span class="m-tracklist__subtitle u-heading-delta">
+                                    <span class="m-item-list__subtitle m-tracklist__subtitle u-heading-delta a-tag a-tag--brand">
                                         {{ gig.venue }}, {{ gig.city }}
                                     </span>
                                 </li>
@@ -58,18 +58,18 @@ submenu:
 
                     {% if gigYear <= curYear %}
                         <h2 id="gigs-{{ gigYear }}">{{ gigYear }}</h2>
-                        <ol class="a-list-bare m-tracklist">
+                        <ol class="a-list-bare m-item-list">
                     {% endif %}
 
                     {% assign previousYear = gigYear %}
                 {% endif %}
 
                 {% if curDate > gigDate %}
-                    <li>
-                        <span class="m-tracklist__title u-heading-delta">
+                    <li class="m-item-list__item">
+                        <span class="a-tag a-tag--black m-item-list__title u-heading-delta">
                             {{ gig.date | date: '%d-%m-%Y' }}
                         </span>
-                        <span class="m-tracklist__subtitle u-heading-delta">
+                        <span class="a-tag a-tag--brand m-item-list__subtitle u-heading-delta">
                             {{ gig.venue }}, {{ gig.city }}
                         </span>
                     </li>

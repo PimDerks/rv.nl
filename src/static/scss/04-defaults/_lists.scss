@@ -68,9 +68,12 @@ dl {
     }
 
     dt {
-        font-family: $font-display;
+        // font-family: $font-display;
         opacity: .5;
-        text-transform: uppercase;
+        // text-transform: uppercase;
+        &::after {
+            content: ':';
+        }
     }
 
     dd + dt {
