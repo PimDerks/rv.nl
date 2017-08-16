@@ -23,7 +23,7 @@
     }
 
     + li {
-      margin-top: baseline(.5);
+      margin-top: baseline(.25);
     }
 
     position: relative;
@@ -34,6 +34,11 @@
       text-decoration: none;
     }
 
+  }
+
+  .m-item-list__title,
+  .m-item-list__subtitle {
+    margin-top: baseline(.25);
   }
 
   .m-item-list__title {

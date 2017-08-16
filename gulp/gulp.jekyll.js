@@ -14,12 +14,6 @@ module.exports.copy = function(){
     var spawn = require('child_process').spawn;
     var tasks = ['serve', '--watch', '--incremental'];
 
-    if(util.env.build) {
-        tasks.push('JEKYLL_ENV=production --port 1337')
-    } else {
-        tasks.push('JEKYLL_ENV=development --port 1337')
-    }
-
     var jekyll = spawn('jekyll', tasks, {stdio: 'inherit'});
 
 };
