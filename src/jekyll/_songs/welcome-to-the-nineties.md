@@ -56,5 +56,5 @@ where right is wrong and wrong is right</p>
 
 <p>(Chorus)</p>
 
-<p>Welcome to the nineties</p>
+<p>Welcome to the nineties<br />
 Welcome to the nineties</p>
