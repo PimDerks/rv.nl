@@ -4,6 +4,7 @@ title: Bizarro World EP
 date: 2014-05-17
 img: /images/singles/bizarro-world-ep.jpg
 permalink: /music/singles/:title/
+lyrics: true
 discs:
   - tracks:
     - Bizarro World

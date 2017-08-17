@@ -3,7 +3,7 @@ title: Deadbeat Boy
 year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
-about: A vaudeville type of song. Starts with a saloon piano recorded on bad vinyl. A Michael Jackson-minded verse. Queen-like harmonies in the chorus. Brian may’s guitar orchestra in ‘Good company’ was the inspiration of the guitar solo.
+about: A vaudeville type of song. Starts with a saloon piano recorded on bad vinyl. A Michael Jackson-minded verse. Queen-like harmonies in the chorus. Brian May’s guitar orchestra in ‘Good company’ was the inspiration of the guitar solo.
 img: /images/headers/5.jpg
 ---
 
