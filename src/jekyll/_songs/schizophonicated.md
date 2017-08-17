@@ -1,6 +1,6 @@
 ---
 title: Schizophonicated
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: This song is about the battle between several voices inside the head of a person lost in an unfulfilled ambition. Or… it can also be about someone trapped in a relationship. That’s what it looks like in the beginning. It’s another Muse-minded composition.

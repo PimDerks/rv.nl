@@ -1,6 +1,6 @@
 ---
 title: The Mistake
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: The song is about the event where it started to go downhill in my personal life. The lyrics are clear enough, they’re literal. One of the favorite rock ballads I wrote. It was only a bonus track on Falling Down In Misanthropolis and I felt it needed to be exposed better.

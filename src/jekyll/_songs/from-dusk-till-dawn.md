@@ -1,6 +1,6 @@
 ---
 title: From Dusk Till Dawn
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: Another Pop song inspired by Adam Lambert’s first album, For your entertainment, about partying. Actually also based on a true experience.

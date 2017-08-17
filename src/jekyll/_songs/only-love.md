@@ -1,6 +1,6 @@
 ---
 title: Only Love
-year: 2006-01-01
+year: 1990
 writer: Robby Valentine
 composer: Robby Valentine
 ---

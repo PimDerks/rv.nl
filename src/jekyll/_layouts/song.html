@@ -51,8 +51,8 @@ type: song
                 {% assign metaValues = "" | split:"" %}
 
                 {% assign metaKeys = metaKeys | push: "Title" %}
-                {% assign releaseDate = page.title %}
-                {% assign metaValues = metaValues | push: releaseDate %}
+                {% assign title = page.title %}
+                {% assign metaValues = metaValues | push: title %}
 
                 {% assign metaKeys = metaKeys | push: "Writer" %}
                 {% assign writer = page.writer %}

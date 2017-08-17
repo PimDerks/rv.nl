@@ -1,6 +1,6 @@
 ---
 title: Save Our Souls
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: Being inspired by Jeff Buckley’s ‘Grace’, I came up with the verses. It’s about trying to escape from Bizarro World. That whatever you do, wherever you go, you would never fit in. It’s about time to escape, run away. Before it’s too late. But the question is, where to escape to?

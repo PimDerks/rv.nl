@@ -1,6 +1,6 @@
 ---
 title: I Can't Get Over You
-year: 2006-01-01
+year: 2006
 writer: Robby Valentine
 composer: Robby Valentine
 about: |

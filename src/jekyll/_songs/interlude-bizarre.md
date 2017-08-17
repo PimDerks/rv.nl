@@ -1,6 +1,6 @@
 ---
 title: Interlude Bizarre
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: The intro of the album is a classical piano version of the title track,  played in a way like ‘Un sospiro’, a concert etude by Franz Liszt.

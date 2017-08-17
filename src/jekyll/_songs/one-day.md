@@ -1,6 +1,6 @@
 ---
 title: One Day
-year: 2006-01-01
+year: 1991
 credits:
   - key: Written, composed and arranged
     value: Robby Valentine

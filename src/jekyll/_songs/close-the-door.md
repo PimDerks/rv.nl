@@ -1,6 +1,6 @@
 ---
 title: Close The Door
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: A melodic mid tempo American rocksong. About a broken heart, betrayal,  the ending of a love affair

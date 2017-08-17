@@ -1,6 +1,6 @@
 ---
 title: The Cold And Lonely Lie
-year: 2006-01-01
+year: 2006
 writer: Robby Valentine
 composer: Robby Valentine
 about: "Piano rock-ballad. Expressing my big desperation about losing the one I loved.

@@ -1,6 +1,6 @@
 ---
 title: Searching Forever
-year: 2006-01-01
+year: 1991
 writer: Robby Valentine
 composer: Robby Valentine
 about: "1990 written piano ballad Searching Forever is about the end of a love .

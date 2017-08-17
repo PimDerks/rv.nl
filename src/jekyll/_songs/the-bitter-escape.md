@@ -1,6 +1,6 @@
 ---
 title: The Bitter Escape
-year: 2006-01-01
+year: 2007
 writer: Robby Valentine
 composer: Robby Valentine
 about: "An inconspicuous mix of different styles in one song. Indian music inspired rock in the bridges, nu metal verses, 90’s Britpop melody style choruses.

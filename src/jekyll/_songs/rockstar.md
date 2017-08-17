@@ -1,6 +1,6 @@
 ---
 title: Rockstar
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: A bit inspired by Rammstein and Marilyn Manson, about a wannabe rockstar, a non genuine person. A mixture between some people I know.

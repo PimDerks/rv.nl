@@ -1,6 +1,6 @@
 ---
 title: Megaman
-year: 2006-01-01
+year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
 ---

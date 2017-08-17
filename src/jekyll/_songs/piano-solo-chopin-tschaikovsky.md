@@ -1,6 +1,6 @@
 ---
 title: Piano Solo (Chopin, Tschaikovsky)
-year: 2006-01-01
+year: 2008
 writer: Robby Valentine
 composer: Robby Valentine
 ---

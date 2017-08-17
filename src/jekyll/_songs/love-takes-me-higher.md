@@ -1,6 +1,6 @@
 ---
 title: Love Takes Me Higher
-year: 2006-01-01
+year: 1992
 credits:
   - key: Written, composed and arranged
     value: Robby Valentine

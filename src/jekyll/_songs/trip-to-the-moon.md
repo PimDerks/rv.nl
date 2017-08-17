@@ -1,6 +1,6 @@
 ---
 title: Trip To The Moon
-year: 2014-01-01
+year: 2014
 writer: Robby Valentine
 composer: Robby Valentine
 about: One of the first dance minded Valentine songs. It’s about going out and all that comes with it. Going to the max, crossing the line. Getting into a bad trip in the final part with a fatal ending.

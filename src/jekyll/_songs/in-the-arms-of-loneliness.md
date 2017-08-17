@@ -1,6 +1,6 @@
 ---
 title: In The Arms Of Loneliness
-year: 2006-01-01
+year: 1995
 credits:
   - key: Composed, written, arranged and produced
     value: Robby Valentine
