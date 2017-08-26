@@ -3,6 +3,11 @@ title: The Sulky Shuffle
 year: 1994
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: "Composed, writted, arranged, produced, recorded, mixed & performed"
+    value: Robby V
+  - key: Lead guitar
+    value: Rob Winter
 ---
 
 <p>Wherever I go feel alone<br />

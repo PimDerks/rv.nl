@@ -3,4 +3,37 @@ title: Kombat
 year: 1998
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: "Composed, writted, arranged, produced, recorded, mixed & performed"
+    value: Robby V
 ---
+
+<p>It's a cold and dark night for the soldiers<br />
+They're a long way from home<br />
+In a place where they're losing their youth<br />
+In a war where they take no prisoners<br />
+It's to live or be gone<br />
+Now it is down to the truth</p>
+
+<p>Left their lives behind, all the lovers, all the wives<br />
+Goodbye to everything at home<br />
+Will the ship return, will they come back alive<br />
+Only the strong survive</p>
+
+<p>Kombat, Kombat<br />
+Look at the fear in their eyes<br />
+Kombat, Kombat<br />
+Surely they realize<br />
+It's to live or die</p>
+
+<p>It's a cold dark night for the youngsters<br />
+Risking their lives<br />
+Look at the courage they have<br />
+Just scars they get from the army<br />
+No glittering prize<br />
+What kind of future they have</p>
+
+<p>Left their dreams behind for somebody else's strife<br />
+Goodbye to innocence and youth<br />
+Will the ship return, will they come back alive<br />
+Only the strong survive</p>

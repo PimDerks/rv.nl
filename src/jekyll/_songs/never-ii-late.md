@@ -3,4 +3,44 @@ title: Never II Late
 year: 1998
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: "Composed, writted, arranged, produced, recorded, mixed & performed"
+    value: Robby V
 ---
+
+<p>There is a girl<br />
+She has a cancer<br />
+She's only sixteen years old<br />
+Within this world she lost all her chances<br />
+With only a few months to go</p>
+
+<p>It's so unfair why life has to leave her<br />
+God knows what she's going through<br />
+She knows she dies<br />
+But nothing can break her to make all her wishes come true</p>
+
+<p>She gives life in a short time a meaning<br />
+And does everything she wants to do</p>
+
+<p>Never too late to live<br />
+When the future is gone you see life as a gift<br />
+Never too late to live<br />
+No it's never too late, to live your life</p>
+
+<p>There was a girl<br />
+She died of cancer<br />
+It happened like she always knew<br />
+Within this world she took all her chances<br />
+And made all her wishes come true</p>
+
+<p>She gives life in a short time a meaning<br />
+And did everything she wanted to do</p>
+
+<p>Chorus</p>
+
+<p>When luck's running out, or love gets you down<br />
+Don't make a mess of your life<br />
+Just keep on believing in all of your dreams<br />
+Think they will all come true</p>
+
+<p>Chorus x 2</p>

@@ -3,4 +3,32 @@ title: Love Never Dies
 year: 1998
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: "Composed, writted, arranged, produced, recorded, mixed & performed"
+    value: Robby V
 ---
+
+<p>This life of emptiness controlled her mind<br />
+So sure she would never find her way<br />
+Inside her restless heart the rain didn't end<br />
+She couldn't take it anymore</p>
+
+<p>That night she realized the dream she had<br />
+And opened her eyes for something new<br />
+This life has failed again right before our eyes<br />
+She couldn't face it anymore<br />
+She couldn't face it anymore</p>
+
+<p>Sometimes love never dies<br />
+And feelings go on forever<br />
+Sometimes you don't see through your eyes<br />
+We share all our dreams together<br />
+But in times of no disguise<br />
+We can't fool ourselves with lies<br />
+Cause we all miss you so</p>
+
+<p>Drawn in desperate thoughts she carried on<br />
+How lonely she felt, nobody knew<br />
+The love she hoped to find was in another world<br />
+She couldn't face it anymore<br />
+She couldn't face it anymore</p>
