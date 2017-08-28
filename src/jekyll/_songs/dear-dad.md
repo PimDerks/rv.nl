@@ -19,7 +19,6 @@ all I do is feeling sorry for myself.<br />
 Dear dad, it feels like all the good is in the past,<br />
 dear dad, it looks like only sorrow's up ahead<br />
 Dear dad, I just want to be with you, in another world.</p>
-</p>
 
 <p>Heal me, Father, heal my soul,<br />
 heal my heart, I can't take no more.<br />
@@ -35,7 +34,7 @@ I don't know how to cure.</p>
 <p>Dear dad, remember all the great times that we shared.<br />
 Dear dad, I hate to know they're buried in the past.<br />
 Dear dad, I can't wait to be with you...<br />
-In the better word...</p>
+In the better world...</p>
 
 <p>Heal me, Father, heal my soul,<br />
 heal my heart, I can't take no more.<br />
