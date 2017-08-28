@@ -33,7 +33,7 @@ credits:
     value: Takashi Ito                       
 ---
 
-<p>In the beginning of ’98 I started recording No Sugar Added. Initially rather inspired to do something slightly different. A bit edgier, less ‘bombast’ and less orchestrated than the general feel on the previous albums , New songs, like <a href="/music/songs/the-forces-of-secrecy/">The Forces Of Secrecy</a>, <a href="/music/songs/train-against-the-grain">Train Against The Grain</a>, <a href="/music/songs/reincarnated-virtually/">Reincarnated Virtually</a>, <a href="/music/songs/its-all-about/">It’s All About...</a> came quickly. While I wanted to take that new approach much further I got blocked. Usually I would wait, sometimes for months, to get the inspiration back. But I wanted this album to come out quickly.</p>
+<p>In the beginning of ’98 I started recording No Sugar Added. Initially rather inspired to do something slightly different. A bit edgier, less ‘bombast’ and less orchestrated than the general feel on the previous albums. New songs, like <a href="/music/songs/the-forces-of-secrecy/">The Forces Of Secrecy</a>, <a href="/music/songs/train-against-the-grain">Train Against The Grain</a>, <a href="/music/songs/reincarnated-virtually/">Reincarnated Virtually</a>, <a href="/music/songs/its-all-about/">It’s All About...</a> came quickly. While I wanted to take that new approach much further I got blocked. Usually I would wait, sometimes for months, to get the inspiration back. But I wanted this album to come out quickly.</p>
 
 <p>So decided to record some ‘old’ songs, some of them very dear to me but never saw the light of day on a Valentine album . I figured that would be a much better solution than to record the lame ‘fillers’ I could come up with on such a short notice.</p>
 
