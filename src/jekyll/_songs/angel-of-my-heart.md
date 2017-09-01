@@ -1,6 +1,75 @@
 ---
 title: Angel Of My Heart
-year: 2006
+year: 1994
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead-vocals
+    value: "Robby Valentine & Arthur Polini"
+  - key: Acoustic guitars
+    value: "Robby Valentine & Rob Winter"
+  - key: "12 string acoustic guitars & lead acoustic"
+    value: Rob Winter
+  - key: Percussion
+    value: Hans Eijkenaar
+  - key: Background vocals
+    value: "Rob & Robby"
 ---
+
+<p>Life - when will it bring<br />
+This memory back in time<br />
+When will it bring me back<br />
+The love of my life<br />
+Can I ever solve<br />
+The mystery in my heart<br />
+Will I ever find out who you are<br />
+Ooh I'm still trying</p>
+
+<p>Love - will I always hold on<br />
+To this love<br />
+Even when the pain gets too tough<br />
+No there's no one<br />
+In the world like you<br />
+No there's nothing<br />
+I don't do for you - wooh<br />
+Only for you - only for you</p>
+
+<p>Wooh angel of my heart<br />
+You don't know<br />
+You still tear me apart<br />
+Wooh angel of my heart<br />
+I still love you</p>
+
+<p>Time - never gave me any chance<br />
+For peace of mind<br />
+Never made me leave<br />
+The heartache behind<br />
+Now it's all so grey and blue<br />
+Can't you see I'd die for you<br />
+Wooh - only for you - only for you</p>
+
+<p>Wooh angel of my heart<br />
+You don't know<br />
+You still tear me apart<br />
+Wooh angel of my heart<br />
+I still love you<br />
+Oh I still love<br />
+I'm still in love with you</p>
+
+<p>Can't you see<br />
+What she's doing to you<br />
+Yeah - but my love still remains<br />
+Wooh - don't you see<br />
+Where it's leading you to<br />
+But without her it is never the same<br />
+Never be the same</p>
+
+<p>Wooh angel of my heart<br />
+You don't know<br />
+You still tear me apart<br />
+Wooh angel of my heart<br />
+I still love you</p>
+
+<p>Wooh - wooh - loving you<br />
+I still believe in the things you do<br />
+I'm still in love with you</p>

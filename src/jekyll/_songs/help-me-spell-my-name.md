@@ -3,6 +3,13 @@ title: Help Me Spell My Name
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead vocals, grand piano, synthesizers, harmony vocals
+    value: Robby Valentine
+  - key: Guitars
+    value: Rob Winter
+  - key: Piano pizzicato solo
+    value: "Robby Valentine & Pim Koopman"
 ---
 
 <p>When I look at myself in the mirror<br />

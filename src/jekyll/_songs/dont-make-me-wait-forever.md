@@ -3,6 +3,15 @@ title: Don't Make Me Wait Forever
 year: 1990
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead vocals, grand piano, synthesizers, harmony vocal, drum
+    value: Robby Valentine
+  - key: Lead & rhythm guitars
+    value: Rob Winter
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: "Cymbals & Hi-hats"
+    value: Pim Koopman
 ---
 
 <p>Memories on a lonely night<br/>

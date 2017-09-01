@@ -3,6 +3,15 @@ title: Miss You Eternally
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead-vocals, grand piano, synthesizers & harmony vocals
+    value: Robby Valentine
+  - key: Lead & rhythm guitars
+    value: Rob Winter
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: Drums
+    value: Hans Eijkenaar
 ---
 
 <p>I woke up a million miles away<br />

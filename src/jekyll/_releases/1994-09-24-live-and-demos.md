@@ -4,6 +4,7 @@ title: Live & Demos
 date: 1994-09-24
 img: /images/singles/live-demos.jpg
 permalink: /music/singles/:title/
+lyrics: true
 discs:
   - tracks:
     - title: I Believe In You

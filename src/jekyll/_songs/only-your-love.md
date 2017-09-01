@@ -3,6 +3,15 @@ title: Only Your Love
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: "Lead-vocals, harmony vocals, synthesizers, drum programming"
+    value: Robby Valentine
+  - key: Lead & rhythm guitars
+    value: Rob Winter
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: "Cymbals & Hi-hats"
+    value: Pim Koopman
 ---
 
 <p>I'm lost in a senseless fight<br />

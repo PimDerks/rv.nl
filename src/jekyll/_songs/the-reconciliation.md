@@ -3,4 +3,26 @@ title: The Reconciliation
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead-vocals, grand piano, synthesizers, harmony vocals
+    value: Robby Valentine
+  - key: Slide guitar
+    value: Rob Winter
 ---
+
+<p>We used to love the silence<br />
+We built a wall around us<br />
+To play our solitary game<br />
+The world of sacred magic<br />
+Now looks like melted plastic<br />
+All our pride turned into shame</p>
+
+<p>The star that guides us<br />
+Has surely lost it's way<br />
+It makes us fight about<br />
+Which words we want to say</p>
+
+<p>Now there's only one thing<br />
+For us to do<br />
+Saying I love you<br />
+Together we can make it through</p>

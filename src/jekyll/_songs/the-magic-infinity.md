@@ -3,6 +3,17 @@ title: The Magic Infinity
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead-vocals & synthesizers
+    value: Robby Valentine
+  - key: Lead & rhythm guitars
+    value: Rob Winter
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: Drums
+    value: Hans Eijkenaar
+  - key: Backing vocals
+    value: Robby Valentine & Arthur Polini                   
 ---
 
 <p>Everywhere I hear my name<br />

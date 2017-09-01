@@ -3,6 +3,21 @@ title: Megaman
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead-vocals
+    value: Robby Valentine
+  - key: Lead & rhythm guitars
+    value: Rob Winter
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: Drums
+    value: Hans Eijkenaar
+  - key: Harmony vocals
+    value: Arthur Polini
+  - key: Bag pipes
+    value: Cees van Gils
+  - key: End chorus
+    value: Soesterberg American School        
 ---
 
 <p>Like brother and sister<br />

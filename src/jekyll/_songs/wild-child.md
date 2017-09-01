@@ -3,6 +3,17 @@ title: Wild Child
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: "Lead vocals & synthesizers"
+    value: Robby Valentine
+  - key: Lead & rhythm guitars
+    value: Rob Winter
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: Drums
+    value: Hans Eijkenaar
+  - key: Harmony vocals
+    value: "Arthur & Robby"    
 ---
 
 <p>Darling's on the run<br />

@@ -3,6 +3,19 @@ title: I Need Your Love
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead vocals, synthesizers, drum programming
+    value: Robby Valentine
+  - key: Lead guitars
+    value: Rob Winter
+  - key: Rhythm guitar
+    value: Robby Valentine    
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: Harmony vocals
+    value: "Robby & Arthur"    
+  - key: Additional cymbals
+    value: Pim Koopman
 ---
 
 <p>Times have changed<br />

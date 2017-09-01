@@ -5,6 +5,7 @@ date: 1993-07-01
 img: /images/albums/the-magic-infinity.jpg
 header: /images/headers/albums/tmi1994.jpg
 permalink: /music/albums/:title/
+lyrics: true
 discs:
   - tracks:
     - The Magic Infinity
@@ -23,6 +24,16 @@ discs:
     - title: Valentine's Overture Part II (A Martian On Earth)
       subtitle: Japanese bonustrack
 credits:
+  - key: "All songs written, composed & arranged"
+    value: Robby Valentine
+  - key: "Producer"
+    value: "Robby Valentine, Pim Koopman & John Sonneveld"    
+  - key: "Engineer"
+    value: John Sonneveld
+  - key: Mix    
+    value: John Sonneveld & Pim Koopman
+  - key: Recorded at
+    value: Wisseloord Studios, Hilversum    
   - key: Photography
     value: Joost van Velsen
   - key: Design

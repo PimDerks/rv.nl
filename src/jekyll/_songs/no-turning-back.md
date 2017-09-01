@@ -3,6 +3,21 @@ title: No Turning Back
 year: 1993
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead-vocals, harmony vocals, grand piano, synthesizers
+    value: Robby Valentine
+  - key: Lead & rhythm guitars
+    value: Rob Winter
+  - key: Bass guitar
+    value: Arthur Polini
+  - key: Drums
+    value: Hans Eijkenaar
+  - key: "Additional harmony vocals (Bombastic intro)"
+    value: "Robby & Johan Willems"
+  - key: "Additional harmony vocals (I feel the strength)"
+    value: "Robby & Arthur"
+  - key: "Additional harmony vocals (Final)"
+    value: "Robby, Arthur, John, Rob"    
 ---
 
 <p>I believed in love<br />
