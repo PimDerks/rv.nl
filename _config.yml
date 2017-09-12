@@ -14,6 +14,7 @@ description: > #
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://robbyvalentine.nl" # the base hostname & protocol for your site
 future: true
+port: 1337
 
 # Where things are
 source: ./src/jekyll
