@@ -123,8 +123,12 @@
 
       > li {
         display: inline-block;
-        padding-left: baseline(.5);
-        padding-right: baseline(.5);
+        padding-left: 0;
+        padding-right: 0;
+
+        + li {
+          margin-left: baseline(.5);
+        }
       }
 
     }
@@ -143,9 +147,8 @@
 
     > ul {
 
-      > li {
-        padding-left: baseline(1.25);
-        padding-right: baseline(1.25);
+      > li + li {
+        margin-left: baseline(1.5);
       }
 
     }
