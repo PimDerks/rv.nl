@@ -3,7 +3,7 @@ type: collaboration
 title: The Great Escape
 artist: Zinatra
 date: 1990-01-01
-img: /images/collaborations/thegreatescape.jpg
+img: /images/collaborations/the-great-escape.jpg
 permalink: /music/collaborations/:title/
 discs:
   - tracks:
