@@ -19,9 +19,17 @@ layout: default
                   <div class="a-inner a-inner+">
 
                     <h2>Upcoming gigs</h2>
+                    {% assign curDate = site.time | date: '%s' %}
+                    {% assign hasUpcoming = false %}
+                    {% for gig in site.live %}
+                        {% assign gigDate = gig.date | date: '%s' %}
+                        {% if gigDate >= curDate %}
+                            {% assign hasUpcoming = true %}
+                        {% endif %}                            
+                    {% endfor %}
 
+                    {% if hasUpcoming %}
                     <ol class="a-list-bare m-item-list">
-                        {% assign curDate = site.time | date: '%s' %}
                         {% for gig in site.live %}
                         {% assign gigDate = gig.date | date: '%s' %}
                             {% if gigDate >= curDate %}
@@ -36,6 +44,9 @@ layout: default
                             {% endif %}
                         {% endfor %}
                     </ol>
+                    {% else %}
+                        <p>No upcoming gigs right now. <a href="/contact/">Contact us for a booking!</a>.
+                    {% endif %}
 
                     {% for gig in site.live reversed %}
 
