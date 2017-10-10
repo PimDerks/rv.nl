@@ -5,6 +5,7 @@ date: 1996-02-01
 img: /images/albums/valentine.jpg
 header: /images/headers/albums/v1995.jpg
 permalink: /music/albums/:title/
+lyrics: true
 discs:
   - tracks:
     - God

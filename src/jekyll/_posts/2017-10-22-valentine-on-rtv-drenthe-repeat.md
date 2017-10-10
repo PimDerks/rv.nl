@@ -1,0 +1,13 @@
+---
+title: Valentine on RTV Drenthe Repeat
+img: /images/news/2017-10-10.jpg
+date: 2017-10-10
+categories: live
+lead: "TT Queen Tribute show on Dutch TV"
+---
+
+<p>This saturday (October 14) at 22:00 hrs (Dutch time) RTV Drenthe will broadcast the show we did earlier this year at the TT Assen. The show will be available in the Netherlands on TV as well as on rtvdrenthe.nl. Below you can already get a sneak preview!</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XQ6FlT_EXhI" frameborder="0" allowfullscreen></iframe>
+
+For more information, visit the <a href="http://www.rtvdrenthe.nl/tv/programma/110/TT-Concerts">RTV Drenthe</a> website.
