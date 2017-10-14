@@ -33,4 +33,10 @@ discs:
       subtitle: Valensia
     - title: Victory
       subtitle: Valensia
+credits:
+  - key: "Composed, written, arranged, recorded, engineered, mixed and produced"
+  - key: Valentine at Studio Heaven
+    value: Recorded by Tjeerd van Zagen, assisted by Julein at Wisseloord Studio 1, Hilversum, Holland.
+  - key: Guitar solo, additional lead and harmony vocals
+    value: Recorded by Valensia Clarkson at Valensia Studios, Spain
 ---
