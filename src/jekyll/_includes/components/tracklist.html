@@ -27,6 +27,10 @@
                     <a href="{{ songData.url }}" class="a-tag a-tag--black">
                         {{ songTitle }}
                     </a>
+                {% else %}
+                    <span class="a-tag a-tag--black">
+                        {{ songTitle }}
+                    </span>
                 {% endif %}
             {% else %}
                 <span class="a-tag a-tag--black">
