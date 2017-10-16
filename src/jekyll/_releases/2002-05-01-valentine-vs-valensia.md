@@ -5,6 +5,7 @@ artist: V
 date: 2002-05-01
 img: /images/collaborations/valentine-vs-valensia.jpg
 permalink: /music/collaborations/:title/
+lyrics: true
 discs:
   - tracks:
     - title: City Lights
