@@ -1,19 +1,19 @@
-<article class="a-card">
+<article class="a-card a-card--overlay" data-tilt>
     <div class="a-card__inner">
          <a href="{{ release.url }}">
-            <div class="a-img u-ratio u-ratio--1:1 u-stacked" style="background-image:url('{{ release.img }}')">
+            <div class="a-card__img a-img u-ratio u-ratio--1:1 u-stacked" style="background-image:url('{{ release.img }}')">
                 <img src="{{ release.img }}" alt="{{ release.title }}" />
             </div>
-            <div class="box">
-                <div class="a-inner">
-                    <div class="a-card__title u-heading-delta">
-                        {{ release.title }}
-                    </div>
-                    <div class="a-card__subtitle">
-                        {{ release.date | date: "%Y" }}
-                    </div>
-                </div>
-            </div>
         </a>
+    </div>
+    <div class="a-card__overlay u-diapositive">
+        <div class="a-inner">
+            <div class="a-card__title u-heading-delta">
+                {{ release.title }}
+            </div>
+            <div class="a-card__subtitle">
+                {{ release.date | date: "%Y" }}
+            </div>
+        </div>
     </div>
 </article>
