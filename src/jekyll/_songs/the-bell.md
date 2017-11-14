@@ -1,0 +1,75 @@
+---
+title: The Bell
+year: 1999
+writer: Valensia/Valentine
+composer: Valentine/Valensia
+credits:
+  - key: Drums
+    value: David Clarkson
+  - key: Grand Piano & Bass
+    value: Robby
+  - key: Doorbell
+    value: Jim Clarkson
+  - key: Sampling
+    value: David Clarkson
+  - key: All guitars
+    value: "Valensia"
+  - key: Vocoder
+    value: "Robby & Valensia"     
+  - key: All lead & harmony vocals
+    value: "Robby & Valensia"
+  - key: "Drums & guitars"
+    value: "Recorded at Bullit Sound Studios"
+  - key: "Everything else"
+    value: "Recorded at The Isolation Cell"
+  - key: "Engineering"
+    value: "Robby"
+  - key: "Drums & Grand Piano engineered by"
+    value: "Holger Schwedt"
+  - key: "Guitars engineered by"
+    value: "Robby & Valensia"
+  - key: "Mixed at"
+    value: "Bullit Sound Studios"  
+---
+
+<p>I fix my hair 'cause my baby comes at seven<br />
+Changed my clothes about a million times today, yeah, yeah...<br />
+Tonight's the night she will take me up to heaven<br />
+I know this time we're going all the way</p>
+
+<p>She is my new horizon<br />
+She is so true, she is my moonshine (moonshine)<br />
+What can I do about it?<br />
+My life gets brighter every day</p>
+
+<p>The doorbell rings, it must be her, it's almost seven<br />
+but the bailiff's there with some bills I didn't pay...</p>
+
+<p>Just as you expect your lover<br />
+It's a neighbour or some clown<br />
+Stupid milkman, total stranger<br />
+What the hell is goin' down?</p>
+
+<p>Hey, are you happy now - there's no one at the doorbell ringing - but yourself</p>
+
+<p>I'm fixing dinner for my first blind-date ever<br />
+and smoke is rising from the microwave, yeah, yeah<br />
+The bell - jump up - eight-o-clock - it must be Heather<br />
+but it's a fireman asking me "Where is the blaze?"</p>
+
+<p>Just as you expect your lover<br />
+It's a neighbour or some clown<br />
+Stupid milkman, total stranger<br />
+What the hell is goin' down?</p>
+
+<p>Hey, are you happy now - there's no one at the doorbell ringing - but yourself</p>
+
+<p>Busy postman, Dr. Labour - no policemen - turn me down<br />
+no Jehova, nor a saviour, Hare Krishna turn around<br />
+Clinton, Arafat or Hoessein, Prince & Mayte go away<br />
+Bill & Monica or Jeltsin, Mr. Gates another day<br />
+Luciella, Ellen, Cindy Crawford, Schiffer, McCarthey - neither way<br />
+Please stop ringing Queen of Holland - maybe next time King of Spain<br />
+Aldrin, Armstrong, Collins, Lovell - in fact, all NASA: blow away!<br />
+Dave & Goliath, Trojan Horses<br />
+Zeus or Salamon, potatoes, China, Pakistan, Norway</p>
