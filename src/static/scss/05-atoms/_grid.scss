@@ -87,11 +87,6 @@
         margin-bottom: baseline(2);
     }
 
-    .m-layout__item--wide {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
 }
 
 @include respond-min('l') {

@@ -9,7 +9,7 @@ type: song
         <div class="m-layout u-group">
           <div class="m-layout__row">
             <div class="m-layout__column u-1/1 u-2/3@m">
-              <div class="m-layout__item m-layout__item--wide">
+              <div class="m-layout__item">
 
                   <div class="box a-inner a-inner+">
 
@@ -26,7 +26,7 @@ type: song
               </div>
 
               {% if page.about %}
-              <div class="m-layout__item m-layout__item--wide">
+              <div class="m-layout__item">
                 <section>
                   <div class="box box--dimmed a-inner a-inner+">
                     <h2 class="u-heading-gamma">Robby talks about {{ page.title }}</h2>
@@ -37,7 +37,7 @@ type: song
                 {% endif %}
 
               {% if page.credits %}
-              <div class="m-layout__item m-layout__item--wide">
+              <div class="m-layout__item">
               {% include components/meta.html meta-title="Credits" meta-items=page.credits %}
               </div>
               {% endif %}
@@ -45,7 +45,7 @@ type: song
 
               </div>
             <div class="m-layout__column u-1/1 u-1/3@m m-layout__sidebar">
-              <div class="m-layout__item m-layout__item--wide">
+              <div class="m-layout__item">
 
                 {% assign metaKeys = "" | split:"" %}
                 {% assign metaValues = "" | split:"" %}
