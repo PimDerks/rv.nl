@@ -54,14 +54,6 @@ type: song
                 {% assign title = page.title %}
                 {% assign metaValues = metaValues | push: title %}
 
-                {% assign metaKeys = metaKeys | push: "Writer" %}
-                {% assign writer = page.writer %}
-                {% assign metaValues = metaValues | push: writer %}
-
-                {% assign metaKeys = metaKeys | push: "Composer" %}
-                {% assign composer = page.composer %}
-                {% assign metaValues = metaValues | push: composer %}
-
                 {% assign metaKeys = metaKeys | push: "Year" %}
                 {% assign year = page.year %}
                 {% assign metaValues = metaValues | push: year %}
