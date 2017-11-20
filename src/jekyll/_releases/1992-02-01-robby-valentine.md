@@ -4,6 +4,7 @@ title: Robby Valentine
 date: 1992-02-14
 img: /images/albums/robby-valentine.jpg
 permalink: /music/albums/:title/
+lyrics: true
 discs:
   - tracks:
     - The Magic Breeze
