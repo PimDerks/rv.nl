@@ -28,7 +28,9 @@ permalink: /news/:title/
 # Pagination
 paginate: 6
 paginate_path: "/news/:num/"
-gems: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
 
 # Defaults
 defaults:
