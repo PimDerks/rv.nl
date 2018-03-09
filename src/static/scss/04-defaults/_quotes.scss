@@ -5,12 +5,12 @@
 blockquote,
 q,
 cite {
-    @extend %u-heading-beta;
-    color: black;
-    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
-    margin: baseline(1.75) 0;
     quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+q,
+cite {
 
     &::before,
     &::after {
@@ -25,10 +25,10 @@ cite {
     &::after {
         content: close-quote;
     }
+}
 
-    p {
-        @extend %u-heading-delta;
-    }
+
+blockquote {
 
     p:first-of-type {
         &::before {

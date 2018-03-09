@@ -77,8 +77,7 @@ dl {
     }
 
     dd + dt {
-        margin-top: baseline(.5);
-        padding-top: baseline(.5);
+        margin-top: baseline(1);
 
         &::before {
             border-top: 1px solid currentColor;
@@ -91,3 +90,4 @@ dl {
     }
 
 }
+

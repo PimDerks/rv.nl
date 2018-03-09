@@ -1,0 +1,37 @@
+.a-interview {
+
+	blockquote {
+		margin: 0;
+	}
+
+	dt {
+		font-weight: bold;
+		opacity: 1;
+
+		&::after {
+			display: none;
+		}
+
+	}
+
+	dd {
+		opacity: .5;
+
+		blockquote {
+			font-style: normal;
+		}
+	}
+
+	dt + dd {
+		margin-top: baseline(1);
+		
+	}
+
+	dd + dt {
+
+		&::before {
+			display: none;
+		}
+	}
+
+}

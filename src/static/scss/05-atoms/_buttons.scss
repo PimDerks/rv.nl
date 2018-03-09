@@ -4,7 +4,7 @@ button,
   border: baseline(.1) solid get-color('white');
   color: get-color('white');
   display: inline-block;
-  font-family: 'Open Sans';
+  font-family: $font-display;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -23,12 +23,12 @@ button,
 .button--brand {
   background-color: #FFE400;
   border-color: #FFE400;
-  color: black;
+  color: black !important;
 
   @include attention(){
     background-color: black;
     border-color: black;
-    color: white;
+    color: white !important;
   }
 
 }
