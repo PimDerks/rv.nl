@@ -67,6 +67,8 @@ defaults:
 
 # Collections
 collections:
+  crowdsourcing:
+    output: "false"
   articles:
     output: "true"
   releases:
