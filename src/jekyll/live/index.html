@@ -34,12 +34,18 @@ layout: default
                         {% assign gigDate = gig.date | date: '%s' %}
                             {% if gigDate >= curDate %}
                                 <li class="m-item-list__item">
+                                    {% if gig.link %}
+                                        <a href="{{ gig.link }}" target="_blank">
+                                    {% endif %}
                                     <span class="m-item-list__title u-heading-delta a-tag a-tag--black">
                                         {{ gig.date | date: '%d-%m-%Y' }}
                                     </span>
                                     <span class="m-item-list__subtitle m-tracklist__subtitle u-heading-delta a-tag a-tag--brand">
                                         {{ gig.venue }}, {{ gig.city }}
                                     </span>
+                                    {% if gig.link %}
+                                        </a>
+                                    {% endif %}
                                 </li>
                             {% endif %}
                         {% endfor %}
