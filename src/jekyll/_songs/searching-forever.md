@@ -8,3 +8,35 @@ Heartbroken and desolated, trying to face the thought that real love might not e
 A beautiful but sad conclusion of the mainly dark atmosphere on the album."
 ---
 
+<p>Alone in the dark - thinking 'bout our love<br />
+We came so far but never close enough<br />
+Time was on our side - so how could we divide<br />
+I never felt such a pain before</p>
+
+<p>Love seems so far away - Oh I wish that I could die<br />
+Why can't we give it another try</p>
+
+<p>Tears in my eyes, another in your life<br />
+I can't believe it's what you're looking for<br />
+But I cannot forget - the better times we shared<br />
+Why can't we love like those memories</p>
+
+<p>They're not so far away - are they so hard to remain<br />
+The things we felt before - or is this song still in vain</p>
+
+<p>Love's not meant for me, love is a fantasy<br />
+I keep searching forever<br />
+Love's no friend of mine<br />
+My love-life sun will never shine<br />
+Search for the thing I can never find<br />
+Your love</p>
+
+<p>Hold me tight, let me help you win this fight<br />
+I can give you love forever<br />
+Roll the dice, I don't want to love on lies<br />
+'Cause I still keep this feeling - I still keep this feeling...</p>
+
+<p>Your love...<br />
+I don't wanna miss you</p>
+
+<p>I will always love you...</p>

@@ -6,3 +6,74 @@ composer: Robby Valentine
 about: |
   The stranger in the midst. 80’s electro-pop sounding track with catchy sing along pop/rock chorus. Sung with low -tongue in cheek- lead vocals customary for these type of songs. A fun track that escapes the dark atmosphere of the majority of the songs on this album. Synthesized-basses, pounding bass drum, danceable rhythm, the patently obvious gay-pastiche puts a smile on your face.
 ---
+
+<p>Looking for consolidation in the nighttime<br />
+Trying to find an answer to the void<br />
+Love is the best solution<br />
+But love never finds its way to my door</p>
+
+<p>Promised myself a new life from tomorrow<br />
+Saving it every day for years and years<br />
+But nothing is ever changing<br />
+Nothing will ever be like before</p>
+
+<p>It's just a test, that's what Lovey would say<br />
+But I made a mess, it's the price I must pay<br />
+For all the times I was going astray<br />
+Throwing all the love away</p>
+
+<p>Rock me like a hurricane<br />
+Up the nose and through my veins<br />
+White heat, white light<br />
+It doesn't matter if it's wrong or right</p>
+
+<p>Rock me like a hurricane<br />
+Addicted to love, I cast away<br />
+Raw meat, read light<br />
+I need a fix before the heat<br />
+Comes down tonight<br />
+Alright - yeah</p>
+
+<p>Trying to come to grips with my desolation<br />
+But how can I fill the void without a cure<br />
+What is my destination?<br />
+Guess there will never be a big reward</p>
+
+<p>It's all a quest to a different day<br />
+That's what she said<br />
+Don't forget your prayers<br />
+An apple a day keeps the doctor away<br />
+But that won't ease the pain</p>
+
+<p>Rock me like a hurricane<br />
+Up the nose and through my veins<br />
+White heat, white light<br />
+It doesn't matter if it's wrong or right</p>
+
+<p>Rock me like a hurricane<br />
+Addicted to love, I cast away<br />
+Raw meat, read light<br />
+I need a fix before the heat<br />
+Comes down tonight<br />
+Alright - yeah</p>
+
+<p>It's just a test I'm about to fail<br />
+I made a mess now it's time to pay<br />
+For all the times I was going astray<br />
+Throwing all the love away</p>
+
+<p>Rock me like a hurricane<br />
+Up the nose and through my veins<br />
+White heat, white light<br />
+It doesn't matter if it's wrong or right</p>
+
+<p>Rock me like a hurricane<br />
+Addicted to love, I cast away<br />
+Raw meat, read light<br />
+It doesn't matter if it's wrong or right</p>
+
+<p>Rock me like a hurricane<br />
+Against the wall I go insane<br />
+I need love, I need a life<br />
+I need a fix before the heat comes down tonight<br />
+Alright - alright - alright- - all night</p>

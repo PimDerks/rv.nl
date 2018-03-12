@@ -6,3 +6,49 @@ composer: Robby Valentine
 about: |
   On the verge of giving up hope, but still trying to hold on to the dream once shared with the one for whom most of these songs are written about. Mid-tempo pop/rock song with a slice of metal , and a mysteriously sounding verse that’s coming right out of no-mans land.
 ---
+
+<p>What am I gonna do when I find that the dream is over<br />
+What am I gonna do when I finally realize<br />
+What am I gonna do when I there's nothing to hold on to<br />
+What am I gonna do when I find out it's all a lie</p>
+
+<p>Tell (I gotta know) me (I gotta know)<br />
+Tell (I gotta know) me (I gotta know)<br />
+Tell me that it's not a game</p>
+
+<p>Here<br />
+In this place of make-believe I slowly die<br />
+Will you ever come clean<br />
+Or would you like to see me living for a lie</p>
+
+<p>What am I gonna do in this no-win situation<br />
+What am I gonna do when there's nothing to decide<br />
+How am I gonna live with this blind infatuation<br />
+I bless the days I can leave it all behind</p>
+
+<p>Tell (I gotta know) me (I gotta know)<br />
+Tell (I gotta know) me (I gotta know)<br />
+Tell me that it's not a game</p>
+
+<p>Here<br />
+In this place of make-believe I slowly die<br />
+Will you ever come clean<br />
+Or would you like to see me living for a lie</p>
+
+<p>Nanananana-na-nanana-na-na-nanananana-na-na<br />
+Nanananana-na-nanana-na-na-nanananana-na-na</p>
+
+<p>Hey! - you know it's killing me<br />
+Hey! - you know it's killing me<br />
+Hey! Hey!<br />
+Tell me it's not a game</p>
+
+<p>Here<br />
+In this place of make-believe I slowly die<br />
+Will you ever come clean<br />
+Or would you like to see me living for a lie</p>
+
+<p>Will you ever get here<br />
+In a rhapsody of angels we'll get high-high-high<br />
+But I guess you'll never come clean<br />
+Would you like to see me suffer till I die</p>

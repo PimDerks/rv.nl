@@ -5,6 +5,7 @@ date: 2007-06-27
 img: /images/albums/falling-down-in-misanthropolis.jpg
 header: /images/headers/albums/fdim2007.jpg
 permalink: /music/albums/:title/
+lyrics: true
 discs:
   - tracks:
     - Falling Down
@@ -23,6 +24,17 @@ discs:
       subtitle: 2006 Mix, Japanese bonustrack
     - title: The Mistake
       subtitle: Japanese bonustrack
+credits:
+  - key: "Produced, recorded, mixed and performed"
+    value: Robby Valentine
+  - key: "Written, composed and arranged"
+    value: Robby Valentine
+  - key: "Recorded at"
+    value: Heaven and Misanthropolis
+  - key: Cover
+    value: Michael Bernlohr
+  - key: Artwork and layout
+    value: Christian Olbrich        
 ---
 
 (Robby) Valentine’s 8th studio album ‘Falling Down In Misanthropolis’ gives an honest inside look into the personal turmoil of the mind of it’s creator during the time of recording and writing of it.
