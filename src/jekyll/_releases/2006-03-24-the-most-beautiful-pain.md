@@ -5,6 +5,24 @@ date: 2006-03-24
 img: /images/albums/the-most-beautiful-pain.jpg
 header: /images/headers/albums/tmbp2006.jpg
 permalink: /music/albums/:title/
+lyrics: true
+credits:
+  - key: Composed, written and arranged
+    value: Robby Valentine
+  - key: Produced, recorded and mixed
+    value: Robby Valentine at Studio Heaven and Misanthropolis
+  - key: Drums Nop Ton
+    value: Recorded by Hans van Vondelen at FendalSound Studios
+  - key: Drums Juan
+    value: Recorded by Dré van Logten at Dreyfuss Recording Studio
+  - key: Mastering
+    value: Peter van 't Riet for FineTune.
+  - key: Photograpy
+    value: Marc A. van Peski
+  - key: Cover art
+    value: Tami Fukatami
+  - key: Layout + artwork
+    value: Christian Olbrich                
 discs:
   - tracks:
     - I Should Have Known Better

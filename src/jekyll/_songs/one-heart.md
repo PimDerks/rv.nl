@@ -3,5 +3,34 @@ title: One Heart
 year: 2006
 writer: Robby Valentine
 composer: Robby Valentine
+credits:
+  - key: Lead vocals, choirs, grand piano, synthesizers, all guitars, bass-guitar, drum programming
+    value: Robby Valentine
 about: "My attempt of a Roy Orbison type of bolero."
 ---
+
+<p>This won't last for always - and forever<br />
+We will be together soon - we share one heart<br />
+We are forever - yes, we are</p>
+
+<p>This world hurts as always<br />
+But it never can deceive our destined love<br />
+Desperate hearts<br />
+Made for each other - yes, we are</p>
+
+<p>We walk the storm to find our home<br />
+We will be strong, holding on<br />
+'Cause soon we will be one</p>
+
+<p>Distance separates us - find an answer<br />
+How to see this nightmare through<br />
+Without you, my love - nothing's to matter<br />
+Life's so tough</p>
+
+<p>This won't last for always - and forever<br />
+We will be together soon - we share one heart<br />
+We are forever - yes, we are</p>
+
+<p>We walk the storm to find our home<br />
+We will be strong, holding on<br />
+'Cause soon we will be one</p>
