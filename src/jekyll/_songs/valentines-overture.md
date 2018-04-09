@@ -14,7 +14,7 @@ credits:
 
 <p>All the time<br />
 I keep searching for the answers<br />
-To the questions in my mind
+To the questions in my mind<br />
 The emptiness in my life</p>
 
 <p>All my life<br />
