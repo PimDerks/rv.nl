@@ -19,7 +19,7 @@ type: post
 
                   <div class="box a-inner a-inner+">
                     {% if page.img %}
-                      <div class="a-img u-ratio u-ratio--16:9" style="background-image:url('{{ page.img }}');">
+                      <div class="a-img u-ratio u-ratio--{% if page.imgRatio %}{{ page.imgRatio }}{% else %}16:9{% endif %}" style="background-image:url('{{ page.img }}');">
                           <img src="{{ page.img}}" alt="" />
                       </div>
                     {% endif %}
