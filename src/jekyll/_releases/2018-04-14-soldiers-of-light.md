@@ -1,7 +1,7 @@
 ---
 type: single
 title: Soldiers Of Light
-date: 2018-04-04
+date: 2018-04-14
 img: /images/singles/soldiers-of-light.jpg
 permalink: /music/singles/:title/
 discs:
