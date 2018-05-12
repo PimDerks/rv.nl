@@ -48,11 +48,18 @@
          url('../fonts/bebasneue_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+  font-family: 'alien';
+    src: url('../fonts/alienleagueiibold-webfont.woff2') format('woff2'),
+         url('../fonts/alienleagueiibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
 }
 
 $font-default: 'Playfair Display', Georgia, Times New Roman, sans-serif;
-$font-display: 'bebas_neuebold', Impact, Arial, sans-serif;
+$font-display: 'alien', Impact, Arial, sans-serif;
 
 body {
   font-family: $font-default;
@@ -73,7 +80,7 @@ h5 {
   font-size: 1em;
   font-weight: normal;
   color: black;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 h1,

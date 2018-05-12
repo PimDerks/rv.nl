@@ -4,6 +4,7 @@
   margin-bottom: 0;
   padding: baseline(1);
   text-decoration: none;
+  text-transform: lowercase;
 }
 
 
@@ -53,6 +54,7 @@
   font-family: $font-display;
   margin-bottom: 0;
   padding: baseline(.25) baseline(.5);
+  text-transform: lowercase;
 }
 
 .a-tag--black {
