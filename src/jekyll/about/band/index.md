@@ -1,7 +1,12 @@
 ---
-title: Robby Valentine
-subtitle: "Guitar, piano, vocals"
-instrument: "Guitar, piano, vocals"
+title: Band
+subtitle: "Meet the Valentine band"
 img: /images/band/rv.jpg
 layout: default
 ---
+
+- [Robby Valentine](/about/band/robby-valentine/)
+- [Maria Catharina](/about/band/maria-catharina/)
+- [Paul Coenradie](/about/band/paul-coenradie/)
+- [Luuk van Gerven](/about/band/luuk-van-gerven/)
+- [Andre Borgman](/about/band/andre-borgman/)

@@ -30,7 +30,9 @@ type: song
                 <section>
                   <div class="box box--dimmed a-inner a-inner+">
                     <h2 class="u-heading-gamma">Robby talks about {{ page.title }}</h2>
-                    {{ page.about | markdownify }}
+                    <blockquote>
+                      {{ page.about | markdownify }}
+                    </blockquote>
                   </div>
                 </section>
                 </div>

@@ -15,6 +15,7 @@ discs:
     - No Turning Back
     - The Reconciliation
     - Don't Make Me Wait Forever
+    - Wild Child
     - I Need Your Love
     - Help Me Spell My Name
     - Megaman
