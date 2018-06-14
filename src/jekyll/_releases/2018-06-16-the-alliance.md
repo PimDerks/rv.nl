@@ -4,12 +4,13 @@ title: The Alliance
 date: 2018-06-16
 img: /images/albums/the-alliance.jpg
 permalink: /music/albums/:title/
+lyrics: true
 discs:
   - tracks:
     - The Alliance Theme
     - Judgement Day
     - Black Dog
-    - Sons of America
+    - Sons Of America
     - Running On Empty
     - Eleanor Robyn
     - Soldiers Of Light

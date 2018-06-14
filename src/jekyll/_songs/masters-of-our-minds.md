@@ -1,0 +1,43 @@
+---
+title: Masters Of Our Minds
+year: 2018
+writer: Robby Valentine
+composer: Robby Valentine
+---
+
+<p>They got me good, I got it bad<br />
+I can't break down this wall inside my head<br />
+They got me numb, they got me dumb<br />
+Made me become some kind of walking dead</p>
+
+<p>But I woke up, opened my eyes,<br /> 
+Revealed their lies<br />
+They serve the darkest forces <br />
+The reptiles in disguise</p>
+
+<p class="em">Chorus:</p>
+
+<p>We're the masters of our minds<br />
+They're not taking over humankind<br />
+When we open up our hearts and seek the good<br />
+You'll find the truth</p>
+
+<p>The system's dumbed me down a lot<br />
+Poisoned vaccines they'd shot, they took me out<br />
+The lies they planted in my head<br />
+The news they spread made me too numb to doubt</p>
+
+<p>But once you learn to understand their evil plan <br />
+Don't fight fire with fire - be your own man</p>
+
+<p class="em">Chorus</p>
+
+<p>They use the MK-Ultra<br />
+send a wolf in disguise<br />
+And a Big Bad Brother to control your life <br />
+Enslaving us: their goal<br />
+But they'll never get my soul</p>
+
+<p class="em">Chorus</p>
+
+<p class="em">Chorus</p>
