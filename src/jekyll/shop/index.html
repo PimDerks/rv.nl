@@ -2,14 +2,10 @@
 title: Shop
 subtitle: Your one-stop Valentine Shop!
 img: /images/headers/3.jpg
-header: /images/headers/generic/3.jpg
+header: /images/headers/alliance7.jpg
 intro: A wide range of Valentine merchandising is available, including beautiful t-shirts and exclusive sweaters. We also have in stock most of the recent releases by Robby - even some on vinyl!
 layout: default
 ---
-
-{% include components/hero.html %}
-
-{% include components/breadcrumbs.html %}
 
 <div class="stack">
     <div class="wrapper">
@@ -22,8 +18,9 @@ layout: default
                         <main>
 
                             <ul class="m-layout m-card-list m-releases-list u-group a-list-bare">
-                                {% for product in site.shop %}
-                                <li class="m-layout__column u-1/1 u-1/2@s u-1/3@m u-1/4@l">
+                                {% assign products = site.shop | sort: 'year' %}
+                                {% for product in products reversed %}
+                                <li class="m-layout__column u-1/1 u-1/2@m u-1/3@l">
                                     <div class="m-layout__item">
                                         {% include components/card-product.html index=index %}
                                     </div>

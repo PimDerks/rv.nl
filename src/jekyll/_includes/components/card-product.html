@@ -3,24 +3,21 @@
 <article class="a-card">
     <div class="a-card__inner">
         <div class="a-card__image">
-            <div class="a-img u-ratio u-ratio--1:1" style="background-image:url('http://loremflickr.com/300/300')">
-                <img src="http://loremflickr.com/300/300" alt="{{ product.title }}" />
+            <div class="a-img u-ratio u-ratio--1:1 u-stacked" style="background-image:url('{{ product.img }}')">
+                <img src="{{ product.img }}" alt="{{ product.title }}" />
             </div>
         </div>
         <div class="a-card__content">
-            <div class="a-inner a-inner+">
-                <h2 class="u-heading-delta">{{ product.title }}</h2>
-                {{ product.content }}
-                <!-- <h3>Details</h3>
-                <dl>
-                    <dt>Format</dt>
-                    <dd>{{ product.format }}</dd>
-                    <dt>Price (excl. postage)</dt>
-                    <dd>{{ product.price }}</dd>
-                </dl> -->
-                <p class="u-heading-delta u-italic">
-                    € {{ product.price }},- <span class="u-small u-dimmed">(excl. postage)</span>
-                </p>
+            <div class="a-inner">
+                <h2 class="u-heading-gamma a-card__title">{{ product.title }}</h2>
+                <p>{{ product.subtitle }}</p>                
+            </div>
+        </div>
+        <div class="a-card__action">
+            <div class="a-inner">
+            <a class="button button--brand u-heading-delta" href="https://docs.google.com/forms/d/e/1FAIpQLSeO4vvJBQLkFT-CMbZWyA6mLzs16F21VonPagndLaVpHNltIw/viewform?usp=pp_url&entry.678234709={{ product.shopUrl }}">
+                    Buy now &euro; {{ product.price }}
+                </a>
             </div>
         </div>
     </div>

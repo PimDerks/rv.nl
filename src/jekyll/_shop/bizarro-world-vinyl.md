@@ -1,8 +1,9 @@
 ---
-title: Bizarro World Vinyl
-img: http://lorempixel.com/480/480
+title: Bizarro World
+subtitle: Deluxe gatefold vinyl with full color inner
+year: 2016
 format: music
-price: 25
+img: /images/shop/bizarro-world-vinyl.jpg
+price: 20
+shopUrl: "Bizarro+World+(Vinyl)+-+20+EUR"
 ---
-
-Bizarro World on limited, hand-numbered vinyl. 250 copies in a gatefold sleeve with full-color innersleeve/labels.

@@ -1,8 +1,9 @@
 ---
-title: Androgenius Vinyl
-img: http://lorempixel.com/480/480
+title: Androgenius
+subtitle: Yellow vinyl in full color sleeve.
+year: 2010
 format: music
+img: /images/shop/androgenius-vinyl.jpg
 price: 20
+shopUrl: "Androgenius+(Yellow+Vinyl+LP)+-+20+EUR"
 ---
-
-A beautiful shirt featuring the Valentine band in full colour on the front. When ordering, please specify your size. The sizes available are L, M and S. 
