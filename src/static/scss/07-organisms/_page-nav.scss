@@ -1,4 +1,4 @@
-.page-nav {
+.o-page-nav {
   background: rgba(black, .85);
   bottom: 0;
   display: block;
@@ -16,16 +16,6 @@
   transition: all 500ms ease-out;
   z-index: 10000;
 
-  .page-nav__close {
-    position: absolute;
-    right: baseline(1);
-    top: baseline(1);
-
-    &::before {
-      content: 'X';
-    }
-  }
-
   ul {
     position: absolute;
     top: 50%;
@@ -41,26 +31,10 @@
     text-align: center;
   }
 
-  .page-nav__logo {
-
-    a {
-      background: url('../img/logo.svg') no-repeat center center;
-      height: baseline(6);
-      left: 50%;
-      text-indent: -999em;
-      top: 50%;
-      transition: all 250ms ease-out;
-      transform: translateX(-50%) translateY(-50%);
-      width: baseline(6);
-    }
-
-  }
-
-  a {
+  .o-page-nav__link {
     @extend %u-heading-gamma;
     border-bottom: none;
     color: white;
-    cursor: pointer;
     display: block;
     margin-bottom: 0;
     padding: baseline(1) 0;
@@ -93,8 +67,9 @@
     }
   }
 
-  a:focus,
-  a:hover {
+  .o-page-nav__link--active,
+  .o-page-nav__link:focus,
+  .o-page-nav__link:hover {
     border-bottom: none;
 
     span::after {
@@ -108,13 +83,23 @@
 
 @include respond-min('m'){
 
-  .page-nav {
+  .page-header 
+    .logo {
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      z-index: 99999;
+    }
+  }
+
+  .o-page-nav {
     background-color: transparent;
-    display: inline-block;
+    display: block;
     opacity: 1;
     overflow: hidden;
     pointer-events: inherit;
     position: relative;
+    text-align: center;
     vertical-align: middle;
 
     > ul {
@@ -129,21 +114,24 @@
         + li {
           margin-left: baseline(.5);
         }
+
+        &:nth-child(3) {
+          padding-right: baseline(6);
+        }
+
+        &:nth-child(4) {
+          padding-left: baseline(6);
+        }
+
       }
 
     }
-
-    .page-nav__close {
-      display: none;
-    }
-
-  }
 
 }
 
 @include respond-min('l'){
 
-  .page-nav {
+  .o-page-nav {
 
     > ul {
 
@@ -152,7 +140,6 @@
       }
 
     }
-
 
   }
 

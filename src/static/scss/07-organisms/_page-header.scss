@@ -138,7 +138,18 @@
     .page-header .logo,
     .page-header .logo img {
       height: baseline(6);
+      transition: height 300ms ease-out;
     }
+
+    [data-scroll-offset] .page-header .logo,
+    [data-scroll-offset] .page-header .logo img {    
+      height: baseline(4);
+    }
+
+    [data-scroll-offset="0"] .page-header .logo,
+    [data-scroll-offset="0"] .page-header .logo img {
+      height: baseline(6);
+  }
 }
 
 .page-header h1 {

@@ -1,0 +1,69 @@
+---
+layout: default
+type: band
+---
+
+    <div class="stack">
+      <div class="wrapper">
+
+        <div class="m-layout u-group">
+          <div class="m-layout__row">
+            <div class="m-layout__column u-1/1 u-2/3@m">
+              <div class="m-layout__item">
+
+                  <div class="box a-inner a-inner+">
+
+                    <h2 class="u-heading-gamma u-screenreader">Profile</h2>
+
+                    {% assign content = content | strip_newlines %}
+                    {% if content == '' %}
+                      <p>Check back soon for the lyrics for {{ page.title }}!</p>
+                    {% else %}
+                      {{ content }}
+                    {% endif %}
+                  </div>
+
+              </div>
+
+              </div>
+            <div class="m-layout__column u-1/1 u-1/3@m m-layout__sidebar">
+              <div class="m-layout__item">
+                {% include components/meta.html meta-title="Profile" meta-items=page.meta %}
+              </div>
+
+              
+              <div class="m-layout__item">
+
+                <nav class="box box--brand a-inner">
+                  <h2 class="u-heading-delta">Subnavigation</h2>
+                  {% assign songs = site.band | sort: 'title' %}
+                  {% for song in songs %}
+                  {% if song.title == page.title %}
+                  {% assign currentIndex = forloop.index0 %}
+                  {% endif %}
+                  {% endfor %}
+
+                  {% assign current = songs[currentIndex] %}
+                  <p>Current: {{ current.title }} </p>
+
+                  {% assign nextIndex = currentIndex|plus:1 %}
+                  {% if nextIndex >= 0 and songs[nextIndex] %}
+                  {% assign next = songs[nextIndex] %}
+                  <p>Next: <a href="{{ next.url }}">{{ next.title }}</a> </p>
+                  {% endif %}
+
+                  {% assign prevIndex = currentIndex|minus:1 %}
+                  {% if prevIndex >= 0 and songs[prevIndex] %}
+                  {% assign prev = songs[prevIndex] %}
+                  <p>Prev: <a href="{{ prev.url }}">{{ prev.title }}</a></p>
+                  {% endif %}
+                </nav>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>

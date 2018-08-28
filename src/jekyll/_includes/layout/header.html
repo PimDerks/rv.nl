@@ -7,37 +7,33 @@
         </a>
     </h1>
 
+    {% assign currentPage = page.url | split: '/' %}
+
     <input type="checkbox" class="menu-toggle" id="menu-input" />
     <label class="menu-link" for="menu-input">
         <span class="menu-icon" aria-hidden="true"></span>
         <span class="u-screenreader">Menu</span>
     </label>
 
-    <nav class="page-nav" id="menu">
+    <nav class="o-page-nav" id="menu">
         <h2 class="u-screenreader">Main navigation</h2>
         <ul class="a-list-bare">
-            <li>
-                <a href="/news/"><span>News</span></a>
-            </li>
-            <li>
-                <a href="/music/"><span>Music</span></a>
-            </li>
-            <li>
-                <a href="/live/"><span>Live</span></a>
-            </li>
-            <li>
-                <a href="/about/"><span>About</span></a>
-            </li>
-            <li>
-                <a href="/shop/"><span>Shop</span></a>
-            </li>
-            <li>
-                <a href="/contact/"><span>Contact</span></a>
-            </li>
+            {% for navItem in site.data.navigation %}
+                <li>
+                    {% if currentPage[1] == navItem.link %}
+                        <span class="o-page-nav__link o-page-nav__link--active">
+                            <span>{{ navItem.title }}</span>
+                        </span>
+                    {% else %}
+                        <a href="/{{ navItem.link }}/" class="o-page-nav__link">
+                            <span>{{ navItem.title }}</span>
+                        </a>
+                    {% endif %}
+                    
+                </li>
+            {% endfor %}
         </ul>
     </nav>
 
     </div>
 </header>
-
-
