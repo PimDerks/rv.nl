@@ -81,9 +81,9 @@
 
 }
 
-@include respond-min('m'){
+@include respond-min('m') {
 
-  .page-header 
+  .page-header {
     .logo {
       left: 50%;
       position: absolute;
@@ -91,6 +91,7 @@
       z-index: 99999;
     }
   }
+
 
   .o-page-nav {
     background-color: transparent;
@@ -143,4 +144,5 @@
 
   }
 
+}
 }

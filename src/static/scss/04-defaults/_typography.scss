@@ -74,12 +74,15 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.u-heading-alpha,
+.u-heading-beta,
+.u-heading-gamma,
+.u-heading-delta {
   color: get-color('brand-off');
   font-family: $font-display;
   font-size: 1em;
   font-weight: normal;
-  color: black;
   text-transform: lowercase;
 }
 

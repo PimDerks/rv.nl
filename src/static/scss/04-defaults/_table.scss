@@ -7,28 +7,60 @@ table {
     table-layout: fixed;
     width: 100%;
 
-    td,
-    th {
-        padding: .75rem 0;
-        text-align: left;
-        vertical-align: top;
-    }
-
-    th {
-        color: black;
+    thead th {
+        background-color: get-color('black');
+        color: get-color('white') !important;
+        font-size: .75rem;
+        font-weight: bold;
+        text-transform: uppercase;
         font-weight: normal;
     }
 
-    thead {
-        th {
-            font-size: .75rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+    td,
+    th {
+        padding: .5rem 1rem;
+        text-align: left;
+        vertical-align: top;
     }
 
     tr {
         border-bottom: 1px solid #F0F0F0;
     }
 
+    tbody {
+        tr:nth-child(odd) {
+            background-color: get-color('white');
+        }
+
+        tr:nth-child(even) {
+            background-color: get-color('off-white');   
+        }
+    }
+
+}
+
+@include respond-max('m') {
+    table {
+        border-top: 1px solid #F0F0F0;
+        
+        thead {
+            display: none;
+        }
+
+        td {
+            display: block;
+            padding: 0;
+        }
+
+        tr {
+            display: block;
+            padding: baseline(1);
+        }
+
+        [data-label]::before {
+            content: attr(data-label) ':';
+            font-weight: bold;
+            margin-right: baseline(0.5);
+        }
+    }
 }

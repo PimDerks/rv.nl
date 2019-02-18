@@ -44,6 +44,7 @@
 
   .a-card__title {
     border-radius: 0;
+    color: get-color('white');
     font-family: $font-display;
     margin-bottom: baseline(.5);
     text-transform: lowercase;
@@ -58,6 +59,12 @@
   .a-card__subtitle {
     font-style: italic;
     margin-bottom: 0;
+  }
+
+  .a-card__img,
+  .a-card__action {
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
 }
@@ -92,6 +99,7 @@
     text-shadow: 0 0 2px rgba(black, .5);
     transform: translateZ(20px) translateX(-50%) translateY(-50%);
     z-index: 2;
+    width: 100%;
   }
 }
 

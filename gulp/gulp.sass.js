@@ -53,7 +53,7 @@ module.exports.watch = function(){
 
     var tasks = ['output-sass'];
     if(!util.env.killlint) {
-        tasks.push('lint-sass');
+        // tasks.push('lint-sass');
     }
 
     // watch sass files
