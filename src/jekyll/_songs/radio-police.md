@@ -1,0 +1,43 @@
+---
+title: Radio Police
+year: 2019
+writer: Robby Valentine
+composer: Robby Valentine
+---
+
+<p>
+Dear Mr. DJ, can you play my song?<br />
+It's rather catchy,  only three minutes long<br />
+Hey Mr. DJ,  can't you give me a break?<br />
+A bit of (f)airplay that is all that it takes</p>
+
+<p>But he said:</p>
+
+<p>Even if I dig it , if I think it's real good<br />
+There's nothing that I can do<br />
+I got mouths to feed, gotta make ends meet<br />
+I better not mess with the Radio Police<br />
+Naa naa na na na naaa<br />
+Naa naa na na na naaa</p>
+
+<p>Dear Mr. DJ, tell me how does it feel<br />
+To live the puppet-life where nothing is real<br />
+Inside your mansion and your big shiny car<br />
+You're just a slave who's told to kill the real stars</p>
+
+<p>But he said:</p>
+
+<p>It's not about music, it's not about art<br />
+Screw everything coming from the heart<br />
+I gotta kill their goals and corrupt their souls<br />
+So I better not fuck with the Radio Police<br />
+Naa naa na na na naaa<br />
+Naa naa na na na naaa</p>
+ 
+<p>You serve the serpent not the human race<br />
+Don't you remember who you were<br />
+You had such passion in your younger days<br />
+What happened to the boy who's lost his only toy</p> 
+
+<p>Downwards we go – shut off from the universe<br />
+We're all sheople what do we know (4x)</p>
