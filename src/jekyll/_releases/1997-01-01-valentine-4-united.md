@@ -5,6 +5,7 @@ date: 1997-06-20
 img: /images/albums/united.jpg
 header: /images/headers/albums/u1997.jpg
 permalink: /music/albums/:title/
+lyrics: true
 discs:
   - tracks:
     - Rise And Shine

@@ -21,7 +21,9 @@ discs:
     - title: The Reconciliation
       subtitle: Demo    
     - title: Don't Make Me Wait Forever
-      subtitle: Demo    
+      subtitle: Demo
+    - title: Wild Child
+      subtitle: Demo
     - title: I Need Your Love
       subtitle: Demo    
     - title: Help Me Spell My Name
@@ -31,5 +33,4 @@ discs:
     - title: Raise Your Hands
       subtitle: Demo    
     - title: Valentine's Overture Part II (A Martian On Earth)
-      subtitle: Demo    
 ---
