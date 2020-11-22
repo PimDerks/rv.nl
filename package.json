@@ -24,7 +24,7 @@
     "gulp-minify-css": "^1.2.1",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.4",
+    "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.3.6",
     "gulp-shell": "^0.5.0",
     "gulp-sourcemaps": "^1.6.0",
@@ -43,5 +43,12 @@
     "vinyl-ftp": "^0.4.5",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.4.0"
+  },
+  "dependencies": {
+    "graceful-fs": {
+      "version": "4.2.2"
+    },
+    "jekyll": "^3.0.0-beta1",
+    "nvm": "0.0.4"
   }
 }

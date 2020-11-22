@@ -1,0 +1,16 @@
+---
+title: "Separate Worlds"
+lead: "New album!"
+img: /images/news/separate-worlds.jpg
+date: 2020-11-22
+---
+
+<p>"SEPARATE WORLDS" is not just the title-track of the new classical pop album Robby will be releasing soon - it also perfectly describes the fact that this style of music is a bit different from what Robby usually does.</p>
+
+<p>Besides the title-track the album will contain 10 other tracks highlighting Robby's love for classical (pop) music, including his interpretations of some of his favorite classical composers.</p>
+
+<p>"SEPARATE WORLDS" will be released digitally, on vinyl and CD.  Pre-orders will be made available soon.</p>
+
+<p>Art direction and layout by Pim Derks.<br />
+Original photography by Jeroen Oosterhof.<br />
+Photo editing by Dimitri Tzortis.</p>

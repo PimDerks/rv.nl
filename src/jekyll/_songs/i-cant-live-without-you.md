@@ -1,0 +1,31 @@
+---
+title: I Can't Live Without You
+year: 2020
+writer: Robby Valentine
+composer: Robby Valentine
+---
+
+<p>I closed another door<br />
+Realized that I rode the wrong track<br />
+It's too late to turn back... time<br />
+I miss the times before - Lord what have I done<br />
+Will I find you - Will I dare - Will you care</p>
+
+<p>I can't live without you - Can't live without you<br />
+Oooooooohhhhh what have I done</p>
+
+<p>I'm sad forevermore</p>
+
+<p>If I have to live life without you<br />
+There's no one to turn to... Anymore<br />
+Lord (tell me why) Tell me what's my cause<br />
+Now that I have lost all I care for<br />
+Will I find peace of mind - in this life</p>
+
+<p>I can't live without you - Can't live without you<br />
+Oooooooohhhhh</p>
+
+<p>I (Lord will I) closed another door (every find joy in this life)<br />
+Realized that I rode the wrong track (would I be lonesome for all time)<br />
+It's too late to turn back... time<br />
+Oh lord what have I done</p>
