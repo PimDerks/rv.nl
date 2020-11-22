@@ -5,40 +5,40 @@ writer: Robby Valentine
 composer: Robby Valentine
 ---
 
-<p>Just a friend - It ain't easy to pretend
-Just a girl who crossed my path and changed my world
-Just a dream came into my life  
+<p>Just a friend - It ain't easy to pretend<br />
+Just a girl who crossed my path and changed my world<br />
+Just a dream came into my life<br />
 I couldn't close my eyes - God knows I tried</p>
 
-<p>It was way too strong - I'm only human after all
-I had no choice 
-No resistance to the voice that's telling me  you were sent to me
+<p>It was way too strong - I'm only human after all<br />
+I had no choice<br />
+No resistance to the voice that's telling me  you were sent to me<br />
 It is destiny - But it cannot be</p>
 
-<p>I cannot tell it to the world 
-You don't know half how much it hurts
-But there's no choice to keep it to myself
-How could we stay in separate worlds when you're my angel send to earth
-It's killing me to keep it to myself
+<p>I cannot tell it to the world<br />
+You don't know half how much it hurts<br />
+But there's no choice to keep it to myself<br />
+How could we stay in separate worlds when you're my angel send to earth<br />
+It's killing me to keep it to myself<br />
 But time will tell - Time will tell</p>
 
-<p>Time stood still - We had no choice  we had no will
-The first embrace - The first time I touched your face
-I can't believe that we fit so well   
-But it such a shame that we cannot tell
-Just a friend - It ain't easy to pretend  
-Just a girl who crossed my path and changed my world
-You're a dream came into my life
+<p>Time stood still - We had no choice  we had no will<br />
+The first embrace - The first time I touched your face<br />
+I can't believe that we fit so well<br />
+But it such a shame that we cannot tell<br />
+Just a friend - It ain't easy to pretend<br />
+Just a girl who crossed my path and changed my world<br />
+You're a dream came into my life<br />
 I could not deny - God knows I tried</p>
 
-<p>I cannot tell it to the world
-You don't know half how much it hurts
-But there's no choice to keep it to myself
-When you're with me it feels so right
-It's such a shame we have to hide
+<p>I cannot tell it to the world<br />
+You don't know half how much it hurts<br />
+But there's no choice to keep it to myself<br />
+When you're with me it feels so right<br />
+It's such a shame we have to hide<br />
 But then  you go and leave me in the night</p>
 
-<p>How could we stay in separate worlds when you're my angel send to earth
-It's killing me to keep it to myself
-But time will tell - Time will tell
+<p>How could we stay in separate worlds when you're my angel send to earth<br />
+It's killing me to keep it to myself<br />
+But time will tell - Time will tell<br />
 You know it hurts torn apart in separate worlds</p>
