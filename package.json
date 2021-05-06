@@ -36,7 +36,7 @@
     "imagemin-pngquant": "^4.2.0",
     "jshint-stylish": "^2.1.0",
     "json-file": "^0.1.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.21",
     "mkdirp": "^0.5.1",
     "run-sequence": "^1.1.4",
     "through2": "^2.0.0",
