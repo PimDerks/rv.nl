@@ -1,7 +1,7 @@
 ---
 title: "Separate Worlds"
 lead: "New album!"
-img: /images/news/separate-worlds.jpg
+img: /images/news/2020-11-22.jpg
 date: 2020-11-22
 ---
 

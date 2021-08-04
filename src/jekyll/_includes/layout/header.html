@@ -24,12 +24,15 @@
                         <span class="o-page-nav__link o-page-nav__link--active">
                             <span>{{ navItem.title }}</span>
                         </span>
+                    {% elsif navItem.external == 'true' %}
+                        <a target="_blank" href="{{ navItem.link }}" class="o-page-nav__link">
+                            <span>{{ navItem.title }}</span>
+                        </a>
                     {% else %}
                         <a href="/{{ navItem.link }}/" class="o-page-nav__link">
                             <span>{{ navItem.title }}</span>
                         </a>
                     {% endif %}
-                    
                 </li>
             {% endfor %}
         </ul>
@@ -37,3 +40,5 @@
 
     </div>
 </header>
+
+

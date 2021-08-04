@@ -1,11 +1,13 @@
-- title: "Out now: The Alliance"
-  subtitle: Available now in the shop
-  link: /shop/
+- title: "Separate Worlds"
+  subtitle: Pre-order now!
+  link: "https://robbyvalentine.myonline.store/"
+  external: true
+  image: /images/headers/sw.jpeg
+- title: "The Alliance"
+  subtitle: Available in the shop
+  link: "https://robbyvalentine.myonline.store/"
+  external: true
   image: /images/headers/newalbum.jpg  
-- title: The Alliance Tour
-  subtitle: New live dates announced!
-  link: /live/
-  image: /images/headers/live.jpg
 - title: Discography
   subtitle: 25 years of Valentine
   link: /music/

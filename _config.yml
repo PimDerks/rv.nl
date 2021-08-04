@@ -84,7 +84,5 @@ collections:
     permalink: /about/band/:title/
   timeline:
     output: "false"
-  shop:
-    output: "false"
   faq:
     output: "false"
