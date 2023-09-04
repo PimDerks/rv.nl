@@ -1,15 +1,5 @@
-- title: "The Black Dog Album"
-  subtitle: Order now!
+- title: "Embrace The Unknown"
+  subtitle: Pre-order now!
   link: "https://robbyvalentine.myonline.store/"
   external: true
-  image: /images/albums/the-black-dog-album.jpg
-- title: "The Beatles Album"
-  subtitle: Order now!
-  link: "https://robbyvalentine.myonline.store/"
-  external: true
-  image: /images/albums/the-beatles-album.jpg
-- title: "The Queen EP 2"
-  subtitle: Order now!
-  link: "https://robbyvalentine.myonline.store/"
-  external: true
-  image: /images/singles/the-queen-ep-2.jpg
+  image: /images/albums/embrace-the-unknown.jpg
