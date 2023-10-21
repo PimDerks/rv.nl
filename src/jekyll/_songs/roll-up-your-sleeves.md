@@ -1,6 +1,11 @@
 ---
 title: Roll Up Your Sleeves
 year: 2021
+appears:
+  - title: Roll Up Your Sleeves
+    type: single
+  - title: Embrace The Unknown
+    type: album
 writer: Robby Valentine
 composer: Robby Valentine
 ---
