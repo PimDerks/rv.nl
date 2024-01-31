@@ -54,7 +54,7 @@ Lead the way</p>
 In the psycho stream<br />
 Keep your faith in the voice within<br />
 To the voice within<br />
-Don't ajust to the world you're in<br />
+Don't adjust to the world you're in<br />
 It's just the world you're in<br />
 Find your truth there's a war to win</p>
 

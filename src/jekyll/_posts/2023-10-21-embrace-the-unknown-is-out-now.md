@@ -1,5 +1,5 @@
 ---
-title: "Embrace The Un"
+title: "Embrace The Unknown"
 lead: "Out now!"
 img: /images/albums/embrace-the-unknown.jpg
 date: 2023-10-21
