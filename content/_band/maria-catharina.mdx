@@ -1,0 +1,64 @@
+---
+title: Maria Catharina
+subtitle: "Vocals/backings"
+instrument: "Vocals/backings"
+layout: band
+img: /images/band/mc.jpg
+header: /images/band/mc.jpg
+meta:
+  - key: Name
+    value: Maria Catharina
+  - key: Role
+    value: Vocals
+  - key: Date of birth
+    value: March 30, 1981
+submenu:
+  - title: Robby Valentine
+    link: /about/band/robby-valentine/
+  - title: Maria Catharina
+    link: /about/band/maria-catharina/
+    active: true
+  - title: Paul Coenradie
+    link: /about/band/paul-coenradie/
+  - title: Andre Borgman
+    link: /about/band/andre-borgman/
+  - title: Luuk van Gerven
+    link: /about/band/luuk-van-gerven/
+  - title: Johan Willems
+    link: /about/band/johan-willems/
+---
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+<h2 class="u-heading-gamma">Before joining Valentine</h2>
+
+<dl class="a-interview">
+	<dt><blockquote><p>Can you please introduce yourself?</p></blockquote></dt>
+	<dd><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></blockquote></dd>
+	<dt><blockquote><p>What was your first experience as a musician?</p></blockquote></dt>
+	<dd><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></blockquote></dd>
+</dl>
+
+<h2 class="u-heading-gamma">Joining Valentine</h2>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+<dl class="a-interview">
+	<dt><blockquote><p>When and how did you join the Valentine band?</p></blockquote></dt>
+	<dd><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></blockquote></dd>
+	<dt><blockquote><p>Where was your first gig with Valentine and what are your memories about it?</p></blockquote></dt>
+	<dd><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></blockquote></dd>
+  <dt><blockquote><p>What is your most memorable Valentine moment?</p></blockquote></dt>
+  <dd><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></blockquote></dd>
+</dl>
+
+<h2 class="u-heading-gamma">Besides Valentine</h2>
+
+<dl class="a-interview">
+  <dt><blockquote><p>Valentine does not perform every weekend, so it is not a full time job. What do you do besides playing in Valentine?</p></blockquote></dt>
+  <dd><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></blockquote></dd>
+  <dt><blockquote><p>Besides music, what are some of your interests?</p></blockquote></dt>
+  <dd><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></blockquote></dd>
+  <dt><blockquote><p>Any last words?</p></blockquote></dt>
+  <dd><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></blockquote></dd>
+</dl>
