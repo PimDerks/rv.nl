@@ -41,7 +41,7 @@ A misfit until I die... I guess I don't have choice</p>
 What in the wayward world I'm waiting for<br />
 What in the world I'm waiting<br />
 Wagoner Will is waiting<br />
-What in thre wayward world he's waiting for</p>
+What in the wayward world he's waiting for</p>
 
 <p>Why should someone sacrifice themselves<br />
 When it destroys his life<br />

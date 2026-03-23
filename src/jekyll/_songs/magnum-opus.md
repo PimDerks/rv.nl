@@ -15,13 +15,13 @@ about: |
 ---
 
 <p>I walk down the street gonna buy something sweet<br />
-Guess some sugar might hear<br />
+Guess some sugar might heal<br />
 Just for an hour or a minute or two<br />
 Change the way that I feel</p>
 
 <p>I had to be alone to get into the special zone<br />
 But now I feel undone<br />
-Just because I'm overdoses doesn't mean I'm bored<br />
+Just because I'm overdosed doesn't mean I'm bored<br />
 with my baby</p>
 
 <p>What would I do in a world without you<br />

@@ -14,7 +14,7 @@ Embrace the Unknown.</p>
 <p>Who will join the premiere and the live chat through this link?</p>
 
 <p>
-    <a href="https://youtu.be/GYEXaItZlR8">Order now!</a>
+    <a href="https://youtu.be/GYEXaItZlR8">Watch the premiere!</a>
 </p>
 
 <p>If you don't want to wait until the 6th of February, join us in CAPSLOC this Saturday. There the music video will be shown on screen at the show.</p>
