@@ -6,3 +6,4 @@ export { Tracklist } from "./Tracklist";
 export { SongCredits } from "./SongCredits";
 export { ReleaseBadge } from "./ReleaseBadge";
 export { EventTable } from "./EventTable";
+export { BandMemberCard } from "./BandMemberCard";
