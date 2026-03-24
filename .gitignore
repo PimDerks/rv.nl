@@ -1,11 +1,37 @@
-.idea/
+# dependencies
 node_modules/
 bower_components/
-.sass-cache/ls
-.jekyll-cache
-*.css
-*.log
-*.psd
+
+# next.js
+.next/
+out/
+
+# build output
 dest/
 tmp/
 www/
+*.tsbuildinfo
+next-env.d.ts
+
+# env files
+.env
+.env.local
+.env.*.local
+
+# ide
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# os
+.DS_Store
+Thumbs.db
+
+# misc
+*.log
+*.psd
+
+# legacy
+.sass-cache/
+.jekyll-cache
