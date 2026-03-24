@@ -9,6 +9,7 @@ import {
   getTypeSlug,
 } from "@/lib/releases";
 import { formatDate } from "@/lib/utils";
+import { generateMusicAlbumJsonLd } from "@/lib/jsonld";
 import { Tracklist } from "@/components/content/Tracklist";
 
 interface PageProps {
@@ -64,9 +65,16 @@ export default async function ReleaseDetailPage({
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 md:py-12">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-        <div className="md:col-span-1">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: generateMusicAlbumJsonLd(release, type),
+        }}
+      />
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="md:col-span-1">
           <div className="sticky top-24">
             <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
               <Image
@@ -129,8 +137,9 @@ export default async function ReleaseDetailPage({
               />
             </section>
           )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

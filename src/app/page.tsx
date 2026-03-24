@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { getCarouselSlides } from "@/lib/carousel";
 import { getAllPosts } from "@/lib/posts";
 import { getAllReleases } from "@/lib/releases";
+import { generateWebSiteJsonLd, generateMusicGroupJsonLd } from "@/lib/jsonld";
 import { HeroCarousel, NewsCard, ReleaseGrid } from "@/components/content";
 
 export default async function HomePage(): Promise<React.ReactElement> {
@@ -14,6 +15,15 @@ export default async function HomePage(): Promise<React.ReactElement> {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: generateWebSiteJsonLd() }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: generateMusicGroupJsonLd() }}
+      />
+
       <HeroCarousel slides={slides} />
 
       <section className="container mx-auto px-4 py-12 md:py-16">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { getAllSongs } from "@/lib/songs";
+import { SubNavigation, PageHero } from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "Songs",
@@ -36,11 +37,10 @@ export default async function SongsPage(): Promise<React.ReactElement> {
   });
 
   return (
+    <>
+    <PageHero title="Songs" image="/images/headers/alliance9.jpg" />
+    <SubNavigation />
     <div className="container mx-auto px-4 py-8 md:py-12">
-      <h1 className="font-heading text-3xl md:text-4xl font-bold mb-8">
-        Songs A-Z
-      </h1>
-
       <p className="text-muted-foreground mb-8">
         {songs.length} songs in the catalog
       </p>
@@ -72,5 +72,6 @@ export default async function SongsPage(): Promise<React.ReactElement> {
         ))}
       </div>
     </div>
+    </>
   );
 }

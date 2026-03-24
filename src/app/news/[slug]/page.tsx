@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { formatDate } from "@/lib/utils";
+import { generateBlogPostingJsonLd } from "@/lib/jsonld";
 import { mdxComponents } from "@/components/mdx";
 
 interface PageProps {
@@ -51,9 +52,14 @@ export default async function NewsDetailPage({
   }
 
   return (
-    <article className="container mx-auto px-4 py-8 md:py-12">
-      <div className="max-w-3xl mx-auto">
-        <header className="mb-8">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: generateBlogPostingJsonLd(post) }}
+      />
+      <article className="container mx-auto px-4 py-8 md:py-12">
+        <div className="max-w-3xl mx-auto">
+          <header className="mb-8">
           <time className="text-sm text-muted-foreground">
             {formatDate(post.date)}
           </time>
@@ -79,9 +85,10 @@ export default async function NewsDetailPage({
         )}
 
         <div className="prose-content">
-          <MDXRemote source={post.content} components={mdxComponents} />
+            <MDXRemote source={post.content} components={mdxComponents} />
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </>
   );
 }

@@ -7,13 +7,21 @@ import { useState } from "react";
 
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
-import { Button } from "@/components/ui/button";
 
-export function Navigation(): React.ReactElement {
+interface NavigationProps {
+  /** Which half of the split nav to render on desktop. On mobile this is ignored — all items render in the overlay. */
+  side: "left" | "right";
+}
+
+export function Navigation({ side }: NavigationProps): React.ReactElement {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  const isActive = (href: string): boolean => {
+  const isActive = (href: string, external: boolean): boolean => {
+    if (external) {
+      return false;
+    }
+
     if (href === "/") {
       return pathname === "/";
     }
@@ -21,61 +29,100 @@ export function Navigation(): React.ReactElement {
     return pathname.startsWith(href);
   };
 
-  return (
-    <nav className="relative">
-      {/* Mobile menu button */}
-      <Button
-        variant="ghost"
-        size="icon"
-        className="md:hidden"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle navigation menu"
-      >
-        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-      </Button>
+  const allItems = siteConfig.navigation.main;
+  const sideItems = allItems.filter((item) => item.side === side);
 
-      {/* Desktop navigation */}
-      <ul className="hidden md:flex items-center gap-6">
-        {siteConfig.navigation.main.map((item) => (
-          <li key={item.href}>
-            <Link
-              href={item.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-foreground/80",
-                isActive(item.href)
-                  ? "text-foreground"
-                  : "text-foreground/60"
-              )}
-            >
-              {item.label}
-            </Link>
-          </li>
-        ))}
+  return (
+    <>
+      {/* Mobile hamburger — only rendered once, on the right side slot */}
+      {side === "right" && (
+        <button
+          className="md:hidden p-2 text-white"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isOpen}
+        >
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      )}
+
+      {/* Desktop: half-nav */}
+      <ul
+        className={cn(
+          "hidden md:flex items-center gap-6",
+          side === "left" ? "justify-end" : "justify-start"
+        )}
+      >
+        {sideItems.map((item) => {
+          const active = isActive(item.href, item.external);
+
+          return (
+            <li key={item.href} className="relative">
+              <Link
+                href={item.href}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
+                className={cn(
+                  "group relative block py-6 text-sm tracking-wide transition-colors duration-200",
+                  "font-display uppercase text-white/80 hover:text-white",
+                  active && "text-white"
+                )}
+              >
+                <span className="relative">
+                  {item.label}
+                  {/* Brand-yellow underline — slides in on hover/active */}
+                  <span
+                    className={cn(
+                      "absolute -bottom-1 left-1/2 -translate-x-1/2 h-0.5 bg-brand transition-all duration-500",
+                      active ? "w-full" : "w-0 group-hover:w-full"
+                    )}
+                    aria-hidden="true"
+                  />
+                </span>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
-      {/* Mobile navigation */}
-      {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-48 rounded-md border bg-background shadow-lg md:hidden z-50">
-          <ul className="py-2">
-            {siteConfig.navigation.main.map((item) => (
-              <li key={item.href}>
+      {/* Mobile: full-screen overlay — rendered once from the right side slot */}
+      {side === "right" && isOpen && (
+        <div
+          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center md:hidden"
+          style={{ background: "rgba(0,0,0,0.92)" }}
+          onClick={() => setIsOpen(false)}
+        >
+          <ul className="w-full text-center">
+            {allItems.map((item) => (
+              <li key={item.href} className="px-4">
                 <Link
                   href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
                   className={cn(
-                    "block px-4 py-2 text-sm transition-colors hover:bg-accent",
-                    isActive(item.href)
-                      ? "text-foreground font-medium"
-                      : "text-foreground/60"
+                    "group relative inline-block py-4 font-display text-2xl text-white transition-colors duration-200",
+                    isActive(item.href, item.external) && "text-brand-off"
                   )}
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.label}
+                  <span className="relative">
+                    {item.label}
+                    <span
+                      className={cn(
+                        "absolute -bottom-1 left-1/2 -translate-x-1/2 h-0.5 bg-brand transition-all duration-500",
+                        isActive(item.href, item.external)
+                          ? "w-full"
+                          : "w-0 group-hover:w-full"
+                      )}
+                      aria-hidden="true"
+                    />
+                  </span>
                 </Link>
               </li>
             ))}
           </ul>
         </div>
       )}
-    </nav>
+    </>
   );
 }

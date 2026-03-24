@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { getReleasesByType, getTypeFromSlug } from "@/lib/releases";
 import { ReleaseGrid } from "@/components/content";
+import { SubNavigation, PageHero } from "@/components/layout";
 
 interface PageProps {
   params: Promise<{ type: string }>;
@@ -52,16 +53,16 @@ export default async function TypePage({
   const title = typeTitles[type];
 
   return (
-    <div className="container mx-auto px-4 py-8 md:py-12">
-      <h1 className="font-heading text-3xl md:text-4xl font-bold mb-8">
-        {title}
-      </h1>
-
-      {releases.length === 0 ? (
-        <p className="text-muted-foreground">No {title.toLowerCase()} found.</p>
-      ) : (
-        <ReleaseGrid releases={releases} />
-      )}
-    </div>
+    <>
+      <PageHero title={title} image="/images/headers/alliance9.jpg" />
+      <SubNavigation />
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        {releases.length === 0 ? (
+          <p className="text-muted-foreground">No {title.toLowerCase()} found.</p>
+        ) : (
+          <ReleaseGrid releases={releases} />
+        )}
+      </div>
+    </>
   );
 }

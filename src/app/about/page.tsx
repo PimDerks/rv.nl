@@ -7,8 +7,10 @@ import { ArrowRight } from "lucide-react";
 
 import { getAboutPage } from "@/lib/about";
 import { getAllBandMembers } from "@/lib/band";
+import { generatePersonJsonLd } from "@/lib/jsonld";
 import { mdxComponents } from "@/components/mdx";
 import { BandMemberCard } from "@/components/content/BandMemberCard";
+import { PageHero } from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "About",
@@ -24,17 +26,19 @@ export default function AboutPage(): React.ReactElement {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 md:py-12">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-        <div className="lg:col-span-2">
-          <h1 className="font-heading text-3xl md:text-4xl font-bold mb-2">
-            {about.title}
-          </h1>
-          {about.subtitle && (
-            <p className="text-xl text-muted-foreground mb-8">
-              {about.subtitle}
-            </p>
-          )}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: generatePersonJsonLd() }}
+      />
+      <PageHero
+        title={about.title}
+        subtitle={about.subtitle}
+        image="/images/headers/alliance3.jpg"
+      />
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="lg:col-span-2">
 
           <div className="prose-content">
             <MDXRemote source={about.content} components={mdxComponents} />
@@ -104,9 +108,10 @@ export default function AboutPage(): React.ReactElement {
                 </div>
               </div>
             )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

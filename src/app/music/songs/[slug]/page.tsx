@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { getAllSongs, getSongBySlug, getReleasesBySong } from "@/lib/songs";
+import { generateMusicCompositionJsonLd } from "@/lib/jsonld";
 import { SongCredits } from "@/components/content/SongCredits";
 import { ReleaseBadge } from "@/components/content/ReleaseBadge";
 
@@ -46,9 +47,14 @@ export default async function SongDetailPage({
   const releases = await getReleasesBySong(song.title);
 
   return (
-    <div className="container mx-auto px-4 py-8 md:py-12">
-      <div className="max-w-3xl">
-        <h1 className="font-heading text-3xl md:text-4xl font-bold mb-2">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: generateMusicCompositionJsonLd(song) }}
+      />
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="max-w-3xl">
+          <h1 className="font-heading text-3xl md:text-4xl font-bold mb-2">
           {song.title}
         </h1>
 
@@ -78,11 +84,12 @@ export default async function SongDetailPage({
         )}
 
         {releases.length > 0 && (
-          <section>
-            <ReleaseBadge releases={releases} />
-          </section>
-        )}
+            <section>
+              <ReleaseBadge releases={releases} />
+            </section>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

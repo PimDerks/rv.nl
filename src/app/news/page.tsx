@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { getPaginatedPosts } from "@/lib/posts";
 import { NewsCard } from "@/components/content";
+import { PageHero } from "@/components/layout";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -23,9 +24,9 @@ export default async function NewsPage({
   const { posts, totalPages, currentPage } = getPaginatedPosts(page, 6);
 
   return (
+    <>
+    <PageHero title="News" image="/images/headers/alliance9.jpg" />
     <div className="container mx-auto px-4 py-8 md:py-12">
-      <h1 className="font-heading text-3xl md:text-4xl font-bold mb-8">News</h1>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {posts.map((post) => (
           <NewsCard key={post.slug} post={post} />
@@ -68,5 +69,6 @@ export default async function NewsPage({
         </nav>
       )}
     </div>
+    </>
   );
 }

@@ -12,27 +12,34 @@ export function NewsCard({ post }: NewsCardProps): React.ReactElement {
   const href = `/news/${post.slug}`;
 
   return (
-    <Link href={href} className="group block" data-testid="news-card">
+    <Link
+      href={href}
+      className="group flex flex-col overflow-hidden rounded bg-surface shadow-md transition-transform duration-250 hover:scale-[1.025] hover:shadow-lg"
+      data-testid="news-card"
+    >
       {post.img && (
-        <div className="relative aspect-video overflow-hidden rounded-lg bg-muted mb-4">
+        <div className="relative aspect-video w-full overflow-hidden bg-black">
           <Image
             src={post.img}
             alt={post.title}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-cover transition-opacity duration-300 group-hover:opacity-90"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </div>
       )}
-      <div>
-        <time className="text-sm text-muted-foreground">
+
+      <div className="flex flex-1 flex-col p-4">
+        <time className="mb-1 font-body text-xs text-muted-foreground">
           {formatDate(post.date)}
         </time>
-        <h3 className="font-heading font-semibold text-lg mt-1 group-hover:text-foreground/80 transition-colors line-clamp-2">
+        <h3 className="font-display text-base text-brand-off line-clamp-2 transition-colors group-hover:text-brand">
           {post.title}
         </h3>
         {post.lead && (
-          <p className="text-muted-foreground mt-2 line-clamp-2">{post.lead}</p>
+          <p className="mt-2 font-body text-sm text-muted-foreground line-clamp-3">
+            {post.lead}
+          </p>
         )}
       </div>
     </Link>

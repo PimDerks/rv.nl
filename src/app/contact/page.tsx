@@ -4,6 +4,7 @@ import { Mail, Facebook, Instagram, Youtube } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { ContactForm } from "@/components/content/ContactForm";
+import { PageHero } from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -12,11 +13,13 @@ export const metadata: Metadata = {
 
 export default function ContactPage(): React.ReactElement {
   return (
+    <>
+    <PageHero
+      title="Contact"
+      subtitle="For interviews, bookings and fanmail"
+      image="/images/headers/alliance7.jpg"
+    />
     <div className="container mx-auto px-4 py-8 md:py-12">
-      <h1 className="font-heading text-3xl md:text-4xl font-bold mb-8">
-        Contact
-      </h1>
-
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
         <div className="lg:col-span-2">
           <div className="max-w-xl">
@@ -85,5 +88,6 @@ export default function ContactPage(): React.ReactElement {
         </div>
       </div>
     </div>
+    </>
   );
 }
