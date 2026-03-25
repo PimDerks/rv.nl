@@ -1,3 +1,5 @@
+import { cache } from "react";
+
 import { getContentFiles, getContentFile } from "./content";
 import { markdownToHtml } from "./markdown";
 import { getAllReleases } from "./releases";
@@ -115,3 +117,11 @@ export async function buildSongReleaseIndex(): Promise<
 
   return index;
 }
+
+// Get a set of all available song slugs (songs that have lyric files)
+// Cached to prevent multiple filesystem reads per request
+export const getAvailableSongSlugs = cache((): Set<string> => {
+  const files = getContentFiles<SongFrontmatter>("_songs");
+
+  return new Set(files.map((file) => file.slug));
+});

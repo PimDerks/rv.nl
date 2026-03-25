@@ -6,6 +6,7 @@ import { slugify } from "@/lib/utils";
 interface TracklistProps {
   discs: ReleaseDisc[];
   linkSongs?: boolean;
+  availableSongSlugs?: Set<string>;
 }
 
 function getTrackTitle(track: ReleaseTrack): string {
@@ -19,6 +20,7 @@ function getTrackSubtitle(track: ReleaseTrack): string | undefined {
 export function Tracklist({
   discs,
   linkSongs = true,
+  availableSongSlugs,
 }: TracklistProps): React.ReactElement {
   return (
     <div className="space-y-6">
@@ -34,6 +36,9 @@ export function Tracklist({
               const title = getTrackTitle(track);
               const subtitle = getTrackSubtitle(track);
               const songSlug = slugify(title);
+              const hasLyrics = availableSongSlugs
+                ? availableSongSlugs.has(songSlug)
+                : true;
 
               return (
                 <li
@@ -44,7 +49,7 @@ export function Tracklist({
                     {trackIndex + 1}.
                   </span>
                   <div className="flex-1">
-                    {linkSongs ? (
+                    {linkSongs && hasLyrics ? (
                       <Link
                         href={`/music/songs/${songSlug}`}
                         className="hover:text-foreground/80 transition-colors"
