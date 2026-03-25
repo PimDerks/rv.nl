@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { getAllSongs, getSongBySlug, getReleasesBySong } from "@/lib/songs";
 import { generateMusicCompositionJsonLd } from "@/lib/jsonld";
 import { SongCredits } from "@/components/content/SongCredits";
-import { ReleaseBadge } from "@/components/content/ReleaseBadge";
+import { ReleaseGrid } from "@/components/content/ReleaseGrid";
+import { PageHero } from "@/components/layout";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -46,50 +47,58 @@ export default async function SongDetailPage({
 
   const releases = await getReleasesBySong(song.title);
 
+  const subtitleParts: string[] = [];
+
+  if (song.writer) {
+    subtitleParts.push(`Written by ${song.writer}`);
+  }
+
+  if (song.year) {
+    subtitleParts.push(String(song.year));
+  }
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: generateMusicCompositionJsonLd(song) }}
       />
-      <div className="container mx-auto px-4 py-8 md:py-12">
-        <div className="max-w-3xl">
-          <h1 className="font-heading text-3xl md:text-4xl font-bold mb-2">
-          {song.title}
-        </h1>
 
-        <div className="flex flex-wrap gap-4 text-muted-foreground mb-8">
-          {song.year && <span>Year: {song.year}</span>}
-          {song.writer && <span>Written by: {song.writer}</span>}
-          {song.composer && song.composer !== song.writer && (
-            <span>Composed by: {song.composer}</span>
-          )}
+      <PageHero
+        title={song.title}
+        subtitle={subtitleParts.join(" — ") || undefined}
+        image="/images/headers/alliance9.jpg"
+      >
+        <div className="container mx-auto px-4 py-8 md:py-12">
+          <div className="max-w-3xl mx-auto text-center">
+            {song.content && (
+              <section className="mb-8">
+                <h2 className="mb-4">Lyrics</h2>
+                <div
+                  className="lyrics"
+                  dangerouslySetInnerHTML={{ __html: song.content }}
+                />
+              </section>
+            )}
+
+            {song.credits && song.credits.length > 0 && (
+              <section className="mb-8">
+                <h2 className="mb-4">Credits</h2>
+                <SongCredits credits={song.credits} />
+              </section>
+            )}
+
+            {releases.length > 0 && (
+              <section>
+                <h2 className="mb-6">This song appears on the following releases</h2>
+                <div className="flex justify-center">
+                  <ReleaseGrid releases={releases} />
+                </div>
+              </section>
+            )}
+          </div>
         </div>
-
-        {song.content && (
-          <section className="mb-8">
-            <h2 className="font-heading text-xl font-semibold mb-4">Lyrics</h2>
-            <div
-              className="lyrics"
-              dangerouslySetInnerHTML={{ __html: song.content }}
-            />
-          </section>
-        )}
-
-        {song.credits && song.credits.length > 0 && (
-          <section className="mb-8">
-            <h2 className="font-heading text-xl font-semibold mb-4">Credits</h2>
-            <SongCredits credits={song.credits} />
-          </section>
-        )}
-
-        {releases.length > 0 && (
-            <section>
-              <ReleaseBadge releases={releases} />
-            </section>
-          )}
-        </div>
-      </div>
+      </PageHero>
     </>
   );
 }
