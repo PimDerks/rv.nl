@@ -36,58 +36,40 @@ credits:
     value: "Bullit Sound Studios"  
 ---
 
+
 Bye, bye, gone in the sky  
-
 My friends are all grown up and I'm still a child  
-
 but now I'm feeling I'm stuck in my cocoon  
-
 its' me I'm seeing through
 
 Bye, bye, wonderful sounds  
-
 All my heroes have been turned into clowns  
-
 I rather hold my horses, quit and come clean  
-
 There's nothing in between
 
 Take a look at me, now  
-
 Would you act like me?  
-
 Take a look at me, now  
-
 Take a loot at me!
 
 All we want is a little bit Love! (...A littlebit Love!)  
-
 All we want is a little bit Love! (...A littlebit Love!)  
-
 All we want is a little bit Love! (...A littlebit Love!)
 
 We want love!
 
 Life, life, the harder I try  
-
 Prefer to go to sleep and dream til' I die  
-
 Bye, bye, big attitude  
-
 bet ya babe, I miss my youth
 
 Take a look at me, now  
-
 Would you act like me?  
-
 Take a look at me, now  
-
 Take a loot at me!
 
 All we want is a little bit Love! (...A littlebit Love!)  
-
 All we want is a little bit Love! (...A littlebit Love!)  
-
 All we want is a little bit Love! (...A littlebit Love!)
 
 We want love!

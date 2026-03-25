@@ -10,16 +10,11 @@ credits:
     value: Mummy-dear
 ---
 
-We will rise and shine  
 
+We will rise and shine  
 We're the greatest of our time  
-
 We will rise and shine  
-
 May the strongest glorify  
-
 In the heart of hope there's no surrender  
-
 We will rise and shine  
-
 Yeah, we will rise and shine

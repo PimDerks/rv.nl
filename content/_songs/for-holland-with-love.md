@@ -12,8 +12,7 @@ credits:
     value: Unidentified 
 ---
 
+
 ...As Earth gathered to see this star,  
-
 a new one suddenly rose up from the south.  
-
 And they both seemed in pain (they shine too bright)

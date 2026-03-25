@@ -12,18 +12,12 @@ credits:
     value: Rani, Sara and Noortje Koch
 ---
 
+
 In the land where my grandmother's now  
-
 I wanna get there sometime  
-
 There is the place I can break away  
-
 from this painful masquerade  
-
 But I have to be strong in life  
-
 Just to earn my paradise  
-
 Where I can finally say au-revoir  
-
 To the pain of this aching heart

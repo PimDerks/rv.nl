@@ -12,4 +12,5 @@ about: |
   Coming from ‘One Heart’ it’s great as an intro for the next song ‘Now Or Never’. Also the meaning. The whole album I’ve been mourning and moaning about losing my girl. And now it’s time to get back to the future. Get on with life."
 ---
 
+
 Instrumental.

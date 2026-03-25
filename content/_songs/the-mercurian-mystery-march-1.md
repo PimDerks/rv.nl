@@ -26,50 +26,34 @@ credits:
     value: "Wisseloord Studios"  
 ---
 
-In the beginning, a sun and two moons in the sky  
 
+In the beginning, a sun and two moons in the sky  
 Mercurian orbit swinging, the polar lights on the equator sing
 
 La la la la la la la in the beginning
 
 This was not the first time the wheel was invented   
-
 there were men before the apeman  
-
 (Alei-alei ova coua, alei-alei ova coua)  
-
 They came from the sky sowing seeds on the world  
-
 breeding many kinds of races  
-
 (Alei-alei ova coua, alei-alei ova coua)
 
 They built Atlantic cities  
-
 they educated living  
-
 We threw rocks at the moons in the sky  
-
 We grew wiser as the ages flew by  
-
 The knowledge made us greedy  
-
 The first end of the world
 
 Stairway of human evolution ending with a  
-
 Nuclear breeze - Big Bang by the atom beam  
-
 Nuclear breeze - Black bite in the cerulean  
-
 Fratricide genealogy  
-
 We're reviving the history  
-
 The Mercurian Mystery
 
 People of the past being barbarian  
-
 today remain the same unless they start becoming egalitarian
 
 The lineage of the race after apocalypse will survive for many eons...

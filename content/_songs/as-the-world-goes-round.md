@@ -28,46 +28,32 @@ credits:
     value: "Wisseloord Studios"  
 ---
 
+
 Dreams of Eden in your mind  
-
 As my love for you will find  
-
 As the world goes 'round
 
 Through our sacreligious lives  
-
 Destined love of ours will rise  
-
 As the world goes 'round
 
 I feel
 
 Now I am in love  
-
 I am in love  
-
 I'm in love now...  
-
 I'm in love now...
 
 Dreams of Eden in your mind  
-
 As my love for you will find  
-
 As the world goes 'round
 
 Now I am in love  
-
 I am in love  
-
 I'm in love now...  
-
 I'm in love now...
 
 Oh, I am in love  
-
 I am in love  
-
 I'm in love now...  
-
 I'm in love now...

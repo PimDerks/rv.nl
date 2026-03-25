@@ -28,44 +28,32 @@ credits:
     value: "Bullit Sound Studios"  
 ---
 
-I wouldn't say that she is something new  
 
+I wouldn't say that she is something new  
 Look down from her hips up to her head
 
 I used to say I was a non-believer  
-
 but I must admit that God was in my head
 
 And when I see you  
-
 Just want to feel you  
-
 And when I see you I feel fine
 
 Everytime I see you  
-
 Just want to be with you  
-
 And when I touch you I feel fine
 
 I wouldn't say that she was something new  
-
 taking all her clothes off in my head
 
 ...just walk away Renee  
-
 I could not believe her  
-
 She said: "I am in love with someone else"
 
 And when I see you  
-
 Just want to feel you  
-
 And when I see you I feel fine
 
 Everytime I see you  
-
 Just want to be with you  
-
 And when I touch you I feel fine

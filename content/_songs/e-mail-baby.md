@@ -26,36 +26,26 @@ credits:
     value: "Bullit Sound Studios"  
 ---
 
-I got an e-mail from Miss  
 
+I got an e-mail from Miss  
 must be the cutest girl that I've never seen
 
 "A black lace teddy, longest hair, highest heels"  
-
 Well no big deal, I've got to see this for real
 
 E-mail baby, can't you see  
-
 E-mail love between you & me  
-
 E-mail baby can't you see
 
 Agreed to meet in Paris, I booked a flight  
-
 and on the Eiffel-tower someone said "Hi!"  
-
 The woman's clothing, guess that wasn't a lie  
-
 the rest of her turned out to be a guy
 
 E-mail baby, can't you see  
-
 E-mail love between you & me  
-
 E-mail baby can't you see
 
 E-mail baby, can't you see  
-
 E-mail love between you & me  
-
 E-mail baby can't you see

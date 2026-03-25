@@ -30,48 +30,33 @@ credits:
     value: "Bullit Sound Studios"  
 ---
 
-City Skyline all horizon - you're in Tokyo  
 
+City Skyline all horizon - you're in Tokyo  
 Workaholics we chill out 'cause we're in Tokyo
 
 Mr. West Guy better be polite now you're in Tokyo  
-
 We say: "Okidoki-o - let's karaoke-o"
 
 Tokyo-kko  
-
 And it's  
-
 Tokyo-ko  
-
 And it's  
-
 Tokyo-ko ...it's you and me
 
 Where on earth did Mr. Rock go? He's in Tokyo  
-
 You Bourgondic Bon Vivant, wake up in Tokyo
 
 Mr. West Guy never will be denied while you're in Tokyo  
-
 We say: "Okidoki-o - let's karaoke-o"
 
 Tokyo-kko  
-
 And it's  
-
 Tokyo-ko  
-
 And it's  
-
 Tokyo-ko ...it's you and me
 
 Tokyo-kko  
-
 And it's  
-
 Tokyo-ko  
-
 And it's  
-
 Tokyo-ko ...it's you and me

@@ -14,32 +14,21 @@ about: |
   Maybe they can adopt it in a commercial . That would be a dream, full circle. It surely would be a little payback for all the money I spent on them through the years. I did some guitar harmonies with the Brian May guitar on it. And my favourite drummer Juan plays the drums.
 ---
 
+
 I walk down the street gonna buy something sweet  
-
 Guess some sugar might heal  
-
 Just for an hour or a minute or two  
-
 Change the way that I feel
 
 I had to be alone to get into the special zone  
-
 But now I feel undone  
-
 Just because I'm overdosed doesn't mean I'm bored  
-
 with my baby
 
 What would I do in a world without you  
-
 You save my life  
-
 Whenever I'm lost, you're guiding me all the way  
-
 What would I do when I can't count on you  
-
 within my life  
-
 All that I say  
-
 A magnum for everyday!

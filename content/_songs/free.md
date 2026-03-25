@@ -30,99 +30,67 @@ credits:
     value: "Wisseloord Studios"  
 ---
 
+
 Once I thought I got it all for free (I believed!)  
-
 but I had to find  
-
 ...this ain't Heaven (This sure ain't Heaven for me!)
 
 Yes, the road was long  
-
 & hostile mystery (talk about, talk about it)  
-
 but I know, right now  
-
 that the price won't come easy to me
 
 My persistent attitude  
-
 get me close to the truth
 
 Come make me change you  
-
 You make me change
 
 Once I thought (Once I thought that I got it all for... All for free!)  
-
 I got it all for free  
-
 but I know the price right now  
-
 that the price won't come easy to me
 
 Guess I just was right about  
-
 who would ever let me down  
-
 (Again and again and again and you take me away)  
-
 But it's dogged as does it yes, I'm here to stay  
-
 Got to hold on, got to hold on anyway  
-
 (Yeah, yeah, yeah!)
 
 Once I thought  
-
 I got it all for free  
-
 but I know right NOW  
-
 that the price won't come easy to me
 
 Gonna be free - I'm  
-
 Gonna be free - I'm  
-
 Gonna be free - I'm  
-
 Gonna be free - I'm
 
 Gonna be free - I'm  
-
 Gonna be free - I'm  
-
 Gonna be free - I'm  
-
 Gonna be free - I'm
 
 Gonna be free - I'm
 Gonna be free - I'm  
-
 Gonna be free - I'm  
-
 Gonna be free - I'm
 
 Free  
-
 I'm free  
-
 I'm free... yeah!
 
 My persistent attitude  
-
 get me close to the truth
 
 Come make me change you  
-
 You make me change
 
 Once I thought  
-
 I got it all for free (but then again nothing's for free...)  
-
 but I know right now  
-
 that the price won't come easy to me
 
 I am free...

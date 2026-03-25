@@ -10,26 +10,17 @@ about: |
   A little sad piano ballad. The first of 6 tracks glued together. I wrote it late 2000. Recorded the piano end of 2001. Re-wrote the lyric and recorded the vocal about a year later.
 ---
 
+
 Dear baby, we're both so unhappy now  
-
 Being far apart, living in this cold world  
-
 But darling, please believe me now  
-
 To each other we belong - you're my only home  
-
 Can't you see the world spins in a different way  
-
 Since we fell into the dark - but we can  
-
 find the magic back again - faith is all it takes  
-
 Baby please awake, it's not too late
 
 How can I live without you - how can my heart go on  
-
 How can I move the mountains  
-
 How can I still be strong  
-
 Now that everything I'm dreaming of is gone

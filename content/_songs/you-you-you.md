@@ -30,26 +30,19 @@ credits:
     value: "John Dikke"      
 ---
 
+
 I tried to call you on the phone  
-
 last night was all I was waiting for  
-
 so darlin' I want more
 
 Anything I want  
-
 Anything I need  
-
 Anything you want from me I'll do
 
 But there was you, you, you  
-
 Open up the door  
-
 There was you, you, you  
-
 Shining like before  
-
 There was you, you, you
 
 I tried to make it on my own
@@ -58,27 +51,17 @@ I'd die for you - I will for sure
 It's you that I adore
 
 Anything I want  
-
 Anything I need  
-
 Anything you want from me I'll do
 
 But I want you, you, you  
-
 like no one before  
-
 I want you, you, you  
-
 Anytime,  
-
 Anytime at all
 
 But there was you, you, you  
-
 Open up the door  
-
 There was you, you, you  
-
 Shining like before  
-
 There was you, you, you

@@ -20,62 +20,38 @@ credits:
     value: Humberto Garcia
 ---
 
+
 It's been so long ago  
-
 Since you waved my love goodbye  
-
 With sadness in your eyes  
-
 You left me wondering why  
-
 Yes I was hurt before  
-
 But it never felt so strong  
-
 Now I face the world so wrong  
-
 Without you I can't go on
 
 It's just the way I feel  
-
 I know we're meant to be  
-
 I'm praying day and night  
-
 Why can't you see
 
 Over and over again  
-
 I feel the pain in my heart  
-
 Can we make a brand new start  
-
 Over and over again  
-
 I keep on loving you  
-
 There's no end
 
 These times without you  
-
 Turned my life into hell  
-
 Everyone can see  
-
 But no one can help  
-
 I did the best I could  
-
 To get you out of my mind  
-
 To prove I'm not that blind  
-
 But I just couldn't lie
 
 Love is all I feel  
-
 I know we're meant to be  
-
 Don't waste our time too long  
-
 Angel, angel come with me
