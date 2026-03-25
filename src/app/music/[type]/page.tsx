@@ -53,8 +53,7 @@ export default async function TypePage({
   const title = typeTitles[type];
 
   return (
-    <>
-      <PageHero title={title} image="/images/headers/alliance9.jpg" />
+    <PageHero title={title} image="/images/headers/alliance9.jpg">
       <SubNavigation />
       <div className="container mx-auto px-4 py-8 md:py-12">
         {releases.length === 0 ? (
@@ -63,6 +62,6 @@ export default async function TypePage({
           <ReleaseGrid releases={releases} />
         )}
       </div>
-    </>
+    </PageHero>
   );
 }

@@ -17,12 +17,12 @@ export const siteConfig = {
   },
   navigation: {
     main: [
-      { label: "News", href: "/news", side: "left" as const, external: false },
-      { label: "Music", href: "/music", side: "left" as const, external: false },
-      { label: "Live", href: "/live", side: "left" as const, external: false },
-      { label: "About", href: "/about", side: "right" as const, external: false },
-      { label: "Shop", href: "https://robbyvalentine.myonline.store/", side: "right" as const, external: true },
-      { label: "Contact", href: "/contact", side: "right" as const, external: false },
+      { label: "News", href: "/news", external: false },
+      { label: "Music", href: "/music", external: false },
+      { label: "Live", href: "/live", external: false },
+      { label: "About", href: "/about", external: false },
+      { label: "Shop", href: "https://robbyvalentine.myonline.store/", external: true },
+      { label: "Contact", href: "/contact", external: false },
     ],
     music: [
       { label: "All Releases", href: "/music" },

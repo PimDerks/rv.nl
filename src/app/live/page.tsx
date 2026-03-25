@@ -27,20 +27,21 @@ export default function LivePage(): React.ReactElement {
         title="Live"
         subtitle="Valentine performances"
         image="/images/headers/alliance1.jpg"
-      />
-      <div className="container mx-auto px-4 py-8 md:py-12">
-        <EventTable
-          events={upcoming}
-          title="Upcoming Shows"
-          emptyMessage="No upcoming shows scheduled. Check back soon!"
-        />
+      >
+        <div className="container mx-auto px-4 py-8 md:py-12">
+          <EventTable
+            events={upcoming}
+            title="Upcoming Shows"
+            emptyMessage="No upcoming shows scheduled. Check back soon!"
+          />
 
-        <EventTable
-          events={past}
-          title="Past Shows"
-          emptyMessage="No past shows recorded."
-        />
-      </div>
+          <EventTable
+            events={past}
+            title="Past Shows"
+            emptyMessage="No past shows recorded."
+          />
+        </div>
+      </PageHero>
     </>
   );
 }

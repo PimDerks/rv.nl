@@ -1,9 +1,25 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { Lora, Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 
 import "@/styles/globals.css";
-import { Header, Footer } from "@/components/layout";
+import { Header, Footer, TopLoader } from "@/components/layout";
 import { siteConfig } from "@/config/site";
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
+  display: "swap",
+  weight: ["400", "700"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  weight: ["400", "500", "600"],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -42,12 +58,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>): React.ReactElement {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${lora.variable} ${inter.variable}`}>
       <body>
-        {/*
-          Dark is the default theme (matches the original design).
-          Light class is applied by next-themes when user switches.
-        */}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -55,7 +67,10 @@ export default function RootLayout({
           value={{ dark: "dark", light: "light" }}
           disableTransitionOnChange
         >
-          <div className="relative flex min-h-screen flex-col bg-background text-foreground">
+          <Suspense fallback={null}>
+            <TopLoader />
+          </Suspense>
+          <div className="relative flex min-h-screen flex-col text-foreground">
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />

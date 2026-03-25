@@ -37,41 +37,40 @@ export default async function SongsPage(): Promise<React.ReactElement> {
   });
 
   return (
-    <>
-    <PageHero title="Songs" image="/images/headers/alliance9.jpg" />
-    <SubNavigation />
-    <div className="container mx-auto px-4 py-8 md:py-12">
-      <p className="text-muted-foreground mb-8">
-        {songs.length} songs in the catalog
-      </p>
+    <PageHero title="Songs" image="/images/headers/alliance9.jpg">
+      <SubNavigation />
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <p className="text-muted-foreground mb-8">
+          {songs.length} songs in the catalog
+        </p>
 
-      <div className="space-y-8">
-        {sortedLetters.map((letter) => (
-          <section key={letter}>
-            <h2 className="font-heading text-2xl font-bold mb-4 pb-2 border-b">
-              {letter}
-            </h2>
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
-              {groupedSongs[letter].map((song) => (
-                <li key={song.slug}>
-                  <Link
-                    href={`/music/songs/${song.slug}`}
-                    className="hover:text-foreground/80 transition-colors"
-                  >
-                    {song.title}
-                    {song.year && (
-                      <span className="text-muted-foreground text-sm ml-2">
-                        ({song.year})
-                      </span>
-                    )}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+        <div className="space-y-8">
+          {sortedLetters.map((letter) => (
+            <section key={letter}>
+              <h2 className="font-heading text-2xl font-bold mb-4 pb-2 border-b">
+                {letter}
+              </h2>
+              <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
+                {groupedSongs[letter].map((song) => (
+                  <li key={song.slug}>
+                    <Link
+                      href={`/music/songs/${song.slug}`}
+                      className="hover:text-foreground/80 transition-colors"
+                    >
+                      {song.title}
+                      {song.year && (
+                        <span className="text-muted-foreground text-sm ml-2">
+                          ({song.year})
+                        </span>
+                      )}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
       </div>
-    </div>
-    </>
+    </PageHero>
   );
 }

@@ -1,38 +1,50 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 import { Navigation } from "./Navigation";
 import { ThemeToggle } from "./ThemeToggle";
 
 export function Header(): React.ReactElement {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header
-      className="sticky top-0 z-50 w-full"
-      style={{ background: "rgba(0,0,0,0.35)", backdropFilter: "blur(4px)" }}
-    >
-      {/* Three-column grid: left nav | centred logo | right nav + toggle */}
-      <div className="container mx-auto grid grid-cols-[1fr_auto_1fr] items-center px-4 py-3 md:py-0">
-        {/* Left half of nav */}
-        <Navigation side="left" />
+    <>
+      <header className="sticky top-0 z-50 w-full bg-background/85 backdrop-blur-md border-b border-border/50">
+        <div className="container mx-auto flex items-center justify-between px-4 py-3">
+          {/* Logo */}
+          <Link href="/" aria-label="Robby Valentine — home">
+            <Image
+              src="/images/logo.svg"
+              alt="Robby Valentine"
+              width={120}
+              height={60}
+              className="h-8 w-auto md:h-10 transition-all duration-300"
+              priority
+            />
+          </Link>
 
-        {/* Logo — centred */}
-        <Link href="/" className="flex justify-center py-2 md:py-3" aria-label="Robby Valentine — home">
-          <Image
-            src="/images/logo.svg"
-            alt="Robby Valentine"
-            width={120}
-            height={60}
-            className="h-10 w-auto md:h-14 lg:h-16 transition-all duration-300"
-            priority
-          />
-        </Link>
-
-        {/* Right half of nav + theme toggle */}
-        <div className="flex items-center justify-end gap-2">
-          <Navigation side="right" />
-          <ThemeToggle />
+          {/* Right side: theme toggle + hamburger */}
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <button
+              className="flex items-center justify-center p-1 text-foreground transition-colors hover:text-heading"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle navigation menu"
+              aria-expanded={isMenuOpen}
+              data-testid="menu-toggle"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+
+      {/* Full-screen navigation overlay */}
+      <Navigation isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+    </>
   );
 }

@@ -1,0 +1,263 @@
+@import "tailwindcss";
+
+/* -----------------------------------------------
+   Local fonts
+----------------------------------------------- */
+
+@font-face {
+  font-family: "Bebas Neue";
+  src:
+    url("/fonts/bebasneue_bold-webfont.woff2") format("woff2"),
+    url("/fonts/bebasneue_bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -----------------------------------------------
+   Design tokens
+----------------------------------------------- */
+
+@theme {
+  /* Fonts — Lora and Inter are set via CSS vars from next/font in layout.tsx */
+  --font-display: "Bebas Neue", Impact, sans-serif;
+  --font-body: var(--font-lora), Georgia, "Times New Roman", serif;
+  --font-ui: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  /* Brand colours — same in both themes */
+  --color-brand: oklch(91.4% 0.2 98.2);      /* #FFE400 */
+  --color-brand-off: oklch(86.7% 0.2 91.5);  /* #FFCC00 */
+
+  /* Dark theme (default) */
+  --color-background: oklch(22.5% 0 0);       /* #303030 */
+  --color-surface: oklch(18% 0 0);            /* ~#282828, cards/boxes */
+  --color-surface-raised: oklch(26% 0 0);     /* slightly lighter surface */
+  --color-foreground: oklch(96% 0 0);         /* near-white body text */
+  --color-heading: oklch(86.7% 0.2 91.5);     /* brand-off yellow for headings in dark */
+  --color-muted-foreground: oklch(65% 0 0);   /* #999 equivalent */
+  --color-border: oklch(30% 0 0);             /* subtle border */
+  --color-input: oklch(26% 0 0);
+  --color-ring: oklch(86.7% 0.2 91.5);        /* brand yellow focus ring */
+
+  /* Semantic aliases consumed by Tailwind utilities */
+  --color-primary: oklch(86.7% 0.2 91.5);     /* brand yellow */
+  --color-primary-foreground: oklch(10% 0 0); /* black on yellow */
+  --color-secondary: oklch(26% 0 0);
+  --color-secondary-foreground: oklch(96% 0 0);
+  --color-muted: oklch(26% 0 0);
+  --color-accent: oklch(86.7% 0.2 91.5);
+  --color-accent-foreground: oklch(10% 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-card: oklch(18% 0 0);
+  --color-card-foreground: oklch(96% 0 0);
+  --color-popover: oklch(18% 0 0);
+  --color-popover-foreground: oklch(96% 0 0);
+
+  /* Radii */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
+}
+
+/* Light theme overrides */
+.light {
+  --color-background: oklch(97% 0 0);
+  --color-surface: oklch(100% 0 0);
+  --color-surface-raised: oklch(97% 0 0);
+  --color-foreground: oklch(15% 0 0);
+  --color-heading: oklch(15% 0 0);           /* black headings in light mode */
+  --color-muted-foreground: oklch(45% 0 0);
+  --color-border: oklch(88% 0 0);
+  --color-input: oklch(88% 0 0);
+  --color-ring: oklch(50% 0.15 80);          /* darker gold for focus ring */
+  --color-primary: oklch(15% 0 0);           /* black buttons in light mode */
+  --color-primary-foreground: oklch(96% 0 0);
+  --color-secondary: oklch(94% 0 0);
+  --color-secondary-foreground: oklch(15% 0 0);
+  --color-muted: oklch(94% 0 0);
+  --color-accent: oklch(50% 0.15 80);        /* darker gold accent in light mode */
+  --color-accent-foreground: oklch(100% 0 0);
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(15% 0 0);
+  --color-popover: oklch(100% 0 0);
+  --color-popover-foreground: oklch(15% 0 0);
+}
+
+/* -----------------------------------------------
+   Base layer
+----------------------------------------------- */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    border-color: var(--color-border);
+  }
+
+  html {
+    font-size: 100%; /* 16px base on mobile */
+    line-height: 1.7;
+    scroll-behavior: smooth;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 112.5%; /* 18px base on desktop */
+    }
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-weight: 400;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-heading);
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+  h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+
+  a {
+    color: var(--color-heading);
+    text-decoration: none;
+    transition: color 150ms ease-out;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* -----------------------------------------------
+   Prose / content body
+----------------------------------------------- */
+
+@layer utilities {
+  .prose-content {
+    max-width: none;
+  }
+
+  .prose-content h2,
+  .prose-content h3,
+  .prose-content h4 {
+    color: var(--color-heading);
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+  }
+
+  .prose-content a {
+    color: var(--color-heading);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .prose-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose-content ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose-content li {
+    margin-bottom: 0.25rem;
+  }
+
+  .prose-content blockquote {
+    border-left: 4px solid var(--color-brand);
+    padding-left: 1rem;
+    font-style: italic;
+    color: var(--color-muted-foreground);
+    margin: 1.5rem 0;
+  }
+
+  .prose-content img {
+    border-radius: var(--radius-md);
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+
+  /* Lyrics */
+  /* .lyrics {
+    white-space: pre-line;
+    line-height: 1;
+    font-family: var(--font-body);
+  }
+
+  .lyrics strong {
+    display: block;
+    font-family: var(--font-display);
+    color: var(--color-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+  } */
+
+  /* Scroll reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hide scrollbar utility */
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}

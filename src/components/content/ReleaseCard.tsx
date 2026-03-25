@@ -16,7 +16,7 @@ export function ReleaseCard({ release }: ReleaseCardProps): React.ReactElement {
   return (
     <Link
       href={href}
-      className="group relative block overflow-hidden bg-black"
+      className="group relative block overflow-hidden bg-muted rounded"
       data-testid="release-card"
     >
       {/* Album artwork fills the card */}
@@ -25,23 +25,23 @@ export function ReleaseCard({ release }: ReleaseCardProps): React.ReactElement {
           src={release.img}
           alt={release.title}
           fill
-          className="object-cover transition-opacity duration-300 group-hover:opacity-80"
+          className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
         />
 
-        {/* Overlay: appears on hover, centred title */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus:opacity-100">
-          <div className="px-4 text-center" style={{ textShadow: "0 0 2px rgba(0,0,0,0.5)" }}>
-            <p className="font-display text-base text-white">{release.title}</p>
-            <p className="mt-1 font-body text-sm text-brand-off">{formatYear(release.date)}</p>
+        {/* Overlay on hover — sits on image, so hard-coded dark + white is correct */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus:opacity-100">
+          <div className="px-4 text-center" style={{ textShadow: "0 1px 4px rgba(0,0,0,0.6)" }}>
+            <p className="font-display text-lg tracking-wide uppercase text-white">{release.title}</p>
+            <p className="mt-1 font-ui text-sm text-white/80">{formatYear(release.date)}</p>
           </div>
         </div>
       </div>
 
-      {/* Title below image (visible always, complements the overlay) */}
+      {/* Title below image — theme-aware */}
       <div className="px-2 py-2">
-        <p className="font-display text-sm text-brand-off truncate">{release.title}</p>
-        <p className="font-body text-xs text-muted-foreground">{formatYear(release.date)}</p>
+        <p className="font-display text-sm tracking-wide uppercase text-heading truncate">{release.title}</p>
+        <p className="font-ui text-xs text-muted-foreground">{formatYear(release.date)}</p>
       </div>
     </Link>
   );

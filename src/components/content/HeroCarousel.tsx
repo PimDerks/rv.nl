@@ -47,9 +47,13 @@ export function HeroCarousel({ slides }: HeroCarouselProps): React.ReactElement 
                 className="object-cover"
                 priority
               />
+              {/* Image overlay context — hard-coded dark gradient + white text is intentional */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
-                <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-2">
+                <h2
+                  className="font-display text-3xl md:text-5xl lg:text-6xl tracking-wide uppercase text-white mb-2"
+                  style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}
+                >
                   {slide.title}
                 </h2>
                 {slide.subtitle && (
@@ -62,7 +66,7 @@ export function HeroCarousel({ slides }: HeroCarouselProps): React.ReactElement 
                     href={slide.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-white text-black px-6 py-2 rounded-md font-medium hover:bg-white/90 transition-colors"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2 rounded-md font-display text-sm tracking-wider uppercase hover:opacity-90 transition-opacity"
                   >
                     Order Now
                     <ExternalLink className="h-4 w-4" />
@@ -70,7 +74,7 @@ export function HeroCarousel({ slides }: HeroCarouselProps): React.ReactElement 
                 ) : (
                   <Link
                     href={slide.link}
-                    className="inline-flex items-center gap-2 bg-white text-black px-6 py-2 rounded-md font-medium hover:bg-white/90 transition-colors"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2 rounded-md font-display text-sm tracking-wider uppercase hover:opacity-90 transition-opacity"
                   >
                     Learn More
                   </Link>
@@ -86,7 +90,7 @@ export function HeroCarousel({ slides }: HeroCarouselProps): React.ReactElement 
           <Button
             variant="ghost"
             size="icon"
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/50 hover:bg-background/70 text-foreground"
             onClick={scrollPrev}
             aria-label="Previous slide"
           >
@@ -95,7 +99,7 @@ export function HeroCarousel({ slides }: HeroCarouselProps): React.ReactElement 
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/50 hover:bg-background/70 text-foreground"
             onClick={scrollNext}
             aria-label="Next slide"
           >

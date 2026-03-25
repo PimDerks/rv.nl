@@ -7,6 +7,7 @@ import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { formatDate } from "@/lib/utils";
 import { generateBlogPostingJsonLd } from "@/lib/jsonld";
 import { mdxComponents } from "@/components/mdx";
+import { PageHero } from "@/components/layout";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -51,44 +52,46 @@ export default async function NewsDetailPage({
     notFound();
   }
 
+  const heroImage = post.header || post.img || "/images/headers/alliance9.jpg";
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: generateBlogPostingJsonLd(post) }}
       />
-      <article className="container mx-auto px-4 py-8 md:py-12">
-        <div className="max-w-3xl mx-auto">
-          <header className="mb-8">
-          <time className="text-sm text-muted-foreground">
-            {formatDate(post.date)}
-          </time>
-          <h1 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">
-            {post.title}
-          </h1>
-          {post.lead && (
-            <p className="text-xl text-muted-foreground">{post.lead}</p>
-          )}
-        </header>
 
-        {post.img && (
-          <div className="relative aspect-video overflow-hidden rounded-lg bg-muted mb-8">
-            <Image
-              src={post.img}
-              alt={post.title}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
-        )}
+      <PageHero
+        title={post.title}
+        subtitle={formatDate(post.date)}
+        image={heroImage}
+      >
+        <article className="container mx-auto px-4 py-8 md:py-12">
+          <div className="max-w-3xl mx-auto">
+            {post.lead && (
+              <p className="text-xl text-muted-foreground mb-8">{post.lead}</p>
+            )}
 
-        <div className="prose-content">
-            <MDXRemote source={post.content} components={mdxComponents} />
+            {post.img && (
+              <div className="overflow-hidden rounded-lg bg-muted mb-8">
+                <Image
+                  src={post.img}
+                  alt={post.title}
+                  width={768}
+                  height={0}
+                  className="w-full h-auto"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 768px"
+                />
+              </div>
+            )}
+
+            <div className="prose-content">
+              <MDXRemote source={post.content} components={mdxComponents} />
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </PageHero>
     </>
   );
 }
