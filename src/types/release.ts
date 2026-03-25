@@ -25,4 +25,5 @@ export interface Release {
   discs?: ReleaseDisc[];
   credits?: ReleaseCredit[];
   content: string;
+  spotify?: string;
 }

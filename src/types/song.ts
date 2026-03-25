@@ -11,5 +11,6 @@ export interface Song {
   composer?: string;
   credits?: SongCredit[];
   order?: boolean | number;
+  spotify?: string;
   content: string;
 }

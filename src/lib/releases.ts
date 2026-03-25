@@ -11,6 +11,7 @@ interface ReleaseFrontmatter {
   credits?: ReleaseCredit[];
   lyrics?: boolean;
   permalink?: string;
+  spotify?: string;
 }
 
 export async function getAllReleases(): Promise<Release[]> {
@@ -29,14 +30,23 @@ export async function getAllReleases(): Promise<Release[]> {
         discs: file.frontmatter.discs,
         credits: file.frontmatter.credits,
         content,
+        spotify: file.frontmatter.spotify,
       };
     })
   );
 
   // Sort by date descending (newest first)
-  return releases.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  // Defensive: invalid/missing dates sort to the end
+  return releases.sort((a, b) => {
+    const tsA = new Date(a.date).getTime();
+    const tsB = new Date(b.date).getTime();
+
+    if (isNaN(tsA) && isNaN(tsB)) return 0;
+    if (isNaN(tsA)) return 1;
+    if (isNaN(tsB)) return -1;
+
+    return tsB - tsA;
+  });
 }
 
 export async function getReleaseBySlug(slug: string): Promise<Release | null> {
@@ -57,6 +67,7 @@ export async function getReleaseBySlug(slug: string): Promise<Release | null> {
     discs: file.frontmatter.discs,
     credits: file.frontmatter.credits,
     content,
+    spotify: file.frontmatter.spotify,
   };
 }
 

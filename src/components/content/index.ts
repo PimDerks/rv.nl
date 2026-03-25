@@ -8,3 +8,4 @@ export { ReleaseBadge } from "./ReleaseBadge";
 export { EventTable } from "./EventTable";
 export { BandMemberCard } from "./BandMemberCard";
 export { ContactForm } from "./ContactForm";
+export { SpotifyEmbed } from "./SpotifyEmbed";

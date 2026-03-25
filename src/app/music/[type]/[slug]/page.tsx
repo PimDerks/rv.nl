@@ -8,9 +8,12 @@ import {
   getTypeFromSlug,
   getTypeSlug,
 } from "@/lib/releases";
-import { formatDate } from "@/lib/utils";
+import { getAvailableSongSlugs } from "@/lib/songs";
+import { formatDate, formatYear } from "@/lib/utils";
+import { formatSectionTitle } from "@/lib/format-section-title";
 import { generateMusicAlbumJsonLd } from "@/lib/jsonld";
-import { Tracklist } from "@/components/content/Tracklist";
+import { Tracklist, SpotifyEmbed } from "@/components/content";
+import { PageHero } from "@/components/layout";
 
 interface PageProps {
   params: Promise<{ type: string; slug: string }>;
@@ -64,6 +67,22 @@ export default async function ReleaseDetailPage({
     notFound();
   }
 
+  const availableSongSlugs = getAvailableSongSlugs();
+  const typeLabel = releaseType.charAt(0).toUpperCase() + releaseType.slice(1);
+
+  const albumArt = (
+    <div className="relative w-56 h-56 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden rounded-lg shadow-2xl">
+      <Image
+        src={release.img}
+        alt={release.title}
+        fill
+        className="object-cover"
+        priority
+        sizes="(max-width: 768px) 192px, 256px"
+      />
+    </div>
+  );
+
   return (
     <>
       <script
@@ -72,74 +91,72 @@ export default async function ReleaseDetailPage({
           __html: generateMusicAlbumJsonLd(release, type),
         }}
       />
-      <div className="container mx-auto px-4 py-8 md:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          <div className="md:col-span-1">
-          <div className="sticky top-24">
-            <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
-              <Image
-                src={release.img}
-                alt={release.title}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="text-sm text-muted-foreground">
-                Released: {formatDate(release.date)}
-              </p>
-            </div>
+
+      <PageHero
+        title={release.title}
+        subtitle={`${typeLabel} — ${formatYear(release.date)}`}
+        image={release.img}
+        heroContent={albumArt}
+      >
+        <div className="container mx-auto px-4 py-8 md:py-12">
+          <div className="max-w-3xl mx-auto">
+            <p className="font-ui text-sm text-muted-foreground mb-8">
+              Released: {formatDate(release.date)}
+            </p>
+
+            {release.spotify && (
+              <section className="mb-8">
+                <SpotifyEmbed 
+                  spotifyId={release.spotify}
+                  title={formatSectionTitle('Listen', 'to')}
+                />
+              </section>
+            )}
+
+            {release.discs && release.discs.length > 0 && (
+              <section className="mb-8">
+                <h2 
+                  className="mb-4 text-center"
+                  dangerouslySetInnerHTML={{ __html: formatSectionTitle('Tracklist', 'for') }}
+                />
+                <Tracklist
+                  discs={release.discs}
+                  availableSongSlugs={availableSongSlugs}
+                />
+              </section>
+            )}
+
+            {release.credits && release.credits.length > 0 && (
+              <section className="mb-8">
+                <h2 
+                  className="mb-4 text-center"
+                  dangerouslySetInnerHTML={{ __html: formatSectionTitle('Credits', 'for') }}
+                />
+                <dl className="space-y-2">
+                  {release.credits.map((credit, index) => (
+                    <div key={index} className="flex flex-col sm:flex-row gap-1">
+                      <dt className="font-ui text-muted-foreground flex-shrink-0 sm:w-48">
+                        {credit.key}:
+                      </dt>
+                      <dd>{credit.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            )}
+
+            {release.content && (
+              <section>
+                <h2 className="mb-4">About</h2>
+                <div
+                  className="prose-content"
+                  dangerouslySetInnerHTML={{ __html: release.content }}
+                />
+              </section>
+            )}
           </div>
         </div>
-
-        <div className="md:col-span-2">
-          <h1 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            {release.title}
-          </h1>
-
-          {release.discs && release.discs.length > 0 && (
-            <section className="mb-8">
-              <h2 className="font-heading text-xl font-semibold mb-4">
-                Tracklist
-              </h2>
-              <Tracklist discs={release.discs} />
-            </section>
-          )}
-
-          {release.credits && release.credits.length > 0 && (
-            <section className="mb-8">
-              <h2 className="font-heading text-xl font-semibold mb-4">
-                Credits
-              </h2>
-              <dl className="space-y-2">
-                {release.credits.map((credit, index) => (
-                  <div key={index} className="flex flex-col sm:flex-row gap-1">
-                    <dt className="text-muted-foreground flex-shrink-0 sm:w-48">
-                      {credit.key}:
-                    </dt>
-                    <dd>{credit.value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
-          )}
-
-          {release.content && (
-            <section>
-              <h2 className="font-heading text-xl font-semibold mb-4">
-                About
-              </h2>
-              <div
-                className="prose-content"
-                dangerouslySetInnerHTML={{ __html: release.content }}
-              />
-            </section>
-          )}
-          </div>
-        </div>
-      </div>
+      </PageHero>
     </>
   );
 }

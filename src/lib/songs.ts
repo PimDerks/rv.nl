@@ -12,6 +12,7 @@ interface SongFrontmatter {
   composer?: string;
   credits?: SongCredit[];
   order?: boolean | number;
+  spotify?: string;
 }
 
 export async function getAllSongs(): Promise<Song[]> {
@@ -29,6 +30,7 @@ export async function getAllSongs(): Promise<Song[]> {
         composer: file.frontmatter.composer,
         credits: file.frontmatter.credits,
         order: file.frontmatter.order,
+        spotify: file.frontmatter.spotify,
         content,
       };
     })
@@ -55,6 +57,7 @@ export async function getSongBySlug(slug: string): Promise<Song | null> {
     composer: file.frontmatter.composer,
     credits: file.frontmatter.credits,
     order: file.frontmatter.order,
+    spotify: file.frontmatter.spotify,
     content,
   };
 }

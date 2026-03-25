@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 
 import { getAllSongs, getSongBySlug, getReleasesBySong } from "@/lib/songs";
 import { generateMusicCompositionJsonLd } from "@/lib/jsonld";
+import { formatSectionTitle } from "@/lib/format-section-title";
 import { SongCredits } from "@/components/content/SongCredits";
 import { ReleaseGrid } from "@/components/content/ReleaseGrid";
+import { SpotifyEmbed } from "@/components/content";
 import { PageHero } from "@/components/layout";
 
 interface PageProps {
@@ -71,6 +73,16 @@ export default async function SongDetailPage({
       >
         <div className="container mx-auto px-4 py-8 md:py-12">
           <div className="max-w-3xl mx-auto text-center">
+            {song.spotify && (
+              <section className="mb-8">
+                <SpotifyEmbed 
+                  spotifyId={song.spotify} 
+                  type="track"
+                  title={formatSectionTitle('Listen', 'to')}
+                />
+              </section>
+            )}
+
             {song.content && (
               <section className="mb-8">
                 <h2 className="mb-4">Lyrics</h2>
