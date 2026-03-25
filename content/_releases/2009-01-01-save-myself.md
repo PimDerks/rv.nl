@@ -4,6 +4,7 @@ title: Save Myself
 date: 2009-01-01
 img: /images/singles/save-myself.jpg
 permalink: /music/singles/:title/
+spotify: 5Wut9M2LueDud5ZJVdLbZV
 discs:
   - tracks:
     - title: Save Myself

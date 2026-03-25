@@ -3,6 +3,7 @@ title: The Bitter End
 year: 2018
 writer: Robby Valentine
 composer: Robby Valentine
+spotify: 0ftE81kBNJK3Z7kGl1g8Fz
 ---
 
 

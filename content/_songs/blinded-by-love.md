@@ -4,12 +4,13 @@ year: 1998
 writer: Robby Valentine
 composer: Robby Valentine
 credits:
-  - key: "Composed, writted, arranged, produced, recorded, mixed & performed"
+  - key: Composed, writted, arranged, produced, recorded, mixed & performed
     value: Robby V
   - key: Lead guitar
     value: Rob Winter
   - key: Extra harmony vocals
-    value: Arthur Polini  
+    value: Arthur Polini
+spotify: 6jrhsmguhEPoicsyXC9kwD
 ---
 
 

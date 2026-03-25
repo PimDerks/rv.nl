@@ -5,6 +5,7 @@ date: 2023-10-21
 img: /images/albums/embrace-the-unknown.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 0UtktKSQwrbUrsLqR8Fe2c
 discs:
   - tracks:
       - Break The Chain

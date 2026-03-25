@@ -3,6 +3,7 @@ title: Soldiers Of Light
 year: 2018
 writer: Robby Valentine
 composer: Robby Valentine
+spotify: 5vIU0t1i2IW43JNTZAQI6O
 ---
 
 

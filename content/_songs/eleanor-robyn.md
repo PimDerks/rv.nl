@@ -3,6 +3,7 @@ title: Eleanor Robyn
 year: 2018
 writer: Robby Valentine
 composer: Robby Valentine
+spotify: 1IM75Gl68VIlPCg2lzkCpC
 ---
 
 

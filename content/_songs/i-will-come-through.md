@@ -6,6 +6,7 @@ composer: Robby Valentine
 credits:
   - key: Lead vocals, vocal harmonies, black and whites, bass-guitar, lead, harmonic, acoustic and rhythm guitars, vocoder, drum programming and other noises.
     value: Robby Valentine
+spotify: 4RnB05vm6mulgKUnIeVf9s
 ---
 
 

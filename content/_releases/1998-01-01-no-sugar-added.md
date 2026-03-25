@@ -6,6 +6,7 @@ img: /images/albums/no-sugar-added.jpg
 header: /images/headers/albums/nsa1998.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 7GiCRZCqC5Fv1PvdadWVhh
 discs:
   - tracks:
     - The Forces Of Secrecy

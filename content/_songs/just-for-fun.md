@@ -8,6 +8,7 @@ credits:
     value: Robby Valentine
   - key: Lead guitar, additional vocal harmonies, sampling engineer
     value: Rob Winter
+spotify: 57Y1pK4HRBkqRBsCcdSqrP
 ---
 
 

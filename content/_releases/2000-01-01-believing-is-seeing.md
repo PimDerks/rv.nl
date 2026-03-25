@@ -5,6 +5,7 @@ date: 2000-11-29
 img: /images/albums/believing-is-seeing.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 2OcnCe9GZwXhLrY7cH42Du
 discs:
   - tracks:
     - Dear Dad

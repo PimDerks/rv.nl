@@ -6,6 +6,7 @@ img: /images/albums/the-magic-infinity.jpg
 header: /images/headers/albums/tmi1994.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 42R4FOToohvgo6CtTbiw0i
 discs:
   - tracks:
     - The Magic Infinity

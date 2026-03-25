@@ -10,6 +10,7 @@ credits:
     value: Rob Winter
   - key: Additional backing vocals
     value: Jay Jay
+spotify: 0a3mt6jHrGDG2OC55ps2Qi
 ---
 
 

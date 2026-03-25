@@ -4,8 +4,9 @@ year: 1998
 writer: Robby Valentine
 composer: Robby Valentine
 credits:
-  - key: "Composed, writted, arranged, produced, recorded, mixed & performed"
+  - key: Composed, writted, arranged, produced, recorded, mixed & performed
     value: Robby V
+spotify: 75mTkF1CIlkLQC1S8fJJKk
 ---
 
 

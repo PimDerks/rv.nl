@@ -6,7 +6,8 @@ composer: Robby Valentine
 credits:
   - key: Lead vocals, choirs, grand piano, synthesizers, all guitars, bass-guitar, drum programming
     value: Robby Valentine
-about: "My attempt of a Roy Orbison type of bolero."
+about: My attempt of a Roy Orbison type of bolero.
+spotify: 5aaeOFoP2JGwDwauA6QmH9
 ---
 
 

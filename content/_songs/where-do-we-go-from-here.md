@@ -12,6 +12,7 @@ credits:
     value: Rob Winter
   - key: Additional backing vocals
     value: Arthur Polini and John Ewbank
+spotify: 4YVymQRjMrcrWxgJs2EZ1y
 ---
 
 

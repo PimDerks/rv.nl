@@ -11,7 +11,8 @@ credits:
   - key: Lead and harmonic guitars
     value: Valensia
   - key: Grand piano, bass and electric guitar, synthesizers and samples
-    value: Valentine  
+    value: Valentine
+spotify: 1XpDVdYlV746j9uar8MdZk
 ---
 
 

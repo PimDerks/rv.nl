@@ -4,10 +4,11 @@ year: 1998
 writer: Robby Valentine
 composer: Robby Valentine
 credits:
-  - key: "Composed, writted, arranged, produced, recorded, mixed & performed"
+  - key: Composed, writted, arranged, produced, recorded, mixed & performed
     value: Robby V
   - key: Extra harmony vocals
     value: Sjakie
+spotify: 3ufeSFluYnzolQQrVKY3yY
 ---
 
 

@@ -6,6 +6,7 @@ img: /images/albums/valentine.jpg
 header: /images/headers/albums/v1995.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 1H28rL7xo3ld03V4EGXKTx
 discs:
   - tracks:
     - God

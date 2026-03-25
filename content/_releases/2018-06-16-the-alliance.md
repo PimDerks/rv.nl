@@ -5,6 +5,7 @@ date: 2018-06-16
 img: /images/albums/the-alliance.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 50QeqseJwtlZyWNXrlEVds
 discs:
   - tracks:
     - The Alliance Theme

@@ -6,6 +6,7 @@ img: /images/albums/falling-down-in-misanthropolis.jpg
 header: /images/headers/albums/fdim2007.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 4iBFT4o06vNR3emXKj1BH1
 discs:
   - tracks:
     - Falling Down

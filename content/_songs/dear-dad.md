@@ -5,11 +5,11 @@ img: /images/headers/4.jpg
 writer: Robby Valentine
 composer: Robby Valentine
 credits:
-  - key: "Lead vocals, choirs, grand piano, synthesizers, lead-rhythm and acoustic guitars, bass
-    guitar-samples and drum machine"
+  - key: Lead vocals, choirs, grand piano, synthesizers, lead-rhythm and acoustic guitars, bass guitar-samples and drum machine
     value: Robert Valentine
   - key: Drums
     value: Juan van Emmerloot
+spotify: 0lgy3Ta8ugnuMLmBv3QpUQ
 ---
 
 

@@ -5,6 +5,7 @@ artist: Peter Strykes
 date: 2009-01-01
 img: /images/collaborations/peter-strykes-sings-robby-valentine.jpg
 permalink: /music/collaborations/:title/
+spotify: 4DE7NHElaLGHkSebA87jax
 discs:
   - tracks:
     - Invincible

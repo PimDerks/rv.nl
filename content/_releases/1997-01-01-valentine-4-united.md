@@ -6,6 +6,7 @@ img: /images/albums/united.jpg
 header: /images/headers/albums/u1997.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 69cyWjj41gvUi1yvprcrUC
 discs:
   - tracks:
     - Rise And Shine

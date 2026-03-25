@@ -7,7 +7,8 @@ permalink: /music/albums/:title/
 lyrics: true
 discs:
   - tracks:
-      - Black Dog (2021 Remix)
+      - title: Black Dog 
+        subtitle: 2021 Remix
       - Mad World
       - Stop The Rain
       - Ordinary World

@@ -5,6 +5,7 @@ date: 1992-02-14
 img: /images/albums/robby-valentine.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 00smO3DWBKWV5yjIEbdHRN
 discs:
   - tracks:
     - The Magic Breeze
@@ -13,7 +14,7 @@ discs:
     - One Day
     - The Gift Of Life
     - Over And Over Again
-    - Heaven In Callin'
+    - Heaven Is Callin'
     - I'm Searchin'
     - Here, There And Everywhere
     - Angel

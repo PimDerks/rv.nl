@@ -6,6 +6,7 @@ img: /images/albums/the-most-beautiful-pain.jpg
 header: /images/headers/albums/tmbp2006.jpg
 permalink: /music/albums/:title/
 lyrics: true
+spotify: 02RCgZlgIIxKcFaXW8bujP
 credits:
   - key: Composed, written and arranged
     value: Robby Valentine

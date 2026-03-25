@@ -6,6 +6,7 @@ credits:
     value: Robby Valentine
   - key: All instruments, lead vocal and vocal harmonies
     value: Robby Valentine
+spotify: 09ovqiLjFCyhHIMXSNcvSR
 ---
 
 
